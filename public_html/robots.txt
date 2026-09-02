@@ -1,0 +1,34 @@
+# robots.txt for S.Sense Salon & Spa
+# Allow all search engines to crawl and index all pages
+
+User-agent: *
+Allow: /
+
+# Disallow unnecessary system folders (optional, for safety)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Sitemap location (CORRECTED - UPDATED)
+Sitemap: https://ssensesalon.com/sitemap.xml
+
+# Additional best practices
+# Disallow duplicate content if any
+# Disallow: /test/
+# Disallow: /demo/
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow all CSS and JS files for better rendering
+User-agent: Googlebot
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+
+# Crawl-delay (optional - only if server is slow)
+# Crawl-delay: 10

@@ -1,0 +1,9 @@
+{
+    "name": "S.Sense Salon & Spa",
+    "short_name": "S.Sense",
+    "description": "Premium salon and spa services",
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#ffffff",
+    "theme_color": "#d4a574"
+}

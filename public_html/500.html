@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="S.Sense Salon & Spa is temporarily unavailable because of a server error.">
+    <title>500 - Server Error | S.Sense Salon & Spa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-icon {
+            font-size: 120px;
+            color: #fa709a;
+            margin-bottom: 20px;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 72px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            box-shadow: 0 10px 30px rgba(250, 112, 154, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(250, 112, 154, 0.6);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #fa709a;
+            border: 2px solid #fa709a;
+        }
+
+        .btn-secondary:hover {
+            background: #fa709a;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .info-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff9f0;
+            border-left: 4px solid #fee140;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            margin-left: 20px;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .refresh-timer {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .refresh-timer strong {
+            color: #fa709a;
+            font-size: 18px;
+        }
+
+        .links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        .links h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .quick-links a {
+            color: #fa709a;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .quick-links a:hover {
+            background: #fff9f0;
+            color: #d85a7f;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 56px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .error-icon {
+                font-size: 80px;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-icon">500</div>
+        <h1>500</h1>
+        <h2>Internal Server Error</h2>
+        <p>Oops! Something went wrong on our end. Our team has been notified and we're working to fix it. Please try again in a few moments.</p>
+        
+        <div class="btn-container">
+            <a href="javascript:location.reload()" class="btn btn-primary">Refresh Page</a>
+            <a href="/" class="btn btn-secondary">Go to Homepage</a>
+        </div>
+
+        <div class="refresh-timer">
+            Auto-refreshing in <strong id="countdown">30</strong> seconds...
+        </div>
+
+        <div class="info-box">
+            <h3>What can you do?</h3>
+            <ul>
+                <li>Wait a few moments and refresh the page</li>
+                <li>Clear your browser cache and cookies</li>
+                <li>Try accessing the page again later</li>
+                <li>Contact us if the problem persists</li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h3>Quick Links</h3>
+            <div class="quick-links">
+                <a href="booking.html">Book Appointment</a>
+                <a href="/beauty-salon.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let countdown = 30;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(function() {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+                location.reload();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

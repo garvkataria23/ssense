@@ -1,0 +1,167 @@
+# .htaccess for S.Sense Salon & Spa
+# Optimized for SEO, Security, and Performance
+# Last Updated: October 17, 2025
+
+# ==========================================
+# 1. FORCE HTTPS (Redirect HTTP to HTTPS)
+# ==========================================
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==========================================
+# 2. FORCE WWW or NON-WWW (Choose One)
+# ==========================================
+
+# Option A: Force NON-WWW (ssensesalon.com)
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Option B: Force WWW (www.ssensesalon.com)
+# Uncomment below lines if you want WWW
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# ==========================================
+# 3. REMOVE .HTML EXTENSION FROM URLs
+# ==========================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Redirect .html to clean URLs
+RewriteCond %{THE_REQUEST} ^GET\ /[^\ ]+\.html
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# ==========================================
+# 4. CUSTOM ERROR PAGES
+# ==========================================
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 500 /500.html
+
+# ==========================================
+# 5. SECURITY HEADERS
+# ==========================================
+
+# Prevent clickjacking
+Header always set X-Frame-Options "SAMEORIGIN"
+
+# XSS Protection
+Header always set X-XSS-Protection "1; mode=block"
+
+# Prevent MIME type sniffing
+Header always set X-Content-Type-Options "nosniff"
+
+# Referrer Policy
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Content Security Policy (adjust as needed)
+Header always set Content-Security-Policy "default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:;"
+
+# ==========================================
+# 6. DISABLE DIRECTORY BROWSING
+# ==========================================
+Options -Indexes
+
+# ==========================================
+# 7. BLOCK ACCESS TO SENSITIVE FILES
+# ==========================================
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|txt|md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow robots.txt and sitemap.xml
+<FilesMatch "^(robots\.txt|sitemap\.xml)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# ==========================================
+# 8. GZIP COMPRESSION (Faster Loading)
+# ==========================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml
+</IfModule>
+
+# ==========================================
+# 9. BROWSER CACHING (Better Performance)
+# ==========================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # Default
+    ExpiresDefault "access plus 1 month"
+</IfModule>
+
+# ==========================================
+# 10. LEVERAGE BROWSER CACHING
+# ==========================================
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|ico)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    <FilesMatch "\.(woff|woff2|ttf|eot|svg)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
+
+# ==========================================
+# 11. REDIRECT OLD URLs (Add Your Redirects)
+# ==========================================
+# Example: Redirect old URLs to new ones
+# Redirect 301 /old-page.html /new-page
+# Redirect 301 /services.html /beauty-salon
+
+# ==========================================
+# 12. SET DEFAULT CHARACTER SET
+# ==========================================
+AddDefaultCharset UTF-8
+
+# ==========================================
+# 13. ENABLE KEEP-ALIVE
+# ==========================================
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# ==========================================
+# 14. PREVENT HOTLINKING (Image Protection)
+# ==========================================
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?ssensesalon\.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,L]
+
+# ==========================================
+# END OF .htaccess FILE
+# ==========================================

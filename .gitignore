@@ -1,0 +1,13 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# Root-level non-site clutter (keep the repo scoped to public_html)
+/images/
+/New folder/
+/opencode
+/addrash.html
+
+# Temp / logs
+*.log
