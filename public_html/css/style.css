@@ -7544,10 +7544,10 @@ body.ssense-reviews-page .ssense-final-booking-panel h2 {
   font-size: 1rem;
 }
 
-body.ssense-reviews-page .ssense-social-instagram { background: linear-gradient(135deg, #f55da8, #e13c83); }
-body.ssense-reviews-page .ssense-social-facebook { background: #225a9f; }
-body.ssense-reviews-page .ssense-social-whatsapp { background: #25d366; }
-body.ssense-reviews-page .ssense-social-youtube { background: #ef130f; }
+.ssense-social-instagram { background: linear-gradient(135deg, #f55da8, #e13c83); }
+.ssense-social-facebook { background: #225a9f; }
+.ssense-social-whatsapp { background: #25d366; }
+.ssense-social-youtube { background: #ef130f; }
 
 .ssense-general-footer__script {
   margin: 22px 0 0 14px;
