@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--S.Sense Salon & Spa Template design by S.Sense Salon & Spa (http://www.ssensesalon.com) -->
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -196,10 +196,10 @@
     <link href="css/animate.css" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- TEMPLATE CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=batch2-premium-2" rel="stylesheet">
     
     <!-- RESPONSIVE CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/responsive.css?v=batch2-premium-2-fix" rel="stylesheet">
     
     <!-- LINES 260-265: NEW GOOGLE TAG MANAGER -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -214,7 +214,7 @@
          
 
 
-	<body itemscope itemtype="https://schema.org/WebPage">
+	<body class="ssense-batch2-page ssense-booking-page" itemscope itemtype="https://schema.org/WebPage">
 	    
 	    
 	     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
@@ -270,31 +270,33 @@
 	    					<!-- MAIN MENU -->
 	      					<nav class="wsmenu clearfix">
 	        					<ul class="wsmenu-list">
-
-	        						<!-- SIMPLE NAVIGATION LINKS -->
-						    	<li class="nl-simple" aria-haspopup="true"><a href="index.html" class="h-link">Home</a></li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="about.html" class="h-link">About</a></li>
-						        	<li aria-haspopup="true"><a href="pricing-1.html" class="h-link">Services <span class="wsarrow"></span></a>
-						        		<ul class="sub-menu">
-						        			<li aria-haspopup="true"><a href="pricing-1.html">Hair Services</a></li>
-						        			<li aria-haspopup="true"><a href="pricing-2.html">Beauty Services</a></li>
-						        			<li aria-haspopup="true"><a href="pricing-3.html">Salon Packages</a></li>
-						        			<li aria-haspopup="true"><a href="nail-studio.html">Nails</a></li>
-						        			<li aria-haspopup="true"><a href="skincare-center.html">Skin Care</a></li>
-						        			<li aria-haspopup="true"><a href="barber-shop-1.html">Men's Grooming</a></li>
-						        		</ul>
-						          	</li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="gallery.html" class="h-link">Gallery</a></li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="reviews.html" class="h-link">Reviews</a></li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="contact.html" class="h-link">Contact</a></li>
-
-								    <!-- SIGN UP BUTTON -->
-								    <li class="nl-simple" aria-haspopup="true">
-								    	<a href="booking.html" class="btn btn--tra-white hover--white last-link">Book Online</a>
-								    </li> 
-
-	        					</ul>
-	        				</nav>	<!-- END MAIN MENU -->
+<li class="nl-simple" aria-haspopup="true"><a href="index.html" class="h-link">Home</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="about.html" class="h-link">About</a></li>
+<li aria-haspopup="true"><a href="services.html" class="h-link">Services <span class="wsarrow"></span></a>
+  <ul class="sub-menu ssense-service-submenu">
+    <li aria-haspopup="true"><a href="services.html">All Services</a></li>
+    <li aria-haspopup="true"><a href="services-hair.html">Hair Services</a></li>
+    <li aria-haspopup="true"><a href="haircuts.html">Haircuts</a></li>
+    <li aria-haspopup="true"><a href="hair-colour.html">Hair Colour</a></li>
+    <li aria-haspopup="true"><a href="hair-treatments.html">Hair Treatments</a></li>
+    <li aria-haspopup="true"><a href="hair-spa.html">Hair Spa</a></li>
+    <li aria-haspopup="true"><a href="beauty-salon.html">Beauty Services</a></li>
+    <li aria-haspopup="true"><a href="facials.html">Facials</a></li>
+    <li aria-haspopup="true"><a href="cleanup.html">Cleanup</a></li>
+    <li aria-haspopup="true"><a href="waxing.html">Waxing</a></li>
+    <li aria-haspopup="true"><a href="threading.html">Threading</a></li>
+    <li aria-haspopup="true"><a href="nail-services.html">Nail Services</a></li>
+    <li aria-haspopup="true"><a href="manicure-pedicure.html">Manicure &amp; Pedicure</a></li>
+    <li aria-haspopup="true"><a href="medi-treatments.html">Medi / Aesthetics</a></li>
+    <li aria-haspopup="true"><a href="pricing.html">Pricing Overview</a></li>
+  </ul>
+</li>
+<li class="nl-simple" aria-haspopup="true"><a href="offers.html" class="h-link">Offers</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="gallery.html" class="h-link">Gallery</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="reviews.html" class="h-link">Reviews</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="contact.html" class="h-link">Contact</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="booking.html" class="btn btn--tra-white hover--white last-link">Book Online</a></li>
+</ul></nav>	<!-- END MAIN MENU -->
 
 
 	    				</div>
@@ -328,12 +330,29 @@
 			<!-- BOOKING-1
 			============================================= -->
 			<div id="booking-1" class="pt-8 pb-7 booking-section division">
-				<div class="container"> <h2 class="text-center mb-5">Online Appointment Booking Form</h2>
+				<div class="container">
+					<div class="ssense-page-intro text-center">
+						<span class="ssense-eyebrow">Reserve your chair</span>
+						<h2>Choose a service, preferred artist and time.</h2>
+						<p>Share a few details below and our Kandivali team will confirm your salon appointment quickly.</p>
+					</div>
 
 
 					<!-- BOOKING FORM -->
 <div class="row justify-content-center">	
-    <div class="col-lg-10 col-xl-9">
+    <div class="col-xl-11">
+        <div class="ssense-booking-layout">
+            <aside class="ssense-booking-aside" aria-label="Booking steps">
+                <span class="ssense-eyebrow">Simple appointment flow</span>
+                <h3>From request to confirmation.</h3>
+                <ol>
+                    <li><strong>Tell us who you are.</strong><span>Name, phone and email help us confirm your visit.</span></li>
+                    <li><strong>Pick your service.</strong><span>Choose hair, beauty, nails, skincare or makeup.</span></li>
+                    <li><strong>Select artist & time.</strong><span>Request a specialist or choose any available staff.</span></li>
+                </ol>
+                <p>Prefer to speak with reception? <a href="tel:+918054777888">Call +91 8054 777 888</a>.</p>
+            </aside>
+            <div class="ssense-booking-form-panel">
         <!-- ADDED: id, method, and action attributes -->
         <form name="bookinkform" id="bookingForm" class="row booking-form" method="POST" action="php/bookingForm.php">
 
@@ -412,6 +431,8 @@
             </div>	
                                                     
         </form>
+            </div>
+        </div>
     </div>	
 </div>    <!-- END BOOKING FORM -->
 
@@ -663,7 +684,8 @@
 
 
 					<!-- BOTTOM FOOTER -->
-					<div class="bottom-footer">
+					<div class="ssense-footer-architecture-links" aria-label="Important salon links"><a href="services.html">Services</a><a href="services-hair.html">Hair</a><a href="beauty-salon.html">Beauty</a><a href="nail-services.html">Nails</a><a href="manicure-pedicure.html">Manicure &amp; Pedicure</a><a href="medi-treatments.html">Medi / Aesthetics</a><a href="pricing.html">Pricing</a><a href="offers.html">Offers</a><a href="careers.html">Careers</a><a href="privacy-policy.html">Privacy</a></div>
+<div class="bottom-footer">
 						<div class="row justify-content-center">	
 							<div class="col-lg-10 col-xl-9">
 
@@ -736,3 +758,4 @@
   
 </body>
 </html>
+

@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -157,6 +157,10 @@
 
 @media (max-width: 991.98px) {
   .ssense-hero { padding-top: 118px; }
+  .ssense-inner-hero-grid,
+  .ssense-story-grid,
+  .ssense-contact-layout { grid-template-columns: 1fr; }
+  .ssense-contact-actions-grid { grid-template-columns: repeat(2, 1fr); }
   .ssense-hero-meta,
   .ssense-trust-row,
   .ssense-price-grid,
@@ -4545,6 +4549,337 @@ body:not(.theme--dark) #hero-1 .caption p,
   }
 }
 
+/* Reviews redesign responsive rules: scoped so other pages retain their layouts. */
+@media (max-width: 1199.95px) {
+  body.ssense-reviews-page .ssense-featured-grid,
+  body.ssense-reviews-page .ssense-reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  body.ssense-reviews-page .ssense-featured-grid .ssense-review-card--feature:first-child {
+    grid-row: auto;
+  }
+
+  body.ssense-reviews-page .ssense-return-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.ssense-reviews-page .ssense-return-grid > div:nth-child(2n) {
+    border-right: 0;
+  }
+
+  body.ssense-reviews-page .ssense-return-grid > div:nth-child(-n+2) {
+    border-bottom: 1px solid var(--ssense-review-line);
+  }
+}
+
+@media (max-width: 991.95px) {
+  body.ssense-reviews-page .ssense-general-footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__newsletter {
+    grid-column: 1 / -1;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__bottom .container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__bottom nav,
+  body.ssense-reviews-page .ssense-general-footer__bottom p:last-child {
+    justify-self: center;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__bottom p:last-child:before {
+    display: none;
+  }
+
+  body.ssense-reviews-page .ssense-return-section .container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero {
+    padding-top: 102px;
+    padding-bottom: 44px;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero__visual {
+    max-width: 620px;
+    min-height: 0;
+  }
+
+  body.ssense-reviews-page .ssense-featured-grid,
+  body.ssense-reviews-page .ssense-reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.ssense-reviews-page .ssense-all-reviews .ssense-reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(340px, auto);
+  }
+
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card--lead {
+    grid-column: 1 / -1;
+  }
+
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card,
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card--lead,
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card--support {
+    min-height: 340px;
+  }
+
+  body.ssense-reviews-page .ssense-featured-grid .ssense-review-card--feature:first-child {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  body.ssense-reviews-page .ssense-review-head--split,
+  body.ssense-reviews-page .ssense-featured-head,
+  body.ssense-reviews-page .ssense-review-cta-panel {
+    grid-template-columns: 1fr;
+  }
+
+  body.ssense-reviews-page .ssense-review-cta-panel .ssense-review-actions {
+    justify-content: flex-start;
+  }
+
+  body.ssense-reviews-page .ssense-review-cta-panel h2,
+  body.ssense-reviews-page .ssense-review-cta-panel p:not(.ssense-eyebrow) {
+    max-width: none;
+  }
+}
+
+@media (max-width: 767.95px) {
+  body.ssense-reviews-page {
+    overflow-x: hidden;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-page {
+    overflow-x: hidden;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero {
+    padding-top: 88px;
+    padding-bottom: 34px;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero h1 {
+    font-size: clamp(2.05rem, 9.4vw, 3rem)!important;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero__visual {
+    min-height: 0;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero__image {
+    border-radius: 24px;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero__quote {
+    width: calc(100% - 18px);
+    margin-top: -28px;
+    margin-left: auto;
+    padding: 18px 20px;
+    border-radius: 20px;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-section {
+    padding: 40px 0;
+  }
+
+  body.ssense-reviews-page .ssense-featured-grid,
+  body.ssense-reviews-page .ssense-reviews-grid,
+  body.ssense-reviews-page .ssense-return-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  body.ssense-reviews-page .ssense-featured-grid,
+  body.ssense-reviews-page .ssense-reviews-grid {
+    display: grid!important;
+    gap: 16px;
+    transform: none!important;
+  }
+
+  body.ssense-reviews-page .ssense-all-reviews .ssense-reviews-grid {
+    grid-auto-rows: auto;
+  }
+
+  body.ssense-reviews-page .ssense-return-grid {
+    border-top: 1px solid var(--ssense-review-line);
+  }
+
+  body.ssense-reviews-page .ssense-return-grid > div {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 8px 18px;
+    padding: 24px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--ssense-review-line);
+  }
+
+  body.ssense-reviews-page .ssense-return-grid h3,
+  body.ssense-reviews-page .ssense-return-grid p {
+    grid-column: 2;
+  }
+
+  body.ssense-reviews-page .ssense-return-grid > div:last-child {
+    border-bottom: 0;
+  }
+
+  body.ssense-reviews-page .ssense-return-grid span {
+    margin-bottom: 16px;
+  }
+
+  body.ssense-reviews-page .ssense-return-grid p {
+    max-width: none;
+  }
+
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card--lead,
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card--support,
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card.ssense-review-card--orphan {
+    grid-column: auto;
+    min-height: auto;
+  }
+
+  body.ssense-reviews-page .ssense-all-reviews .ssense-review-card:nth-child(n) {
+    margin-top: 0;
+    border-radius: 20px;
+  }
+
+  body.ssense-reviews-page .ssense-review-card,
+  body.ssense-reviews-page .ssense-review-card--feature {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: auto;
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  body.ssense-reviews-page .ssense-review-copy,
+  body.ssense-reviews-page .ssense-review-card--feature .ssense-review-copy {
+    -webkit-line-clamp: 4;
+    max-height: calc(1em * 1.62 * 4);
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+
+  body.ssense-reviews-page .ssense-review-card.is-expanded .ssense-review-copy {
+    -webkit-line-clamp: unset;
+    max-height: var(--ssense-review-expanded-height, 1600px);
+  }
+
+  body.ssense-reviews-page .ssense-review-actions,
+  body.ssense-reviews-page .ssense-review-cta-panel .ssense-review-actions {
+    align-items: stretch;
+  }
+
+  body.ssense-reviews-page .ssense-review-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  body.ssense-reviews-page .ssense-review-cta-panel {
+    padding: 28px 22px;
+    border-radius: 22px;
+  }
+
+  body.ssense-reviews-page .ssense-review-cta .ssense-review-cta-panel {
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 22px;
+  }
+
+  body.ssense-reviews-page .ssense-review-cta-panel:after {
+    width: 100%;
+    opacity: .22;
+  }
+
+  body.ssense-reviews-page .ssense-final-booking-panel {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  body.ssense-reviews-page #footer-1.ssense-general-footer {
+    padding-top: 34px!important;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-bottom: 34px;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__brand img {
+    max-width: 220px;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__direction,
+  body.ssense-reviews-page .ssense-general-footer__booking,
+  body.ssense-reviews-page .ssense-general-footer__newsletter .input-group {
+    width: 100%;
+    max-width: none;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__hours ul,
+  body.ssense-reviews-page .ssense-general-footer__badges {
+    max-width: none;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__badges span {
+    padding-inline: 10px;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__newsletter .input-group {
+    height: 60px;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__newsletter .btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  body.ssense-reviews-page .ssense-general-footer__script {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 379.98px) {
+  body.ssense-reviews-page .ssense-featured-grid,
+  body.ssense-reviews-page .ssense-reviews-grid {
+    gap: 14px;
+  }
+
+  body.ssense-reviews-page .ssense-reviews-hero {
+    padding-top: 90px;
+  }
+
+  body.ssense-reviews-page .ssense-eyebrow {
+    font-size: .66rem;
+  }
+
+  body.ssense-reviews-page .ssense-review-card,
+  body.ssense-reviews-page .ssense-return-grid > div,
+  body.ssense-reviews-page .ssense-review-cta-panel {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 /* S.Sense final mobile QA fixes: this block must stay at EOF to win responsive cascade. */
 @media (max-width: 991.98px) {
   body:not(.theme--dark) .wsmobileheader .wsanimated-arrow {
@@ -4959,5 +5294,674 @@ body:not(.theme--dark) #hero-1 .caption p,
 
   #reviews-3 + .page-pagination {
     display: none!important;
+  }
+}
+
+/* ==========================================================================
+   BATCH 2 — Premium Inner Pages · Responsive
+   booking · gallery · team · faqs
+   Keep at EOF to win cascade over carousel & card rules above.
+   =========================================================================== */
+
+/* ---------------------------
+   Booking page — stack layout
+   --------------------------- */
+@media (max-width: 991.98px) {
+  body.ssense-booking-page .ssense-booking-layout {
+    grid-template-columns: 1fr!important;
+  }
+  body.ssense-booking-page .ssense-booking-aside {
+    position: static!important;
+  }
+}
+
+/* ---------------------------
+   Gallery page — grid columns
+   --------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body.ssense-gallery-page .ssense-gallery-row {
+    grid-template-columns: repeat(2,1fr)!important;
+    grid-auto-rows: 280px!important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Let existing gallery carousel (row-cols-1) drive the strip;
+     just keep image tiles tidy inside it. */
+  body.ssense-gallery-page .ssense-gallery-row {
+    grid-template-columns: 1fr!important;
+    grid-auto-rows: auto!important;
+  }
+  body.ssense-gallery-page .ssense-gallery-row .gallery-image {
+    aspect-ratio: auto!important;
+    height: 245px!important;
+  }
+}
+
+/* ---------------------------
+   Team page — card polish in carousel
+   --------------------------- */
+@media (max-width: 767.98px) {
+  body.ssense-team-page .team-member {
+    min-height: 0!important;
+    display: flex!important;
+    flex-direction: column!important;
+  }
+  body.ssense-team-page .team-member-photo {
+    aspect-ratio: auto!important;
+    height: 148px!important;
+  }
+  body.ssense-team-page .team-member-photo img {
+    object-fit: cover!important;
+  }
+  body.ssense-team-page .category-title {
+    margin-bottom: 14px!important;
+  }
+}
+
+/* ---------------------------
+   FAQs page — accordion comfort on small screens
+   --------------------------- */
+@media (max-width: 575.98px) {
+  body.ssense-faqs-page .accordion-thumb {
+    padding: 15px 16px!important;
+    gap: 12px!important;
+  }
+  body.ssense-faqs-page .accordion-panel {
+    padding: 0 16px 15px!important;
+  }
+  body.ssense-faqs-page .accordion-thumb h3,
+  body.ssense-faqs-page .accordion-thumb h5 {
+    font-size: 1rem!important;
+  }
+}
+
+
+/* ==========================================================================
+   BATCH 3 — Location · Gift Cards · Pricing 1 · Pricing 2 — Responsive
+   Keep at EOF to win cascade over batch2 and earlier rules.
+   ========================================================================== */
+
+/* ---------------------------
+   Tablet adjustments (≤991px)
+   --------------------------- */
+@media (max-width: 991.98px) {
+  /* Gift cards: stack accordion section */
+  body.ssense-giftcards-page .shape--01 .row {
+    flex-direction: column-reverse;
+  }
+  body.ssense-giftcards-page .shape--01 .order-last {
+    order: 0 !important;
+  }
+  body.ssense-giftcards-page .shape--01 .order-first {
+    order: 0 !important;
+  }
+
+  /* Pricing tables: stack */
+  body.ssense-pricing1-page .pricing-5-wrapper .row,
+  body.ssense-pricing2-page .pricing-1-wrapper .row {
+    gap: 20px;
+  }
+
+  /* Location text content: stack */
+  body.ssense-location-page .ct-09 .row {
+    gap: 24px;
+  }
+}
+
+/* ---------------------------
+   Mobile adjustments (≤767px)
+   --------------------------- */
+@media (max-width: 767.98px) {
+  /* Hero refinement */
+  body.ssense-batch3-page .inner-page-hero {
+    padding: clamp(110px, 15vw, 150px) 0 40px !important;
+  }
+
+  body.ssense-batch3-page .inner-page-hero h1 {
+    font-size: clamp(2rem, 8vw, 2.6rem) !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Service boxes: 2-col on mobile */
+  body.ssense-giftcards-page .sbox-3-wrapper .row {
+    gap: 12px;
+  }
+  body.ssense-giftcards-page .sbox-3-wrapper .row > .col {
+    flex: 0 0 calc(50% - 6px) !important;
+    max-width: calc(50% - 6px) !important;
+  }
+
+  /* Gift card grid: single column */
+  body.ssense-giftcards-page .cards-row .row {
+    gap: 16px;
+  }
+  body.ssense-giftcards-page .cards-row .row > .col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  body.ssense-giftcards-page .gift-card {
+    padding: 24px 20px;
+  }
+
+  /* Pricing tables: full-width */
+  body.ssense-pricing1-page .pricing-5-table,
+  body.ssense-pricing1-page .pricing-1-table,
+  body.ssense-pricing2-page .pricing-1-table {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .detail-price,
+  body.ssense-pricing2-page .pricing-1-item .detail-price {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-name,
+  body.ssense-pricing2-page .pricing-1-item .price-name {
+    flex: 0 0 auto;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-dots,
+  body.ssense-pricing2-page .pricing-1-item .price-dots {
+    display: none;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-number,
+  body.ssense-pricing2-page .pricing-1-item .price-number {
+    flex: 0 0 100%;
+    text-align: right;
+    margin-top: 2px;
+  }
+
+  /* SEO article */
+  body.ssense-location-page .ssense-seo-section article {
+    padding: 24px 20px;
+  }
+
+  /* Location text content */
+  body.ssense-location-page .ct-09-txt {
+    padding: 0;
+  }
+
+  /* Working hours table */
+  body.ssense-location-page .ct-table .table td,
+  body.ssense-giftcards-page .ct-table .table td,
+  body.ssense-pricing1-page .ct-table .table td,
+  body.ssense-pricing2-page .ct-table .table td {
+    padding: 12px 14px;
+    font-size: .88rem;
+  }
+
+  /* Gallery image heights */
+  body.ssense-location-page .gallery-image,
+  body.ssense-giftcards-page .gallery-image,
+  body.ssense-pricing1-page .gallery-image,
+  body.ssense-pricing2-page .gallery-image {
+    height: 200px !important;
+  }
+
+  /* Advantages list */
+  body.ssense-location-page .advantages {
+    gap: 6px 12px;
+  }
+
+  /* Footer address */
+  body.ssense-location-page .footer-address {
+    text-align: center;
+  }
+
+  /* Pricing section padding */
+  body.ssense-pricing1-page .pricing-section,
+  body.ssense-pricing2-page .pricing-section {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  /* About-5 (pricing-2) */
+  body.ssense-pricing2-page .about-5 {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  body.ssense-pricing2-page .about-5 .txt-block {
+    padding: 30px 22px;
+  }
+
+  body.ssense-pricing2-page .about-5 .section-id {
+    gap: 8px;
+    letter-spacing: .18em;
+  }
+
+  body.ssense-pricing2-page .about-5 .section-id:before,
+  body.ssense-pricing2-page .about-5 .section-id:after {
+    width: 18px;
+  }
+
+  body.ssense-pricing2-page .about-5 h2 {
+    font-size: clamp(2.05rem, 9vw, 3.2rem);
+  }
+
+  body.ssense-pricing2-page #ab-5-1 img,
+  body.ssense-pricing2-page #ab-5-3 img {
+    height: 260px;
+  }
+
+  body.ssense-pricing2-page #ab-5-2 img {
+    height: 180px;
+  }
+
+  /* Banner CTA */
+  body.ssense-batch3-page .banner-1-wrapper {
+    padding: clamp(28px, 6vw, 48px) clamp(16px, 4vw, 32px) !important;
+  }
+}
+
+/* ---------------------------
+   Small mobile (≤575px)
+   --------------------------- */
+@media (max-width: 575.98px) {
+  /* Service boxes: full-width single column */
+  body.ssense-giftcards-page .sbox-3-wrapper .row > .col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Gift card price */
+  body.ssense-giftcards-page .gift-card span[itemprop="price"] {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  /* Hero subtitle */
+  body.ssense-batch3-page .ssense-hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+
+  /* Pricing lead text */
+  body.ssense-pricing1-page .lead {
+    font-size: .92rem;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Batch 4 — Pricing-3 page responsive
+   ------------------------------------------------------------------ */
+
+@media (max-width: 991px) {
+  body.ssense-pricing3-page .pricing-1-wrapper {
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+}
+
+@media (max-width: 767px) {
+  body.ssense-pricing3-page .pricing-1-wrapper .col-lg-6 + .col-lg-6 {
+    margin-top: clamp(24px, 4vw, 40px);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Batch 4 — Service pages responsive
+   ------------------------------------------------------------------ */
+
+@media (max-width: 991px) {
+  body.ssense-service-page .sbox-2 {
+    padding: clamp(20px, 3vw, 28px) clamp(14px, 2vw, 20px);
+  }
+
+  body.ssense-service-page .txt-table {
+    padding: 20px;
+  }
+}
+
+/* ==========================================================================
+   BATCH 7 — Blog / Artist / Single Post pages responsive
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+  /* Artist: stack photo above bio */
+  body.ssense-artist-page .ssense-artist-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  body.ssense-artist-page .ssense-artist-photo img {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Blog: collage to single column */
+  body.ssense-blog-page .ssense-blog-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  body.ssense-blog-page .ssense-blog-sidebar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  body.ssense-blog-page .ssense-blog-sidebar .blog-post {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Artist hero */
+  body.ssense-artist-page .inner-page-hero,
+  body.ssense-post-page .inner-page-hero {
+    padding: clamp(96px, 13vw, 126px) 0 38px !important;
+  }
+
+  /* Artist gallery gap */
+  body.ssense-artist-page .ssense-artist-gallery .row-cols-sm-2 {
+    gap: 12px;
+  }
+  body.ssense-artist-page .ssense-artist-gallery .gallery-image {
+    margin-bottom: 12px;
+  }
+
+  /* Blog sidebar: 1 col on small, 2 col on tablet */
+  body.ssense-blog-page .ssense-blog-section {
+    padding-top: 28px;
+  }
+  body.ssense-blog-page .ssense-blog-main .row {
+    margin: 0;
+    gap: 16px;
+  }
+  body.ssense-blog-page .ssense-blog-main .row > .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  body.ssense-blog-page .ssense-blog-sidebar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  body.ssense-blog-page .ssense-blog-sidebar .blog-post-img {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Post typography tighten on mobile */
+  body.ssense-post-page .ssense-post-section {
+    padding-top: 28px;
+  }
+  body.ssense-post-page .single-post-title h2 {
+    font-size: clamp(1.7rem, 7vw, 2.2rem) !important;
+  }
+  body.ssense-post-page .simple-list .list-item {
+    padding: 16px 16px 20px;
+    margin-bottom: 12px;
+  }
+  body.ssense-post-page .comment {
+    gap: 12px;
+  }
+  body.ssense-post-page .comments-wrapper .comment img {
+    width: 44px;
+    height: 44px;
+  }
+  body.ssense-post-page .ssense-author-bio {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  body.ssense-post-page .ssense-author-bio img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body.ssense-blog-page .ssense-blog-sidebar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Batch 4 — Service pages mobile refinements */
+@media (max-width: 767px) {
+  body.ssense-service-page .about-6 .a6-txt {
+    margin-bottom: 24px;
+  }
+
+  body.ssense-service-page .about-8-txt {
+    padding: clamp(16px, 3vw, 32px) 0;
+  }
+
+  body.ssense-service-page .accordion-thumb {
+    padding: 16px 20px;
+  }
+
+  body.ssense-service-page .accordion-panel {
+    padding: 0 20px 16px;
+  }
+
+  body.ssense-service-page .sbox-2 {
+    margin-bottom: 16px;
+  }
+}
+
+/* ==========================================================================
+   BATCH 8 — Error Pages & Privacy Policy (Responsive)
+   ========================================================================== */
+
+@media (max-width: 767.98px) {
+  /* Error pages */
+  body.ssense-error-page .error-code {
+    font-size: clamp(4rem, 16vw, 6rem);
+    margin-bottom: -6px;
+  }
+
+  body.ssense-error-page .error-search {
+    flex-direction: column;
+    max-width: 280px;
+  }
+
+  body.ssense-error-page .error-search input,
+  body.ssense-error-page .error-search button {
+    width: 100%;
+  }
+
+  body.ssense-error-page .error-quick-links-row {
+    gap: 4px 14px;
+  }
+
+  /* Privacy policy */
+  body.ssense-privacy-page .privacy-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ==========================================================================
+   TEXT OVERFLOW FIXES  �?" 2026-09-02
+   Prevents text from spilling out of its box on mobile across all pages:
+   pricing tables, service boxes, slider/marquee cards, grids and headings.
+   Keep at EOF to win the cascade.
+   ========================================================================== */
+
+/* 1) Pricing tables �?" let the service name grow + wrap; never collapse to ~10px
+      (the original .price-name used display:table-cell + width:1% which clips
+      the label when the parent is a flex row on mobile). */
+@media (max-width: 767.98px) {
+  body.ssense-pricing1-page .pricing-5-item .detail-price,
+  body.ssense-pricing2-page .pricing-1-item .detail-price,
+  body.ssense-pricing3-page .pricing-1-item .detail-price,
+  body.ssense-service-page .pricing-5-item .detail-price,
+  body.ssense-service-page .pricing-1-item .detail-price {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: baseline !important;
+    gap: 2px 10px !important;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-name,
+  body.ssense-pricing2-page .pricing-1-item .price-name,
+  body.ssense-pricing3-page .pricing-1-item .price-name,
+  body.ssense-service-page .pricing-5-item .price-name,
+  body.ssense-service-page .pricing-1-item .price-name {
+    display: block !important;
+    width: auto !important;
+    flex: 1 1 60% !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    padding: 0 !important;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-name p,
+  body.ssense-pricing2-page .pricing-1-item .price-name p,
+  body.ssense-pricing3-page .pricing-1-item .price-name p,
+  body.ssense-service-page .pricing-5-item .price-name p,
+  body.ssense-service-page .pricing-1-item .price-name p {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.25 !important;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-number,
+  body.ssense-pricing2-page .pricing-1-item .price-number,
+  body.ssense-pricing3-page .pricing-1-item .price-number,
+  body.ssense-service-page .pricing-5-item .price-number,
+  body.ssense-service-page .pricing-1-item .price-number {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: max-content !important;
+    max-width: none !important;
+    justify-self: end !important;
+    text-align: right !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-number p,
+  body.ssense-pricing2-page .pricing-1-item .price-number p,
+  body.ssense-pricing3-page .pricing-1-item .price-number p,
+  body.ssense-service-page .pricing-5-item .price-number p,
+  body.ssense-service-page .pricing-1-item .price-number p {
+    white-space: nowrap !important;
+    line-height: 1.25 !important;
+  }
+
+  body.ssense-pricing1-page .pricing-5-item .price-dots,
+  body.ssense-pricing2-page .pricing-1-item .price-dots,
+  body.ssense-pricing3-page .pricing-1-item .price-dots,
+  body.ssense-service-page .pricing-5-item .price-dots,
+  body.ssense-service-page .pricing-1-item .price-dots {
+    display: none !important;
+  }
+}
+
+/* 2) Any pricing list whose labels still sit side-by-side on tiny screens */
+@media (max-width: 575.98px) {
+  body.ssense-pricing1-page .pricing-5-item .detail-price .price-name,
+  body.ssense-pricing2-page .pricing-1-item .detail-price .price-name,
+  body.ssense-pricing3-page .pricing-1-item .detail-price .price-name,
+  body.ssense-service-page .pricing-5-item .detail-price .price-name,
+  body.ssense-service-page .pricing-1-item .detail-price .price-name {
+    flex: 1 1 auto !important;
+  }
+}
+
+/* 3) Service boxes: stop headings/text spilling past the card edge */
+@media (max-width: 767.98px) {
+  body.ssense-service-page .sbox-2,
+  .ssense-service-card,
+  body.ssense-giftcards-page .gift-card {
+    overflow-wrap: anywhere !important;
+  }
+  body.ssense-service-page .sbox-txt h3,
+  body.ssense-service-page .sbox-txt h5,
+  .ssense-service-card h3 {
+    overflow-wrap: break-word !important;
+  }
+  .ssense-service-card > * {
+    min-width: 0 !important;
+  }
+}
+
+/* 4) Prevent cards inside mobile sliders/marquees from forcing their container
+      wider than the screen (text nowrap inside a fixed-width slide) */
+@media (max-width: 767.98px) {
+  .ssense-trust-cards article,
+  .ssense-trust-row > div,
+  .ssense-contact-actions-grid a,
+  .ssense-price-panel,
+  .ssense-review-grid blockquote,
+  .ssense-service-grid a {
+    min-width: 0 !important;
+    overflow-wrap: break-word !important;
+  }
+  .ssense-contact-actions-grid a strong,
+  .ssense-contact-actions-grid a small,
+  .ssense-contact-actions-grid a span {
+    overflow-wrap: anywhere !important;
+  }
+}
+
+/* 5) Kill any accidental horizontal page scroll from stray overflow */
+@media (max-width: 767.98px) {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+  #page,
+  #page .container,
+  #page .container-fluid {
+    max-width: 100% !important;
+    overflow-x: clip !important;
+  }
+}
+
+/* S.SENSE NARROW OVERFLOW GUARD 2026 */
+@media (max-width: 430px) {
+  body, #page, .page, main, section, footer, header { max-width: 100vw!important; overflow-x: clip!important; }
+  .container { width: 100%!important; padding-left: 16px!important; padding-right: 16px!important; }
+  .row { margin-left: -8px!important; margin-right: -8px!important; }
+  [class*="col-"] { padding-left: 8px!important; padding-right: 8px!important; }
+  .btn, button, input, select, textarea { max-width: 100%; }
+  .wsmobileheader .smllogo img { max-width: 154px!important; height: auto!important; }
+}
+
+/* Gallery page final mobile override: keep gallery.html as a wrapped editorial
+   grid, not the global horizontal card scroller. Must stay after mobile guards. */
+@media (max-width: 767.98px) {
+  body.ssense-gallery-page #gallery-1 .ssense-gallery-row {
+    display: grid!important;
+    grid-template-columns: repeat(2, minmax(0, 1fr))!important;
+    grid-auto-rows: clamp(150px, 42vw, 210px)!important;
+    gap: 12px!important;
+    width: 100%!important;
+    max-width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+    overflow: visible!important;
+    scroll-snap-type: none!important;
+  }
+
+  body.ssense-gallery-page #gallery-1 .ssense-gallery-row > .col {
+    flex: initial!important;
+    width: auto!important;
+    max-width: none!important;
+    padding: 0!important;
+    scroll-snap-align: none!important;
+  }
+
+  body.ssense-gallery-page #gallery-1 .ssense-gallery-row > .col:nth-child(n) {
+    grid-column: auto!important;
+    grid-row: auto!important;
+  }
+
+  body.ssense-gallery-page #gallery-1 .ssense-gallery-row > .col:nth-child(5n+1) {
+    grid-row: span 2!important;
+  }
+}
+
+@media (max-width: 420px) {
+  body.ssense-gallery-page #gallery-1 .ssense-gallery-row {
+    grid-template-columns: 1fr!important;
+    grid-auto-rows: minmax(250px, 72vw)!important;
+  }
+
+  body.ssense-gallery-page #gallery-1 .ssense-gallery-row > .col:nth-child(n) {
+    grid-column: auto!important;
+    grid-row: auto!important;
   }
 }

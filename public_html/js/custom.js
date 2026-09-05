@@ -161,14 +161,133 @@
 
 
 		/*----------------------------------------------------*/
+		/*	Homepage Blog Cards
+		/*----------------------------------------------------*/
+
+		$(document).on("click", "body.ssense-home-refined #blog-1 .ssense-blog-card", function(e) {
+			if ($(e.target).closest("a, button, input, textarea, select, label").length) return;
+
+			var href = $(this).find("a.stretched-link").attr("href");
+			if (href) window.location.href = href;
+		});
+
+
+		/*----------------------------------------------------*/
 		/*	Accordion
 		/*----------------------------------------------------*/
 
-		$(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
-				
-		$(".accordion > .accordion-item").on('click', function() {
-			$(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
-			$(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+		function syncAccordionAria(item) {
+			var isActive = item.hasClass("is-active");
+			item.children(".accordion-thumb").attr("aria-expanded", isActive ? "true" : "false");
+			item.children(".accordion-panel").attr("aria-hidden", isActive ? "false" : "true");
+		}
+
+		function isWhyAccordion(item) {
+			return item.closest("#why-ssense").length > 0;
+		}
+
+		function setWhyPanel(item, open, immediate) {
+			var panel = item.children(".accordion-panel")[0];
+			if (!panel) return;
+
+			var $panel = $(panel);
+			$panel.off("transitionend.ssenseWhyAccordion");
+
+			if (immediate) {
+				panel.style.transition = "none";
+				panel.style.overflow = open ? "visible" : "hidden";
+				panel.style.display = open ? "block" : "none";
+				panel.style.height = open ? "auto" : "0px";
+				panel.style.opacity = open ? "1" : "0";
+				panel.offsetHeight;
+				panel.style.transition = "";
+				return;
+			}
+
+			panel.style.display = "block";
+			panel.style.overflow = "hidden";
+			panel.style.transition = "none";
+
+			if (open) {
+				panel.style.height = "0px";
+				panel.style.opacity = "0";
+				panel.offsetHeight;
+				panel.style.transition = "";
+				requestAnimationFrame(function() {
+					panel.style.height = panel.scrollHeight + "px";
+					panel.style.opacity = "1";
+				});
+				$panel.on("transitionend.ssenseWhyAccordion", function(e) {
+					if (e.originalEvent.propertyName !== "height" || !item.hasClass("is-active")) return;
+					panel.style.height = "auto";
+					panel.style.overflow = "visible";
+					$panel.off("transitionend.ssenseWhyAccordion");
+				});
+			} else {
+				panel.style.height = panel.getBoundingClientRect().height + "px";
+				panel.style.opacity = getComputedStyle(panel).opacity;
+				panel.offsetHeight;
+				panel.style.transition = "";
+				requestAnimationFrame(function() {
+					panel.style.height = "0px";
+					panel.style.opacity = "0";
+				});
+				$panel.on("transitionend.ssenseWhyAccordion", function(e) {
+					if (e.originalEvent.propertyName !== "height" || item.hasClass("is-active")) return;
+					panel.style.display = "none";
+					$panel.off("transitionend.ssenseWhyAccordion");
+				});
+			}
+		}
+
+		$("ul.accordion > .accordion-item").each(function() {
+			var $item = $(this);
+			syncAccordionAria($item);
+			if (isWhyAccordion($item)) {
+				setWhyPanel($item, $item.hasClass("is-active"), true);
+			} else if ($item.hasClass("is-active")) {
+				$item.children(".accordion-panel").slideDown(0);
+			}
+		});
+
+		$("ul.accordion").on("click", ".accordion-item", function() {
+			var $item = $(this);
+			var $panel = $item.children(".accordion-panel");
+			var wasActive = $item.hasClass("is-active");
+
+			if (isWhyAccordion($item)) {
+				$item.siblings(".accordion-item.is-active").each(function() {
+					var $sibling = $(this).removeClass("is-active");
+					syncAccordionAria($sibling);
+					setWhyPanel($sibling, false, false);
+				});
+
+				$item.toggleClass("is-active", !wasActive);
+				syncAccordionAria($item);
+				setWhyPanel($item, !wasActive, false);
+				return;
+			}
+
+			$item.siblings(".accordion-item").removeClass("is-active").each(function() {
+				syncAccordionAria($(this));
+				$(this).children(".accordion-panel").stop(true, true).slideUp();
+			});
+
+			$item.toggleClass("is-active");
+			syncAccordionAria($item);
+
+			if (wasActive) {
+				$panel.stop(true, true).slideUp();
+			} else {
+				$panel.stop(true, true).slideDown();
+			}
+		});
+
+		$("ul.accordion").on("keydown", ".accordion-thumb", function(e) {
+			if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+				e.preventDefault();
+				$(this).closest(".accordion-item").trigger("click");
+			}
 		});
 
 
@@ -236,6 +355,13 @@
 								}
 							}
 						}		  		  
+		});
+
+		$(document).on('click', 'body.ssense-gallery-page #gallery-1 .gallery-image', function(e) {
+			if ($(e.target).closest('a').length) return;
+
+			var link = $(this).find('a.image-link, a.video-popup1, a.video-popup2, a.video-popup3').first();
+			if (link.length) link.trigger('click');
 		});
 
 
@@ -498,7 +624,7 @@
 			var bar =
 				'<div class="ssense-floating-cta" role="region" aria-label="Quick contact actions">' +
 					'<a class="ssense-floating-cta__call" href="' + phoneHref + '" aria-label="Call S.Sense Salon and Spa">' +
-						'<span class="flaticon-phone"></span><span class="ssense-floating-cta__label">Call</span>' +
+						'<svg class="ssense-cta-call-icon call-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6.62 10.79c1.35 2.65 3.53 4.82 6.18 6.18l2.06-2.06c.34-.34.84-.45 1.28-.3 1.14.38 2.35.59 3.6.59.7 0 1.26.56 1.26 1.26v3.28c0 .7-.56 1.26-1.26 1.26C10.49 21 3 13.51 3 4.26 3 3.56 3.56 3 4.26 3h3.28c.7 0 1.26.56 1.26 1.26 0 1.25.21 2.46.59 3.6.15.45.04.94-.3 1.28l-2.47 1.65Z" fill="currentColor"/><path d="M14.8 3.7a6.7 6.7 0 0 1 5.5 5.5" stroke="currentColor" stroke-width="2.15" stroke-linecap="round"/><path d="M14.7 7.65a3.15 3.15 0 0 1 1.65 1.65" stroke="currentColor" stroke-width="2.15" stroke-linecap="round"/></svg><span class="ssense-floating-cta__label">Call</span>' +
 					'</a>' +
 					'<a class="ssense-floating-cta__whatsapp" href="' + whatsappHref + '" target="_blank" rel="noopener" aria-label="Message S.Sense Salon and Spa on WhatsApp">' +
 						'<span class="flaticon-whatsapp"></span><span class="ssense-floating-cta__label">WhatsApp</span>' +
@@ -515,6 +641,114 @@
 		}
 
 		ssenseQuickAccess();
+
+
+		/*----------------------------------------------------*/
+		/*	Reviews page: readable long cards + progressive reveal
+		/*----------------------------------------------------*/
+
+		function ssenseReviewsPageInteractions() {
+			var $page = $('body.ssense-reviews-page');
+			if (!$page.length) return;
+			var resizeTimer;
+
+			function balanceReviewRows() {
+				var $grid = $page.find('[data-review-grid]');
+				var $visible = $grid.find('.ssense-review-card').not('[hidden]');
+
+				$visible.removeClass('ssense-review-card--orphan');
+			}
+
+			function setupReviewCard(card, index) {
+				var $card = $(card);
+				var copy = $card.find('.ssense-review-copy')[0];
+				if (!copy || $card.is('[hidden]')) return;
+
+				var button = $card.find('.ssense-read-more');
+				var buttonId = 'ssense-review-toggle-' + index;
+				copy.id = copy.id || 'ssense-review-copy-' + index;
+				var computed = window.getComputedStyle(copy);
+				var lineHeight = parseFloat(computed.lineHeight) || 24;
+				var clamp = $card.hasClass('ssense-review-card--feature') ? 5 : 4;
+				var collapsedHeight = lineHeight * clamp;
+				var clone = copy.cloneNode(true);
+				clone.removeAttribute('id');
+				clone.style.cssText = 'position:absolute;visibility:hidden;pointer-events:none;display:block;overflow:visible;-webkit-line-clamp:unset;-webkit-box-orient:unset;max-height:none;width:' + copy.getBoundingClientRect().width + 'px;';
+				copy.parentNode.appendChild(clone);
+				var fullHeight = clone.scrollHeight;
+				clone.parentNode.removeChild(clone);
+				copy.style.setProperty('--ssense-review-expanded-height', fullHeight + 2 + 'px');
+				if (!button.length) {
+					button = $('<button/>', {
+						'class': 'ssense-read-more',
+						'id': buttonId,
+						'type': 'button',
+						'aria-expanded': 'false',
+						'aria-controls': copy.id,
+						'text': 'Read More'
+					});
+					button.insertAfter(copy);
+				}
+
+				if (!$card.hasClass('is-expanded') && fullHeight <= collapsedHeight + 6) {
+					button.remove();
+				}
+			}
+
+			function refreshReviewCards() {
+				$page.find('.ssense-review-card').each(function(index) {
+					setupReviewCard(this, index);
+				});
+				balanceReviewRows();
+			}
+
+			refreshReviewCards();
+			$(window).on('resize.ssenseReviewsBalance', function() {
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(refreshReviewCards, 120);
+			});
+
+			$page.on('click', '.ssense-read-more', function() {
+				var $button = $(this);
+				var $card = $button.closest('.ssense-review-card');
+				var copy = $card.find('.ssense-review-copy')[0];
+				if (copy) {
+					copy.style.setProperty('--ssense-review-expanded-height', copy.scrollHeight + 2 + 'px');
+				}
+				var isExpanded = $card.toggleClass('is-expanded').hasClass('is-expanded');
+				$button.attr('aria-expanded', isExpanded ? 'true' : 'false').text(isExpanded ? 'Show Less' : 'Read More');
+			});
+
+			$page.on('click', '[data-load-reviews]', function() {
+				var $button = $(this);
+				if ($button.prop('disabled')) return;
+				$button.prop('disabled', true);
+				var $hidden = $page.find('[data-review-grid] .ssense-review-card[hidden]');
+				var $next = $hidden.slice(0, 4);
+				var revealDelay = Math.max(0, ($next.length - 1) * 45 + 180);
+				$next.each(function(i) {
+					var $card = $(this);
+					setTimeout(function() {
+						$card.addClass('ssense-reveal').removeAttr('hidden');
+						requestAnimationFrame(function() {
+							setupReviewCard($card[0], $page.find('.ssense-review-card').index($card));
+							balanceReviewRows();
+						});
+					}, i * 45);
+				});
+
+				if ($hidden.length <= $next.length) {
+					setTimeout(function() {
+						balanceReviewRows();
+						$button.closest('.ssense-load-more-wrap').fadeOut(220);
+					}, revealDelay);
+				} else {
+					setTimeout(function() { $button.prop('disabled', false); }, revealDelay);
+				}
+			});
+		}
+
+		ssenseReviewsPageInteractions();
 
 
 	});

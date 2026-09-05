@@ -79,10 +79,10 @@
 	<link href="css/animate.css" rel="stylesheet" media="print" onload="this.media='all'">
 
 	<!-- TEMPLATE CSS -->
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.css?v=batch2-premium-2" rel="stylesheet">
 
 	<!-- RESPONSIVE CSS -->
-	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/responsive.css?v=batch2-premium-2-fix" rel="stylesheet">
 	
 	<!-- ADDED: Image Gallery Schema -->
 	<script type="application/ld+json">
@@ -109,7 +109,7 @@
 
 </head>
 
-<body>
+<body class="ssense-batch2-page ssense-gallery-page">
 
 	<!-- PRELOADER SPINNER -->
 	<div id="loading" class="loading-black">
@@ -149,31 +149,33 @@
 	    					<!-- MAIN MENU -->
 	      					<nav class="wsmenu clearfix">
 	        					<ul class="wsmenu-list">
-
-	        						<!-- SIMPLE NAVIGATION LINKS -->
-						    	<li class="nl-simple" aria-haspopup="true"><a href="index.html" class="h-link">Home</a></li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="about.html" class="h-link">About</a></li>
-						        	<li aria-haspopup="true"><a href="pricing-1.html" class="h-link">Services <span class="wsarrow"></span></a>
-						        		<ul class="sub-menu">
-						        			<li aria-haspopup="true"><a href="pricing-1.html">Hair Services</a></li>
-						        			<li aria-haspopup="true"><a href="pricing-2.html">Beauty Services</a></li>
-						        			<li aria-haspopup="true"><a href="pricing-3.html">Salon Packages</a></li>
-						        			<li aria-haspopup="true"><a href="nail-studio.html">Nails</a></li>
-						        			<li aria-haspopup="true"><a href="skincare-center.html">Skin Care</a></li>
-						        			<li aria-haspopup="true"><a href="barber-shop-1.html">Men's Grooming</a></li>
-						        		</ul>
-						          	</li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="gallery.html" class="h-link">Gallery</a></li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="reviews.html" class="h-link">Reviews</a></li>
-						    	<li class="nl-simple" aria-haspopup="true"><a href="contact.html" class="h-link">Contact</a></li>
-
-								    <!-- SIGN UP BUTTON -->
-								    <li class="nl-simple" aria-haspopup="true">
-								    	<a href="booking.html" class="btn btn--tra-white hover--white last-link">Book Online</a>
-								    </li> 
-
-	        					</ul>
-	        				</nav>	<!-- END MAIN MENU -->
+<li class="nl-simple" aria-haspopup="true"><a href="index.html" class="h-link">Home</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="about.html" class="h-link">About</a></li>
+<li aria-haspopup="true"><a href="services.html" class="h-link">Services <span class="wsarrow"></span></a>
+  <ul class="sub-menu ssense-service-submenu">
+    <li aria-haspopup="true"><a href="services.html">All Services</a></li>
+    <li aria-haspopup="true"><a href="services-hair.html">Hair Services</a></li>
+    <li aria-haspopup="true"><a href="haircuts.html">Haircuts</a></li>
+    <li aria-haspopup="true"><a href="hair-colour.html">Hair Colour</a></li>
+    <li aria-haspopup="true"><a href="hair-treatments.html">Hair Treatments</a></li>
+    <li aria-haspopup="true"><a href="hair-spa.html">Hair Spa</a></li>
+    <li aria-haspopup="true"><a href="beauty-salon.html">Beauty Services</a></li>
+    <li aria-haspopup="true"><a href="facials.html">Facials</a></li>
+    <li aria-haspopup="true"><a href="cleanup.html">Cleanup</a></li>
+    <li aria-haspopup="true"><a href="waxing.html">Waxing</a></li>
+    <li aria-haspopup="true"><a href="threading.html">Threading</a></li>
+    <li aria-haspopup="true"><a href="nail-services.html">Nail Services</a></li>
+    <li aria-haspopup="true"><a href="manicure-pedicure.html">Manicure &amp; Pedicure</a></li>
+    <li aria-haspopup="true"><a href="medi-treatments.html">Medi / Aesthetics</a></li>
+    <li aria-haspopup="true"><a href="pricing.html">Pricing Overview</a></li>
+  </ul>
+</li>
+<li class="nl-simple" aria-haspopup="true"><a href="offers.html" class="h-link">Offers</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="gallery.html" class="h-link">Gallery</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="reviews.html" class="h-link">Reviews</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="contact.html" class="h-link">Contact</a></li>
+<li class="nl-simple" aria-haspopup="true"><a href="booking.html" class="btn btn--tra-white hover--white last-link">Book Online</a></li>
+</ul></nav>	<!-- END MAIN MENU -->
 
 
 	    				</div>
@@ -190,11 +192,19 @@
 				<div class="row">
 					<div class="col">
 						<div class="page-title-txt">
-							<!-- CHANGED: Added H1 with keywords -->
-							<h1 style="font-size: 3rem; margin-bottom: 1rem;">Beauty Transformation Gallery</h1>
-							<h2 style="font-size: 1.5rem; font-weight: 400;">S.Sense Salon & Spa Gallery - Kandivali East, Mumbai</h2>
+							<div class="ssense-gallery-hero-brand">
+								<img src="images/logo-black.png" width="1000" height="300" alt="S.Sense Salon and Spa">
+							</div>
+							<span class="ssense-eyebrow">S.Sense Portfolio</span>
+							<h1>The Beauty Lookbook</h1>
+							<div class="ssense-gallery-hero-meta">
+								<span>Hair Colour</span>
+								<span>Makeup</span>
+								<span>Nails</span>
+								<span>Skin & Spa</span>
+							</div>
 							<!-- CHANGED: Enhanced description -->
-							<p>Explore our professional hair styling, makeup artistry, nail designs & spa treatments</p>
+							<p>Selected hair, beauty and nail moments from our Kandivali East studio, created with detail, polish and a soft luxury finish.</p>
 						</div>
 					</div>
 				</div>
@@ -202,11 +212,14 @@
 		</section>
 
 		<!-- GALLERY-1 -->
-		<div id="gallery-1" class="gallery-section division">
+		<div id="gallery-1" class="gallery-section ssense-editorial-gallery division">
 			<div class="container">
+				<div class="ssense-gallery-note">
+					<p>Tap any image to view the full portfolio detail.</p>
+				</div>
 
 				<!-- IMAGES WRAPPER -->
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 ssense-gallery-row">
 
 					<!-- IMAGE #1 -->
 					<div class="col">
@@ -1066,7 +1079,7 @@
 								<h3>Custom Hair Color Service - This Week Only!</h3>
 								<p>Professional balayage, highlights & color treatments</p>
 
-								<a href="booking.html" class="btn btn--tra-white hover--white">Book an Appointment</a>
+								<a href="booking.html" class="btn btn--tra-white hover--white">Book an Appointment <span aria-hidden="true">&rarr;</span></a>
 
 							</div>
 						</div>
@@ -1225,7 +1238,8 @@
 				<hr>
 
 				<!-- BOTTOM FOOTER -->
-				<div class="bottom-footer">
+				<div class="ssense-footer-architecture-links" aria-label="Important salon links"><a href="services.html">Services</a><a href="services-hair.html">Hair</a><a href="beauty-salon.html">Beauty</a><a href="nail-services.html">Nails</a><a href="manicure-pedicure.html">Manicure &amp; Pedicure</a><a href="medi-treatments.html">Medi / Aesthetics</a><a href="pricing.html">Pricing</a><a href="offers.html">Offers</a><a href="careers.html">Careers</a><a href="privacy-policy.html">Privacy</a></div>
+<div class="bottom-footer">
 					<div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
 
 						<!-- FOOTER COPYRIGHT -->
@@ -1278,3 +1292,4 @@
 </body>
 
 </html>
+
