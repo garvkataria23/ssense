@@ -9958,7 +9958,6 @@ body.ssense-batch1-contact .wsmenu > .wsmenu-list > li > a.h-link.is-active:afte
 }
 
 .ssense-contact-premium {
-  display: none!important;
   min-height: 100vh;
   padding: clamp(118px, 11vw, 156px) 0 clamp(46px, 6vw, 78px);
   background:
@@ -10114,7 +10113,7 @@ body.ssense-batch1-contact .wsmenu > .wsmenu-list > li > a.h-link.is-active:afte
 .ssense-contact-connect {
   position: relative;
   isolation: isolate;
-  padding: clamp(112px, 9vw, 140px) 0 clamp(54px, 6vw, 86px);
+  padding: clamp(42px, 5vw, 72px) 0 clamp(54px, 6vw, 86px);
   overflow: hidden;
   background:
     radial-gradient(circle at 100% 72%, rgba(181, 94, 108, .1), transparent 22%),
@@ -10447,7 +10446,7 @@ body.ssense-batch1-contact .wsmenu a:focus-visible {
   .ssense-contact-premium__card,
   .ssense-contact-premium__image { border-radius: 28px; }
   .ssense-contact-premium__image { min-height: 430px; }
-  .ssense-contact-connect { padding-top: 106px; }
+  .ssense-contact-connect { padding-top: 34px; }
   .ssense-contact-connect__panel { padding: 26px 20px; border-radius: 26px; }
   .ssense-contact-connect h2 { font-size: clamp(2.45rem, 12vw, 3.5rem); }
   .ssense-contact-connect__row,
