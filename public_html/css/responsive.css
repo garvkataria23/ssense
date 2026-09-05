@@ -4575,15 +4575,15 @@ body:not(.theme--dark) #hero-1 .caption p,
 }
 
 @media (max-width: 991.95px) {
-  body.ssense-reviews-page .ssense-general-footer__grid {
+  .ssense-general-footer__grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__newsletter {
+  .ssense-general-footer__newsletter {
     grid-column: 1 / -1;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__bottom .container {
+  .ssense-general-footer__bottom .container {
     grid-template-columns: 1fr;
     gap: 12px;
     padding-top: 22px;
@@ -4591,12 +4591,12 @@ body:not(.theme--dark) #hero-1 .caption p,
     text-align: center;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__bottom nav,
-  body.ssense-reviews-page .ssense-general-footer__bottom p:last-child {
+  .ssense-general-footer__bottom nav,
+  .ssense-general-footer__bottom p:last-child {
     justify-self: center;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__bottom p:last-child:before {
+  .ssense-general-footer__bottom p:last-child:before {
     display: none;
   }
 
@@ -4814,46 +4814,46 @@ body:not(.theme--dark) #hero-1 .caption p,
     border-radius: 22px;
   }
 
-  body.ssense-reviews-page #footer-1.ssense-general-footer {
+  #footer-1.ssense-general-footer {
     padding-top: 34px!important;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__grid {
+  .ssense-general-footer__grid {
     grid-template-columns: 1fr;
     gap: 34px;
     padding-bottom: 34px;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__brand img {
+  .ssense-general-footer__brand img {
     max-width: 220px;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__direction,
-  body.ssense-reviews-page .ssense-general-footer__booking,
-  body.ssense-reviews-page .ssense-general-footer__newsletter .input-group {
+  .ssense-general-footer__direction,
+  .ssense-general-footer__booking,
+  .ssense-general-footer__newsletter .input-group {
     width: 100%;
     max-width: none;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__hours ul,
-  body.ssense-reviews-page .ssense-general-footer__badges {
+  .ssense-general-footer__hours ul,
+  .ssense-general-footer__badges {
     max-width: none;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__badges span {
+  .ssense-general-footer__badges span {
     padding-inline: 10px;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__newsletter .input-group {
+  .ssense-general-footer__newsletter .input-group {
     height: 60px;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__newsletter .btn {
+  .ssense-general-footer__newsletter .btn {
     width: 50px;
     height: 50px;
   }
 
-  body.ssense-reviews-page .ssense-general-footer__script {
+  .ssense-general-footer__script {
     margin-left: 0;
   }
 }

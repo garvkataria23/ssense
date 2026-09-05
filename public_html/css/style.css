@@ -7238,7 +7238,7 @@ body.ssense-reviews-page .ssense-final-booking-panel h2 {
   font-size: clamp(1.85rem, 2.8vw, 2.65rem);
 }
 
-body.ssense-reviews-page #footer-1.ssense-general-footer {
+#footer-1.ssense-general-footer {
   position: relative;
   overflow: hidden;
   padding-top: clamp(24px, 3vw, 38px)!important;
@@ -7250,14 +7250,14 @@ body.ssense-reviews-page #footer-1.ssense-general-footer {
   color: #222831;
 }
 
-body.ssense-reviews-page #footer-1.ssense-general-footer:before,
-body.ssense-reviews-page #footer-1.ssense-general-footer:after {
+#footer-1.ssense-general-footer:before,
+#footer-1.ssense-general-footer:after {
   content: '';
   position: absolute;
   pointer-events: none;
 }
 
-body.ssense-reviews-page #footer-1.ssense-general-footer:before {
+#footer-1.ssense-general-footer:before {
   inset: auto -90px -110px auto;
   width: 300px;
   height: 300px;
@@ -7265,7 +7265,7 @@ body.ssense-reviews-page #footer-1.ssense-general-footer:before {
   border-radius: 50%;
 }
 
-body.ssense-reviews-page #footer-1.ssense-general-footer:after {
+#footer-1.ssense-general-footer:after {
   right: 5vw;
   bottom: 82px;
   content: 'S';
@@ -7275,13 +7275,13 @@ body.ssense-reviews-page #footer-1.ssense-general-footer:after {
   line-height: .7;
 }
 
-body.ssense-reviews-page #footer-1.ssense-general-footer .container {
+#footer-1.ssense-general-footer .container {
   position: relative;
   z-index: 1;
   max-width: 1560px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__grid {
+.ssense-general-footer__grid {
   display: grid;
   grid-template-columns: 1.15fr .82fr 1.12fr 1.22fr;
   gap: clamp(24px, 3.6vw, 58px);
@@ -7289,7 +7289,7 @@ body.ssense-reviews-page .ssense-general-footer__grid {
   padding-bottom: clamp(22px, 2.6vw, 34px);
 }
 
-body.ssense-reviews-page .ssense-general-footer h3 {
+.ssense-general-footer h3 {
   position: relative;
   margin-bottom: 22px;
   color: #121820;
@@ -7299,7 +7299,7 @@ body.ssense-reviews-page .ssense-general-footer h3 {
   letter-spacing: -.025em;
 }
 
-body.ssense-reviews-page .ssense-general-footer h3:after {
+.ssense-general-footer h3:after {
   content: '';
   position: absolute;
   left: 0;
@@ -7309,24 +7309,24 @@ body.ssense-reviews-page .ssense-general-footer h3:after {
   background: #b76170;
 }
 
-body.ssense-reviews-page .ssense-general-footer p,
-body.ssense-reviews-page .ssense-general-footer a,
-body.ssense-reviews-page .ssense-general-footer li,
-body.ssense-reviews-page .ssense-general-footer label {
+.ssense-general-footer p,
+.ssense-general-footer a,
+.ssense-general-footer li,
+.ssense-general-footer label {
   color: #333b45;
   font-family: var(--font-primary);
   font-size: .96rem;
   line-height: 1.42;
 }
 
-body.ssense-reviews-page .ssense-general-footer__brand img {
+.ssense-general-footer__brand img {
   display: block;
   width: min(220px, 100%);
   height: auto;
   margin-bottom: 14px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__tagline {
+.ssense-general-footer__tagline {
   margin-bottom: 8px;
   color: #44474d!important;
   font-size: .74rem!important;
@@ -7334,28 +7334,28 @@ body.ssense-reviews-page .ssense-general-footer__tagline {
   letter-spacing: .32em;
 }
 
-body.ssense-reviews-page .ssense-general-footer__contact-list,
-body.ssense-reviews-page .ssense-general-footer__hours ul,
-body.ssense-reviews-page .ssense-general-footer__socials ul {
+.ssense-general-footer__contact-list,
+.ssense-general-footer__hours ul,
+.ssense-general-footer__socials ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-body.ssense-reviews-page .ssense-general-footer__contact-list {
+.ssense-general-footer__contact-list {
   display: grid;
   gap: 12px;
   margin-top: 16px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__contact-list li {
+.ssense-general-footer__contact-list li {
   display: grid;
   grid-template-columns: 36px 1fr;
   gap: 14px;
   align-items: start;
 }
 
-body.ssense-reviews-page .ssense-general-footer__contact-list [class*="flaticon-"] {
+.ssense-general-footer__contact-list [class*="flaticon-"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -7366,17 +7366,17 @@ body.ssense-reviews-page .ssense-general-footer__contact-list [class*="flaticon-
   color: #a65362;
 }
 
-body.ssense-reviews-page .ssense-general-footer__contact-list [class*="flaticon-"]:before {
+.ssense-general-footer__contact-list [class*="flaticon-"]:before {
   font-size: .98rem;
 }
 
-body.ssense-reviews-page .ssense-general-footer__contact-list a {
+.ssense-general-footer__contact-list a {
   color: #17202a;
   font-weight: 700;
 }
 
-body.ssense-reviews-page .ssense-general-footer__direction,
-body.ssense-reviews-page .ssense-general-footer__booking {
+.ssense-general-footer__direction,
+.ssense-general-footer__booking {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -7392,54 +7392,54 @@ body.ssense-reviews-page .ssense-general-footer__booking {
   text-transform: uppercase;
 }
 
-body.ssense-reviews-page .ssense-general-footer__direction {
+.ssense-general-footer__direction {
   border: 1px solid rgba(178, 88, 103, .28);
   background: rgba(255, 255, 255, .42);
 }
 
-body.ssense-reviews-page .ssense-general-footer__booking {
+.ssense-general-footer__booking {
   width: min(100%, 370px);
   color: #fff!important;
   background: linear-gradient(135deg, #b45d6d, #9d4c59);
   box-shadow: 0 14px 28px rgba(157, 76, 89, .2);
 }
 
-body.ssense-reviews-page .ssense-general-footer__links {
+.ssense-general-footer__links {
   display: grid;
   gap: 0;
 }
 
-body.ssense-reviews-page .ssense-general-footer__links a {
+.ssense-general-footer__links a {
   display: block;
   color: #333b45;
   line-height: 1.28;
 }
 
-body.ssense-reviews-page .ssense-general-footer__links a:hover,
-body.ssense-reviews-page .ssense-general-footer__contact-list a:hover {
+.ssense-general-footer__links a:hover,
+.ssense-general-footer__contact-list a:hover {
   color: #a65362;
 }
 
-body.ssense-reviews-page .ssense-general-footer__hours ul {
+.ssense-general-footer__hours ul {
   display: grid;
   gap: 7px;
   max-width: 360px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__hours li {
+.ssense-general-footer__hours li {
   display: grid;
   grid-template-columns: 70px 1fr;
   gap: 20px;
   align-items: baseline;
 }
 
-body.ssense-reviews-page .ssense-general-footer__hours time {
+.ssense-general-footer__hours time {
   color: #25303a;
   font-size: .96rem;
   white-space: nowrap;
 }
 
-body.ssense-reviews-page .ssense-general-footer__badges {
+.ssense-general-footer__badges {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
@@ -7447,7 +7447,7 @@ body.ssense-reviews-page .ssense-general-footer__badges {
   margin-top: 22px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__badges span {
+.ssense-general-footer__badges span {
   min-height: 52px;
   padding: 0 14px;
   border-right: 1px solid rgba(178, 88, 103, .22);
@@ -7457,16 +7457,16 @@ body.ssense-reviews-page .ssense-general-footer__badges span {
   text-align: center;
 }
 
-body.ssense-reviews-page .ssense-general-footer__badges span:last-child {
+.ssense-general-footer__badges span:last-child {
   border-right: 0;
 }
 
-body.ssense-reviews-page .ssense-general-footer__newsletter p {
+.ssense-general-footer__newsletter p {
   max-width: 430px;
   margin-bottom: 16px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__newsletter .input-group {
+.ssense-general-footer__newsletter .input-group {
   max-width: 440px;
   height: 54px;
   padding: 5px;
@@ -7476,7 +7476,7 @@ body.ssense-reviews-page .ssense-general-footer__newsletter .input-group {
   box-shadow: 0 13px 34px rgba(34, 40, 49, .08), inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-body.ssense-reviews-page .ssense-general-footer__newsletter .form-control {
+.ssense-general-footer__newsletter .form-control {
   height: 100%;
   padding: 0 18px;
   border: 0!important;
@@ -7486,12 +7486,12 @@ body.ssense-reviews-page .ssense-general-footer__newsletter .form-control {
   box-shadow: none!important;
 }
 
-body.ssense-reviews-page .ssense-general-footer__newsletter .form-control::placeholder {
+.ssense-general-footer__newsletter .form-control::placeholder {
   color: #989fa8;
   opacity: 1;
 }
 
-body.ssense-reviews-page .ssense-general-footer__newsletter .btn {
+.ssense-general-footer__newsletter .btn {
   width: 44px;
   height: 44px;
   padding: 0;
@@ -7504,7 +7504,7 @@ body.ssense-reviews-page .ssense-general-footer__newsletter .btn {
   box-shadow: 0 8px 18px rgba(157, 76, 89, .22);
 }
 
-body.ssense-reviews-page .ssense-general-footer__consent {
+.ssense-general-footer__consent {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -7512,24 +7512,24 @@ body.ssense-reviews-page .ssense-general-footer__consent {
   font-size: .84rem!important;
 }
 
-body.ssense-reviews-page .ssense-general-footer__consent input {
+.ssense-general-footer__consent input {
   width: 16px;
   height: 16px;
   accent-color: #a65362;
 }
 
-body.ssense-reviews-page .ssense-general-footer__socials {
+.ssense-general-footer__socials {
   margin-top: 28px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__socials ul {
+.ssense-general-footer__socials ul {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   align-items: center;
 }
 
-body.ssense-reviews-page .ssense-general-footer__socials a {
+.ssense-general-footer__socials a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -7540,7 +7540,7 @@ body.ssense-reviews-page .ssense-general-footer__socials a {
   box-shadow: 0 10px 22px rgba(34, 40, 49, .15);
 }
 
-body.ssense-reviews-page .ssense-general-footer__socials [class*="flaticon-"]:before {
+.ssense-general-footer__socials [class*="flaticon-"]:before {
   font-size: 1rem;
 }
 
@@ -7549,7 +7549,7 @@ body.ssense-reviews-page .ssense-social-facebook { background: #225a9f; }
 body.ssense-reviews-page .ssense-social-whatsapp { background: #25d366; }
 body.ssense-reviews-page .ssense-social-youtube { background: #ef130f; }
 
-body.ssense-reviews-page .ssense-general-footer__script {
+.ssense-general-footer__script {
   margin: 22px 0 0 14px;
   color: rgba(77, 71, 67, .68)!important;
   font-family: var(--font-handwriting)!important;
@@ -7558,12 +7558,12 @@ body.ssense-reviews-page .ssense-general-footer__script {
   transform: rotate(-7deg);
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom {
+.ssense-general-footer__bottom {
   border-top: 1px solid rgba(178, 88, 103, .18);
   background: rgba(255, 255, 255, .52);
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom .container {
+.ssense-general-footer__bottom .container {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 28px;
@@ -7571,25 +7571,25 @@ body.ssense-reviews-page .ssense-general-footer__bottom .container {
   min-height: 62px;
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom p,
-body.ssense-reviews-page .ssense-general-footer__bottom a {
+.ssense-general-footer__bottom p,
+.ssense-general-footer__bottom a {
   margin: 0;
   color: #333b45;
   font-size: .86rem;
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom nav {
+.ssense-general-footer__bottom nav {
   display: flex;
   gap: 22px;
   align-items: center;
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom nav a + a {
+.ssense-general-footer__bottom nav a + a {
   position: relative;
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom nav a + a:before,
-body.ssense-reviews-page .ssense-general-footer__bottom p:last-child:before {
+.ssense-general-footer__bottom nav a + a:before,
+.ssense-general-footer__bottom p:last-child:before {
   content: '';
   position: absolute;
   left: -12px;
@@ -7600,12 +7600,12 @@ body.ssense-reviews-page .ssense-general-footer__bottom p:last-child:before {
   transform: translateY(-50%);
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom p:last-child {
+.ssense-general-footer__bottom p:last-child {
   position: relative;
   justify-self: end;
 }
 
-body.ssense-reviews-page .ssense-general-footer__bottom p:last-child span {
+.ssense-general-footer__bottom p:last-child span {
   color: #b45d6d;
 }
 
