@@ -76,6 +76,41 @@
   --radius-full: 50%;
 }
 
+/* Ensure floating actions are visible and identical across every page. */
+.ssense-floating-cta { display: flex !important; visibility: visible !important; opacity: 1 !important; z-index: 2147483000 !important; }
+.ssense-floating-cta a.ssense-floating-cta__call,
+.ssense-floating-cta a.ssense-floating-cta__whatsapp,
+.ssense-floating-cta a.ssense-floating-cta__facebook,
+.ssense-floating-cta a.ssense-floating-cta__instagram {
+  box-sizing: border-box !important;
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  flex: 0 0 50px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.ssense-floating-cta__facebook .flaticon-facebook:before { display: block !important; font-size: 1.5rem !important; line-height: 1 !important; }
+.ssense-floating-cta__facebook .flaticon-facebook:before { font-size: 1.5rem !important; }
+
+/* Preserve the original Why S.Sense card height with replacement images. */
+@media (min-width: 992px) {
+  body.ssense-home-refined #why-ssense > .container > .row { min-height: 660px !important; height: 660px !important; }
+  body.ssense-home-refined #why-ssense .ct-06-img,
+  body.ssense-home-refined #why-ssense .ct-06-img img { height: 660px !important; min-height: 660px !important; max-height: 660px !important; }
+  body.ssense-home-refined #why-ssense .ct-06-img img { width: 100% !important; object-fit: cover !important; object-position: center !important; }
+}
+
+/* Keep floating actions clear of the Back to Top control on every page. */
+.ssense-floating-cta { bottom: 180px !important; }
+
+@media (max-width: 480px) {
+  .ssense-floating-cta { bottom: 180px !important; }
+}
+
 /* Hair services: editorial related-services showcase. */
 body.ssense-services-premium .ssense-hair-related-showcase {
   position: relative;
@@ -874,17 +909,20 @@ body.ssense-home-refined .ssense-locations-section .advantages li:last-child a {
 }
 /* Compact scale pass while preserving the Image #2 composition. */
 body.ssense-home-refined #why-ssense { padding: 22px 0 54px !important; }
-body.ssense-home-refined #why-ssense > .container > .row { min-height: 640px !important; }
-body.ssense-home-refined #why-ssense .ct-06-img img { min-height: 640px !important; }
-body.ssense-home-refined #why-ssense .txt-block { padding: 60px 58px 42px !important; }
-body.ssense-home-refined #why-ssense .h2-md { margin-bottom: 28px !important; font-size: clamp(3rem, 4vw, 4.8rem) !important; }
-body.ssense-home-refined #why-ssense .accordion .accordion-item { margin-bottom: 9px !important; border-radius: 18px !important; }
-body.ssense-home-refined #why-ssense .accordion .accordion-thumb { min-height: 64px !important; padding: 14px 58px 10px 78px !important; }
-body.ssense-home-refined #why-ssense .accordion .accordion-thumb::before { left: 14px !important; top: 12px !important; width: 42px !important; height: 42px !important; line-height: 42px !important; font-size: 1.2rem !important; }
-body.ssense-home-refined #why-ssense .accordion .accordion-thumb p { font-size: clamp(1.05rem, 1.25vw, 1.4rem) !important; }
-body.ssense-home-refined #why-ssense .accordion .accordion-panel { padding: 0 58px 14px 78px !important; }
-body.ssense-home-refined #why-ssense .accordion .accordion-panel p { font-size: .9rem !important; }
-body.ssense-home-refined #why-ssense .ssense-why-cta { margin-top: 12px; padding: 14px 24px; }
+body.ssense-home-refined #why-ssense > .container > .row { min-height: 660px !important; }
+body.ssense-home-refined #why-ssense .row > .ssense-why-img { flex: 0 0 48% !important; max-width: 48% !important; padding: 0 !important; }
+body.ssense-home-refined #why-ssense .row > .ssense-why-txt { flex: 0 0 52% !important; max-width: 52% !important; padding: 0 !important; }
+body.ssense-home-refined #why-ssense .ct-06-img { height: 660px !important; aspect-ratio: auto !important; width: 100% !important; }
+body.ssense-home-refined #why-ssense .ct-06-img img { height: 660px !important; min-height: 660px !important; }
+body.ssense-home-refined #why-ssense .txt-block { padding: 52px 58px 34px !important; }
+body.ssense-home-refined #why-ssense .h2-md { margin-bottom: 24px !important; font-size: clamp(2.7rem, 3.6vw, 4.1rem) !important; }
+body.ssense-home-refined #why-ssense .accordion .accordion-item { margin-bottom: 8px !important; border-radius: 18px !important; }
+body.ssense-home-refined #why-ssense .accordion .accordion-thumb { min-height: 50px !important; padding: 12px 48px 10px 66px !important; }
+body.ssense-home-refined #why-ssense .accordion .accordion-thumb::before { left: 13px !important; top: 11px !important; width: 34px !important; height: 34px !important; line-height: 34px !important; font-size: 1.05rem !important; }
+body.ssense-home-refined #why-ssense .accordion .accordion-thumb p { font-size: clamp(.98rem, 1.12vw, 1.24rem) !important; }
+body.ssense-home-refined #why-ssense .accordion .accordion-panel { padding: 0 48px 12px 66px !important; }
+body.ssense-home-refined #why-ssense .accordion .accordion-panel p { font-size: .86rem !important; }
+body.ssense-home-refined #why-ssense .ssense-why-cta { margin-top: 10px; padding: 13px 22px; }
 @media (max-width: 991.98px) {
   body.ssense-home-refined #why-ssense > .container { width: calc(100% - 32px) !important; }
   body.ssense-home-refined #why-ssense > .container > .row { min-height: 0; }
@@ -8525,14 +8563,22 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
 
 .ssense-general-footer__socials {
   margin-top: 28px;
+  width: 100%;
+  text-align: center;
 }
 
 .ssense-general-footer__socials ul {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-wrap: nowrap;
+  gap: 16px;
   align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
+.ssense-general-footer__socials h3 { margin-bottom: 16px; text-align: center; }
 
 .ssense-general-footer__socials a {
   display: inline-flex;
@@ -8547,7 +8593,11 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
 
 .ssense-general-footer__socials [class*="flaticon-"]:before {
   font-size: 1rem;
+  line-height: 1;
+  vertical-align: middle;
 }
+
+.ssense-general-footer__socials a span { display: inline-flex; align-items: center; justify-content: center; height: 1em; line-height: 1; transform: translateY(1px); }
 
 .ssense-social-instagram { background: linear-gradient(135deg, #f55da8, #e13c83); }
 .ssense-social-facebook { background: #225a9f; }
@@ -8674,13 +8724,15 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
 .ssense-floating-cta .flaticon-phone:before,
 .ssense-floating-cta .flaticon-telephone:before,
 .ssense-floating-cta .flaticon-whatsapp:before,
-.ssense-floating-cta .flaticon-instagram:before {
+.ssense-floating-cta .flaticon-instagram:before,
+.ssense-floating-cta .flaticon-facebook:before {
   font-size: 1.15rem;
   line-height: 1;
 }
 
 .ssense-floating-cta .flaticon-instagram:before { color: #E1306C; }
 .ssense-floating-cta .flaticon-whatsapp:before { color: #25D366; }
+.ssense-floating-cta .flaticon-facebook:before { color: #225a9f; }
 
 .ssense-floating-cta a .ssense-cta-call-icon {
   display: block;
@@ -8748,6 +8800,7 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
 @media (min-width: 992px) {
   .ssense-floating-cta__call,
   .ssense-floating-cta__whatsapp,
+  .ssense-floating-cta__facebook,
   .ssense-floating-cta__instagram {
     width: 52px;
     height: 52px;
@@ -8782,6 +8835,8 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
   .ssense-floating-cta__call:focus-visible .ssense-floating-cta__label,
   .ssense-floating-cta__whatsapp:hover .ssense-floating-cta__label,
   .ssense-floating-cta__whatsapp:focus-visible .ssense-floating-cta__label,
+  .ssense-floating-cta__facebook:hover .ssense-floating-cta__label,
+  .ssense-floating-cta__facebook:focus-visible .ssense-floating-cta__label,
   .ssense-floating-cta__instagram:hover .ssense-floating-cta__label,
   .ssense-floating-cta__instagram:focus-visible .ssense-floating-cta__label {
     opacity: 1;
@@ -8885,6 +8940,37 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
     letter-spacing: .04em;
     padding-inline: 10px;
   }
+}
+
+/* Final floating action controls: visible and equal-sized on every page. */
+.ssense-floating-cta {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: fixed !important;
+  z-index: 2147483000 !important;
+}
+
+.ssense-floating-cta a.ssense-floating-cta__call,
+.ssense-floating-cta a.ssense-floating-cta__whatsapp,
+.ssense-floating-cta a.ssense-floating-cta__facebook,
+.ssense-floating-cta a.ssense-floating-cta__instagram {
+  box-sizing: border-box !important;
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  flex: 0 0 50px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ssense-floating-cta a.ssense-floating-cta__facebook .flaticon-facebook:before {
+  display: block !important;
+  font-size: 1.5rem !important;
+  line-height: 1 !important;
 }
 
 body:not(.theme--dark) a:focus-visible,
@@ -18723,6 +18809,17 @@ body.ssense-home-refined #why-ssense .accordion .accordion-panel p {
   body.ssense-home-refined #why-ssense .accordion-thumb { padding: 12px 24px 12px 0; }
   body.ssense-home-refined #why-ssense .accordion-panel { padding-right: 20px; }
 body.ssense-home-refined #why-ssense .ct-06-img { border-radius: 18px; }
+
+}
+
+/* Keep the Why S.Sense image inside its half of the card. */
+@media (min-width: 992px) {
+  body.ssense-home-refined #why-ssense > .container > .row { display: flex !important; align-items: stretch !important; }
+  body.ssense-home-refined #why-ssense .row > .ssense-why-img { flex: 0 0 46% !important; max-width: 46% !important; width: 46% !important; }
+  body.ssense-home-refined #why-ssense .row > .ssense-why-txt { flex: 0 0 54% !important; max-width: 54% !important; width: 54% !important; }
+  body.ssense-home-refined #why-ssense .ct-06-img,
+  body.ssense-home-refined #why-ssense .ct-06-img img { width: 100% !important; height: 100% !important; min-height: 0 !important; }
+  body.ssense-home-refined #why-ssense .ct-06-img img { display: block !important; object-fit: cover !important; object-position: center !important; }
 }
 
 /* Homepage-only header state. Keep this after the global white-header rules. */
@@ -18733,6 +18830,24 @@ body.ssense-transparent-header #header .wsmainfull:not(.scroll) {
   border-bottom-color: transparent !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
+}
+
+/* Keep all floating social circles identical on mobile. */
+@media (max-width: 480px) {
+  .ssense-floating-cta a.ssense-floating-cta__facebook {
+    flex: 0 0 50px !important;
+    width: 50px !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+  }
+
+  .ssense-floating-cta__facebook .flaticon-facebook:before {
+    display: block;
+    font-size: 1.5rem !important;
+    line-height: 1 !important;
+  }
 }
 
 body.ssense-transparent-header #header .wsmainfull:not(.scroll) .logo-black {
@@ -25073,6 +25188,72 @@ body.ssense-detailed-menu-page .ssense-detailed-menu .more-btn p {
 body.ssense-detailed-menu-page .ssense-detailed-menu .more-btn a:focus-visible {
   outline: 2px solid #17151a;
   outline-offset: 4px;
+}
+
+/* Floating actions are shared by all pages, including About. */
+.ssense-floating-cta {
+  display: flex !important;
+  position: fixed !important;
+  right: 18px !important;
+  bottom: 18px !important;
+  z-index: 2147483000 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.ssense-floating-cta a.ssense-floating-cta__call,
+.ssense-floating-cta a.ssense-floating-cta__whatsapp,
+.ssense-floating-cta a.ssense-floating-cta__facebook,
+.ssense-floating-cta a.ssense-floating-cta__instagram {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  flex: 0 0 50px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+}
+.ssense-floating-cta__facebook .flaticon-facebook:before { font-size: 1.5rem !important; }
+
+@media (min-width: 992px) {
+  #scrollUp {
+    right: 22px !important;
+    bottom: 258px !important;
+    z-index: 2147483001 !important;
+  }
+
+  #scrollUp:before {
+    content: 'Back to Top';
+    position: absolute;
+    right: calc(100% + 10px);
+    top: 50%;
+    display: inline-flex;
+    min-height: 34px;
+    padding: 0 12px;
+    align-items: center;
+    border: 1px solid var(--ssense-line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .96);
+    box-shadow: var(--ssense-shadow-subtle);
+    color: var(--ssense-ink);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translate(4px, -50%);
+    transition: opacity .22s var(--ssense-ease), transform .22s var(--ssense-ease), visibility .22s var(--ssense-ease);
+  }
+
+  #scrollUp:hover:before,
+  #scrollUp:focus-visible:before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
