@@ -2,6 +2,8 @@
 
 
 
+@import url("mobile-compact.css") screen and (max-width: 767.98px);
+
 /*
   Template Name: Reine - Beauty Salon HTML5 Template
   Theme URL: https://themeforest.net/user/dsathemes
@@ -5964,4 +5966,287 @@ body:not(.theme--dark) #hero-1 .caption p,
     grid-column: auto!important;
     grid-row: auto!important;
   }
+}
+
+/* Detailed pricing menus — final responsive cascade. */
+@media (max-width: 991.98px) {
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-wrapper > .row,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-wrapper > .row {
+    gap: 0 !important;
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-wrapper > .row > [class*="col-"],
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-wrapper > .row > [class*="col-"] {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-wrapper > .row > [class*="col-"] + [class*="col-"],
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-wrapper > .row > [class*="col-"] + [class*="col-"] {
+    margin-top: 14px !important;
+    padding-top: 14px;
+    border-top: 1px solid rgba(144, 121, 117, 0.22);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.ssense-detailed-menu-page .ssense-detailed-menu {
+    padding: 34px 0 !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu > .container {
+    width: 100%;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-menu-heading {
+    margin-bottom: 26px;
+  }
+
+  body.ssense-detailed-menu-page .ssense-menu-eyebrow {
+    gap: 9px;
+    font-size: 0.61rem;
+    letter-spacing: 0.24em;
+  }
+
+  body.ssense-detailed-menu-page .ssense-menu-eyebrow::before,
+  body.ssense-detailed-menu-page .ssense-menu-eyebrow::after {
+    width: 20px;
+  }
+
+  body.ssense-detailed-menu-page .ssense-menu-heading h2 {
+    font-size: clamp(2.55rem, 13vw, 3.8rem) !important;
+    line-height: 0.96 !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .category-title h2 {
+    font-size: clamp(1.55rem, 7.5vw, 2.1rem) !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-wrapper,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-wrapper {
+    padding: 8px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-table,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-table {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-item .detail-price,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-item .detail-price {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    gap: 4px 10px !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-name {
+    justify-self: start;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-dots {
+    display: none !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-number {
+    width: auto !important;
+    min-width: max-content !important;
+    justify-self: end !important;
+    margin: 0 !important;
+    text-align: right;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-name p,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-name strong,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-name span {
+    font-size: 0.96rem !important;
+    line-height: 1.28 !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-number p,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-number span {
+    font-size: 0.84rem !important;
+    line-height: 1.28 !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-txt p {
+    padding-right: 0;
+    font-size: 0.76rem !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-item:hover,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-item:hover {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .more-btn {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .more-btn .btn {
+    width: 100%;
+    min-height: 50px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-1-item .detail-price,
+  body.ssense-detailed-menu-page .ssense-detailed-menu .pricing-5-item .detail-price {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.ssense-detailed-menu-page .ssense-detailed-menu .price-number {
+    justify-self: start !important;
+    text-align: left;
+  }
+}
+
+/* =====================================================================
+   S.Sense mobile pass — desktop rules remain untouched above 768px.
+   ===================================================================== */
+@media (max-width: 767.98px) {
+  html, body { max-width: 100%; overflow-x: hidden; }
+  .container { width: 100%; max-width: 100%; padding-right: 18px !important; padding-left: 18px !important; }
+  img, video, iframe { max-width: 100%; }
+
+  body h1 { font-size: clamp(2.1rem, 10vw, 3.15rem); line-height: 1.02; }
+  body h2 { font-size: clamp(1.8rem, 8vw, 2.55rem); line-height: 1.08; }
+  body p { font-size: .94rem; line-height: 1.58; }
+  .btn, a.btn { min-height: 48px; padding: 13px 18px; font-size: .7rem; letter-spacing: .1em; }
+
+  /* Shared IA/service layouts */
+  body.ssense-ia-page .ssense-ia-hero,
+  body.ssense-service-page .inner-page-hero { padding: 86px 0 34px !important; }
+  body.ssense-ia-page .ssense-ia-hero-grid,
+  body.ssense-services-index .ssense-services-hero-grid,
+  body.ssense-ia-page .ssense-ia-content { display: flex !important; flex-direction: column; gap: 26px !important; }
+  body.ssense-ia-page .ssense-ia-hero-copy,
+  body.ssense-services-index .ssense-services-hero-copy { width: 100%; max-width: none; }
+  body.ssense-ia-page .ssense-ia-hero h1,
+  body.ssense-services-index .ssense-services-hero-copy h1 { font-size: clamp(2.3rem, 11vw, 3.5rem); }
+  body.ssense-ia-page .ssense-ia-hero figure,
+  body.ssense-services-index .ssense-services-hero-visual figure { width: 100%; margin: 0; }
+  body.ssense-services-index .ssense-services-hero-visual { min-height: 0 !important; position: relative; display: flex; flex-direction: column; gap: 14px; }
+  body.ssense-services-index .ssense-services-hero-visual figure { position: relative !important; inset: auto !important; width: 100% !important; order: 1; }
+  body.ssense-services-index .ssense-services-hero-visual .ssense-services-hero-shape { position: absolute; inset: 18px 8px 78px !important; }
+  body.ssense-services-index .ssense-services-hero-visual .ssense-services-hero-badge { top: 16px !important; right: 16px !important; }
+  body.ssense-services-index .ssense-services-hero-visual .ssense-services-hero-script { top: auto !important; right: 10px !important; bottom: 84px !important; }
+  body.ssense-services-index .ssense-services-hero-visual .ssense-services-hero-stat { position: relative !important; inset: auto !important; order: 2; width: 100%; min-width: 0; }
+  body.ssense-ia-page .ssense-ia-hero figure img,
+  body.ssense-services-index .ssense-services-hero-visual img { width: 100%; height: auto; max-height: 430px; object-fit: cover; }
+  body.ssense-ia-page .ssense-actions,
+  body.ssense-services-index .ssense-actions { flex-direction: column; align-items: stretch; gap: 10px; }
+  body.ssense-ia-page .ssense-actions .btn,
+  body.ssense-services-index .ssense-actions .btn { width: 100%; justify-content: center; }
+  .ssense-quick-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  .ssense-quick-grid > div { min-height: 86px; padding: 14px !important; }
+  .ssense-related-grid { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+  body.ssense-related-card { padding: 12px !important; }
+  body.ssense-related-card img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+
+  /* Home sections */
+  body.ssense-home-refined .ssense-testimonial-grid { grid-template-columns: 1fr !important; gap: 14px; }
+  body.ssense-home-refined .ssense-testimonial-card { min-height: 0; padding: 20px 18px; }
+  body.ssense-home-refined .ssense-testimonial-card p { min-height: 0; font-size: .92rem; }
+  body.ssense-home-refined .ssense-testimonial-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 28px; font-size: .78rem; }
+  body.ssense-home-refined .ssense-testimonial-cta { width: 100%; max-width: 300px; }
+
+  /* Reviews page */
+  body.ssense-reviews-page .ssense-reviews-hero__inner,
+  body.ssense-reviews-page .ssense-review-head--split { display: flex !important; flex-direction: column; gap: 22px; }
+  body.ssense-reviews-page .ssense-reviews-hero { padding: 82px 0 32px; }
+  body.ssense-reviews-page .ssense-reviews-hero__visual { width: 100%; order: 2; }
+  body.ssense-reviews-page .ssense-reviews-hero__image img { width: 100%; height: auto; }
+  body.ssense-reviews-page .ssense-featured-grid,
+  body.ssense-reviews-page .ssense-reviews-grid { grid-template-columns: 1fr !important; gap: 14px; }
+  body.ssense-reviews-page .ssense-review-card { padding: 20px 18px; }
+  body.ssense-reviews-page .ssense-return-section .container { display: flex !important; flex-direction: column; gap: 26px; }
+  body.ssense-reviews-page .ssense-return-section .ssense-review-head { max-width: 100%; padding: 0; }
+  body.ssense-reviews-page .ssense-return-section .ssense-review-head h2 { max-width: 12ch; font-size: clamp(2.25rem, 11vw, 3.2rem); }
+  body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div { min-height: 100px; }
+  body.ssense-reviews-page .ssense-review-cta-panel,
+  body.ssense-reviews-page .ssense-final-booking-panel { display: flex !important; flex-direction: column; align-items: stretch; gap: 22px; padding: 24px 20px; }
+  body.ssense-reviews-page .ssense-review-actions { display: flex; flex-direction: column; gap: 10px; }
+  body.ssense-reviews-page .ssense-review-actions .btn { width: 100%; justify-content: center; }
+
+  /* Shared booking panels and cards */
+  .ssense-booking-cta { padding: 34px 0 48px !important; }
+  .ssense-booking-cta .ssense-booking-panel { display: flex !important; flex-direction: column; min-height: 0; gap: 22px; padding: 28px 20px; border-radius: 26px 26px 12px 26px !important; }
+  .ssense-booking-cta .ssense-booking-panel::before { position: relative; inset: auto; order: 2; width: 100%; min-height: 210px; border: 0; border-radius: 20px; }
+  .ssense-booking-cta .ssense-booking-panel .ssense-actions { width: 100%; }
+  .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn { width: 100%; }
+  body.ssense-service-page .sbox-2-wrapper .row { row-gap: 14px; }
+  body.ssense-service-page .sbox-2 { padding: 22px 18px; }
+
+  /* Wide tables become scrollable instead of breaking the viewport. */
+  .ct-table, .pricing-table, .pricing-1-table, .pricing-5-table { max-width: 100%; overflow-x: auto; display: block; }
+  .ct-table table, .pricing-table table { min-width: 620px; }
+  input, select, textarea { max-width: 100%; }
+
+  /* Compact long copy without removing it from the page. */
+  .ssense-mobile-copy-collapsed { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; margin-bottom: 6px !important; }
+  .ssense-mobile-copy-collapsed.is-expanded { display: block; -webkit-line-clamp: unset; }
+  .ssense-mobile-read-more { display: inline-flex; align-items: center; gap: 6px; border: 0; padding: 4px 0 10px; background: transparent; color: #ad3e61; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .ssense-mobile-read-more span { font-size: 1rem; }
+
+  /* Horizontal swipe rows keep repeated content compact on phones. */
+  body.ssense-home-refined .ssense-testimonial-grid,
+  body.ssense-home-refined .ssense-blog-replacement .row,
+  body.ssense-home-refined #gallery-3 .row,
+  body.ssense-ia-page .ssense-related-grid { display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: 8px; }
+  body.ssense-home-refined .ssense-testimonial-grid::-webkit-scrollbar,
+  body.ssense-home-refined .ssense-blog-replacement .row::-webkit-scrollbar,
+  body.ssense-home-refined #gallery-3 .row::-webkit-scrollbar,
+  body.ssense-ia-page .ssense-related-grid::-webkit-scrollbar { display: none; }
+  body.ssense-home-refined .ssense-testimonial-grid > *,
+  body.ssense-home-refined .ssense-blog-replacement .row > *,
+  body.ssense-home-refined #gallery-3 .row > *,
+  body.ssense-ia-page .ssense-related-grid > * { flex: 0 0 84%; scroll-snap-align: start; }
+
+  /* Home page vertical rhythm and image heights. */
+  body.ssense-home-refined .hero-section { min-height: 0 !important; height: auto !important; }
+  body.ssense-home-refined .hero-section .hero-slider { min-height: 0 !important; }
+  body.ssense-home-refined .ssense-luxury-hero,
+  body.ssense-home-refined .about-section,
+  body.ssense-home-refined .content-section,
+  body.ssense-home-refined .services-section,
+  body.ssense-home-refined .blog-section,
+  body.ssense-home-refined .gallery-section { padding-top: 38px !important; padding-bottom: 38px !important; }
+  body.ssense-home-refined .ssense-home-secret-services .sbox-2-wrapper > .row { display: grid !important; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 !important; }
+  body.ssense-home-refined .ssense-home-secret-services .sbox-2-wrapper > .row > .col { width: 100% !important; max-width: none !important; padding: 0 !important; }
+  body.ssense-home-refined .ssense-home-secret-services .sbox-2 { min-height: 0 !important; height: 100%; }
+  body.ssense-home-refined .ssense-home-secret-services .ssense-home-service-photo img { height: 132px !important; object-fit: cover; }
+
+  /* Footer link groups become tap-to-open accordions. */
+  .ssense-general-footer__links > h3,
+  .ssense-general-footer__hours > h3 { display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 14px 0; border-bottom: 1px solid rgba(174, 74, 100, .18); cursor: pointer; }
+  .ssense-general-footer__links > h3::after,
+  .ssense-general-footer__hours > h3::after { content: '+'; color: #b63d63; font-size: 1.2rem; }
+  .ssense-general-footer__links.is-open > h3::after,
+  .ssense-general-footer__hours.is-open > h3::after { content: '−'; }
+  .ssense-general-footer__links > a,
+  .ssense-general-footer__hours > ul,
+  .ssense-general-footer__hours > .ssense-general-footer__booking,
+  .ssense-general-footer__hours > .ssense-general-footer__badges { display: none !important; }
+  .ssense-general-footer__links.is-open > a,
+  .ssense-general-footer__hours.is-open > ul,
+  .ssense-general-footer__hours.is-open > .ssense-general-footer__booking,
+  .ssense-general-footer__hours.is-open > .ssense-general-footer__badges { display: flex !important; }
+}
+
+@media (max-width: 420px) {
+  body h1 { font-size: 2.15rem; }
+  .ssense-quick-grid { grid-template-columns: 1fr !important; }
+  .ssense-related-grid { grid-template-columns: 1fr !important; }
+  body.ssense-home-refined .ssense-testimonial-stats { grid-template-columns: 1fr; }
+  body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div { grid-template-columns: 48px 1fr 32px; padding: 14px; }
 }

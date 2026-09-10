@@ -1,0 +1,902 @@
+/* Mobile density layer. Deliberately outranks earlier template-specific mobile
+   overrides; no rule in this file applies to tablet or desktop. */
+@layer ssense-mobile-compact {
+@media (max-width: 767.98px) {
+  /* Important declarations in this layer beat legacy unlayered !important
+     rules without a specificity arms race. Keep the root as the scroller. */
+  html, html body, html body #page {
+    height: auto !important;
+    overflow-x: clip !important;
+    overflow-y: visible !important;
+  }
+  html body {
+    --compact-gap: 12px;
+    --compact-space: 24px;
+    --compact-ink: #703553;
+  }
+
+  /* Mobile header: preserve transparent top logic, replace only white states. */
+  html body:not(.ssense-transparent-header) .wsmobileheader,
+  html body.ssense-transparent-header:has(.wsmainfull.scroll) .wsmobileheader {
+    background: #fff8f5 !important;
+    background-color: #fff8f5 !important;
+    border-bottom-color: rgba(180, 63, 93, .14) !important;
+    box-shadow: 0 8px 26px rgba(98, 49, 64, .06) !important;
+  }
+  html body.ssense-transparent-header:has(.wsmainfull:not(.scroll)) .wsmobileheader {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-bottom-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Content must not rely on WOW's window scroll listener: this theme also
+     uses a body scroll container on mobile. */
+  html body .wow,
+  html body .ssense-reveal {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  html body section.division:not([class*="hero"]):not(.inner-page-title):not(.ssense-contact-premium),
+  html body main > section:not([class*="hero"]):not(.ssense-contact-premium),
+  html body #page > section:not([class*="hero"]):not(.inner-page-title),
+  html body .ssense-about-section,
+  html body .pricing-section,
+  html body .ssense-blog-section,
+  html body #gallery-1 {
+    padding-top: var(--compact-space) !important;
+    padding-bottom: var(--compact-space) !important;
+  }
+  html body section[class*="hero"]:not(#hero-1):not(.ssense-luxury-hero),
+  html body .ssense-contact-premium,
+  html body .inner-page-title {
+    min-height: 0 !important;
+    padding-top: 92px !important;
+    padding-bottom: 28px !important;
+  }
+  html body .section-title,
+  html body .ssense-section-heading,
+  html body .category-title,
+  html body .ssense-testimonials-heading {
+    margin-bottom: 22px !important;
+  }
+  html body section h2,
+  html body .pricing-section h2,
+  html body section .h2-title { font-size: clamp(1.75rem, 7.6vw, 2.1rem) !important; line-height: 1.12 !important; }
+  html body section .mb-5,
+  html body section .mb-6 { margin-bottom: 22px !important; }
+  html body section .mt-5,
+  html body section .mt-6 { margin-top: 22px !important; }
+  html body .ssense-ia-hero-grid,
+  html body .ssense-ia-content,
+  html body .ssense-services-hero-grid,
+  html body .ssense-about-hero-grid,
+  html body .ssense-about-approach,
+  html body .ssense-contact-premium__grid,
+  html body .ssense-contact-connect__grid,
+  html body .ssense-offers-hero__grid,
+  html body .ssense-luxury-hero-grid { gap: 22px !important; }
+
+  /* Short, readable heroes, not viewport-height screens. */
+  html body #hero-1,
+  html body #hero-1 .slideshow,
+  html body #hero-1 .slides {
+    height: 400px !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+  html body #hero-1 .slideshow { margin-top: 64px !important; }
+  html body #hero-1 .slide,
+  html body #hero-1 .slide-content,
+  html body #hero-1 .image-container { height: 100% !important; min-height: 0 !important; }
+  html body #hero-1 .slide-content { padding: 20px 0 !important; align-items: center !important; }
+  html body #hero-1 .caption { margin-top: 0 !important; }
+  html body #hero-1 .caption h1,
+  html body #hero-1 .caption h2 { font-size: clamp(1.9rem, 8.3vw, 2.25rem) !important; line-height: 1.06 !important; letter-spacing: -.035em !important; }
+  html body #hero-1 .caption p { font-size: 1rem !important; line-height: 1.45 !important; margin-block: 14px !important; }
+  html body #hero-1 .caption .btn { min-height: 44px !important; padding: 12px 8px !important; margin: 0 !important; font-size: .8rem !important; overflow-wrap: normal !important; }
+  html body #hero-1 .slide-content .container { width: 100% !important; max-width: 100% !important; padding-inline: 18px !important; }
+  html body #hero-1 .slide-content .row { margin: 0 !important; }
+  html body #hero-1 .slide-content .col { padding: 0 !important; }
+  html body #hero-1 .caption { padding: 0 !important; }
+  html body #hero-1 .caption .text { margin: 0 !important; padding: 0 !important; }
+  html body #hero-1 .caption .ssense-hero-assist { font-size: .8rem !important; font-weight: 500 !important; line-height: 1.4 !important; text-transform: none !important; letter-spacing: .02em !important; margin-bottom: 0 !important; }
+  html body .ssense-ia-hero figure img,
+  html body .ssense-services-hero-visual img {
+    height: 160px !important;
+    max-height: 160px !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+  html body .ssense-ia-hero figure { margin-bottom: 0 !important; }
+  html body .ssense-luxury-hero { padding: 32px 0 !important; }
+  html body .ssense-luxury-visual { min-height: 0 !important; }
+  html body .ssense-luxury-photo { height: 210px !important; min-height: 0 !important; }
+  html body .ssense-luxury-photo img { height: 100% !important; object-fit: cover; }
+  html body .ssense-about-hero-visual { min-height: 240px !important; height: 240px !important; }
+  html body .ssense-about-image-main { height: 210px !important; }
+  html body .ssense-about-image-secondary { height: 130px !important; }
+  html body .ssense-reviews-hero__image img { height: 220px !important; object-fit: cover; }
+  html body .ssense-article-hero { height: auto !important; min-height: 0 !important; }
+  html body .ssense-article-hero__content { padding-top: 24px !important; padding-bottom: 24px !important; }
+
+  /* Compact two-up discovery, with natural text wrapping, never clipped copy. */
+  html body .ssense-quick-grid,
+  html body .ssense-related-grid:not(#related-posts .ssense-related-grid),
+  html body .ssense-about-menu-grid,
+  html body .ssense-luxury-features,
+  html body .ssense-best-features,
+  html body .ssense-service-grid,
+  html body .services-section .sbox-2-wrapper > .row {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    gap: var(--compact-gap) !important;
+    overflow: visible !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  html body .services-section .sbox-2-wrapper > .row > .col {
+    width: auto !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+  }
+  html body .ssense-quick-grid > div,
+  html body .ssense-related-card,
+  html body .ssense-about-menu-card,
+  html body .ssense-offers-card,
+  html body .ssense-offers-visit__card,
+  html body .services-section .sbox-2 {
+    padding: 14px !important;
+    min-height: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  html body .ssense-related-card img,
+  html body .ssense-home-service-photo,
+  html body .ssense-home-service-photo img { height: 120px !important; min-height: 0 !important; object-fit: cover; }
+  html body .sbox-2 .sbox-ico { margin: 8px auto !important; }
+  html body .sbox-2 h5,
+  html body .ssense-about-menu-card h3,
+  html body .ssense-related-card h3,
+  html body .ssense-offers-card h3 { font-size: 1.2rem !important; line-height: 1.2 !important; overflow-wrap: break-word; }
+  html body .sbox-2 p,
+  html body .ssense-related-card p,
+  html body .ssense-about-menu-card p,
+  html body .ssense-offers-card p { font-size: .9rem !important; line-height: 1.45 !important; }
+
+  /* These two templates use image/text/arrow grids inside each desktop card.
+     Switch the internal composition as well as the outer two-column grid. */
+  html body .ssense-services-related-showcase .ssense-related-card,
+  html body .ssense-hair-related-showcase .ssense-related-card,
+  html body .ssense-about-menu-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    border-radius: 16px !important;
+  }
+  html body .ssense-services-related-showcase .ssense-related-card > *,
+  html body .ssense-hair-related-showcase .ssense-related-card > *,
+  html body .ssense-about-menu-card > * {
+    position: static !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  html body .ssense-services-related-showcase .ssense-related-card > img,
+  html body .ssense-hair-related-showcase .ssense-related-card > img,
+  html body .ssense-about-menu-card > img { width: 100% !important; height: 110px !important; min-height: 0 !important; object-fit: cover; }
+  html body .ssense-services-related-showcase .ssense-related-card strong,
+  html body .ssense-hair-related-showcase .ssense-related-card strong,
+  html body .ssense-about-menu-card > strong { font-size: 1.2rem !important; line-height: 1.2 !important; }
+  html body .ssense-services-related-showcase .ssense-related-card em { font-size: .86rem !important; line-height: 1.4 !important; }
+  html body .ssense-services-related-showcase .ssense-related-card::after,
+  html body .ssense-hair-related-showcase .ssense-related-card::after,
+  html body .ssense-about-menu-card::after { display: none !important; }
+  html body .ssense-about-menu-card__meta { display: flex !important; justify-content: space-between; }
+  html body .ssense-about-menu-card__icon { width: 24px !important; height: 24px !important; font-size: 14px !important; }
+  html body .ssense-about-menu-card__link { display: flex !important; flex-wrap: wrap; margin-top: auto !important; min-height: 44px; }
+  html body .ssense-about-proof-strip { gap: 8px !important; }
+  html body .ssense-about-proof-item { padding: 12px !important; min-height: 0 !important; }
+  html body .ssense-about-approach-step { padding: 12px 0 !important; min-height: 0 !important; }
+  html body .ssense-about-experience-media { min-height: 210px !important; height: 210px !important; }
+  html body .ssense-service-design-media,
+  html body .ssense-service-design-media img { height: 150px !important; min-height: 0 !important; object-fit: cover; }
+  html body .ssense-service-design-copy .ssense-check-list { display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important; }
+  html body .ssense-service-design-copy .ssense-check-list li { padding: 0 0 0 28px !important; min-height: 0 !important; text-align: left !important; }
+  html body .ssense-service-design-copy .ssense-check-list li::before { left: 0 !important; top: 2px !important; width: 20px !important; height: 20px !important; transform: none !important; }
+  html body .ssense-services-hero-strip { margin-top: 18px !important; padding: 12px !important; gap: 10px !important; }
+  html body .ssense-services-hero-stat { padding: 12px 16px !important; }
+  html body .ssense-home-secret-head .txt-block { padding-block: 0 !important; }
+  html body .ssense-home-secret-head .section-id { font-size: .75rem !important; letter-spacing: .16em !important; margin-bottom: 12px !important; }
+  html body .ssense-home-secret-rail { margin-top: 12px !important; }
+  html body .ssense-home-secret-rail > span { font-size: .8rem !important; letter-spacing: 0 !important; text-transform: none !important; }
+  html body #why-ssense .txt-block,
+  html body .ssense-best-section .txt-block,
+  html body .ssense-home-peace-panel .txt-block { padding: 22px 18px !important; }
+  html body #why-ssense .ct-06-img,
+  html body .ssense-best-section .ct-05-img,
+  html body .ssense-home-peace-panel .img-block { height: 230px !important; min-height: 0 !important; margin: 0 !important; }
+  html body #why-ssense .accordion .accordion-thumb { min-height: 54px !important; padding-block: 10px !important; }
+  html body #why-ssense .row,
+  html body .ssense-best-section .row { min-height: 0 !important; }
+  html body .ssense-home-peace-points { gap: 10px !important; margin-top: 18px !important; }
+  html body .ssense-home-peace-points > * { padding: 12px !important; min-height: 0 !important; }
+  html body .ssense-home-peace-panel > .row { display: flex !important; flex-direction: column !important; }
+  html body .ssense-home-peace-panel > .row > .col-lg-6 { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; }
+  html body .ssense-home-peace-panel .img-block { width: 100% !important; height: 230px !important; min-height: 0 !important; }
+  html body .ssense-home-peace-panel .img-block img { display: block !important; width: 100% !important; height: 100% !important; min-height: 0 !important; object-fit: cover !important; object-position: center 30% !important; }
+  html body .ssense-home-peace-points { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 7px !important; }
+  html body .ssense-home-peace-points > * { padding: 9px 4px !important; font-size: .8rem !important; line-height: 1.35 !important; }
+  html body .ssense-home-peace-points i { width: 30px !important; height: 30px !important; margin-bottom: 5px !important; font-size: 1rem !important; }
+  html body .ssense-home-secret-services .sbox-2 { display: flex !important; flex-direction: column !important; height: auto !important; }
+  html body .ssense-home-secret-services .sbox-txt { padding: 8px 0 !important; }
+  html body .ssense-home-secret-services .ssense-home-service-photo { margin: 0 !important; }
+  html body .ssense-home-secret-services .sbox-txt h5,
+  html body .ssense-home-secret-services .sbox-txt p { min-height: 0 !important; margin-bottom: 10px !important; }
+  html body .ssense-home-secret-services .sbox-ico { display: none !important; }
+  html body .ssense-home-secret-services .sbox-ico span::before { font-size: 28px !important; }
+  html body .ssense-home-secret-services .sbox-txt p:not([hidden]) { display: block !important; max-height: none !important; -webkit-line-clamp: unset !important; }
+  html body .ssense-home-service-link { min-height: 44px !important; font-size: .8rem !important; letter-spacing: 0 !important; gap: 8px !important; white-space: nowrap !important; }
+  html body .ssense-home-secret-services .sbox-txt h5 { font-size: 1.1rem !important; letter-spacing: -.025em !important; }
+  html body .ssense-home-secret-services .ssense-compact-toggle { gap: 6px !important; }
+  html body .ssense-home-secret-services .ssense-compact-toggle::after { font-size: 20px !important; }
+
+  /* Pricing menu footer: keep both actions readable on one mobile row. */
+  html body .ssense-menu-footer { gap: 12px !important; padding: 0 4px !important; }
+  html body .ssense-menu-footer > span:first-child { font-size: .75rem !important; letter-spacing: .08em !important; line-height: 1.35 !important; }
+  html body .ssense-menu-footer-actions { display: flex !important; width: 100% !important; gap: 8px !important; }
+  html body .ssense-menu-footer-actions a { flex: 1 1 0 !important; min-width: 0 !important; min-height: 44px !important; justify-content: center !important; gap: 8px !important; padding: 12px 8px !important; font-size: .75rem !important; letter-spacing: .04em !important; line-height: 1.25 !important; text-align: center !important; white-space: normal !important; }
+  html body .ssense-menu-footer-actions a b { font-size: 1.1rem !important; flex: 0 0 auto !important; }
+  html body .ssense-menu-footer > span:last-child { font-size: .72rem !important; line-height: 1.3 !important; white-space: nowrap !important; }
+
+  /* Home "Why choose" panel: stack the columns and let the image fill the phone. */
+  html body #why-ssense .row { display: flex !important; flex-direction: column !important; }
+  html body #why-ssense .row > .ssense-why-img,
+  html body #why-ssense .row > .ssense-why-txt { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; }
+  html body #why-ssense .ct-06-img { width: 100% !important; height: 150px !important; min-height: 0 !important; overflow: hidden !important; }
+  html body #why-ssense .ct-06-img img { width: 100% !important; height: 100% !important; min-height: 0 !important; object-fit: cover !important; border-radius: 20px 20px 0 0 !important; }
+  html body #why-ssense .ct-06-img::before { left: 18px !important; top: 26px !important; font-size: 1.35rem !important; }
+  html body #why-ssense .ct-06-img::after { left: 16px !important; bottom: 16px !important; width: 128px !important; height: 76px !important; border-radius: 20px !important; font-size: .58rem !important; }
+  html body #why-ssense .ssense-why-col.ssense-why-txt .txt-block { padding: 20px 16px !important; }
+  html body #why-ssense .ssense-why-txt h2 { font-size: clamp(1.8rem, 8vw, 2.35rem) !important; line-height: 1.05 !important; }
+  html body #why-ssense .accordion { margin-top: 16px !important; }
+  html body #why-ssense .accordion .accordion-thumb { min-height: 54px !important; padding: 10px 42px 10px 50px !important; }
+  html body #why-ssense .accordion .accordion-thumb p { font-size: .98rem !important; line-height: 1.2 !important; }
+  html body #why-ssense .ssense-why-cta { width: 100% !important; justify-content: center !important; margin-top: 14px !important; }
+  html body .ssense-luxury-feature { min-height: 0 !important; padding: 10px !important; gap: 6px !important; }
+  html body .ssense-home-secret-rail,
+  html body .ssense-home-peace-points { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
+  html body .ssense-home-secret-rail > * { padding: 10px !important; min-height: 0 !important; }
+  html body .ssense-about-approach { padding-block: 0 !important; }
+  html body .ssense-about-experience-features { gap: 10px !important; }
+  html body .ssense-about-experience-feature { min-height: 0 !important; padding: 10px !important; }
+  html body .ssense-menu-section .pricing-1-wrapper { padding: 12px 16px !important; }
+  html body .ssense-menu-section .pricing-1-table { padding: 0 !important; margin: 0 !important; }
+  html body .ssense-menu-section .pricing-1-item { padding: 12px 0 !important; margin: 0 !important; }
+  html body .ssense-menu-section .detail-price { display: grid !important; grid-template-columns: minmax(0, 1fr) auto !important; gap: 10px !important; }
+  html body .ssense-menu-section .price-dots { display: none !important; }
+  html body .ssense-menu-section .price-name p { font-size: 1rem !important; line-height: 1.3 !important; }
+  html body .ssense-menu-section .price-number { width: auto !important; }
+  html body .ssense-menu-section .price-number p { font-size: .85rem !important; }
+  html body .ssense-menu-section .price-txt p { font-size: .8rem !important; margin: 4px 0 0 !important; }
+
+  /* Native swipe rows expose the next card and retain a visible scrollbar. */
+  html body .ssense-testimonial-grid,
+  html body .blog-section .row:has(> [class*="col"] > .blog-post),
+  html body .ssense-featured-grid,
+  html body .ssense-reviews-grid,
+  html body .ssense-blog-listing-grid,
+  html body .ssense-blog-main > .row,
+  html body .ssense-blog-row,
+  html body #related-posts .ssense-related-grid,
+  html body .gallery-section:not(#gallery-1) .row.row-cols-1 {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 2px;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #ad708e #f4e9ef;
+    padding: 4px 2px 14px !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+  html body .ssense-testimonial-grid > *,
+  html body .blog-section .row:has(> [class*="col"] > .blog-post) > *,
+  html body .ssense-featured-grid > *,
+  html body .ssense-reviews-grid > *,
+  html body .ssense-blog-listing-grid > *,
+  html body .ssense-blog-main > .row > *,
+  html body .ssense-blog-row > *,
+  html body #related-posts .ssense-related-grid > *,
+  html body .gallery-section:not(#gallery-1) .row.row-cols-1 > * {
+    flex: 0 0 86% !important;
+    width: 86% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    scroll-snap-align: start;
+    margin: 0 !important;
+  }
+  html body .gallery-section:not(#gallery-1) .row.row-cols-1 > * { flex-basis: 44% !important; width: 44% !important; padding: 0 !important; }
+  html body .gallery-section .gallery-image { margin: 0 !important; height: 160px !important; min-height: 0 !important; }
+  html body .gallery-image:focus-within .image-data { opacity: 1 !important; visibility: visible !important; }
+  html body .gallery-image .image-data { opacity: 1 !important; visibility: visible !important; inset: auto 8px 8px auto !important; width: 44px !important; height: 44px !important; transform: none !important; border-radius: 50% !important; background: rgba(20, 15, 18, .7) !important; }
+  html body .gallery-image .gallery-link,
+  html body .gallery-image .gallery-link a { display: grid !important; place-items: center !important; width: 44px !important; height: 44px !important; margin: 0 !important; padding: 0 !important; }
+  html body .gallery-image .gallery-link span::before { font-size: 20px !important; }
+  html body .gallery-image a:focus-visible { outline: 3px solid #fff !important; outline-offset: 2px !important; }
+  html body .gallery-4-wrapper .gallery-image { padding: 0 !important; margin-bottom: 10px !important; }
+  html body .gallery-4-wrapper .gallery-image { height: 140px !important; min-height: 0 !important; }
+  html body .gallery-section .gallery-image img { height: 160px !important; width: 100% !important; object-fit: cover; }
+  html body #gallery-4 { padding-block: 24px !important; }
+  html body #gallery-4 .gallery-4-wrapper { height: auto !important; min-height: 0 !important; padding: 0 !important; margin: 0 !important; }
+  html body #gallery-4 .gallery-4-wrapper > .row { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 8px !important; margin: 0 !important; }
+  html body #gallery-4 .gallery-4-wrapper > .row > * { display: contents !important; }
+  html body #gallery-4 .gallery-image { position: relative !important; inset: auto !important; width: 100% !important; height: 140px !important; margin: 0 !important; transform: none !important; }
+  html body #gallery-4 .gallery-image img { height: 140px !important; }
+  html body #gallery-4 .more-btn { margin-top: 20px !important; }
+  html body #gallery-1 .ssense-gallery-row { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; grid-auto-rows: auto !important; gap: 10px !important; overflow: visible !important; margin: 0 !important; padding: 0 !important; }
+  html body #gallery-1 .ssense-gallery-row > .col { grid-column: auto !important; grid-row: auto !important; width: 100% !important; padding: 0 !important; }
+  html body #gallery-1 .ssense-gallery-row > [hidden] { display: none !important; }
+  html body #gallery-1 .gallery-image,
+  html body #gallery-1 .hover-overlay { height: 160px !important; min-height: 0 !important; }
+  html body .ssense-compact-gallery-more { margin-block: 12px !important; font-size: 1rem !important; }
+  html body .ssense-blog-row .blog-post-img img,
+  html body .blog-section .blog-post-img img,
+  html body .ssense-blog-listing-grid img,
+  html body .ssense-blog-main .blog-post-img img,
+  html body #related-posts .blog-post-img img { height: 180px !important; width: 100%; object-fit: cover; }
+  html body .ssense-testimonial-card { padding: 18px !important; min-height: 0 !important; }
+  html body .ssense-testimonial-card p { min-height: 0 !important; }
+  html body .ssense-testimonial-stats { grid-template-columns: 1fr 1fr !important; gap: 14px !important; margin-top: 20px !important; }
+  html body .ssense-swipe-hint { margin: 0 0 10px; color: var(--compact-ink); font-size: .8rem; }
+
+  /* Supporting photography has a shorter crop; information stays in flow. */
+  html body .ct-05-img img,
+  html body .content-section .img-block > img,
+  html body .about-6-img img,
+  html body .a6-img img,
+  html body .about-8-img img,
+  html body .ct-06-img img,
+  html body .ssense-home-peace-panel .img-block img,
+  html body .ssense-about-experience-media img,
+  html body .ssense-offers-gift__media img { width: 100% !important; height: 230px !important; object-fit: cover; }
+  html body .ct-12 { height: 180px !important; min-height: 0 !important; }
+  html body .ssense-home-peace-panel,
+  html body .ssense-about-approach-card,
+  html body .ssense-about-experience-copy,
+  html body .ssense-offers-gift__copy,
+  html body .ssense-offers-visit__panel,
+  html body .ssense-process-card,
+  html body .ssense-local-panel,
+  html body .ssense-booking-panel,
+  html body .ssense-contact-connect__panel {
+    padding: 20px !important;
+    min-height: 0 !important;
+    gap: 16px !important;
+  }
+  html body .ssense-booking-cta .ssense-booking-panel::before { min-height: 0 !important; height: 100px !important; }
+  html body .ssense-local-panel::before { min-height: 0 !important; height: 110px !important; }
+  html body .ssense-contact-premium__image { height: 130px !important; min-height: 0 !important; }
+  html body .ssense-contact-premium__image img { height: 100% !important; object-fit: cover; }
+  html body .ssense-contact-connect__map,
+  html body .ssense-contact-connect__map iframe { height: 220px !important; min-height: 0 !important; }
+  html body .about-8-img,
+  html body .about-6-img,
+  html body .a6-img { margin-block: 16px !important; }
+  html body .about-8-txt,
+  html body .a6-txt { padding: 20px !important; margin-block: 16px !important; }
+  html body .pricing-section:not(.ssense-detailed-menu) .pricing-list > li { padding-block: 10px !important; margin-bottom: 0 !important; }
+  html body .pricing-section:not(.ssense-detailed-menu) .detail-price { display: grid !important; grid-template-columns: minmax(0, 1fr) auto !important; gap: 8px !important; }
+  html body .pricing-section:not(.ssense-detailed-menu) .price-dots { display: none !important; }
+  html body .pricing-section:not(.ssense-detailed-menu) .price-number { width: auto !important; }
+  html body .pricing-section:not(.ssense-detailed-menu) .detail-price p { font-size: .95rem !important; line-height: 1.35 !important; }
+  html body .pricing-7-img img { height: 160px !important; width: 100% !important; object-fit: cover; }
+  html body .ssense-actions,
+  html body .ssense-hero-actions,
+  html body .ssense-offers-hero__actions,
+  html body .ssense-offers-gift__actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  html body .ssense-actions > a,
+  html body .ssense-hero-actions > a,
+  html body .ssense-offers-hero__actions > a,
+  html body .ssense-offers-gift__actions > a {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    padding: 12px 8px !important;
+    font-size: .875rem !important;
+    letter-spacing: .035em !important;
+    white-space: normal !important;
+    text-align: center;
+    align-content: center;
+  }
+  html body .booking-form .form-control,
+  html body .contact-form .form-control { font-size: 16px !important; }
+
+  /* Enhancement classes exist only while the mobile media query matches. */
+  html body .ssense-compact-toggle {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 44px;
+    border: 0;
+    border-radius: 0;
+    padding: 8px 0;
+    color: inherit;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  html body .ssense-compact-toggle::after { content: "+"; flex-shrink: 0; font: 24px/1 sans-serif; }
+  html body .ssense-compact-toggle > span { min-width: 0; }
+  html body .ssense-compact-toggle[aria-expanded="true"]::after { content: "−"; }
+  html body .ssense-compact-toggle:focus-visible,
+  html body .ssense-compact-row:focus-visible { outline: 2px solid #8a3e67; outline-offset: 4px; }
+  html body .ssense-compact-copy:not(.ssense-compact-open) {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important;
+    overflow: hidden !important;
+  }
+  html body .ssense-compact-copy + .ssense-compact-toggle {
+    width: auto;
+    color: inherit;
+    font: 500 .88rem/1.4 Jost, sans-serif;
+    margin-bottom: 12px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  html body .ssense-compact-panel[hidden] { display: none !important; }
+  html body .ssense-detailed-menu.ssense-compact-category { padding-block: 10px !important; border-bottom: 1px solid #eadbe1 !important; }
+  html body .ssense-compact-category .category-title { margin-bottom: 0 !important; }
+  html body .ssense-compact-category .category-title h2 { font-size: 1.4rem !important; }
+  html body .pricing-5-category h2 { font-size: 1.4rem !important; }
+  html body .pricing-5-category { margin-block: 14px !important; }
+  html body .ssense-compact-category .category-title p { font-size: .88rem !important; margin-bottom: 8px !important; }
+  html body .ssense-compact-category .more-btn { margin-top: 10px !important; padding-top: 0 !important; }
+  html body .ssense-detailed-menu .pricing-1-wrapper { padding: 12px 16px !important; }
+  html body .ssense-detailed-menu .pricing-1-table { padding: 0 !important; margin: 0 !important; }
+  html body .ssense-detailed-menu .pricing-1-item { padding: 12px 0 !important; margin: 0 !important; text-align: left !important; }
+  html body .ssense-detailed-menu .detail-price { display: grid !important; grid-template-columns: minmax(0, 1fr) auto !important; gap: 10px !important; }
+  html body .ssense-detailed-menu .price-dots { display: none !important; }
+  html body .ssense-detailed-menu .price-name p { font-size: 1rem !important; line-height: 1.35 !important; text-align: left !important; }
+  html body .ssense-detailed-menu .price-number { width: auto !important; }
+  html body .ssense-detailed-menu .price-number p { font-size: .875rem !important; line-height: 1.5 !important; }
+  html body .ssense-detailed-menu .price-txt p { font-size: .875rem !important; line-height: 1.4 !important; margin: 4px 0 0 !important; text-align: left !important; }
+
+  html body footer.ssense-general-footer { padding-top: 24px !important; }
+  html body .ssense-general-footer__grid { gap: 0 !important; padding-bottom: 20px !important; }
+  html body .ssense-general-footer__grid h3 { margin-bottom: 12px !important; padding: 0 !important; border: 0 !important; font-size: 1.1rem !important; }
+  html body .ssense-general-footer__grid p { margin-bottom: 12px !important; font-size: .88rem !important; line-height: 1.45 !important; }
+  html body .ssense-general-footer__contact-list { margin-block: 12px !important; gap: 2px !important; }
+  html body .ssense-general-footer__socials { margin-top: 10px !important; }
+  html body .ssense-general-footer__brand > a > img { width: 156px !important; height: auto !important; }
+  html body .ssense-general-footer__hours ul { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
+  html body .ssense-general-footer__hours li { display: flex !important; justify-content: space-between !important; flex-wrap: wrap; gap: 2px 6px !important; padding: 0 !important; font-size: .875rem !important; }
+  html body .ssense-general-footer__badges { margin-top: 14px !important; }
+  html body .ssense-general-footer__bottom { margin-top: 0 !important; padding-top: 12px !important; padding-bottom: 86px !important; }
+  html body .ssense-contact-connect__assurance { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  html body .ssense-general-footer__links h3,
+  html body .ssense-general-footer__links h4,
+  html body .ssense-general-footer__links h5 { margin-bottom: 0 !important; }
+  html body .ssense-general-footer__links a { display: inline-flex; align-items: center; min-height: 44px; }
+  html body .ssense-general-footer__links .ssense-compact-panel:not([hidden]) { display: grid !important; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+
+  /* Complete the shared template pass: shrink space, not the reading size.
+     Reset desktop grid minimums inside the mobile composition as well. */
+  html body .ssense-blog-grid { grid-template-columns: minmax(0, 1fr) !important; gap: 24px !important; }
+  html body .ssense-blog-main,
+  html body .ssense-blog-sidebar,
+  html body .ssense-ia-hero-grid > *,
+  html body .ssense-ia-content > * { min-width: 0 !important; }
+  html body .ssense-ia-hero h1,
+  html body .ssense-about-hero h1,
+  html body .ssense-offers-hero h1,
+  html body .ssense-contact-premium h1 { font-size: clamp(1.9rem, 8.2vw, 2.25rem) !important; line-height: 1.08 !important; margin-bottom: 16px !important; }
+  html body .ssense-quick-info { margin-top: 0 !important; }
+  html body .ssense-services-hero-strip { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  html body .ssense-services-hero-strip > span { grid-template-columns: 28px minmax(0, 1fr) !important; gap: 8px !important; min-width: 0 !important; padding: 4px 0 !important; font-size: .85rem !important; }
+  html body .ssense-services-hero-strip i { margin-bottom: 4px !important; }
+  html body .ssense-services-hero-visual figure { height: 160px !important; min-height: 0 !important; }
+  html body .ssense-services-hero-visual { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; align-items: center !important; }
+  html body .ssense-services-hero-visual figure { width: 100% !important; margin: 0 !important; }
+  html body .ssense-services-hero-stat { display: block !important; position: static !important; width: auto !important; min-height: 0 !important; margin: 0 !important; }
+  html body .ssense-services-hero-stat::before { display: none !important; }
+  html body .ssense-services-hero-stat > * { margin: 0 !important; }
+  html body .ssense-services-hero-stat strong { font-size: 2rem !important; line-height: 1.1 !important; }
+  html body .ssense-services-hero-stat em { font-size: .8rem !important; }
+  html body .ssense-service-design-copy,
+  html body .ssense-services-design-showcase .ssense-process-card { padding: 18px !important; }
+  html body .ssense-process-card ol { margin-block: 12px !important; }
+  html body .ssense-process-card li { padding-block: 8px !important; margin-bottom: 8px !important; }
+  html body .ssense-about-proof-strip { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  html body .ssense-about-proof-item { display: flex !important; flex-direction: column !important; align-items: flex-start !important; gap: 6px !important; }
+  html body .ssense-about-proof-item strong { font-size: .9rem !important; }
+  html body .ssense-about-proof-item span { font-size: .8rem !important; }
+  html body .ssense-about-approach-step-list { gap: 0 !important; }
+  html body .ssense-about-approach-step__body p { margin-bottom: 0 !important; font-size: .9375rem !important; line-height: 1.45 !important; }
+  html body .ssense-about-menu-head,
+  html body .ssense-about-menu-banner { margin-block: 16px !important; padding-block: 16px !important; }
+  html body .ssense-about-experience-feature p { margin: 0 !important; }
+  html body .ssense-offers-visit__card p,
+  html body .ssense-offers-card p { margin-block: 8px !important; }
+  html body .ssense-offers-visit__card h3 { font-size: 1.15rem !important; }
+  html body .ssense-offers-visit__card a { min-height: 44px !important; display: inline-flex !important; align-items: center; }
+  html body .ssense-contact-premium__card { padding: 18px !important; gap: 8px !important; }
+  html body .ssense-contact-premium__badges { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 8px !important; margin-top: 12px !important; }
+  html body .ssense-contact-premium__badges > span { padding: 6px 0 !important; font-size: .75rem !important; }
+  html body .ssense-contact-premium__contact-line,
+  html body .ssense-contact-premium__hours-line { padding-block: 6px !important; margin-top: 0 !important; }
+  html body .ssense-contact-premium__contact-line a { min-height: 44px; display: inline-flex; align-items: center; }
+  html body .ssense-contact-connect__contact-strip { gap: 8px !important; margin-top: 14px !important; }
+  html body .ssense-contact-connect__contact-strip a { min-height: 44px !important; padding: 10px !important; }
+  html body .ssense-contact-connect__booking-strip { margin-top: 14px !important; padding-top: 14px !important; }
+  html body .ssense-contact-connect__form textarea { min-height: 120px !important; }
+  html body .ssense-contact-connect__form .form-control { margin-bottom: 0 !important; }
+  html body .ssense-contact-connect__form label { margin-bottom: 0 !important; }
+  html body .ssense-contact-connect__form input,
+  html body .ssense-contact-connect__form select { height: 52px !important; min-height: 52px !important; }
+  html body .ssense-contact-connect__assurance { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; margin-top: 12px !important; padding-top: 10px !important; }
+  html body .ssense-contact-connect__assurance > span { min-width: 0 !important; padding: 8px 0 !important; }
+  html body .ssense-contact-connect__assurance strong,
+  html body .ssense-contact-connect__assurance small { font-size: .75rem !important; overflow-wrap: break-word; }
+  html body .ssense-contact-connect__visit { margin-bottom: 0 !important; line-height: 1 !important; }
+  html body .ssense-booking-cta .ssense-booking-panel::before { position: absolute !important; inset: 0 !important; height: 100% !important; width: 100% !important; pointer-events: none; }
+  html body .ssense-booking-cta .ssense-actions::after { grid-column: 1 / -1; margin-top: 8px !important; }
+  html body .ssense-booking-cta .ssense-booking-panel { padding: 20px 16px !important; }
+  html body .ssense-home-secret-services .sbox-txt p { font-size: .9375rem !important; line-height: 1.45 !important; }
+  html body .ssense-menu-section .section-title { margin-bottom: 0 !important; }
+  html body .ssense-menu-section .section-title h2 { margin-bottom: 0 !important; }
+  html body .ssense-menu-section .more-btn { margin-top: 16px !important; }
+  html body .ssense-menu-section .ssense-compact-toggle { text-align: center; }
+  html body .ssense-menu-section .ssense-compact-panel:not([hidden]) { margin-top: 18px !important; }
+  html body .ssense-general-footer__contact-list li { gap: 8px !important; }
+  html body .ssense-general-footer__contact-list a { min-height: 44px; display: inline-flex; align-items: center; }
+  html body .ssense-general-footer__hours ul { margin-bottom: 14px !important; }
+  html body .ssense-general-footer__newsletter > h3 { margin-bottom: 0 !important; }
+  html body .ssense-general-footer__socials { display: flex !important; flex-wrap: wrap; align-items: center; gap: 8px !important; }
+  html body .ssense-general-footer__socials h3,
+  html body .ssense-general-footer__socials ul { margin: 0 !important; }
+  html body .ssense-general-footer__socials a { min-height: 44px !important; min-width: 44px !important; }
+  html body .ssense-general-footer__script { display: none !important; }
+  html body .ssense-general-footer__bottom .container { gap: 8px !important; padding-block: 0 !important; }
+  html body .ssense-general-footer__bottom p { margin: 0 !important; font-size: .75rem !important; }
+  html body .ssense-general-footer__bottom a { display: inline-flex; align-items: center; min-height: 44px; }
+  html body .ssense-compact-panel { scroll-margin-top: 84px; }
+  html body .ssense-compact-toggle:active { opacity: .75; }
+  html body .ssense-compact-row > [hidden] { display: none !important; }
+
+  /* Keep the three peace highlights on one compact row even below 576px. */
+  html body .ssense-home-peace-points { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 7px !important; }
+  html body .ssense-home-peace-points > * { padding: 9px 4px !important; min-width: 0 !important; }
+
+  /* Feel Your Best section: stack photo and copy cleanly on phones. */
+  html body .ssense-best-section > .container > .row { display: flex !important; flex-direction: column !important; }
+  html body .ssense-best-section > .container > .row > .col-lg-6 { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; }
+  html body .ssense-best-section .ct-05-img { width: 100% !important; height: 210px !important; min-height: 0 !important; overflow: hidden !important; margin: 0 !important; }
+  html body .ssense-best-section .ct-05-img img { display: block !important; width: 100% !important; height: 100% !important; min-height: 0 !important; object-fit: cover !important; object-position: center 35% !important; border-radius: 20px 20px 0 0 !important; }
+  html body .ssense-best-section .txt-block { position: relative !important; z-index: 2 !important; padding: 22px 18px 20px !important; background: rgba(255,255,255,.96) !important; }
+  html body .ssense-best-section .txt-block h2 { font-size: clamp(1.9rem, 8.2vw, 2.45rem) !important; line-height: 1.05 !important; }
+  html body .ssense-best-section .txt-block > p { font-size: 1rem !important; line-height: 1.5 !important; }
+
+
+  /* Reviews are readable in full; never silently truncate a guest's words. */
+  html body .ssense-testimonial-card { height: auto !important; min-height: 0 !important; display: flex !important; flex-direction: column !important; }
+  html body .ssense-testimonial-card p { display: block !important; font-size: .9375rem !important; line-height: 1.5 !important; margin-bottom: 14px !important; }
+  html body .ssense-testimonial-author { margin-top: auto !important; flex: 0 0 auto !important; }
+  html body .ssense-testimonial-dots { display: none !important; }
+
+  /* Supporting stories are editorial rows, not another sequence of heroes. */
+  html body .ssense-compact-story { padding-block: 16px !important; min-height: 0 !important; }
+  html body .ssense-compact-summary { padding-block: 0 !important; }
+  html body .ssense-compact-summary h2,
+  html body .ssense-compact-summary h3 { margin: 0 !important; font-size: 1.4rem !important; line-height: 1.2 !important; letter-spacing: -.02em !important; }
+  html body .ssense-compact-summary .ssense-compact-toggle { gap: 24px !important; }
+  html body .ssense-compact-story .ssense-compact-summary { padding-inline: 10px !important; }
+  html body .ssense-compact-summary h2 .ssense-compact-toggle,
+  html body .ssense-compact-summary h3 .ssense-compact-toggle {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 28px !important;
+    align-items: center !important;
+    gap: 10px !important;
+    min-height: 0 !important;
+    padding: 11px 12px 11px 14px !important;
+    border: 1px solid rgba(180, 63, 93, .18) !important;
+    border-radius: 18px !important;
+    background: linear-gradient(135deg, rgba(255, 251, 248, .98), rgba(255, 241, 239, .78)) !important;
+    box-shadow: 0 8px 22px rgba(98, 49, 64, .06) !important;
+  }
+  html body .ssense-compact-summary h2 .ssense-compact-toggle > span,
+  html body .ssense-compact-summary h3 .ssense-compact-toggle > span {
+    display: block !important;
+    min-width: 0 !important;
+    color: #15110f !important;
+    font-family: Georgia, serif !important;
+    font-size: clamp(1.06rem, 4.9vw, 1.28rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -.035em !important;
+    text-wrap: balance;
+  }
+  html body .ssense-compact-summary h2 .ssense-compact-toggle em,
+  html body .ssense-compact-summary h3 .ssense-compact-toggle em { color: #b43f5d !important; font-style: italic !important; }
+  html body .ssense-compact-summary h2 .ssense-compact-toggle::after,
+  html body .ssense-compact-summary h3 .ssense-compact-toggle::after {
+    display: grid !important;
+    place-items: center !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    color: #15110f !important;
+    box-shadow: inset 0 0 0 1px rgba(180, 63, 93, .16) !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+  html body .ssense-compact-story:has(> .ssense-compact-panel[hidden]) { background: #fffaf8 !important; border-block: 1px solid #eadbe1 !important; box-shadow: none !important; }
+  html body .ssense-compact-summary + .ssense-compact-panel:not([hidden]) { margin-top: 18px !important; }
+  html body .ssense-about-approach-step__body { width: 100% !important; }
+  html body .ssense-about-approach-step { padding-block: 0 !important; }
+  html body .ssense-about-approach-step h3 { margin: 0 !important; font-size: 1rem !important; }
+  html body .ssense-about-approach-step__num { margin-top: 10px !important; }
+  html body .ssense-hero-actions > .ssense-text-link { grid-column: 1 / -1; min-height: 32px !important; padding: 4px !important; }
+
+  /* Text-heavy offers use readable full-width rows, with optional detail. */
+  html body .ssense-offers-grid__cards,
+  html body .ssense-offers-visit__grid { display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important; }
+  html body .ssense-offers-card { display: grid !important; grid-template-columns: 36px minmax(0, 1fr) !important; gap: 0 12px !important; padding: 12px 16px !important; border-radius: 14px !important; }
+  html body .ssense-offers-card__icon { grid-row: 1 / 4; width: 36px !important; height: 36px !important; margin-top: 4px !important; font-size: 18px !important; }
+  html body .ssense-offers-card > h3,
+  html body .ssense-offers-card > p,
+  html body .ssense-offers-card > a { grid-column: 2 !important; margin: 0 !important; }
+  html body .ssense-offers-card > a { min-height: 44px !important; font-size: .875rem !important; display: flex !important; align-items: center; }
+  html body .ssense-offers-gift__media,
+  html body .ssense-offers-gift__media img { height: 140px !important; min-height: 0 !important; }
+  html body .ssense-offers-gift__copy { padding: 18px !important; }
+  html body .ssense-offers-gift__script { margin: 12px 0 0 !important; }
+  html body .ssense-offers-hero__featured { min-height: 0 !important; }
+  html body .ssense-offers-ribbon__inner p { color: #fff !important; }
+  html body .ssense-service-design-media::before,
+  html body .ssense-service-design-media::after { display: none !important; }
+  html body .ssense-booking-panel { background: #f7eeeb !important; border-radius: 16px !important; }
+  html body .ssense-booking-panel::before,
+  html body .ssense-booking-panel .ssense-actions::after { display: none !important; }
+  html body .ssense-booking-panel h2 { font-size: 1.5rem !important; }
+  html body .ssense-booking-panel p { margin-bottom: 8px !important; }
+  html body .ssense-local-panel { border-radius: 16px !important; }
+  html body .ssense-local-copy ul { gap: 0 !important; }
+  html body .ssense-local-copy li a { min-height: 44px !important; padding-block: 10px !important; }
+  html body .ssense-contact-premium__script { margin-block: 12px !important; }
+  html body .ssense-contact-connect__form .loading:empty { display: none !important; }
+  html body .ssense-contact-connect__form .contact-form-msg { margin-top: 0 !important; }
+  html body .ssense-contact-connect__form .form-control { border-radius: 16px !important; }
+  html body .ssense-contact-connect__form textarea { padding: 18px 16px 28px 48px !important; }
+  html body .ssense-contact-connect__panel { row-gap: 12px !important; }
+  html body .ssense-contact-connect__assurance { align-self: start !important; }
+  html body .banner-section { min-height: 0 !important; padding-block: 28px !important; background-attachment: scroll !important; }
+  html body .banner-section .container,
+  html body .banner-section .row { min-height: 0 !important; height: auto !important; }
+  html body .banner-section .banner-1-txt,
+  html body .banner-section .banner-2-txt { padding: 0 !important; }
+  html body .banner-section h3 { font-size: 1.4rem !important; line-height: 1.2 !important; max-width: none !important; }
+  html body.ssense-gallery-page .page-title-txt { padding-block: 0 !important; }
+
+  /* A single footer disclosure system, including the no-JS fallback. */
+  html body .ssense-general-footer__brand { padding-bottom: 16px !important; }
+  html body .ssense-general-footer__tagline { font-size: .7rem !important; letter-spacing: .14em !important; margin-block: 10px !important; }
+  html body .ssense-general-footer__contact-list li { font-size: .875rem !important; }
+  html body .ssense-general-footer__direction { margin-top: 12px !important; min-height: 44px !important; }
+  html body .ssense-general-footer__grid h3::before,
+  html body .ssense-general-footer__grid h3::after { display: none !important; }
+  html body .ssense-general-footer__hours,
+  html body .ssense-general-footer__newsletter,
+  html body .ssense-general-footer__links { border-top: 1px solid #eadbe1 !important; padding-block: 6px !important; }
+  html body .ssense-general-footer__links > a { display: inline-flex !important; }
+  html body .ssense-general-footer__hours .ssense-general-footer__booking { display: flex !important; }
+  html body .ssense-general-footer__hours .ssense-general-footer__badges { display: flex !important; }
+  html body .ssense-compact-hours { margin: 0 0 8px !important; font-size: .875rem !important; }
+  html body .ssense-general-footer__bottom::before,
+  html body .ssense-general-footer__bottom::after { display: none !important; }
+
+  /* ---- Second mobile polish: footers and tall IA blocks measured
+        920-1054px at 390. Compress padding/crops/gaps below so the same
+        content fits in fewer screens; nothing is removed from the flow. ---- */
+
+  html body .ssense-general-footer__brand > a > img { width: 120px !important; }
+  html body .ssense-general-footer__brand { padding-bottom: 8px !important; }
+  html body .ssense-general-footer__tagline { margin-block: 4px !important; font-size: .62rem !important; }
+  html body .ssense-general-footer__contact-list { margin-block: 4px !important; gap: 0 !important; }
+  html body .ssense-general-footer__contact-list li { padding-block: 3px !important; line-height: 1.35 !important; }
+  html body .ssense-general-footer__contact-list li:last-child { align-items: flex-start !important; }
+  html body .ssense-general-footer__contact-list a { min-height: 36px !important; }
+  html body .ssense-general-footer__direction { margin-top: 6px !important; min-height: 40px !important; }
+  html body .ssense-general-footer__grid { padding-bottom: 8px !important; }
+  html body .ssense-general-footer__grid h3 { margin-bottom: 0 !important; font-size: 1.05rem !important; }
+  html body .ssense-general-footer__hours,
+  html body .ssense-general-footer__newsletter,
+  html body .ssense-general-footer__links { padding-block: 2px !important; }
+  html body .ssense-general-footer__bottom { padding-bottom: 40px !important; }
+  html body .ssense-general-footer__hours .ssense-compact-hours { margin: 0 0 4px !important; font-size: .85rem !important; }
+
+  /* Shared IA hero composition: one tighter stack, same copy. */
+  html body .ssense-ia-hero-grid,
+  html body .ssense-services-hero-grid,
+  html body .ssense-about-hero-grid,
+  html body .ssense-offers-hero__grid,
+  html body .ssense-contact-premium__grid,
+  html body .ssense-contact-connect__grid { gap: 16px !important; }
+  html body .ssense-ia-hero h1,
+  html body .ssense-about-hero h1,
+  html body .ssense-offers-hero h1,
+  html body .ssense-contact-premium h1 { margin-bottom: 10px !important; }
+  html body .ssense-ia-hero p,
+  html body .ssense-about-hero p,
+  html body .ssense-offers-hero p,
+  html body .ssense-contact-premium__lede { margin-block: 6px !important; }
+
+  /* Services hero: shorter crop, tighter strip. */
+  html body .ssense-services-hero-visual figure,
+  html body .ssense-services-hero-visual figure img { height: 120px !important; max-height: 120px !important; }
+  html body .ssense-services-hero-strip { margin-top: 12px !important; padding: 10px !important; gap: 8px !important; }
+  html body .ssense-services-hero-copy > p { margin-block: 6px !important; }
+
+  /* Offers hero: keep the 30% card bold, squeeze its frame. */
+  html body .ssense-offers-hero__notes { display: grid !important; grid-template-columns: 1fr !important; gap: 6px !important; margin: 14px 0 0 !important; padding: 0 !important; }
+  html body .ssense-offers-hero__notes li { display: flex !important; align-items: center; gap: 8px !important; font-size: .875rem !important; line-height: 1.35 !important; }
+  html body .ssense-offers-hero__notes [class*="flaticon-"] { font-size: .9rem !important; }
+  html body .ssense-offers-feature { padding: 18px !important; border-radius: 18px !important; gap: 8px !important; }
+  html body .ssense-offers-feature__chip { margin-bottom: 6px !important; }
+  html body .ssense-offers-feature__stat { font-size: clamp(2.6rem, 13vw, 3.4rem) !important; line-height: 1 !important; }
+  html body .ssense-offers-feature__name { margin: 4px 0 0 !important; }
+  html body .ssense-offers-feature__desc { margin: 6px 0 0 !important; font-size: .9rem !important; line-height: 1.4 !important; }
+  html body .ssense-offers-feature__note { margin: 10px 0 0 !important; font-size: .78rem !important; }
+
+  /* About: leaner menu cards and proof strip. */
+  html body .ssense-about-menu-card { padding: 12px !important; gap: 6px !important; }
+  html body .ssense-about-menu-card img,
+  html body .ssense-services-related-showcase .ssense-related-card > img,
+  html body .ssense-hair-related-showcase .ssense-related-card > img { height: 90px !important; }
+  html body .ssense-about-menu-grid,
+  html body .ssense-related-grid { gap: 10px !important; }
+  html body .ssense-about-menu-head,
+  html body .ssense-about-menu-banner { margin-block: 12px !important; padding-block: 12px !important; }
+  html body .ssense-about-hero-visual { min-height: 200px !important; height: 200px !important; }
+  html body .ssense-about-image-main { height: 190px !important; }
+  html body .ssense-about-image-secondary { height: 110px !important; }
+  html body .ssense-about-approach-step { padding-block: 0 !important; margin-block: 8px !important; }
+
+  /* Contact: leaner cards, panels and shorter form fields. */
+  html body .ssense-contact-premium__card { padding: 14px !important; gap: 6px !important; }
+  html body .ssense-contact-premium__image { height: 110px !important; }
+  html body .ssense-contact-premium__script { margin-block: 8px !important; }
+  html body .ssense-contact-connect__panel { padding: 16px !important; row-gap: 10px !important; }
+  html body .ssense-contact-connect__map,
+  html body .ssense-contact-connect__map iframe { height: 190px !important; }
+  html body .ssense-contact-connect__form input,
+  html body .ssense-contact-connect__form select { height: 46px !important; min-height: 46px !important; }
+  html body .ssense-contact-connect__form textarea { min-height: 100px !important; }
+  html body .ssense-contact-connect__assurance { margin-top: 8px !important; padding-top: 6px !important; }
+  html body .ssense-booking-panel { padding: 16px 16px !important; }
+  html body .ssense-local-panel { padding: 16px !important; }
+
+  /* Home: shorter supporting photos, tighter accordion rails. */
+  html body .ssense-luxury-photo { height: 180px !important; }
+  html body #why-ssense .ct-06-img,
+  html body .ssense-home-peace-panel .img-block,
+  html body .ssense-best-section .ct-05-img { height: 140px !important; }
+  html body #why-ssense .accordion .accordion-thumb { min-height: 46px !important; padding-block: 6px !important; }
+  html body #why-ssense .ct-06-img::after { height: 64px !important; }
+  html body .ssense-home-secret-services .ssense-home-service-photo,
+  html body .ssense-home-secret-services .ssense-home-service-photo img { height: 105px !important; }
+  html body .ssense-related-card img { height: 105px !important; }
+  html body .ssense-testimonial-card { padding: 14px !important; }
+  html body .ssense-testimonial-grid.ssense-review-marquee { scroll-snap-type: none !important; scrollbar-width: none !important; }
+  html body .ssense-testimonial-grid.ssense-review-marquee::-webkit-scrollbar { display: none !important; }
+  html body .ssense-testimonial-grid.ssense-review-marquee > * { scroll-snap-align: none !important; }
+  html body .ssense-blog-row .blog-post-img img,
+  html body .blog-section .blog-post-img img,
+  html body .ssense-blog-listing-grid img,
+  html body #related-posts .blog-post-img img { height: 150px !important; }
+  html body .gallery-section:not(#gallery-1) .gallery-image,
+  html body .gallery-section:not(#gallery-1) .gallery-image img { height: 140px !important; }
+  html body #gallery-1 .gallery-image,
+  html body #gallery-1 .hover-overlay { height: 140px !important; }
+  html body #gallery-1 .gallery-image img { height: 140px !important; }
+  html body #gallery-3 .section-title h3,
+  html body .gallery-section .section-title h2:has(a[href*="instagram"]),
+  html body .gallery-section .section-title h3:has(a[href*="instagram"]) {
+    display: inline-flex !important;
+    align-items: baseline !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    font-size: clamp(.95rem, 4.4vw, 1.1rem) !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+  }
+  html body #gallery-3 .section-title h3 a,
+  html body .gallery-section .section-title h2:has(a[href*="instagram"]) a,
+  html body .gallery-section .section-title h3:has(a[href*="instagram"]) a {
+    display: inline !important;
+    white-space: nowrap !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  /* Micro-labels below 11px read as noise on phones; nudge them up only here. */
+  html body .ssense-eyebrow,
+  html body .ssense-menu-eyebrow,
+  html body .ssense-about-hero-chip,
+  html body .ssense-section-label { font-size: .72rem !important; letter-spacing: .14em !important; }
+
+  /* Mobile button scale: compact enough for phones without changing desktop. */
+  html body .btn,
+  html body a.btn,
+  html body button.btn,
+  html body input.btn,
+  html body .submit,
+  html body .more-btn .btn,
+  html body .ssense-actions > a,
+  html body .ssense-hero-actions > a,
+  html body .ssense-offers-hero__actions > a,
+  html body .ssense-offers-gift__actions > a,
+  html body .ssense-menu-footer-actions a,
+  html body .ssense-home-service-link,
+  html body .ssense-general-footer__direction,
+  html body .ssense-general-footer__booking,
+  html body .ssense-contact-connect__contact-strip a,
+  html body .ssense-contact-premium__contact-line a,
+  html body .ssense-offers-visit__card a,
+  html body .ssense-about-menu-card__link,
+  html body .ssense-testimonial-cta {
+    min-height: 34px !important;
+    height: auto !important;
+    padding: 7px 9px !important;
+    font-size: .7rem !important;
+    line-height: 1.15 !important;
+    letter-spacing: .03em !important;
+    border-radius: 999px !important;
+    gap: 6px !important;
+  }
+  html body #hero-1 .caption .btn {
+    min-height: 32px !important;
+    padding: 7px 6px !important;
+    font-size: .66rem !important;
+    line-height: 1.12 !important;
+  }
+  html body .ssense-actions,
+  html body .ssense-hero-actions,
+  html body .ssense-offers-hero__actions,
+  html body .ssense-offers-gift__actions,
+  html body .ssense-menu-footer-actions { gap: 6px !important; }
+  html body .booking-form .btn,
+  html body .contact-form .btn,
+  html body .newsletter-form .btn,
+  html body .request-form .btn,
+  html body .ssense-contact-connect__form .submit { min-height: 36px !important; padding-block: 8px !important; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html body .ssense-compact-row { scroll-behavior: auto !important; }
+  }
+}
+}

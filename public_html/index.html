@@ -218,7 +218,7 @@
 		<link href="css/style.css" rel="stylesheet">
 
 		<!-- RESPONSIVE CSS -->
-		<link href="css/responsive.css" rel="stylesheet">
+		<link href="css/responsive.css?v=mobile-gallery3" rel="stylesheet">
 
 		<!-- ✅ CHANGE #3: INLINE CSS FOR 5 IMAGE GALLERY -->
 		<style>
@@ -281,6 +281,508 @@
 				.gallery-row-wrapper {
 					gap: 8px;
 				}
+			}
+
+			/* Homepage service showcase: late override after responsive.css. */
+			body.ssense-home-refined .ssense-home-secret-head,
+			body.ssense-home-refined #services-2.ssense-home-secret-services {
+				position: relative !important;
+				overflow: hidden !important;
+				background: linear-gradient(180deg, #fffdfb 0%, #fff7f3 100%) !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-head {
+				padding: clamp(34px, 4vw, 62px) 0 0 !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services {
+				padding: clamp(18px, 2.4vw, 32px) 0 clamp(34px, 4vw, 58px) !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-head .container,
+			body.ssense-home-refined #services-2.ssense-home-secret-services .container {
+				max-width: min(100% - 36px, 1660px) !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id {
+				display: inline-flex !important;
+				align-items: center !important;
+				gap: 16px !important;
+				margin-bottom: 12px !important;
+				color: #b4465b !important;
+				font-size: .76rem !important;
+				font-weight: 900 !important;
+				letter-spacing: .34em !important;
+				text-transform: uppercase !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:before,
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:after {
+				content: "" !important;
+				width: 46px !important;
+				height: 1px !important;
+				background: currentColor !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title {
+				max-width: none !important;
+				margin: 0 auto 12px !important;
+				padding: 0 !important;
+				color: #0f1118 !important;
+				font-family: Georgia, serif !important;
+				font-size: clamp(3.1rem, 5.35vw, 6.45rem) !important;
+				font-weight: 600 !important;
+				letter-spacing: -.065em !important;
+				line-height: .88 !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title em {
+				color: #b4465b !important;
+				font-style: italic !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-head.about-1 .txt-block p {
+				max-width: 920px !important;
+				margin: 0 auto !important;
+				padding: 0 !important;
+				color: #526074 !important;
+				font-size: clamp(1rem, 1.25vw, 1.25rem) !important;
+				line-height: 1.42 !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-side {
+				position: absolute !important;
+				left: clamp(24px, 5vw, 96px) !important;
+				top: clamp(58px, 6vw, 100px) !important;
+				z-index: 2 !important;
+				color: #5b6370 !important;
+				font-size: .78rem !important;
+				font-weight: 800 !important;
+				letter-spacing: .34em !important;
+				line-height: 1.65 !important;
+				text-transform: uppercase !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-note {
+				position: absolute !important;
+				right: clamp(24px, 5vw, 92px) !important;
+				top: clamp(12px, 2.2vw, 34px) !important;
+				display: grid !important;
+				place-items: center !important;
+				width: clamp(150px, 12vw, 220px) !important;
+				height: clamp(150px, 12vw, 220px) !important;
+				border-radius: 50% !important;
+				background: rgba(248, 232, 226, .78) !important;
+				color: #b4465b !important;
+				font-family: "Alex Brush", Georgia, serif !important;
+				font-size: clamp(1.7rem, 2.45vw, 3.2rem) !important;
+				line-height: .92 !important;
+				text-align: center !important;
+				transform: rotate(-7deg) !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-rail {
+				display: grid !important;
+				grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+				gap: clamp(14px, 2vw, 34px) !important;
+				max-width: 1120px !important;
+				margin: clamp(20px, 2.7vw, 34px) auto 0 !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-rail > span {
+				position: relative !important;
+				display: inline-flex !important;
+				align-items: center !important;
+				justify-content: center !important;
+				gap: 14px !important;
+				min-height: 42px !important;
+				color: #303a4a !important;
+				font-size: .74rem !important;
+				font-weight: 900 !important;
+				letter-spacing: .18em !important;
+				text-transform: uppercase !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-rail > span + span:before {
+				content: "" !important;
+				position: absolute !important;
+				left: calc(clamp(14px, 2vw, 34px) / -2) !important;
+				width: 1px !important;
+				height: 34px !important;
+				background: rgba(48, 58, 74, .42) !important;
+			}
+
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-lotus:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart-1:before {
+				color: #b4465b !important;
+				font-size: 1.7rem !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row {
+				display: flex !important;
+				flex-wrap: wrap !important;
+				margin: 0 -8px !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row > .col {
+				display: flex !important;
+				flex: 0 0 25% !important;
+				max-width: 25% !important;
+				padding: 0 8px !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 {
+				display: flex !important;
+				flex-direction: column !important;
+				width: 100% !important;
+				height: auto !important;
+				min-height: clamp(470px, 31vw, 520px) !important;
+				margin: 0 !important;
+				padding: 10px 10px 22px !important;
+				overflow: hidden !important;
+				border: 1px solid rgba(180, 70, 91, .16) !important;
+				border-radius: 30px !important;
+				background: linear-gradient(180deg, rgba(255, 255, 255, .92), rgba(255, 249, 246, .84)) !important;
+				box-shadow: 0 26px 70px rgba(77, 43, 45, .11) !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo,
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img {
+				display: block !important;
+				width: 100% !important;
+				max-width: none !important;
+				margin: 0 !important;
+				border-radius: 24px !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img {
+				height: clamp(190px, 13vw, 225px) !important;
+				object-fit: cover !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 {
+				display: grid !important;
+				place-items: center !important;
+				width: 82px !important;
+				height: 82px !important;
+				margin: -42px auto 13px !important;
+				border: 1px solid rgba(180, 70, 91, .13) !important;
+				border-radius: 50% !important;
+				background: linear-gradient(135deg, #fff9f7, #f8dfdc) !important;
+				box-shadow: 0 16px 36px rgba(87, 46, 48, .12) !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 span:before {
+				color: #b4465b !important;
+				font-size: 2.25rem !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt {
+				display: flex !important;
+				flex: 1 1 auto !important;
+				flex-direction: column !important;
+				align-items: center !important;
+				padding: 0 clamp(14px, 1.45vw, 24px) !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt h5.h5-lg {
+				margin: 0 0 8px !important;
+				color: #0f1118 !important;
+				font-family: Georgia, serif !important;
+				font-size: clamp(1.65rem, 1.9vw, 2.18rem) !important;
+				letter-spacing: -.04em !important;
+				line-height: 1.08 !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt p {
+				max-width: 300px !important;
+				margin: 0 auto 16px !important;
+				padding: 0 !important;
+				color: #526074 !important;
+				font-size: clamp(.92rem, 1vw, 1.03rem) !important;
+				line-height: 1.42 !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link {
+				display: inline-flex !important;
+				align-items: center !important;
+				gap: 14px !important;
+				margin-top: auto !important;
+				color: #b4465b !important;
+				font-size: .75rem !important;
+				font-weight: 900 !important;
+				letter-spacing: .28em !important;
+				text-transform: uppercase !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link span {
+				display: grid !important;
+				place-items: center !important;
+				width: 42px !important;
+				height: 42px !important;
+				border-radius: 50% !important;
+				background: #f8dfdc !important;
+				letter-spacing: 0 !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script {
+				display: flex !important;
+				align-items: center !important;
+				justify-content: center !important;
+				gap: clamp(16px, 2.8vw, 44px) !important;
+				margin: 24px 0 0 !important;
+				color: #b4465b !important;
+				font-family: "Alex Brush", Georgia, serif !important;
+				font-size: clamp(1.18rem, 1.6vw, 1.65rem) !important;
+			}
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script:before,
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script:after {
+				content: "" !important;
+				width: min(28vw, 340px) !important;
+				height: 1px !important;
+				background: rgba(180, 70, 91, .42) !important;
+			}
+
+			@media (max-width: 1199.98px) {
+				body.ssense-home-refined .ssense-home-secret-side,
+				body.ssense-home-refined .ssense-home-secret-note { display: none !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row > .col { flex-basis: 50% !important; max-width: 50% !important; margin-bottom: 16px !important; }
+			}
+
+			@media (max-width: 767.98px) {
+				body.ssense-home-refined .ssense-home-secret-head .container,
+				body.ssense-home-refined #services-2.ssense-home-secret-services .container { max-width: min(100% - 24px, 1660px) !important; }
+				body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { font-size: clamp(2.35rem, 11vw, 3.5rem) !important; }
+				body.ssense-home-refined .ssense-home-secret-rail { grid-template-columns: 1fr !important; gap: 8px !important; }
+				body.ssense-home-refined .ssense-home-secret-rail > span + span:before { display: none !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row > .col { flex-basis: 100% !important; max-width: 100% !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 { min-height: 0 !important; }
+			}
+
+			/* Homepage secret-place block: compact pass. */
+			body.ssense-home-refined .ssense-home-secret-head { padding: clamp(18px, 2.4vw, 36px) 0 0 !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services { padding: clamp(14px, 1.8vw, 24px) 0 clamp(22px, 2.8vw, 40px) !important; }
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id { margin-bottom: 8px !important; font-size: .68rem !important; letter-spacing: .28em !important; }
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:before,
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:after { width: 34px !important; }
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { margin-bottom: 8px !important; font-size: clamp(2.55rem, 4.3vw, 4.9rem) !important; line-height: .9 !important; }
+			body.ssense-home-refined .ssense-home-secret-head.about-1 .txt-block p { max-width: 800px !important; font-size: clamp(.92rem, 1.05vw, 1.08rem) !important; line-height: 1.36 !important; }
+
+			body.ssense-home-refined .ssense-home-secret-side { top: clamp(44px, 4.6vw, 76px) !important; font-size: .7rem !important; letter-spacing: .3em !important; line-height: 1.5 !important; }
+			body.ssense-home-refined .ssense-home-secret-note { width: clamp(120px, 9vw, 168px) !important; height: clamp(120px, 9vw, 168px) !important; font-size: clamp(1.35rem, 1.7vw, 2.1rem) !important; }
+
+			body.ssense-home-refined .ssense-home-secret-rail { gap: clamp(10px, 1.4vw, 22px) !important; max-width: 1000px !important; margin: clamp(12px, 1.7vw, 20px) auto 0 !important; }
+			body.ssense-home-refined .ssense-home-secret-rail > span { min-height: 34px !important; gap: 10px !important; font-size: .66rem !important; letter-spacing: .15em !important; }
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-lotus:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart-1:before { font-size: 1.35rem !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 { min-height: clamp(330px, 21vw, 380px) !important; padding: 8px 8px 16px !important; border-radius: 22px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo,
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { border-radius: 16px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { height: clamp(148px, 9.5vw, 168px) !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 { width: 60px !important; height: 60px !important; margin: -30px auto 9px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 span:before { font-size: 1.7rem !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt { padding: 0 clamp(8px, 1vw, 16px) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt h5.h5-lg { margin: 0 0 6px !important; font-size: clamp(1.35rem, 1.5vw, 1.75rem) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt p { max-width: 280px !important; margin: 0 auto 12px !important; font-size: clamp(.84rem, .92vw, .95rem) !important; line-height: 1.36 !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link { gap: 10px !important; font-size: .68rem !important; letter-spacing: .22em !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link span { width: 34px !important; height: 34px !important; font-size: 1rem !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script { margin: 16px 0 0 !important; gap: clamp(12px, 2vw, 30px) !important; font-size: clamp(1rem, 1.25vw, 1.28rem) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script:before,
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script:after { width: min(22vw, 260px) !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo figcaption { left: 18px !important; top: 20px !important; font-size: clamp(1.25rem, 1.5vw, 1.7rem) !important; }
+
+			@media (max-width: 1199.98px) {
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row > .col { margin-bottom: 12px !important; }
+			}
+
+			@media (max-width: 767.98px) {
+				body.ssense-home-refined .ssense-home-secret-head { padding-top: 16px !important; }
+				body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { font-size: clamp(2rem, 9vw, 2.8rem) !important; margin-bottom: 6px !important; }
+				body.ssense-home-refined .ssense-home-secret-head.about-1 .txt-block p { font-size: .88rem !important; }
+				body.ssense-home-refined .ssense-home-secret-rail { gap: 6px !important; margin-top: 10px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 { padding: 8px 8px 14px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { height: clamp(150px, 44vw, 190px) !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 { width: 54px !important; height: 54px !important; margin: -27px auto 8px !important; }
+			}
+
+			@media (max-width: 575.98px) {
+				body.ssense-home-refined .ssense-home-secret-note { display: none !important; }
+			}
+
+			/* Homepage secret-place block: proper compact pass. */
+			body.ssense-home-refined .ssense-home-secret-head { padding: clamp(4px, .8vw, 12px) 0 0 !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services { padding: clamp(4px, .7vw, 10px) 0 clamp(12px, 1.6vw, 22px) !important; }
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id { margin-bottom: 5px !important; font-size: .6rem !important; letter-spacing: .2em !important; gap: 10px !important; }
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:before,
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:after { width: 26px !important; }
+
+			body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { margin-bottom: 5px !important; font-size: clamp(1.85rem, 3vw, 3.1rem) !important; line-height: .94 !important; letter-spacing: -.05em !important; }
+			body.ssense-home-refined .ssense-home-secret-head.about-1 .txt-block p { max-width: 720px !important; font-size: clamp(.78rem, .88vw, .92rem) !important; line-height: 1.3 !important; }
+
+			body.ssense-home-refined .ssense-home-secret-side { top: clamp(30px, 3.2vw, 52px) !important; font-size: .6rem !important; letter-spacing: .24em !important; line-height: 1.4 !important; }
+			body.ssense-home-refined .ssense-home-secret-note { width: clamp(96px, 7vw, 130px) !important; height: clamp(96px, 7vw, 130px) !important; font-size: clamp(1.05rem, 1.3vw, 1.55rem) !important; }
+
+			body.ssense-home-refined .ssense-home-secret-rail { gap: clamp(8px, .9vw, 16px) !important; max-width: 900px !important; margin: clamp(8px, 1.1vw, 14px) auto 0 !important; }
+			body.ssense-home-refined .ssense-home-secret-rail > span { min-height: 26px !important; gap: 8px !important; font-size: .58rem !important; letter-spacing: .12em !important; }
+			body.ssense-home-refined .ssense-home-secret-rail > span + span:before { height: 26px !important; }
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-lotus:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart-1:before { font-size: 1.05rem !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row { margin: 0 -6px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row > .col { padding: 0 6px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 { min-height: clamp(215px, 13.5vw, 265px) !important; padding: 6px 6px 10px !important; border-radius: 16px !important; box-shadow: 0 16px 44px rgba(77, 43, 45, .1) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo,
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { border-radius: 11px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { height: clamp(88px, 5.8vw, 108px) !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 { width: 38px !important; height: 38px !important; margin: -18px auto 5px !important; box-shadow: 0 8px 20px rgba(87, 46, 48, .1) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 span:before { font-size: 1.2rem !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt { padding: 0 clamp(6px, .7vw, 10px) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt h5.h5-lg { margin: 0 0 3px !important; font-size: clamp(.95rem, 1.05vw, 1.2rem) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt p { max-width: 250px !important; margin: 0 auto 6px !important; font-size: clamp(.7rem, .76vw, .8rem) !important; line-height: 1.26 !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link { gap: 7px !important; font-size: .58rem !important; letter-spacing: .15em !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link span { width: 26px !important; height: 26px !important; font-size: .9rem !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script { margin: 10px 0 0 !important; gap: clamp(10px, 1.4vw, 22px) !important; font-size: clamp(.9rem, 1.05vw, 1.08rem) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script:before,
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script:after { width: min(16vw, 200px) !important; }
+
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo figcaption { left: 12px !important; top: 12px !important; font-size: clamp(1rem, 1.2vw, 1.35rem) !important; }
+
+			@media (max-width: 1199.98px) {
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row > .col { margin-bottom: 8px !important; }
+			}
+
+			@media (max-width: 767.98px) {
+				body.ssense-home-refined .ssense-home-secret-head { padding-top: 6px !important; }
+				body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { font-size: clamp(1.7rem, 7.5vw, 2.3rem) !important; margin-bottom: 4px !important; }
+				body.ssense-home-refined .ssense-home-secret-head.about-1 .txt-block p { font-size: .8rem !important; }
+				body.ssense-home-refined .ssense-home-secret-rail { gap: 4px !important; margin-top: 6px !important; }
+				body.ssense-home-refined .ssense-home-secret-rail > span { min-height: 22px !important; font-size: .55rem !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { height: clamp(110px, 38vw, 150px) !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 { width: 38px !important; height: 38px !important; margin: -18px auto 5px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt p { font-size: .74rem !important; }
+			}
+
+			/* Final spacious pass: restore the larger editorial scale requested for this section. */
+			body.ssense-home-refined .ssense-home-secret-head { padding: clamp(58px, 6vw, 96px) 0 0 !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services { padding: clamp(34px, 3.8vw, 62px) 0 clamp(52px, 5vw, 86px) !important; }
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id { margin-bottom: 18px !important; font-size: .82rem !important; letter-spacing: .38em !important; }
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:before,
+			body.ssense-home-refined .ssense-home-secret-head .txt-block .section-id:after { width: 54px !important; }
+			body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { margin-bottom: 18px !important; font-size: clamp(3.2rem, 5vw, 6rem) !important; line-height: .92 !important; }
+			body.ssense-home-refined .ssense-home-secret-head.about-1 .txt-block p { max-width: 940px !important; font-size: clamp(1rem, 1.2vw, 1.22rem) !important; line-height: 1.55 !important; }
+			body.ssense-home-refined .ssense-home-secret-rail { gap: clamp(16px, 2vw, 34px) !important; max-width: 1120px !important; margin-top: clamp(28px, 3vw, 46px) !important; }
+			body.ssense-home-refined .ssense-home-secret-rail > span { min-height: 48px !important; gap: 14px !important; font-size: .74rem !important; }
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-lotus:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart:before,
+			body.ssense-home-refined .ssense-home-secret-rail .flaticon-heart-1:before { font-size: 1.7rem !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 { min-height: clamp(390px, 27vw, 500px) !important; padding: 12px 12px 24px !important; border-radius: 28px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { height: clamp(180px, 12vw, 230px) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 { width: 72px !important; height: 72px !important; margin: -36px auto 12px !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 span:before { font-size: 2rem !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt h5.h5-lg { margin-bottom: 10px !important; font-size: clamp(1.5rem, 1.8vw, 2rem) !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt p { margin-bottom: 18px !important; font-size: clamp(.86rem, .95vw, 1rem) !important; line-height: 1.45 !important; }
+			body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link span { width: 38px !important; height: 38px !important; }
+			@media (max-width: 767.98px) {
+				body.ssense-home-refined .ssense-home-secret-head { padding: 48px 0 0 !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services { padding: 28px 0 48px !important; }
+				body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { font-size: clamp(2.35rem, 10vw, 3.5rem) !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 { min-height: 0 !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { height: clamp(160px, 42vw, 220px) !important; }
+			}
+		</style>
+
+		<style>
+			/* Homepage luxury introduction: late reference-matched layout. */
+			body.ssense-home-refined .ssense-luxury-hero { position: relative !important; overflow: hidden !important; padding: clamp(42px, 5vw, 74px) 0 !important; background: radial-gradient(circle at 78% 26%, rgba(190, 66, 96, .11), transparent 28%), linear-gradient(135deg, #fffdfb 0%, #fff8f6 100%) !important; }
+			body.ssense-home-refined .ssense-luxury-hero .container { max-width: min(100% - 50px, 1700px) !important; }
+			body.ssense-home-refined .ssense-luxury-hero-grid { display: grid !important; grid-template-columns: minmax(0, .93fr) minmax(0, 1.07fr) !important; gap: clamp(30px, 4vw, 72px) !important; align-items: center !important; }
+			body.ssense-home-refined .ssense-luxury-copy { position: relative !important; z-index: 2 !important; padding: 0 !important; }
+			body.ssense-home-refined .ssense-luxury-eyebrow { display: flex !important; align-items: center !important; gap: 22px !important; margin: 0 0 16px !important; color: #b73e5a !important; font-size: .76rem !important; font-weight: 800 !important; letter-spacing: .42em !important; text-transform: uppercase !important; }
+			body.ssense-home-refined .ssense-luxury-eyebrow:before, body.ssense-home-refined .ssense-luxury-eyebrow:after { content: "" !important; width: 48px !important; height: 1px !important; background: rgba(183, 62, 90, .65) !important; }
+			body.ssense-home-refined .ssense-luxury-copy h2 { max-width: 790px !important; margin: 0 !important; color: #101015 !important; font-family: Georgia, serif !important; font-size: clamp(3.4rem, 5.2vw, 6.3rem) !important; font-weight: 500 !important; letter-spacing: -.065em !important; line-height: .88 !important; }
+			body.ssense-home-refined .ssense-luxury-copy h2 em { color: #b73e5a !important; font-style: italic !important; }
+			body.ssense-home-refined .ssense-luxury-intro { max-width: 630px !important; margin: clamp(18px, 2vw, 28px) 0 0 !important; color: #637083 !important; font-size: clamp(.93rem, 1.08vw, 1.12rem) !important; line-height: 1.58 !important; }
+			body.ssense-home-refined .ssense-luxury-cta { display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 38px !important; min-width: 286px !important; margin-top: 20px !important; padding: 15px 24px !important; border-radius: 99px !important; background: linear-gradient(120deg, #aa304d, #c64f67) !important; color: #fff !important; font-size: .72rem !important; font-weight: 800 !important; letter-spacing: .16em !important; text-transform: uppercase !important; }
+			body.ssense-home-refined .ssense-luxury-features { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)) !important; margin-top: clamp(24px, 3vw, 42px) !important; }
+			body.ssense-home-refined .ssense-luxury-feature { min-height: 126px !important; padding: 0 clamp(10px, 1.1vw, 18px) !important; border-left: 1px solid rgba(86, 98, 118, .45) !important; }
+			body.ssense-home-refined .ssense-luxury-feature:first-child { padding-left: 0 !important; border-left: 0 !important; }
+			body.ssense-home-refined .ssense-luxury-feature > span { display: grid !important; place-items: center !important; width: 54px !important; height: 54px !important; margin-bottom: 12px !important; border-radius: 50% !important; background: #fbe9ea !important; color: #b73e5a !important; }
+			body.ssense-home-refined .ssense-luxury-feature > span:before { font-size: 1.5rem !important; }
+			body.ssense-home-refined .ssense-luxury-feature h3 { margin: 0 0 7px !important; color: #566276 !important; font-size: .61rem !important; font-weight: 800 !important; letter-spacing: .17em !important; line-height: 1.65 !important; text-transform: uppercase !important; }
+			body.ssense-home-refined .ssense-luxury-feature p { margin: 0 !important; color: #6f7a8a !important; font-size: .76rem !important; line-height: 1.34 !important; }
+			body.ssense-home-refined .ssense-luxury-visual { position: relative !important; min-height: clamp(500px, 38vw, 650px) !important; }
+			body.ssense-home-refined .ssense-luxury-visual:before { content: "" !important; position: absolute !important; inset: 4% 6% 2% 7% !important; border: 1px solid rgba(183, 62, 90, .26) !important; border-radius: 46% 22% 45% 30% !important; background: rgba(250, 222, 225, .48) !important; transform: rotate(6deg) !important; }
+			body.ssense-home-refined .ssense-luxury-photo { position: absolute !important; top: 0 !important; right: clamp(72px, 8vw, 142px) !important; bottom: 4px !important; width: min(78%, 660px) !important; overflow: hidden !important; border: 5px solid #fff !important; border-radius: 58px 58px 112px 58px !important; box-shadow: 0 26px 60px rgba(115, 58, 63, .2) !important; }
+			body.ssense-home-refined .ssense-luxury-photo img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important; }
+			body.ssense-home-refined .ssense-luxury-script { position: absolute !important; top: 28px !important; right: 0 !important; z-index: 2 !important; margin: 0 !important; color: #b73e5a !important; font-family: "Alex Brush", Georgia, serif !important; font-size: clamp(1.9rem, 2.5vw, 3rem) !important; line-height: .84 !important; text-align: center !important; transform: rotate(-6deg) !important; }
+			body.ssense-home-refined .ssense-luxury-badge { right: clamp(0px, 1.2vw, 22px) !important; top: 47% !important; width: clamp(132px, 10vw, 180px) !important; height: clamp(132px, 10vw, 180px) !important; background: rgba(255, 240, 243, .96) !important; }
+			body.ssense-home-refined .ssense-luxury-location { right: 0 !important; bottom: 28px !important; grid-template-columns: 48px 1fr 40px !important; gap: 12px !important; min-width: 300px !important; padding: 10px 12px !important; border-radius: 18px !important; }
+			body.ssense-home-refined .ssense-luxury-pin { width: 44px !important; height: 44px !important; }
+			body.ssense-home-refined .ssense-luxury-location b { width: 38px !important; height: 38px !important; }
+			@media (max-width: 991.98px) { body.ssense-home-refined .ssense-luxury-hero-grid { grid-template-columns: 1fr !important; } body.ssense-home-refined .ssense-luxury-copy { max-width: 760px !important; margin: 0 auto !important; } body.ssense-home-refined .ssense-luxury-visual { width: min(100%, 760px) !important; margin: 18px auto 0 !important; } }
+			@media (max-width: 575.98px) { body.ssense-home-refined .ssense-luxury-hero { padding: 28px 0 !important; } body.ssense-home-refined .ssense-luxury-hero .container { max-width: min(100% - 24px, 1700px) !important; } body.ssense-home-refined .ssense-luxury-copy h2 { font-size: clamp(2.5rem, 13vw, 3.7rem) !important; } body.ssense-home-refined .ssense-luxury-cta { width: 100% !important; min-width: 0 !important; } body.ssense-home-refined .ssense-luxury-features { grid-template-columns: 1fr 1fr !important; gap: 18px 0 !important; } body.ssense-home-refined .ssense-luxury-feature:nth-child(3) { padding-left: 0 !important; border-left: 0 !important; } body.ssense-home-refined .ssense-luxury-visual { min-height: 430px !important; } body.ssense-home-refined .ssense-luxury-photo { right: 24px !important; width: 88% !important; border-radius: 34px 34px 74px 34px !important; } body.ssense-home-refined .ssense-luxury-script { display: none !important; } body.ssense-home-refined .ssense-luxury-badge { right: 0 !important; width: 112px !important; height: 112px !important; } body.ssense-home-refined .ssense-luxury-location { right: 0 !important; bottom: 12px !important; min-width: 0 !important; width: min(100%, 280px) !important; } }
+
+			/* Final mobile home compactness pass. Desktop rules above remain unchanged. */
+			@media (max-width: 767.98px) {
+				body.ssense-home-refined #services-2.ssense-home-secret-services { padding: 16px 0 24px !important; }
+				body.ssense-home-refined .ssense-home-secret-head { padding: 24px 0 0 !important; }
+				body.ssense-home-refined .ssense-home-secret-head .txt-block h2.h2-title { font-size: clamp(1.9rem, 8vw, 2.55rem) !important; line-height: .95 !important; }
+				body.ssense-home-refined .ssense-home-secret-head.about-1 .txt-block p { font-size: .78rem !important; line-height: 1.35 !important; }
+				body.ssense-home-refined .ssense-home-secret-rail { margin-top: 10px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; margin: 0 !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2-wrapper > .row > .col { width: 100% !important; max-width: none !important; flex: none !important; margin: 0 !important; padding: 0 !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-2 { min-height: 0 !important; height: auto !important; padding: 5px 5px 8px !important; border-radius: 14px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo,
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { border-radius: 10px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-photo img { height: clamp(92px, 28vw, 116px) !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 { width: 34px !important; height: 34px !important; margin: -16px auto 4px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-ico.ico-65 span:before { font-size: 1.05rem !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt { padding: 0 3px !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt h5.h5-lg { margin: 0 0 3px !important; font-size: .88rem !important; line-height: 1.08 !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .sbox-txt p { margin: 0 auto 5px !important; font-size: .66rem !important; line-height: 1.2 !important; display: -webkit-box !important; -webkit-line-clamp: 2 !important; -webkit-box-orient: vertical !important; overflow: hidden !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link { gap: 4px !important; font-size: .48rem !important; letter-spacing: .1em !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-service-link span { width: 22px !important; height: 22px !important; font-size: .72rem !important; }
+				body.ssense-home-refined #services-2.ssense-home-secret-services .ssense-home-secret-script { margin: 9px 0 0 !important; font-size: .82rem !important; gap: 9px !important; }
+				body.ssense-home-refined .ssense-luxury-hero { padding: 22px 0 !important; }
+				body.ssense-home-refined .ssense-luxury-copy h2 { font-size: clamp(2.15rem, 11vw, 3rem) !important; }
+				body.ssense-home-refined .ssense-luxury-intro { margin-top: 12px !important; font-size: .84rem !important; line-height: 1.42 !important; }
+				body.ssense-home-refined .ssense-luxury-cta { margin-top: 14px !important; padding: 12px 18px !important; }
+				body.ssense-home-refined .ssense-luxury-features { margin-top: 18px !important; gap: 12px 0 !important; }
+				body.ssense-home-refined .ssense-luxury-feature { min-height: 94px !important; padding: 0 8px !important; }
+				body.ssense-home-refined .ssense-luxury-feature > span { width: 40px !important; height: 40px !important; margin-bottom: 7px !important; }
+				body.ssense-home-refined .ssense-luxury-feature > span:before { font-size: 1.1rem !important; }
+				body.ssense-home-refined .ssense-luxury-feature p { font-size: .68rem !important; }
+				body.ssense-home-refined .ssense-luxury-visual { min-height: 300px !important; }
+				body.ssense-home-refined .ssense-luxury-photo { right: 10px !important; width: 92% !important; border-radius: 24px 24px 48px 24px !important; }
+				body.ssense-home-refined .ssense-luxury-visual { min-height: 248px !important; height: 248px !important; }
+				body.ssense-home-refined .ssense-luxury-photo { top: 0 !important; right: auto !important; bottom: auto !important; left: 0 !important; width: 100% !important; height: 230px !important; border-radius: 22px !important; }
+				body.ssense-home-refined .ssense-luxury-badge { width: 86px !important; height: 86px !important; }
+				body.ssense-home-refined .ssense-luxury-location { right: 4px !important; bottom: 4px !important; width: min(100%, 230px) !important; padding: 7px 8px !important; grid-template-columns: 32px 1fr 28px !important; gap: 7px !important; }
+				body.ssense-home-refined .ssense-testimonials-heading h2 { font-size: 2rem !important; }
+				body.ssense-home-refined .ssense-testimonial-grid { gap: 10px !important; }
+				body.ssense-home-refined .ssense-testimonial-grid > * { flex-basis: 82% !important; }
+				body.ssense-home-refined .ssense-testimonial-card { padding: 14px !important; border-radius: 14px !important; }
+				body.ssense-home-refined .ssense-testimonial-card p { font-size: .82rem !important; line-height: 1.42 !important; }
+				body.ssense-home-refined .ssense-blog-replacement .row > * { flex-basis: 82% !important; }
+				body.ssense-home-refined .ssense-blog-replacement .ssense-blog-card { padding: 12px !important; }
+				body.ssense-home-refined #gallery-3 .row > * { flex-basis: 72% !important; }
 			}
 		</style>
 
@@ -529,44 +1031,31 @@
 
 			<!-- TEXT CONTENT
 			============================================= -->
-			<section class="pt-8 ct-01 content-section division">
+			<section class="ssense-luxury-hero content-section division" aria-labelledby="luxury-hero-title">
 				<div class="container">
-					<div class="row d-flex align-items-center">
+					<div class="ssense-luxury-hero-grid">
+						<div class="ssense-luxury-copy wow fadeInRight">
+							<p class="ssense-luxury-eyebrow">Mind, Body and Soul</p>
+							<h2 id="luxury-hero-title">Luxury salon where you will feel <em>unique.</em></h2>
+							<p class="ssense-luxury-intro">Ready to transform your look? Visit S.Sense Salon in Thakur Village today and discover why we are trusted as one of the best luxury salons in Mumbai. Book your appointment now and let us bring out the best version of you.</p>
+							<a href="gallery.html" class="ssense-luxury-cta">Discover More <span aria-hidden="true">&rarr;</span></a>
 
-
-						<!-- TEXT BLOCK -->
-						<div class="col-lg-6 order-last order-lg-2">
-							<div class="txt-block left-column wow fadeInRight">
-
-								<!-- Section ID -->
-								<span class="section-id">Mind, Body and Soul</span>
-
-								<!-- Title -->
-								<h2 class="h2-md">Luxury salon where you will feel unique</h2>
-
-								<!-- Text -->
-								<p class="mb-0">Ready to transform your look? Visit S.Sense Salon in Thakur Village today and discover why we are trusted as one of the best luxury salons in Mumbai. Book your appointment now and let us bring out the best version of you.</p>
-
-
-								<!-- Button -->
-								<div class="txt-block-btn">
-									<a href="#gallery-4" class="btn btn--tra-black hover--black">Discover More</a>
-								</div>
-
-							</div>
-						</div>	<!-- END TEXT BLOCK -->
-
-
-						<!-- IMAGE BLOCK -->
-						<div class="col-lg-6 order-first order-lg-2">
-							<div class="img-block right-column wow fadeInLeft">
-								<img class="img-fluid" src="images/woman_08.jpg" alt="Beauty treatment at S.Sense Salon Mumbai" loading="lazy">
+							<div class="ssense-luxury-features" aria-label="S.Sense Salon promises">
+								<div class="ssense-luxury-feature"><span class="flaticon-lotus" aria-hidden="true"></span><h3>Premium<br>Products</h3><p>Only the best<br>for your beauty</p></div>
+								<div class="ssense-luxury-feature"><span class="flaticon-star" aria-hidden="true"></span><h3>Expert<br>Stylists</h3><p>Trained to bring<br>out your best</p></div>
+								<div class="ssense-luxury-feature"><span class="flaticon-heart" aria-hidden="true"></span><h3>Personalised<br>Care</h3><p>Because you<br>are unique</p></div>
+								<div class="ssense-luxury-feature"><span class="flaticon-star-1" aria-hidden="true"></span><h3>Luxury<br>Experience</h3><p>Relax, refresh,<br>rejuvenate</p></div>
 							</div>
 						</div>
 
-
-					</div>    <!-- End row -->
-				</div>	   <!-- End container -->
+						<div class="ssense-luxury-visual wow fadeInLeft">
+							<div class="ssense-luxury-photo"><img src="images/woman_08.jpg" alt="Woman with manicured nails and red lipstick at S.Sense Salon" loading="lazy"></div>
+							<div class="ssense-luxury-badge"><span class="flaticon-star-1" aria-hidden="true"></span><span>Beauty<br>is always<br>a good idea</span></div>
+							<p class="ssense-luxury-script" aria-hidden="true">Look<br>Good<br>Feel<br>Amazing</p>
+							<a href="location.html" class="ssense-luxury-location"><span class="ssense-luxury-pin" aria-hidden="true">&#9679;</span><span><strong>Thakur Village</strong><small>Mumbai</small></span><b aria-hidden="true">&rarr;</b></a>
+						</div>
+					</div>
+				</div>
 			</section>	<!-- END TEXT CONTENT -->
 
 
@@ -574,8 +1063,10 @@
 
 			<!-- ABOUT-1
 			============================================= -->
-			<section class="pt-8 about-1 about-section">
+			<section class="pt-8 about-1 about-section ssense-home-secret-head">
 				<div class="container">
+					<span class="ssense-home-secret-side" aria-hidden="true">Beauty<br>Care<br>Relax<br>Repeat</span>
+					<span class="ssense-home-secret-note" aria-hidden="true">Self<br>Care<br>Looks Good<br>On You<br><b>&hearts;</b></span>
 					<div class="row justify-content-center">
 
 
@@ -587,7 +1078,7 @@
 								<span class="section-id">Indulge Yourself</span>
 
 								<!-- Title -->
-								<h2 class="h2-title">Your Secret Place of Beauty</h2>
+								<h2 class="h2-title">Your Secret Place of <em>Beauty</em></h2>
 
 								<!-- Text -->
 								<p class="mb-0">Welcome to S. Sense Salon & Spa – a calm and creative space where beauty is celebrated. Every treatment is designed with care, giving you moments of relaxation and a look you’ll love.
@@ -599,6 +1090,13 @@
 
 
 					</div>    <!-- End row -->
+
+					<div class="ssense-home-secret-rail" aria-label="S.Sense service qualities">
+						<span><span class="flaticon-lotus" aria-hidden="true"></span>Expert Care</span>
+						<span><span class="flaticon-heart" aria-hidden="true"></span>Premium Products</span>
+						<span><span class="flaticon-lotus" aria-hidden="true"></span>A Relaxing Experience</span>
+						<span><span class="flaticon-heart-1" aria-hidden="true"></span>A More Confident You</span>
+					</div>
 				</div>	   <!-- End container -->
 			</section>	<!-- END ABOUT-1 -->
 
@@ -607,7 +1105,7 @@
 
 			<!-- SERVICES-2
 			============================================= -->
-			<section id="services-2" class="pt-6 services-section division">
+			<section id="services-2" class="pt-6 services-section division ssense-home-secret-services">
 				<div class="container">
 
 
@@ -620,6 +1118,11 @@
 							<div class="col">
 								<div class="sbox-2 sb-1 wow fadeInUp">
 
+									<figure class="ssense-home-service-photo">
+										<img src="images/beauty_03.webp" width="520" height="300" alt="Facial treatment at S.Sense Salon" loading="lazy">
+										<figcaption>Refresh<br>Rejuvenate<br>Glow</figcaption>
+									</figure>
+
 									<!-- Icon -->
 									<div class="sbox-ico ico-65">
 										<span class="flaticon-facial-treatment"></span>
@@ -630,6 +1133,7 @@
 										<h5 class="h5-lg">Facials</h5>
 										<p>Our facials are tailored to your skin’s needs, helping you feel refreshed and radiant. From deep cleansing to nourishing treatments, we focus on healthy, glowing skin.
 </p>
+										<a href="facials.html" class="ssense-home-service-link">Learn More <span aria-hidden="true">&rarr;</span></a>
 									</div>
 
 								</div>
@@ -639,6 +1143,10 @@
 							<!-- SERVICES BOX #2 -->
 							<div class="col">
 								<div class="sbox-2 sb-2 wow fadeInUp">
+
+									<figure class="ssense-home-service-photo">
+										<img src="images/beauty_02.webp" width="520" height="300" alt="Waxing care at S.Sense Salon" loading="lazy">
+									</figure>
 
 									<!-- Icon -->
 									<div class="sbox-ico ico-65">
@@ -650,6 +1158,7 @@
 										<h5 class="h5-lg">Waxing</h5>
 										<p>Enjoy smooth, silky skin with our gentle waxing services. We use quality products and careful techniques to make sure the process is quick, clean, and comfortable.
                                          </p>
+										<a href="waxing.html" class="ssense-home-service-link">Learn More <span aria-hidden="true">&rarr;</span></a>
 									</div>
 
 								</div>
@@ -660,6 +1169,10 @@
 							<div class="col">
 								<div class="sbox-2 sb-3 wow fadeInUp">
 
+									<figure class="ssense-home-service-photo">
+										<img src="images/gallery/woman_07.jpg" width="520" height="300" alt="Makeup service at S.Sense Salon" loading="lazy">
+									</figure>
+
 									<!-- Icon -->
 									<div class="sbox-ico ico-65">
 										<span class="flaticon-cosmetics"></span>
@@ -669,6 +1182,7 @@
 									<div class="sbox-txt">
 										<h5 class="h5-lg">Make-Up</h5>
 										<p>Whether it’s a light everyday look or a glamorous style for a special event, our makeup artists highlight your best features and create a look that lasts.</p>
+										<a href="beauty-salon.html" class="ssense-home-service-link">Learn More <span aria-hidden="true">&rarr;</span></a>
 									</div>
 
 								</div>
@@ -679,6 +1193,10 @@
 							<div class="col">
 								<div class="sbox-2 sb-4 wow fadeInUp">
 
+									<figure class="ssense-home-service-photo">
+										<img src="images/gallery/nail_06.webp" width="520" height="300" alt="Nail care at S.Sense Salon" loading="lazy">
+									</figure>
+
 									<!-- Icon -->
 									<div class="sbox-ico ico-65">
 										<span class="flaticon-nail-polish"></span>
@@ -688,6 +1206,7 @@
 									<div class="sbox-txt">
 										<h5 class="h5-lg">Nails</h5>
 										<p>Perfectly polished nails complete your style. From simple manicures to creative nail art, our team makes sure your hands and feet look elegant and well cared for.</p>
+										<a href="nail-services.html" class="ssense-home-service-link">Learn More <span aria-hidden="true">&rarr;</span></a>
 
 									</div>
 
@@ -696,6 +1215,7 @@
 
 
 						</div>	 <!-- End row -->
+						<p class="ssense-home-secret-script" aria-hidden="true">More than a Salon&nbsp;&nbsp; A Better You&nbsp;&nbsp; <span>&hearts;</span></p>
 					</div>	 <!-- END SERVICES-2 WRAPPER -->
 
 
@@ -728,7 +1248,7 @@
 								<span class="section-id">Why S.Sense</span>
 
 								<!-- Title -->
-								<h2 class="h2-md">Why Choose S.Sense Salon & Spa</h2>
+								<h2 class="h2-md">Why Choose <em>S.Sense</em> Salon &amp; Spa</h2>
 
 								<!-- ACCORDION WRAPPER -->
 								<div class="accordion accordion-wrapper mt-5">
@@ -736,10 +1256,10 @@
 
 
 										<!-- ACCORDION ITEM #1 -->
-										<li class="accordion-item is-active">
+										<li class="accordion-item">
 
 											<!-- Title -->
-											<div class="accordion-thumb" role="button" tabindex="0" aria-expanded="true" aria-controls="ssense-acc-panel-1"><p>Experienced Salon Professionals</p></div>
+											<div class="accordion-thumb" role="button" tabindex="0" aria-expanded="false" aria-controls="ssense-acc-panel-1"><p>Experienced Salon Professionals</p></div>
 
 											<!-- Text -->
 											<div class="accordion-panel" id="ssense-acc-panel-1">
@@ -816,6 +1336,8 @@
 									</ul>
 								</div>	<!-- END ACCORDION WRAPPER -->
 
+								<a class="ssense-why-cta" href="booking.html">Book an Appointment <span aria-hidden="true">&rarr;</span></a>
+
 							</div>
 						</div>	  <!-- END TEXT BLOCK -->
 
@@ -827,9 +1349,9 @@
 
 
 
-			<!-- WORKING HOURS
+						<!-- WORKING HOURS
 			============================================= -->
-			<section class="py-8 ct-table content-section division">
+			<section class="py-8 ct-table content-section division ssense-hours-section">
 				<div class="container">
 					<div class="row d-flex align-items-center">
 
@@ -848,6 +1370,13 @@
 								<p class="mb-0">We are here to welcome you every day of the week. Our salon hours are designed to fit into your busy lifestyle,
 								</p>
 
+								<div class="ssense-hours-features" aria-label="Working hours benefits">
+									<span><i class="flaticon-calendar"></i><b>Flexible<br>Appointments</b><small>Book at your convenience</small></span>
+									<span><i class="flaticon-clock"></i><b>On-Time<br>Service</b><small>Because your time matters</small></span>
+									<span><i class="flaticon-heart"></i><b>Always<br>Here For You</b><small>Your beauty, our priority</small></span>
+									<span><i class="flaticon-leaf"></i><b>Relax &amp;<br>Rejuvenate</b><small>In a calm and welcoming space</small></span>
+								</div>
+
 							</div>
 						</div>
 
@@ -857,12 +1386,13 @@
 							<div class="txt-table right-column wow fadeInLeft">
 								<table class="table">
 									<tbody>
-									    <tr class="last-tr">
+										<tr class="last-tr">
 										<td>Monday – Sunday</td>
 										<td class="text-start">11:00 AM – 9:00 PM</td>
-									    </tr>
-									  </tbody>
+										</tr>
+									</tbody>
 								</table>
+								<p class="ssense-hours-script" aria-hidden="true">Walk-ins<br>Welcome <span>&hearts;</span></p>
 							</div>
 						</div>	<!-- END TABLE -->
 
@@ -883,7 +1413,7 @@
 
 			<!-- PRICING-1
 			============================================= -->
-			<div class="pt-8 pricing-1 pricing-section division">
+			<div class="pt-8 pricing-1 pricing-section division ssense-menu-section">
 				<div class="container">
 
 
@@ -896,7 +1426,8 @@
 								<span class="section-id">Focus On Beauty</span>
 
 								<!-- Title -->
-								<h2 class="h2-title">Our Service Menu</h2>
+										<h2 class="h2-title">Our <em>Service</em> Menu</h2>
+										<p class="ssense-menu-subtitle">Thoughtfully curated services to help you look good, feel great and<br> be your most confident self.</p>
 
 							</div>
 						</div>
@@ -1138,14 +1669,7 @@
 					</div>	<!-- END PRICING-1 WRAPPER -->
 
 
-					<!-- BUTTON -->
-					<div class="row">
-						<div class="col">
-							<div class="more-btn mt-5">
-								<a href="pricing-2.html" class="btn btn--tra-black hover--black">View All Prices</a>
-							</div>
-						</div>
-					</div>
+					<div class="ssense-menu-footer"><span>Beauty For<br>Every You</span><span class="ssense-menu-footer-actions"><a href="pricing-2.html" class="ssense-menu-view-more">View More <b>&rarr;</b></a><a href="booking.html">Book An Appointment <b>&rarr;</b></a></span><span>Flexible Timings &nbsp; | &nbsp; Premium Products</span></div>
 
 
 				</div>  <!-- End container -->
@@ -1156,9 +1680,9 @@
 
 			<!-- TEXT CONTENT
 			============================================= -->
-			<section class="pt-8 ct-07 ws-wrapper content-section">
+			<section class="pt-8 ct-07 ws-wrapper content-section ssense-home-peace-section">
 				<div class="container">
-					<div class="ct-07-wrapper bg--white block-shadow">
+					<div class="ct-07-wrapper bg--white block-shadow ssense-home-peace-panel">
 						<div class="row d-flex align-items-center">
 
 
@@ -1170,7 +1694,7 @@
 									<span class="section-id">Come, Relax and Enjoy</span>
 
 									<!-- Title -->
-									<h2 class="h2-md">Place where you will feel peaceful</h2>
+									<h2 class="h2-md">Place where you will feel <em>peaceful.</em></h2>
 
 									<!-- Text -->
 									<p class="mb-0">Unwind in a peaceful atmosphere where beauty meets comfort. Every visit is a chance to relax, refresh, and feel like the best version of yourself.
@@ -1179,8 +1703,16 @@
 
 									<!-- Button -->
 									<div class="txt-block-btn">
-										<a href="booking.html" class="btn btn--black hover--tra-black">Book an Appointment</a>
+										<a href="booking.html" class="btn btn--black hover--tra-black">Book an Appointment <span aria-hidden="true">&rarr;</span></a>
 									</div>
+
+									<div class="ssense-home-peace-points" aria-label="Salon visit highlights">
+										<span><i class="flaticon-lotus" aria-hidden="true"></i>Relaxing<br>Ambience</span>
+										<span><i class="flaticon-cream" aria-hidden="true"></i>Premium<br>Products</span>
+										<span><i class="flaticon-heart" aria-hidden="true"></i>You, A<br>Happier You</span>
+									</div>
+
+									<p class="ssense-home-peace-script" aria-hidden="true">Beauty<br>Feels Better Here <span>&hearts;</span></p>
 
 								</div>
 							</div>	<!-- END TEXT BLOCK -->
@@ -1190,6 +1722,8 @@
 							<div class="col-lg-6 order-first order-lg-2">
 								<div class="img-block right-column">
 									<img class="img-fluid" src="images/woman_05.jpg" alt="content-image">
+									<span class="ssense-home-peace-side" aria-hidden="true">Good<br>Skin<br>Good<br>Mood<br>Always</span>
+									<span class="ssense-home-peace-badge" aria-hidden="true">Self care<br>looks good<br>on you</span>
 								</div>
 							</div>
 
@@ -1502,7 +2036,27 @@
 
 			<!-- TESTIMONIALS-2
 			============================================= -->
-			<div id="reviews-2" class="pt-8 reviews-section">
+			<!-- Redesigned editorial testimonials -->
+			<section id="ssense-home-testimonials" class="ssense-home-testimonials">
+				<div class="ssense-testimonial-deco ssense-testimonial-deco-left">Beauty<br>Looks<br>Good<br>On You <span>♡</span></div>
+				<div class="container">
+					<div class="ssense-testimonials-heading">
+						<span class="section-id">Testimonials</span>
+						<h2>Comments &amp; <em>Reviews</em></h2>
+						<p>Real stories. Real transformations. Real people.<br>Here’s what our valued clients have to say about their S.Sense experience.</p>
+					</div>
+					<div class="ssense-testimonial-grid">
+						<article class="ssense-testimonial-card"><div class="ssense-quote-mark">“</div><div class="ssense-stars">★★★★★</div><p>I go looking for Augustin only. The professional dude who knows how to do his job delivering best service.</p><div class="ssense-testimonial-author"><span class="ssense-avatar ssense-avatar-1">N</span><div><strong>NIPUN A BHUYAN</strong><small>3 weeks ago</small></div><b>♥</b></div></article>
+						<article class="ssense-testimonial-card"><div class="ssense-quote-mark">“</div><div class="ssense-stars">★★★★☆</div><p>Amazing ambience, professional staff and great service. Felt so relaxed and pampered. Highly recommended!</p><div class="ssense-testimonial-author"><span class="ssense-avatar ssense-avatar-2">R</span><div><strong>Rajshri Amin</strong><small>9 weeks ago</small></div><b>♥</b></div></article>
+						<article class="ssense-testimonial-card"><div class="ssense-quote-mark">“</div><div class="ssense-stars">★★★★☆</div><p>S.Sense gave me an amazing experience with their hair botox treatment. Amita was helpful in suggesting the right treatment for my hair.</p><div class="ssense-testimonial-author"><span class="ssense-avatar ssense-avatar-3">S</span><div><strong>Snehal Sawant</strong><small>1 month ago</small></div><b>♥</b></div></article>
+					</div>
+					<div class="ssense-testimonial-dots"><span></span><i></i><span></span></div>
+					<a class="ssense-testimonial-cta" href="reviews.html">READ MORE REVIEWS <b>→</b></a>
+					<div class="ssense-testimonial-stats"><span>♧ <b>1000+</b> Happy Clients</span><span>☆ <b>4.8/5</b> Average Rating</span><span>♡ <b>Trusted</b> by the Community</span><span>♢ <b>Beauty.</b> Wellness. You.</span></div>
+				</div>
+			</section>
+
+			<div id="reviews-2" class="pt-8 reviews-section ssense-reviews-legacy">
 				<div class="container">
 
 
@@ -1800,7 +2354,7 @@
 
 			<!-- TEXT CONTENT
 			============================================= -->
-			<section class="pt-8 ct-05 content-section">
+			<section class="pt-8 ct-05 content-section ssense-best-section">
 				<div class="container white--shape">
 					<div class="row d-flex align-items-center">
 
@@ -1813,16 +2367,18 @@
 								<span class="section-id">Beauty, Your Way</span>
 
 								<!-- Title -->
-								<h2 class="h2-md">Feel Your Best at S.Sense Salon &amp; Spa</h2>
+								<h2 class="h2-md">Feel Your Best at <em>S.Sense</em> Salon &amp; Spa</h2>
 
 								<!-- Text -->
 								<p class="mb-0">From precision haircuts and vibrant colour to rejuvenating facials and meticulous nail care, every service is tailored around you.</p>
 
 								<p class="mb-0">Our certified stylists and therapists take time to understand your look and lifestyle, guiding you with personalised advice and premium products.</p>
 
+								<div class="ssense-best-features"><span><i class="flaticon-scissors"></i><b>Expert<br>Stylists</b></span><span><i class="flaticon-lotus"></i><b>Premium<br>Products</b></span><span><i class="flaticon-user"></i><b>Personalised<br>Care</b></span><span><i class="flaticon-diamond"></i><b>A Relaxing<br>Experience</b></span></div>
+
 								<!-- Button -->
 								<div class="txt-block-btn">
-									<a href="services.html" class="btn btn--tra-black hover--black">Explore Services</a>
+									<a href="services.html" class="btn btn--tra-black hover--black ssense-best-cta">Explore Services <span>&rarr;</span></a>
 								</div>
 
 							</div>
@@ -1846,7 +2402,7 @@
 
 			<!-- TEXT CONTENT
 			============================================= -->
-			<section class="pt-8 ct-09 content-section division">
+			<section class="pt-8 ct-09 content-section division ssense-locations-section">
 				<div class="container text-center">
 
 
@@ -1859,7 +2415,8 @@
 								<span class="section-id">Our Locations</span>
 
 								<!-- Title -->
-								<h2 class="h2-title">Welcome to S.Sense Salon & Spa</h2>
+								<h2 class="h2-title">Welcome to S.Sense<br><em>Salon &amp; Spa</em></h2>
+								<p class="ssense-locations-subtitle">Two beautiful spaces. The same exceptional experience.<br>Visit us at your nearest location.</p>
 
 							</div>
 						</div>
@@ -1959,7 +2516,7 @@
 
 			<!-- BLOG-1
 			============================================= -->
-			<section id="blog-1" class="pt-8 blog-section division">
+			<section id="blog-1" class="pt-8 blog-section division ssense-blog-replacement">
 				<div class="container">
 
 
@@ -2187,8 +2744,6 @@
 								</div>
 							</div>
 						</div>
-
-
 						<!-- IMAGE #2 -->
 						<div class="col">
 							<div id="img-3-2" class="gallery-image">
@@ -2478,7 +3033,7 @@
 
 				<div class="ssense-general-footer__bottom">
 					<div class="container">
-						<p>&copy; 2025 S.Sense Salon &amp; Spa. All Rights Reserved.</p>
+						<p>&copy; 2021 S.Sense Salon &amp; Spa. All Rights Reserved.</p>
 						<nav aria-label="Footer legal links"><a href="privacy-policy.html">Privacy</a><a href="privacy-policy.html">Terms</a><a href="sitemap.xml">Sitemap</a></nav>
 						<p>Designed with <span aria-hidden="true">&hearts;</span> for your beauty journey</p>
 					</div>
@@ -2519,7 +3074,7 @@
 		<script src="js/wow.js"></script>
 
 		<!-- Custom Script -->
-		<script src="js/custom.js"></script>
+		<script src="js/custom.js?v=reviews50"></script>
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
 		<!--

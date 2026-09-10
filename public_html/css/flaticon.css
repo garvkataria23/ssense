@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("../fonts/flaticon.ttf?b8e939e97cbbeabd5290d803a3b7e130") format("truetype"),
-url("../fonts/flaticon.woff?b8e939e97cbbeabd5290d803a3b7e130") format("woff"),
-url("../fonts/flaticon.woff2?b8e939e97cbbeabd5290d803a3b7e130") format("woff2"),
-url("../fonts/flaticon.eot?b8e939e97cbbeabd5290d803a3b7e130#iefix") format("embedded-opentype"),
-url("../fonts/flaticon.svg?b8e939e97cbbeabd5290d803a3b7e130#flaticon_beauty_salon") format("svg");
+    src: url("../images/fonts/flaticon.ttf?b8e939e97cbbeabd5290d803a3b7e130") format("truetype"),
+url("../images/fonts/flaticon.woff?b8e939e97cbbeabd5290d803a3b7e130") format("woff"),
+url("../images/fonts/flaticon.woff2?b8e939e97cbbeabd5290d803a3b7e130") format("woff2"),
+url("../images/fonts/flaticon.eot?b8e939e97cbbeabd5290d803a3b7e130#iefix") format("embedded-opentype"),
+url("../images/fonts/flaticon.svg?b8e939e97cbbeabd5290d803a3b7e130#flaticon_beauty_salon") format("svg");
 }
 
 span[class^="flaticon-"]:before, 
