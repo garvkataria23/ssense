@@ -17469,6 +17469,15 @@ body.ssense-home-refined #hero-1 .image {
   object-position: center 36%;
 }
 
+body.ssense-home-refined #hero-1 .image-container:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, .26);
+  pointer-events: none;
+}
+
 body.ssense-home-refined #hero-1 .slide:nth-child(2) .image { object-position: center 42%; }
 body.ssense-home-refined #hero-1 .slide:nth-child(3) .image { object-position: center 40%; }
 
