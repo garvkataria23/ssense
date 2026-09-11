@@ -608,6 +608,9 @@
 					'<a class="ssense-floating-cta__whatsapp" href="' + whatsappHref + '" target="_blank" rel="noopener" aria-label="Message S.Sense Salon and Spa on WhatsApp">' +
 						'<svg class="ssense-cta-social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.52 0 .19 5.33.19 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.3-1.65a11.9 11.9 0 0 0 5.78 1.47h.01c6.56 0 11.9-5.33 11.91-11.9 0-3.18-1.24-6.17-3.48-8.44Z" fill="#25D366"/><path d="M12.1 21.78h-.01a9.86 9.86 0 0 1-5.02-1.37l-.36-.22-3.74.98 1-3.65-.24-.38a9.82 9.82 0 1 1 8.37 4.64Zm5.39-7.36c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" fill="#fff"/></svg><span class="ssense-floating-cta__label">WhatsApp</span>' +
 					'</a>' +
+					'<a class="ssense-floating-cta__facebook" href="https://www.facebook.com/share/17BiWq4miC/" target="_blank" rel="noopener" aria-label="Visit S.Sense Salon and Spa on Facebook">' +
+						'<span class="flaticon-facebook" aria-hidden="true"></span><span class="ssense-floating-cta__label">Facebook</span>' +
+					'</a>' +
 					'<a class="ssense-floating-cta__instagram" href="https://www.instagram.com/S.Sensesalonandspa" target="_blank" rel="noopener" aria-label="Follow S.Sense Salon and Spa on Instagram">' +
 						'<svg class="ssense-cta-social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="#E1306C" stroke-width="2"/><circle cx="12" cy="12" r="4.2" stroke="#E1306C" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.25" fill="#E1306C"/></svg><span class="ssense-floating-cta__label">Instagram</span>' +
 					'</a>' +
@@ -630,6 +633,12 @@
 			var $page = $('body.ssense-reviews-page');
 			if (!$page.length) return;
 			var resizeTimer;
+			var reviewMarqueeFrame = null;
+			var reviewMarqueeLastTime = 0;
+			var reviewMarqueeOffset = 0;
+			var reviewMarqueePaused = false;
+			var reviewMarqueeBuilt = false;
+			var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 			function balanceReviewRows() {
 				var $grid = $page.find('[data-review-grid]');
@@ -679,6 +688,66 @@
 					setupReviewCard(this, index);
 				});
 				balanceReviewRows();
+				setupMobileReviewMarquee();
+			}
+
+			function stopMobileReviewMarquee() {
+				if (reviewMarqueeFrame) window.cancelAnimationFrame(reviewMarqueeFrame);
+				reviewMarqueeFrame = null;
+				reviewMarqueeLastTime = 0;
+				var grid = $page.find('[data-review-grid]')[0];
+				reviewMarqueeOffset = grid ? grid.scrollLeft : reviewMarqueeOffset;
+			}
+
+			function teardownMobileReviewMarquee() {
+				var $grid = $page.find('[data-review-grid]');
+				stopMobileReviewMarquee();
+				$grid.removeClass('ssense-review-marquee').find('.ssense-review-card--marquee-clone').remove();
+				reviewMarqueeBuilt = false;
+			}
+
+			function tickMobileReviewMarquee(time) {
+				var grid = $page.find('[data-review-grid]')[0];
+				if (!grid) return;
+				if (!reviewMarqueeLastTime) reviewMarqueeLastTime = time;
+				if (!reviewMarqueePaused && !prefersReducedMotion.matches) {
+					var delta = time - reviewMarqueeLastTime;
+					var loopWidth = grid.scrollWidth / 2;
+					reviewMarqueeOffset += delta * 0.045;
+					if (loopWidth > 0 && reviewMarqueeOffset >= loopWidth) reviewMarqueeOffset -= loopWidth;
+					grid.scrollLeft = reviewMarqueeOffset;
+				}
+				reviewMarqueeLastTime = time;
+				reviewMarqueeFrame = window.requestAnimationFrame(tickMobileReviewMarquee);
+			}
+
+			function startMobileReviewMarquee() {
+				if (reviewMarqueeFrame || prefersReducedMotion.matches) return;
+				reviewMarqueeFrame = window.requestAnimationFrame(tickMobileReviewMarquee);
+			}
+
+			function setupMobileReviewMarquee() {
+				var $grid = $page.find('[data-review-grid]');
+				if (!$grid.length) return;
+				if (!window.matchMedia('(max-width: 767.98px)').matches) {
+					teardownMobileReviewMarquee();
+					return;
+				}
+
+				if (!reviewMarqueeBuilt) {
+					$grid.find('.ssense-review-card--marquee-clone').remove();
+					$grid.find('.ssense-review-card').not('[hidden], .ssense-review-card--marquee-clone').each(function() {
+						var $clone = $(this).clone(false, false).addClass('ssense-review-card--marquee-clone').attr('aria-hidden', 'true').removeAttr('id');
+						$clone.find('[id]').removeAttr('id');
+						$clone.find('[aria-controls]').removeAttr('aria-controls');
+						$grid.append($clone);
+					});
+					$grid.addClass('ssense-review-marquee').attr('aria-label', 'Guest reviews auto scrolling list');
+					reviewMarqueeBuilt = true;
+					reviewMarqueeOffset = $grid[0].scrollLeft;
+				}
+
+				startMobileReviewMarquee();
 			}
 
 			refreshReviewCards();
@@ -701,6 +770,7 @@
 			$page.on('click', '[data-load-reviews]', function() {
 				var $button = $(this);
 				if ($button.prop('disabled')) return;
+				teardownMobileReviewMarquee();
 				$button.prop('disabled', true);
 				var $hidden = $page.find('[data-review-grid] .ssense-review-card[hidden]');
 				var $next = $hidden.slice(0, 4);
@@ -719,15 +789,110 @@
 				if ($hidden.length <= $next.length) {
 					setTimeout(function() {
 						balanceReviewRows();
+						setupMobileReviewMarquee();
 						$button.closest('.ssense-load-more-wrap').fadeOut(220);
 					}, revealDelay);
 				} else {
-					setTimeout(function() { $button.prop('disabled', false); }, revealDelay);
+					setTimeout(function() {
+						setupMobileReviewMarquee();
+						$button.prop('disabled', false);
+					}, revealDelay);
 				}
+			});
+
+			$page.find('[data-review-grid]').on('mouseenter focusin touchstart pointerdown', function() {
+				reviewMarqueePaused = true;
+				$(this).addClass('is-auto-paused');
+			});
+			$page.find('[data-review-grid]').on('mouseleave focusout touchend touchcancel pointerup pointercancel', function() {
+				reviewMarqueePaused = false;
+				$(this).removeClass('is-auto-paused');
+			});
+			prefersReducedMotion.addEventListener('change', function() {
+				if (prefersReducedMotion.matches) stopMobileReviewMarquee();
+				else setupMobileReviewMarquee();
 			});
 		}
 
 		ssenseReviewsPageInteractions();
+
+		/* Mobile floating CTA: collapse into one tappable circle. */
+		(function ssenseFloatingCtaToggle() {
+			var $ctas = $('.ssense-floating-cta').filter(function() {
+				return !$(this).closest('.ssense-review-card').length;
+			});
+			if (!$ctas.length) return;
+			$ctas.each(function() {
+				if (this.parentNode !== document.body) document.body.appendChild(this);
+			});
+			$('body').addClass('ssense-floating-present');
+			var mobileQuery = window.matchMedia('(max-width: 767.98px)');
+
+			function applyMobilePosition() {
+				$ctas.each(function() {
+					var cta = this;
+					if (!mobileQuery.matches) {
+						['position', 'left', 'right', 'top', 'bottom', 'width', 'max-width', 'transform'].forEach(function(prop) {
+							cta.style.removeProperty(prop);
+						});
+						return;
+					}
+					cta.style.setProperty('position', 'fixed', 'important');
+					cta.style.setProperty('top', 'auto', 'important');
+					cta.style.setProperty('bottom', '14px', 'important');
+					cta.style.setProperty('transform', 'none', 'important');
+					cta.style.setProperty('z-index', '2147483000', 'important');
+					if ($(cta).hasClass('is-open')) {
+						cta.style.setProperty('left', '18px', 'important');
+						cta.style.setProperty('right', '18px', 'important');
+						cta.style.setProperty('width', 'auto', 'important');
+						cta.style.setProperty('max-width', 'none', 'important');
+					} else {
+						cta.style.setProperty('left', 'auto', 'important');
+						cta.style.setProperty('right', '14px', 'important');
+						cta.style.setProperty('width', '44px', 'important');
+						cta.style.setProperty('max-width', '44px', 'important');
+					}
+				});
+			}
+
+			$ctas.each(function() {
+				var $cta = $(this);
+				if ($cta.find('.ssense-floating-cta__toggle').length) return;
+				var $toggle = $('<button/>', {
+					'class': 'ssense-floating-cta__toggle',
+					'type': 'button',
+					'aria-label': 'Open quick contact options',
+					'aria-expanded': 'false'
+				}).append($('<span/>', {'aria-hidden': 'true', 'text': 'S'}));
+				$cta.prepend($toggle);
+			});
+
+			$(document).on('click', '.ssense-floating-cta__toggle', function(event) {
+				event.preventDefault();
+				var $toggle = $(this);
+				var $cta = $toggle.closest('.ssense-floating-cta');
+				var isOpen = $cta.toggleClass('is-open').hasClass('is-open');
+				$toggle.attr({
+					'aria-expanded': isOpen ? 'true' : 'false',
+					'aria-label': isOpen ? 'Close quick contact options' : 'Open quick contact options'
+				});
+				applyMobilePosition();
+			});
+
+			$(document).on('click', function(event) {
+				if ($(event.target).closest('.ssense-floating-cta').length) return;
+				$('.ssense-floating-cta.is-open').removeClass('is-open').find('.ssense-floating-cta__toggle').attr({
+					'aria-expanded': 'false',
+					'aria-label': 'Open quick contact options'
+				});
+				applyMobilePosition();
+			});
+
+			applyMobilePosition();
+			$(window).on('resize.ssenseFloatingCtaPosition orientationchange.ssenseFloatingCtaPosition', applyMobilePosition);
+			if (mobileQuery.addEventListener) mobileQuery.addEventListener('change', applyMobilePosition);
+		})();
 
 		/* Homepage: rotate the authentic reviews pasted from Google Maps. */
 		(function ssenseHomepageReviewRotation() {

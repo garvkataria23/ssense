@@ -8185,7 +8185,7 @@ body.ssense-reviews-page .ssense-final-booking-panel::after {
   width: 45%;
   border-left: 2px solid rgba(203, 154, 91, .5);
   border-radius: 999px 34px 14px 999px;
-  background: linear-gradient(90deg, rgba(255,253,250,.2), rgba(255,253,250,0)), url('../images/salon_01.webp') center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(255,253,250,.2), rgba(255,253,250,0)), url('../images/salon_01.jpg') center/cover no-repeat;
 }
 
 body.ssense-reviews-page .ssense-final-booking-panel > * { position: relative; z-index: 1; }
@@ -8901,13 +8901,9 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
     font-size: .6rem;
     letter-spacing: .06em;
   }
-  .ssense-floating-cta__instagram { display: none!important; }
+  .ssense-floating-cta__instagram { display: inline-flex!important; }
   .ssense-floating-cta a.ssense-floating-cta__book {
-    flex: 1.35 1 0;
-    background: var(--ssense-ink)!important;
-    border-color: var(--ssense-ink)!important;
-    color: #fff!important;
-    padding-inline: 16px;
+    display: none!important;
   }
   #scrollUp {
     display: none!important;
@@ -8928,17 +8924,14 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
     min-height: 50px;
     padding-inline: 4px;
   }
-  .ssense-floating-cta__instagram { display: none!important; }
+  .ssense-floating-cta__instagram { display: inline-flex!important; }
   .ssense-floating-cta .flaticon-phone:before,
   .ssense-floating-cta .flaticon-telephone:before,
   .ssense-floating-cta .flaticon-whatsapp:before {
     font-size: 1.5rem;
   }
   .ssense-floating-cta a.ssense-floating-cta__book {
-    flex: 1.35 1 0;
-    font-size: .7rem;
-    letter-spacing: .04em;
-    padding-inline: 10px;
+    display: none!important;
   }
 }
 
@@ -9721,7 +9714,7 @@ body:not(.theme--dark) .footer { background: var(--ssense-soft)!important; margi
       rgba(247, 246, 243, .96) 0%,
       rgba(255, 255, 255, .94) 46%,
       rgba(247, 246, 243, .82) 100%),
-    url(../images/salon_01.webp) center/cover no-repeat;
+    url(../images/salon_01.jpg) center/cover no-repeat;
 }
 .ssense-booking-panel > * { position: relative; z-index: 1; }
 .ssense-booking-panel h2 { font-weight: 500; }
@@ -17418,9 +17411,11 @@ body.ssense-home-refined #hero-1 .row.justify-content-md-center { justify-conten
 
 body.ssense-home-refined #hero-1 .caption h1,
 body.ssense-home-refined #hero-1 .caption h2 {
-  max-width: 880px;
+  max-width: 1040px;
   margin-inline: 0;
   color: #fff!important;
+  font-size: clamp(2.1rem, 3vw, 3.15rem);
+  line-height: 1.05;
   text-shadow: 0 2px 34px rgba(0, 0, 0, .34);
 }
 
@@ -17429,6 +17424,22 @@ body.ssense-home-refined #hero-1 .caption h5 {
   max-width: 620px;
   margin-left: 0;
   color: rgba(255, 255, 255, .94)!important;
+}
+
+@media (min-width: 992px) {
+  body.ssense-home-refined #hero-1 .caption {
+    transform: translateX(-130px);
+  }
+
+  body.ssense-home-refined #hero-1 .ssense-hero-title-line {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.ssense-home-refined #hero-1 .ssense-hero-mobile-join {
+    display: none;
+  }
 }
 
 body.ssense-home-refined .ssense-hero-actions {
@@ -18627,6 +18638,16 @@ body.ssense-post-page #related-posts .ssense-related-card .stretched-link:focus-
 
 /* Desktop navigation: dark, readable text + dark dropdown caret. */
 @media (min-width: 992px) {
+  #header .wsmenu > .wsmenu-list > li > a:not(.btn) {
+    margin-inline: 4px !important;
+    padding-inline: 10px !important;
+  }
+
+  #header .wsmenu > .wsmenu-list > li a.btn {
+    margin-left: 6px !important;
+    padding-inline: 22px !important;
+  }
+
   #header .wsmainfull .wsmenu > .wsmenu-list > li > a,
   #header .wsmainfull .wsmenu > .wsmenu-list > li > a.h-link,
   #header .wsmainfull .wsmenu > .wsmenu-list > li > a:not(.btn) {
@@ -20401,7 +20422,7 @@ body.ssense-services-index .ssense-quick-info {
   border-radius: 999px 46px 46px 999px;
   background:
     linear-gradient(90deg, rgba(255, 253, 250, 0.26) 0%, rgba(255, 253, 250, 0.02) 18%),
-    url(../images/salon_01.webp) center/cover no-repeat;
+    url(../images/salon_01.jpg) center/cover no-repeat;
   box-shadow: -18px 0 0 rgba(250, 236, 232, 0.72);
 }
 
@@ -21077,7 +21098,7 @@ body.ssense-services-index .ssense-quick-info {
   width: 48%;
   border-left: 2px solid rgba(203, 154, 91, 0.58);
   border-radius: 320px 38px 38px 320px;
-  background: url(../images/salon_01.webp) center/cover no-repeat;
+  background: url(../images/salon_01.jpg) center/cover no-repeat;
   box-shadow: -20px 0 0 rgba(250, 236, 232, 0.78), 0 26px 70px rgba(95, 41, 55, 0.14);
 }
 
@@ -21381,7 +21402,7 @@ body.ssense-services-index .ssense-services-related-showcase .ssense-heading-spl
   height: clamp(310px, 27vw, 460px);
   border: 8px solid rgba(255, 255, 255, 0.72);
   border-radius: 240px 48px 48px 240px;
-  background: url(../images/salon_04.webp) center/cover no-repeat;
+  background: url(../images/salon_hero_background.jpg) center/cover no-repeat;
   box-shadow: 0 28px 74px rgba(95, 41, 55, 0.16);
 }
 
@@ -21779,7 +21800,9 @@ body.ssense-services-index .ssense-service-design-media {
   overflow: hidden;
   border: 2px solid rgba(203, 154, 91, 0.5);
   border-radius: 230px 230px 34px 34px;
-  background: #fff;
+  background:
+    linear-gradient(180deg, rgba(20, 18, 16, 0.06), rgba(20, 18, 16, 0.22)),
+    url(../images/salon_hero_background.jpg) center/cover no-repeat;
   box-shadow: 0 30px 74px rgba(95, 41, 55, 0.16);
 }
 
@@ -21803,6 +21826,7 @@ body.ssense-services-index .ssense-service-design-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
 }
 
 body.ssense-services-index .ssense-services-design-showcase .ssense-process-card {
@@ -25274,5 +25298,109 @@ body.ssense-detailed-menu-page .ssense-detailed-menu .more-btn a:focus-visible {
 
   body.ssense-detailed-menu-page .ssense-detailed-menu .more-btn .btn:hover {
     transform: none;
+  }
+}
+
+/* Brand CTA color override: replace black buttons with the S.Sense rose tone. */
+body .btn--black,
+body .hover--black:hover,
+body .scroll .hover--black:hover,
+body:not(.theme--dark) .btn--black,
+body:not(.theme--dark) .hover--black:hover,
+body:not(.theme--dark) .scroll .hover--black:hover,
+body .ssense-actions .btn--black,
+body .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--black,
+body.ssense-services-premium .ssense-ia-hero .ssense-actions .btn--black,
+body.ssense-services-premium .ssense-booking-panel .ssense-actions .btn--black,
+body.ssense-services-index .ssense-services-hero-copy .btn--black,
+body.ssense-services-index .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--black,
+body.ssense-offers-page .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--black {
+  background-color: #b63d63!important;
+  border-color: #b63d63!important;
+  color: #fff!important;
+}
+
+body .btn--black:hover,
+body .ssense-actions .btn--black:hover,
+body .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--black:hover,
+body.ssense-services-premium .ssense-ia-hero .ssense-actions .btn--black:hover,
+body.ssense-services-premium .ssense-booking-panel .ssense-actions .btn--black:hover,
+body.ssense-services-index .ssense-services-hero-copy .btn--black:hover,
+body.ssense-services-index .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--black:hover,
+body.ssense-offers-page .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--black:hover {
+  background-color: #a93459!important;
+  border-color: #a93459!important;
+  color: #fff!important;
+}
+
+body .btn--tra-black,
+body:not(.theme--dark) .btn--tra-black,
+body .ssense-actions .btn--tra-black,
+body .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--tra-black {
+  border-color: #b63d63!important;
+  color: #b63d63!important;
+}
+
+body .hover--tra-black:hover,
+body .scroll .hover--tra-black:hover,
+body:not(.theme--dark) .hover--tra-black:hover,
+body .btn--tra-black:hover,
+body .ssense-actions .btn--tra-black:hover,
+body .ssense-booking-cta .ssense-booking-panel .ssense-actions .btn--tra-black:hover {
+  background-color: #b63d63!important;
+  border-color: #b63d63!important;
+  color: #fff!important;
+}
+
+body #header .wsmainfull .wsmenu > .wsmenu-list > li > a.btn.last-link,
+body .wsmenu > .wsmenu-list > li > a.btn.last-link,
+body:not(.theme--dark) .wsmenu > .wsmenu-list > li > a.btn.last-link,
+body.ssense-home-refined .wsmainfull.scroll .last-link.btn--tra-white {
+  background-color: #b63d63!important;
+  border-color: #b63d63!important;
+  color: #fff!important;
+}
+
+body #header .wsmainfull .wsmenu > .wsmenu-list > li > a.btn.last-link:hover,
+body .wsmenu > .wsmenu-list > li > a.btn.last-link:hover,
+body:not(.theme--dark) .wsmenu > .wsmenu-list > li > a.btn.last-link:hover {
+  background-color: #a93459!important;
+  border-color: #a93459!important;
+  color: #fff!important;
+}
+
+/* Floating contact controls: keep them clean without stacked dark shadows. */
+html body .ssense-floating-cta,
+html body .ssense-floating-cta *,
+html body .ssense-floating-cta *:before,
+html body .ssense-floating-cta *:after {
+  box-shadow: none!important;
+  filter: none!important;
+  text-shadow: none!important;
+}
+
+/* Homepage journal: a gentle blush background keeps the editorial cards distinct. */
+body.ssense-home-refined #blog-1.ssense-blog-replacement {
+  background: linear-gradient(135deg, #fff6f7 0%, #fcebed 52%, #fff4f5 100%) !important;
+}
+
+/* Services hero: use the supplied salon photo on the offset background card. */
+body.ssense-services-index .ssense-services-hero-shape {
+  background-image: url("../images/salon_hero_background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform .45s ease, box-shadow .45s ease, filter .45s ease;
+  will-change: transform;
+}
+
+@media (hover: hover) {
+  body.ssense-services-index .ssense-services-hero-shape:hover {
+    z-index: 5;
+    transform: rotate(3deg) scale(1.05) translate(-2%, 1%);
+    filter: saturate(1.06);
+    box-shadow: 0 30px 65px rgba(71, 42, 35, .28);
   }
 }

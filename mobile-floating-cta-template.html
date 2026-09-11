@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reusable Mobile Floating CTA</title>
+  <style>
+    :root {
+      --floating-cta-brand: #b63d63;
+      --floating-cta-brand-dark: #a93459;
+      --floating-cta-blush: #fff8f5;
+    }
+
+    body {
+      min-height: 160vh;
+      margin: 0;
+      background: #fff8f5;
+      color: #171717;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 140px;
+    }
+
+    .demo-card {
+      padding: 28px;
+      border: 1px solid rgba(182, 61, 99, .16);
+      border-radius: 24px;
+      background: #fff;
+    }
+
+    /*
+      Copy from here into your website CSS.
+      This floating CTA is mobile-only. On desktop/tablet it stays hidden.
+    */
+    .mobile-floating-cta {
+      display: none;
+    }
+
+    @media (max-width: 767.98px) {
+      body {
+        padding-bottom: calc(90px + env(safe-area-inset-bottom));
+      }
+
+      .mobile-floating-cta {
+        position: fixed;
+        right: 14px;
+        bottom: max(14px, env(safe-area-inset-bottom));
+        z-index: 2147483000;
+        display: flex;
+        width: 44px;
+        max-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding: 0;
+        overflow: visible;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        transform: none;
+        transition: width .24s ease, max-width .24s ease, background .24s ease, box-shadow .24s ease, padding .24s ease;
+      }
+
+      .mobile-floating-cta.is-open {
+        right: 18px;
+        left: 18px;
+        width: auto;
+        max-width: none;
+        min-height: 44px;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 3px 6px;
+        border: 1px solid rgba(182, 61, 99, .16);
+        border-radius: 999px;
+        background: var(--floating-cta-blush);
+        box-shadow: 0 14px 34px rgba(21, 21, 21, .14);
+        backdrop-filter: blur(14px);
+      }
+
+      .mobile-floating-cta__toggle {
+        display: grid;
+        flex: 0 0 44px;
+        width: 44px;
+        height: 44px;
+        min-height: 44px;
+        place-items: center;
+        padding: 0;
+        border: 1px solid rgba(182, 61, 99, .18);
+        border-radius: 50%;
+        background: var(--floating-cta-brand);
+        color: #fff;
+        box-shadow: 0 12px 28px rgba(182, 61, 99, .24);
+        font: 700 1.35rem/1 Georgia, serif;
+        cursor: pointer;
+      }
+
+      .mobile-floating-cta.is-open .mobile-floating-cta__toggle {
+        display: none;
+      }
+
+      .mobile-floating-cta__link {
+        display: none;
+        min-width: 0;
+        min-height: 36px;
+        height: 36px;
+        flex: 1 1 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6px;
+        border: 0;
+        border-radius: 999px;
+        background: transparent;
+        text-decoration: none;
+        opacity: 0;
+        transform: translateY(6px) scale(.96);
+        transition: opacity .2s ease, transform .2s ease, background .2s ease;
+      }
+
+      .mobile-floating-cta.is-open .mobile-floating-cta__link {
+        display: inline-flex;
+        opacity: 1;
+        transform: none;
+      }
+
+      .mobile-floating-cta__link:hover,
+      .mobile-floating-cta__link:focus-visible {
+        background: rgba(182, 61, 99, .08);
+      }
+
+      .mobile-floating-cta__icon {
+        width: 22px;
+        height: 22px;
+        display: block;
+      }
+
+      .mobile-floating-cta__call { color: #050505; }
+      .mobile-floating-cta__whatsapp { color: #008f43; }
+      .mobile-floating-cta__facebook { color: #003f88; }
+      .mobile-floating-cta__instagram { color: #8a0038; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="demo-card">
+      <h1>Mobile Floating CTA Template</h1>
+      <p>This page contains a reusable mobile-only floating contact button. Resize to mobile width to preview it.</p>
+      <p>Use the instructions inside this file to copy it into another website.</p>
+    </div>
+  </main>
+
+  <!--
+    Copy this HTML before </body> on your other website.
+    Replace phone numbers and social URLs below.
+  -->
+  <div class="mobile-floating-cta" aria-label="Quick contact options">
+    <button class="mobile-floating-cta__toggle" type="button" aria-label="Open quick contact options" aria-expanded="false">S</button>
+
+    <a class="mobile-floating-cta__link mobile-floating-cta__call" href="tel:+918054777888" aria-label="Call now">
+      <svg class="mobile-floating-cta__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79c1.35 2.65 3.53 4.82 6.18 6.18l2.06-2.06c.34-.34.84-.45 1.28-.3 1.14.38 2.35.59 3.6.59.7 0 1.26.56 1.26 1.26v3.28c0 .7-.56 1.26-1.26 1.26C10.49 21 3 13.51 3 4.26 3 3.56 3.56 3 4.26 3h3.28c.7 0 1.26.56 1.26 1.26 0 1.25.21 2.46.59 3.6.15.45.04.94-.3 1.28l-2.47 2.65Z"/></svg>
+    </a>
+
+    <a class="mobile-floating-cta__link mobile-floating-cta__whatsapp" href="https://wa.me/918054777888" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp">
+      <svg class="mobile-floating-cta__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.8 11.8 0 0 0 12.1 0C5.58 0 .28 5.3.28 11.82c0 2.08.54 4.1 1.58 5.9L.18 24l6.43-1.69a11.8 11.8 0 0 0 5.49 1.4h.01c6.52 0 11.82-5.3 11.82-11.82 0-3.16-1.23-6.13-3.41-8.41ZM12.1 21.7h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.22-3.82 1 1.02-3.72-.24-.38a9.78 9.78 0 0 1-1.5-5.19c0-5.42 4.41-9.83 9.84-9.83a9.77 9.77 0 0 1 6.96 2.89 9.77 9.77 0 0 1 2.88 6.96c0 5.42-4.41 9.83-9.83 9.83Zm5.4-7.36c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.08-.79.38-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
+    </a>
+
+    <a class="mobile-floating-cta__link mobile-floating-cta__facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook">
+      <svg class="mobile-floating-cta__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22.68 0H1.32C.59 0 0 .59 0 1.32v21.36C0 23.41.59 24 1.32 24h11.5v-9.3H9.69v-3.62h3.13V8.41c0-3.1 1.89-4.79 4.66-4.79 1.33 0 2.47.1 2.8.14v3.25h-1.92c-1.5 0-1.79.72-1.79 1.76v2.31h3.58l-.47 3.62h-3.11V24h6.1c.74 0 1.33-.59 1.33-1.32V1.32C24 .59 23.41 0 22.68 0Z"/></svg>
+    </a>
+
+    <a class="mobile-floating-cta__link mobile-floating-cta__instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram">
+      <svg class="mobile-floating-cta__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.22.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.05.42 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.22-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.05.37-2.22.42-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.22-.42a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.05-.42-2.22-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.42-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.05-.37 2.22-.42 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.12 1.38A5.86 5.86 0 0 0 .64 4.13C.34 4.9.14 5.78.08 7.05.02 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.92.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.77.3 1.65.5 2.92.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.92-.56a5.86 5.86 0 0 0 2.12-1.38 5.86 5.86 0 0 0 1.38-2.12c.3-.77.5-1.65.56-2.92.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.92a5.86 5.86 0 0 0-1.38-2.12A5.86 5.86 0 0 0 19.87.64c-.77-.3-1.65-.5-2.92-.56C15.67.02 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    /*
+      Copy this script before </body> on your other website.
+      If your site already uses this class name, rename mobile-floating-cta everywhere.
+    */
+    (function () {
+      var ctas = Array.prototype.slice.call(document.querySelectorAll('.mobile-floating-cta'));
+      if (!ctas.length) return;
+
+      ctas.forEach(function (cta) {
+        var toggle = cta.querySelector('.mobile-floating-cta__toggle');
+        if (!toggle) return;
+
+        toggle.addEventListener('click', function () {
+          var isOpen = cta.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          toggle.setAttribute('aria-label', isOpen ? 'Close quick contact options' : 'Open quick contact options');
+        });
+      });
+
+      document.addEventListener('click', function (event) {
+        if (event.target.closest('.mobile-floating-cta')) return;
+        ctas.forEach(function (cta) {
+          cta.classList.remove('is-open');
+          var toggle = cta.querySelector('.mobile-floating-cta__toggle');
+          if (toggle) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Open quick contact options');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
