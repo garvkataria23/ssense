@@ -127,11 +127,11 @@
 				<div class="header-wrapper">
 
 					<!-- MOBILE HEADER -->
-				    <div class="wsmobileheader clearfix">	
+				    <div class="wsmobileheader clearfix">
 				    	<span class="smllogo">
-				    		<a href="index.html"><img src="images/logo-black.png" width="1000" height="300" alt="mobile-logo"></a>
+							<a href="index.html"><img src="images/logo-black.webp" width="1000" height="300" alt="mobile-logo"></a>
 				    	</span>
-				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>	
+						<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
 				 	</div>
 
 
@@ -141,19 +141,25 @@
 
 	    					<!-- HEADER BLACK LOGO -->
 	    					<div class="desktoplogo">
-	    						<a href="index.html" class="logo-black"><img src="images/logo-black.png" width="1000" height="300" alt="logo"></a>
+								<a href="index.html" class="logo-black"><img src="images/logo-black.webp" width="1000" height="300" alt="logo"></a>
 	    					</div>
 
 	    					<!-- HEADER WHITE LOGO -->
 	    					<div class="desktoplogo">
-	    						<a href="index.html" class="logo-white"><img src="images/logo-black.png" width="1000" height="300" alt="logo"></a>
+								<a href="index.html" class="logo-white"><img src="images/logo-black.webp" width="1000" height="300" alt="logo"></a>
 	    					</div>
 
 	    					<!-- MAIN MENU -->
 	      					<nav class="wsmenu clearfix">
 	        					<ul class="wsmenu-list">
 <li class="nl-simple" aria-haspopup="true"><a href="index.html" class="h-link">Home</a></li>
-<li class="nl-simple" aria-haspopup="true"><a href="about.html" class="h-link">About</a></li>
+<li aria-haspopup="true"><a href="about.html" class="h-link">About <span class="wsarrow"></span></a>
+  <ul class="sub-menu">
+    <li aria-haspopup="true"><a href="about.html">About S.Sense</a></li>
+    <li aria-haspopup="true"><a href="team.html">Our Professional Team</a></li>
+    <li aria-haspopup="true"><a href="gallery.html">Salon Gallery</a></li>
+  </ul>
+</li>
 <li aria-haspopup="true"><a href="services.html" class="h-link">Services <span class="wsarrow"></span></a>
   <ul class="sub-menu ssense-service-submenu">
     <li aria-haspopup="true"><a href="services.html">All Services</a></li>
@@ -194,18 +200,36 @@
 
 			<!-- INNER PAGE HERO
 			============================================= -->	
-			<section id="team-page" class="inner-page-hero division">
-				<div class="container">	
-					<div class="row">	
-						<div class="col">
-							<div class="page-hero-txt color--white">
-								<span class="ssense-eyebrow">Artists & specialists</span>
-								<h1>Meet Our Team</h1>	
-								<p>Stylists, artists and technicians dedicated to polished, personal salon care.</p>
-							</div>	
+			<section id="team-page" class="ssense-team-hero division">
+				<div class="container">
+					<div class="ssense-team-hero-grid">
+						<div class="ssense-team-hero-copy">
+							<span class="ssense-team-kicker">Artists &amp; Specialists</span>
+							<h1>Meet Our <em>Team</em></h1>
+							<p>Stylists, artists and technicians dedicated to polished, personal salon care.</p>
+
+							<div class="ssense-team-hero-features" aria-label="Team service highlights">
+								<div><span><i class="flaticon-thumbs-up"></i></span><strong>Expert<br>Professionals</strong></div>
+								<div><span><i class="flaticon-lotus"></i></span><strong>Personalised<br>Care</strong></div>
+								<div><span><i class="flaticon-scissors"></i></span><strong>Hygiene &amp;<br>Safety First</strong></div>
+								<div><span><i class="flaticon-heart"></i></span><strong>Your Beauty<br>Our Priority</strong></div>
+							</div>
+
+							<a class="ssense-team-hero-cta" href="booking.html">Book Your Appointment <span>&rarr;</span></a>
 						</div>
+
+						<div class="ssense-team-hero-visual">
+							<img src="images/salon10.webp" width="1000" height="1200" alt="S.Sense stylist consulting a salon guest" loading="eager">
+							<div class="ssense-team-hero-script" aria-hidden="true">Beauty<br>in Expert Hands</div>
+						</div>
+
+						<aside class="ssense-team-hero-stats" aria-label="Salon team highlights">
+							<div><strong>50+</strong><span>Experts</span></div>
+							<div><strong>1000+</strong><span>Happy Clients</span></div>
+							<div><strong>5★</strong><span>Rated Service</span></div>
+						</aside>
 					</div>
-				</div>	   <!-- End container --> 
+				</div>
 			</section>	<!-- END INNER PAGE HERO -->
 
 
@@ -219,6 +243,14 @@
 						<span class="ssense-eyebrow">Choose your expert</span>
 						<h2>Premium service, matched to your appointment.</h2>
 						<p>Browse management, hair, beauty and nail specialists, then request your preferred team member while booking.</p>
+					</div>
+
+					<div class="ssense-team-category-pills" aria-label="Team categories">
+						<a class="is-active" href="#team-3"><i class="flaticon-thumbs-up"></i> Management</a>
+						<a href="#team-3"><i class="flaticon-scissors"></i> Hair Specialists</a>
+						<a href="#team-3"><i class="flaticon-lotus"></i> Beauty Experts</a>
+						<a href="#team-3"><i class="flaticon-foundation"></i> Nail Specialists</a>
+						<a href="#team-3"><i class="flaticon-facial-treatment"></i> Skin &amp; Wellness</a>
 					</div>
 
 
@@ -247,7 +279,7 @@
 									<!-- Team Member Photo -->
 									<div class="team-member-photo">
 										<div class="hover-overlay"> 
-											<img class="img-fluid" src="images/team-1.jpg" width="700" height="900" alt="team-member-foto" loading="lazy" />
+											<img class="img-fluid" src="images/team-1.webp" width="700" height="900" alt="team-member-foto" loading="lazy" />
 											<div class="item-overlay"></div>
 										</div>
 									</div>
@@ -414,7 +446,7 @@
 									<!-- Team Member Photo -->
 									<div class="team-member-photo">
 										<div class="hover-overlay"> 
-											<img class="img-fluid" src="images/team-4.jpg" width="700" height="900" alt="team-member-foto" loading="lazy" />
+											<img class="img-fluid" src="images/team-4.webp" width="700" height="900" alt="team-member-foto" loading="lazy" />
 											<div class="item-overlay"></div>
 										</div>
 									</div>
@@ -526,7 +558,7 @@
 									<!-- Team Member Photo -->
 									<div class="team-member-photo">
 										<div class="hover-overlay"> 
-											<img class="img-fluid" src="images/team-8.jpg" width="700" height="900" alt="team-member-foto" loading="lazy" />
+											<img class="img-fluid" src="images/team-8.webp" width="700" height="900" alt="team-member-foto" loading="lazy" />
 											<div class="item-overlay"></div>
 										</div>
 									</div>
@@ -748,7 +780,7 @@
 									<!-- Team Member Photo -->
 									<div class="team-member-photo">
 										<div class="hover-overlay"> 
-											<img class="img-fluid" src="images/team-8.jpg" width="700" height="900" alt="team-member-foto" loading="lazy" />
+											<img class="img-fluid" src="images/team-8.webp" width="700" height="900" alt="team-member-foto" loading="lazy" />
 											<div class="item-overlay"></div>
 										</div>
 									</div>
@@ -961,7 +993,7 @@
 						<!-- IMAGE BLOCK -->
 						<div class="col-lg-6 order-first order-lg-2">
 							<div class="img-block right-column wow fadeInLeft">
-								<img class="img-fluid" src="images/woman_02.jpg" width="800" height="800" alt="content-image" loading="lazy" />
+								<img class="img-fluid" src="images/woman_02.webp" width="800" height="800" alt="content-image" loading="lazy" />
 							</div>
 						</div>
 
@@ -1045,13 +1077,13 @@
 							  		<div class="hover-overlay"> 
 
 							  			<!-- Image -->
-										<img class="img-fluid" src="images/gallery/woman_04.jpg" width="800" height="1000" alt="gallery-image" loading="lazy" />			
+										<img class="img-fluid" src="images/gallery/woman_04.webp" width="800" height="1000" alt="gallery-image" loading="lazy" />
 										<div class="item-overlay"></div>				
 										
 										<!-- Image Zoom -->
 										<div class="image-data">
 											<div class="gallery-link ico-30 color--white">
-												<a class="image-link" href="images/gallery/woman_04.jpg">
+												<a class="image-link" href="images/gallery/woman_04.webp">
 													<span class="flaticon-visibility"></span>
 												</a>
 											</div>																					 
@@ -1074,7 +1106,7 @@
 										<!-- Image Zoom -->
 										<div class="image-data">
 											<div class="gallery-link ico-40 color--white">
-												<a class="image-link" href="images/gallery/woman_01.jpg">
+												<a class="image-link" href="images/gallery/woman_01.webp">
 													<span class="flaticon-visibility"></span>
 												</a>
 											</div>																					 
@@ -1100,7 +1132,7 @@
 										<!-- Image Zoom -->
 										<div class="image-data">
 											<div class="gallery-link ico-40 color--white">
-												<a class="image-link" href="images/gallery/woman_03.jpg">
+												<a class="image-link" href="images/gallery/woman_03.webp">
 													<span class="flaticon-visibility"></span>
 												</a>
 											</div>																					 
@@ -1121,7 +1153,7 @@
 										<!-- Image Zoom -->
 										<div class="image-data">
 											<div class="gallery-link ico-40 color--white">
-												<a class="image-link" href="images/gallery/woman_02.jpg">
+												<a class="image-link" href="images/gallery/woman_02.webp">
 													<span class="flaticon-visibility"></span>
 												</a>
 											</div>																					 
@@ -1147,7 +1179,7 @@
 										<!-- Image Zoom -->
 										<div class="image-data">
 											<div class="gallery-link ico-30 color--white">
-												<a class="image-link" href="images/gallery/woman_05.jpg">
+												<a class="image-link" href="images/gallery/woman_05.webp">
 													<span class="flaticon-visibility"></span>
 												</a>
 											</div>																					 
@@ -1168,7 +1200,7 @@
 										<!-- Image Zoom -->
 										<div class="image-data">
 											<div class="gallery-link ico-30 color--white">
-												<a class="image-link" href="images/gallery/woman_06.jpg">
+												<a class="image-link" href="images/gallery/woman_06.webp">
 													<span class="flaticon-visibility"></span>
 												</a>
 											</div>																					 
@@ -1334,7 +1366,7 @@
 				<div class="container">
 					<div class="ssense-general-footer__grid">
 						<div class="ssense-general-footer__brand">
-							<a href="index.html" aria-label="S.Sense Salon & Spa home" itemprop="url"><img src="images/logo-black.png" width="272" height="76" alt="S.Sense Salon & Spa" itemprop="image"></a>
+							<a href="index.html" aria-label="S.Sense Salon & Spa home" itemprop="url"><img src="images/logo-black.webp" width="272" height="76" alt="S.Sense Salon & Spa" itemprop="image"></a>
 							<p class="ssense-general-footer__tagline">BEAUTY &nbsp;&middot;&nbsp; CARE &nbsp;&middot;&nbsp; CONFIDENCE</p>
 							<p>Your trusted salon for hair, beauty, nails and wellness in Thakur Village, Kandivali East.</p>
 							<ul class="ssense-general-footer__contact-list">
@@ -1449,4 +1481,3 @@
 
 
 </html>
-
