@@ -1157,72 +1157,10 @@
             var panel = category.querySelector('.pricing-1-wrapper');
             if (heading && panel) disclosure(heading, panel, false);
         });
-        document.querySelectorAll('.ssense-general-footer__brand').forEach(function(brand) {
-            var logo = brand.querySelector(':scope > a');
-            var tagline = brand.querySelector(':scope > .ssense-general-footer__tagline');
-            var details = Array.from(brand.children).filter(function(child) {
-                return child !== logo && child !== tagline;
-            });
-            if (!details.length) return;
-            var anchor = document.createComment('mobile footer contact details');
-            var heading = document.createElement('h3');
-            var panel = document.createElement('div');
-            heading.textContent = 'Contact S.Sense';
-            details[0].before(anchor);
-            (tagline || logo).after(heading);
-            heading.after(panel);
-            details.forEach(function(node) { panel.appendChild(node); });
-            undo.push(function() {
-                details.forEach(function(node) { brand.insertBefore(node, anchor); });
-                anchor.remove();
-                heading.remove();
-                panel.remove();
-            });
-            disclosure(heading, panel, false);
-        });
-        document.querySelectorAll('.ssense-general-footer__links, .ssense-general-footer__hours').forEach(function(group) {
-            var heading = group.querySelector('h3, h4, h5, h6');
-            var panel = null;
-            if (heading && !panel) {
-                panel = document.createElement('div');
-                heading.after(panel);
-                while (panel.nextSibling) panel.appendChild(panel.nextSibling);
-                undo.push(function() {
-                    while (panel.firstChild) group.insertBefore(panel.firstChild, panel);
-                    panel.remove();
-                });
-            }
-            if (heading && panel) disclosure(heading, panel, false);
-            if (group.classList.contains('ssense-general-footer__hours')) {
-                var times = Array.from(group.querySelectorAll('time'));
-                if (times.length === 7 && times.every(function(time) { return time.textContent === times[0].textContent; })) {
-                    var hours = document.createElement('p');
-                    hours.className = 'ssense-compact-hours';
-                    hours.textContent = 'Every day · ' + times[0].textContent;
-                    heading.after(hours);
-                    undo.push(function() { hours.remove(); });
-                }
-            }
-        });
-        document.querySelectorAll('.ssense-general-footer__newsletter').forEach(function(group) {
-            var heading = group.querySelector(':scope > h3');
-            var form = group.querySelector(':scope > form');
-            if (!heading || !form) return;
-            var panel = document.createElement('div');
-            heading.after(panel);
-            // Leave social/contact links visible; keep the existing form nodes
-            // and plugin handlers intact inside an optional newsletter group.
-            while (panel.nextSibling) {
-                var node = panel.nextSibling;
-                panel.appendChild(node);
-                if (node === form) break;
-            }
-            undo.push(function() {
-                while (panel.firstChild) group.insertBefore(panel.firstChild, panel);
-                panel.remove();
-            });
-            disclosure(heading, panel, false);
-        });
+        // Keep the salon footer fully visible on phones. The footer now uses a
+        // compact responsive grid instead of progressive-disclosure accordions,
+        // so visitors can see the same contact, links, hours and newsletter
+        // content available on desktop without extra taps.
         document.querySelectorAll('.pricing-5-category, .pricing-7-title').forEach(function(category) {
             var heading = category.querySelector('h2, h3, h4, h5');
             var panel = category.nextElementSibling;

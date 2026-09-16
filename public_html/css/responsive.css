@@ -6498,21 +6498,15 @@ body:not(.theme--dark) #hero-1 .caption p,
   body.ssense-home-refined .ssense-home-secret-services .sbox-2 { min-height: 0 !important; height: 100%; }
   body.ssense-home-refined .ssense-home-secret-services .ssense-home-service-photo img { height: 132px !important; object-fit: cover; }
 
-  /* Footer link groups become tap-to-open accordions. */
+  /* Footer keeps desktop content visible, arranged as a compact mobile stack. */
   .ssense-general-footer__links > h3,
-  .ssense-general-footer__hours > h3 { display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 14px 0; border-bottom: 1px solid rgba(174, 74, 100, .18); cursor: pointer; }
+  .ssense-general-footer__hours > h3 { margin: 0 0 14px; padding: 0; border-bottom: 0; cursor: default; }
   .ssense-general-footer__links > h3::after,
-  .ssense-general-footer__hours > h3::after { content: '+'; color: #b63d63; font-size: 1.2rem; }
-  .ssense-general-footer__links.is-open > h3::after,
-  .ssense-general-footer__hours.is-open > h3::after { content: '−'; }
-  .ssense-general-footer__links > a,
-  .ssense-general-footer__hours > ul,
-  .ssense-general-footer__hours > .ssense-general-footer__booking,
-  .ssense-general-footer__hours > .ssense-general-footer__badges { display: none !important; }
-  .ssense-general-footer__links.is-open > a,
-  .ssense-general-footer__hours.is-open > ul,
-  .ssense-general-footer__hours.is-open > .ssense-general-footer__booking,
-  .ssense-general-footer__hours.is-open > .ssense-general-footer__badges { display: flex !important; }
+  .ssense-general-footer__hours > h3::after { content: none; }
+  .ssense-general-footer__links > a { display: inline-flex !important; }
+  .ssense-general-footer__hours > ul { display: grid !important; }
+  .ssense-general-footer__hours > .ssense-general-footer__booking { display: inline-flex !important; }
+  .ssense-general-footer__hours > .ssense-general-footer__badges { display: grid !important; }
 }
 
 @media (max-width: 420px) {
