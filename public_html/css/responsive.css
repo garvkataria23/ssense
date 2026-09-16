@@ -5160,6 +5160,7 @@ body:not(.theme--dark) #hero-1 .caption p,
   .services-section .sbox-2-wrapper > .row,
   .gallery-section .row.row-cols-1,
   .team-section .row.row-cols-1,
+  body.ssense-team-page .ssense-management-row,
   .cards-row > .row,
   #reviews-3 .reviews-3-wrapper > .row {
     display: flex!important;
@@ -5191,6 +5192,7 @@ body:not(.theme--dark) #hero-1 .caption p,
   .services-section .sbox-2-wrapper > .row::-webkit-scrollbar,
   .gallery-section .row.row-cols-1::-webkit-scrollbar,
   .team-section .row.row-cols-1::-webkit-scrollbar,
+  body.ssense-team-page .ssense-management-row::-webkit-scrollbar,
   .cards-row > .row::-webkit-scrollbar,
   #reviews-3 .reviews-3-wrapper > .row::-webkit-scrollbar {
     display: none!important;
@@ -5203,6 +5205,7 @@ body:not(.theme--dark) #hero-1 .caption p,
   .services-section .sbox-2-wrapper > .row > .col,
   .gallery-section .row.row-cols-1 > .col,
   .team-section .row.row-cols-1 > .col,
+  body.ssense-team-page .ssense-management-row > [class*="col"],
   .cards-row > .row > .col,
   #reviews-3 .reviews-3-wrapper > .row > .col {
     flex: 0 0 73vw!important;
@@ -5569,21 +5572,56 @@ body:not(.theme--dark) #hero-1 .caption p,
 
 @media (max-width: 767.98px) {
   body.ssense-team-page .ssense-team-hero {
-    padding: 88px 0 28px!important;
+    padding: 72px 0 18px!important;
+  }
+  body.ssense-team-page .ssense-team-kicker {
+    gap: 12px;
+    font-size: .58rem;
+    letter-spacing: .32em;
+  }
+  body.ssense-team-page .ssense-team-kicker:after {
+    width: 44px;
   }
   body.ssense-team-page .ssense-team-hero h1 {
-    font-size: clamp(2.9rem, 14vw, 4.35rem)!important;
+    margin: 8px 0 8px!important;
+    font-size: clamp(2.35rem, 11.5vw, 3.45rem)!important;
+    line-height: .9!important;
+  }
+  body.ssense-team-page .ssense-team-hero-copy > p {
+    max-width: 300px;
+    font-size: .88rem!important;
+    line-height: 1.28!important;
   }
   body.ssense-team-page .ssense-team-hero-features {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
-    gap: 20px 0;
+    max-width: 270px;
+    margin: 16px auto 16px!important;
+    gap: 14px 0;
+  }
+  body.ssense-team-page .ssense-team-hero-features div {
+    gap: 7px;
+    padding: 0 9px;
+  }
+  body.ssense-team-page .ssense-team-hero-features span {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+  body.ssense-team-page .ssense-team-hero-features strong {
+    font-size: .72rem!important;
+    line-height: 1.12!important;
   }
   body.ssense-team-page .ssense-team-hero-features div:nth-child(2) {
     border-right: 0;
   }
   body.ssense-team-page .ssense-team-hero-cta {
-    width: 100%;
-    min-width: 0;
+    width: min(52vw, 180px);
+    min-width: 156px;
+    min-height: 42px;
+    gap: 12px;
+    padding: 10px 16px;
+    font-size: .58rem;
+    letter-spacing: .12em;
   }
   body.ssense-team-page .ssense-team-hero-visual {
     min-height: 320px;
@@ -5603,7 +5641,7 @@ body:not(.theme--dark) #hero-1 .caption p,
     font-size: .62rem!important;
   }
   body.ssense-team-page .ssense-team-category-pills {
-    display: flex;
+    display: none!important;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 8px;
@@ -5637,9 +5675,17 @@ body:not(.theme--dark) #hero-1 .caption p,
   body.ssense-team-page .category-title {
     gap: 14px!important;
   }
+  body.ssense-team-page .category-title h2,
+  body.ssense-team-page .category-title h2.h2-lg {
+    flex: 0 0 auto;
+    font-size: clamp(1.05rem, 6vw, 1.25rem)!important;
+    line-height: 1.1!important;
+    white-space: nowrap;
+  }
   body.ssense-team-page .category-title:before,
   body.ssense-team-page .category-title:after {
-    width: 56px!important;
+    flex: 0 1 48px;
+    width: 48px!important;
   }
   body.ssense-team-page .team-member {
     min-height: 0!important;
