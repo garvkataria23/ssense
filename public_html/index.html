@@ -152,9 +152,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 		<!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Jost:wght@300;400;500;600;700&family=Vollkorn:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Prioritize the first visible hero image for mobile LCP without changing visuals. -->
+    <link rel="preload" as="image" href="images/slider/Untitled%20design%20(43).webp" fetchpriority="high">
 
 
 		<!-- BOOTSTRAP CSS -->
@@ -902,7 +903,7 @@
 
 								<!-- Slide Background Image -->
 						        <div class="image-container">
-							<img class="image" src="images/slider/Untitled%20design%20(43).webp" alt="slide-background">
+							<img class="image" src="images/slider/Untitled%20design%20(43).webp" alt="slide-background" fetchpriority="high" decoding="async">
 						        </div>
 
 						</div>	<!-- END SLIDE #1 -->
@@ -942,7 +943,7 @@
 
 								<!-- Slide Background Image -->
 						        <div class="image-container">
-							<img class="image" src="images/salon_hero_background.webp" alt="S.Sense salon interior">
+							<img class="image" src="images/salon_hero_background.webp" alt="S.Sense salon interior" loading="lazy" decoding="async" fetchpriority="low">
 						        </div>
 
 						    </div>	<!-- END SLIDE #2 -->
@@ -982,7 +983,7 @@
 
 								<!-- Slide Background Image -->
 						        <div class="image-container">
-							<img class="image" src="images/slider/Untitled%20design%20(45).webp" alt="slide-background">
+							<img class="image" src="images/slider/Untitled%20design%20(45).webp" alt="slide-background" loading="lazy" decoding="async" fetchpriority="low">
 						        </div>
 
 						    </div>	<!-- END SLIDE #3 -->
