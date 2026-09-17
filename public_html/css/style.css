@@ -390,6 +390,183 @@ body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card:
   }
 }
 
+/* Related services: clean pricing-card layout matching the reference. */
+body.ssense-services-premium .ssense-hair-related-showcase {
+  overflow: visible;
+  padding: clamp(58px, 7vw, 94px) 0 clamp(54px, 7vw, 86px);
+  background: #fff !important;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase::before,
+body.ssense-services-premium .ssense-hair-related-showcase::after {
+  content: none;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .container {
+  width: calc(100% - 128px);
+  max-width: 1280px;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-heading-split {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 400px);
+  gap: clamp(40px, 9vw, 150px);
+  align-items: start;
+  margin-bottom: clamp(48px, 6vw, 72px);
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-eyebrow {
+  margin-bottom: 22px;
+  color: #293648 !important;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .42em;
+  line-height: 1.2;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-section-heading h2 {
+  max-width: 660px;
+  color: #111116 !important;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(3.25rem, 5.4vw, 5.65rem);
+  font-weight: 600;
+  letter-spacing: -.07em;
+  line-height: .92;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-section-heading h2 em {
+  color: inherit;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-lede {
+  display: none;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-note {
+  display: block;
+  min-height: 0;
+  padding: 0;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-note > span,
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-note > em {
+  display: none;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-note > p {
+  max-width: 365px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #293648 !important;
+  font-size: clamp(1.06rem, 1.35vw, 1.35rem);
+  line-height: 1.55;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 20px;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card {
+  display: flex;
+  min-height: 160px;
+  padding: 28px 28px 30px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  border: 1px solid rgba(178, 89, 150, .18);
+  border-radius: 24px;
+  background: #fff !important;
+  box-shadow: 0 18px 42px rgba(72, 43, 50, .04);
+  transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card::before {
+  content: "PRICING";
+  color: #a64058;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .26em;
+  line-height: 1;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card > img,
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-icon,
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card > small,
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card > b {
+  display: none !important;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card > strong {
+  margin: 0;
+  color: #060812 !important;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(1.75rem, 2.2vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -.045em;
+  line-height: 1.05;
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card:hover,
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card:focus-visible {
+  border-color: rgba(178, 89, 150, .34);
+  box-shadow: 0 22px 52px rgba(72, 43, 50, .08);
+  transform: translateY(-2px);
+}
+
+body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card:hover > img {
+  transform: none;
+}
+
+@media (max-width: 1199.98px) {
+  body.ssense-services-premium .ssense-hair-related-showcase .container {
+    width: calc(100% - 48px);
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .ssense-heading-split {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.ssense-services-premium .ssense-hair-related-showcase {
+    padding: 42px 0 48px;
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .container {
+    width: calc(100% - 28px);
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .ssense-heading-split {
+    margin-bottom: 30px;
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .ssense-section-heading h2 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-note > p {
+    font-size: 1rem;
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.ssense-services-premium .ssense-hair-related-showcase .ssense-related-card {
+    min-height: 132px;
+    padding: 24px;
+    gap: 22px;
+  }
+}
+
 /* Original top-of-home hero/header treatment. */
 body.ssense-home-refined #hero-1 { display: block !important; }
 body.ssense-home-refined .wsmainfull:not(.scroll) { background: transparent !important; border-bottom-color: transparent !important; }
@@ -8637,6 +8814,10 @@ body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::after
   display: flex;
   gap: 22px;
   align-items: center;
+}
+
+.ssense-general-footer__bottom nav a[href$="sitemap.xml"] {
+  display: none;
 }
 
 .ssense-general-footer__bottom nav a + a {
@@ -17545,92 +17726,452 @@ body.ssense-privacy-page .footer {
 /* ------------------------------------------------------------------
    8.2  Privacy Policy Page
    ------------------------------------------------------------------ */
-body.ssense-privacy-page .inner-page-hero {
-  padding: clamp(140px, 17vw, 192px) 0 clamp(40px, 5vw, 60px) !important;
+body.ssense-privacy-page {
+  background:
+    radial-gradient(circle at 9% 13%, rgba(229, 93, 66, .08), transparent 27%),
+    radial-gradient(circle at 92% 8%, rgba(178, 89, 150, .1), transparent 28%),
+    linear-gradient(180deg, #fff8f5 0%, #fbf5ef 46%, #fffdfb 100%);
 }
 
-body.ssense-privacy-page .inner-page-hero .page-hero-txt p {
-  font-size: clamp(.92rem, 1.4vw, 1.05rem);
-  color: var(--ssense-muted) !important;
+body.ssense-privacy-page .privacy-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(132px, 14vw, 188px) 0 clamp(52px, 7vw, 92px);
 }
 
-body.ssense-privacy-page .privacy-content {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: clamp(16px, 3vw, 32px) 0 clamp(40px, 5vw, 72px);
+body.ssense-privacy-page .privacy-hero::before,
+body.ssense-privacy-page .privacy-hero::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid rgba(178, 89, 150, .14);
 }
 
-body.ssense-privacy-page .privacy-content h2 {
-  font-family: var(--font-heading), serif;
-  font-size: clamp(1.3rem, 2.4vw, 1.65rem);
-  font-weight: 500;
-  letter-spacing: -.03em;
-  color: var(--ssense-ink) !important;
-  margin: clamp(28px, 4vw, 44px) 0 10px;
+body.ssense-privacy-page .privacy-hero::before {
+  width: 360px;
+  height: 360px;
+  right: -130px;
+  top: 90px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .34);
 }
 
-body.ssense-privacy-page .privacy-content h3 {
-  font-family: var(--font-heading), serif;
-  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
-  font-weight: 600;
-  letter-spacing: -.02em;
-  color: var(--ssense-ink) !important;
-  margin: clamp(20px, 3vw, 30px) 0 8px;
+body.ssense-privacy-page .privacy-hero::after {
+  width: 170px;
+  height: 340px;
+  left: -68px;
+  bottom: -120px;
+  border-radius: 90px 90px 12px 12px;
+  transform: rotate(-24deg);
+  background: rgba(249, 239, 237, .72);
 }
 
-body.ssense-privacy-page .privacy-content h4 {
-  font-family: var(--font-heading), serif;
-  font-size: clamp(.95rem, 1.4vw, 1.08rem);
-  font-weight: 600;
-  color: var(--ssense-ink) !important;
-  margin: 20px 0 6px;
+body.ssense-privacy-page .privacy-hero__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(290px, 420px);
+  gap: clamp(32px, 6vw, 88px);
+  align-items: end;
 }
 
-body.ssense-privacy-page .privacy-content p {
-  font-size: clamp(.9rem, 1.2vw, .98rem);
-  line-height: 1.72;
-  color: var(--ssense-muted) !important;
-  margin-bottom: 14px;
-}
-
-body.ssense-privacy-page .privacy-content ul,
-body.ssense-privacy-page .privacy-content ol {
-  padding-left: 22px;
+body.ssense-privacy-page .privacy-kicker {
   margin-bottom: 16px;
+  color: #a34d6a !important;
+  font-size: .76rem !important;
+  font-weight: 700;
+  letter-spacing: .24em;
+  line-height: 1.25 !important;
+  text-transform: uppercase;
 }
 
-body.ssense-privacy-page .privacy-content li {
-  font-size: clamp(.9rem, 1.2vw, .98rem);
-  line-height: 1.72;
-  color: var(--ssense-muted) !important;
-  margin-bottom: 6px;
+body.ssense-privacy-page .privacy-hero h1 {
+  max-width: 780px;
+  margin: 0 0 24px;
+  color: #241e1e;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(3rem, 8vw, 7.2rem);
+  font-weight: 500;
+  letter-spacing: -.07em;
+  line-height: .9;
 }
 
-body.ssense-privacy-page .privacy-content li p {
-  margin-bottom: 4px;
+body.ssense-privacy-page .privacy-hero__copy > p:not(.privacy-kicker) {
+  max-width: 760px;
+  color: #6f5d58 !important;
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+  line-height: 1.75;
 }
 
-body.ssense-privacy-page .privacy-content strong {
-  color: var(--ssense-ink) !important;
+body.ssense-privacy-page .privacy-hero__actions,
+body.ssense-privacy-page .privacy-contact-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: clamp(22px, 3vw, 34px);
+}
+
+body.ssense-privacy-page .privacy-hero__text-link {
+  color: #3d3030 !important;
   font-weight: 600;
-}
-
-body.ssense-privacy-page .privacy-content a {
-  color: var(--ssense-ink) !important;
   text-decoration: underline;
-  text-decoration-color: rgba(32, 33, 36, .2);
-  text-underline-offset: 2px;
-  transition: text-decoration-color .3s;
+  text-decoration-color: rgba(163, 77, 106, .35);
+  text-underline-offset: 5px;
 }
 
-body.ssense-privacy-page .privacy-content a:hover {
-  text-decoration-color: var(--ssense-ink);
+body.ssense-privacy-page .privacy-hero__card {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: clamp(210px, 22vw, 260px) clamp(28px, 3.2vw, 42px) clamp(28px, 3.2vw, 42px);
+  border: 1px solid rgba(175, 136, 85, .22);
+  border-radius: 34px 34px 8px 34px;
+  background: linear-gradient(145deg, rgba(255,255,255,.94), rgba(255,247,244,.9));
+  box-shadow: 0 26px 70px rgba(84, 45, 45, .12);
+}
+
+body.ssense-privacy-page .privacy-hero__image {
+  position: absolute;
+  inset: 0 0 auto;
+  height: clamp(178px, 20vw, 230px);
+  margin: 0;
+  overflow: hidden;
+  border-radius: 34px 34px 52% 52% / 34px 34px 20% 20%;
+}
+
+body.ssense-privacy-page .privacy-hero__image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 42%, rgba(255,247,244,.96) 100%);
+}
+
+body.ssense-privacy-page .privacy-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+body.ssense-privacy-page .privacy-hero__icon,
+body.ssense-privacy-page .privacy-section__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f7e5e1;
+  color: #a34d6a;
+  font-family: Georgia, serif;
+}
+
+body.ssense-privacy-page .privacy-hero__icon::before,
+body.ssense-privacy-page .privacy-section__icon::before {
+  content: '✦';
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 body.ssense-privacy-page .privacy-date {
-  font-size: .85rem;
-  color: var(--ssense-muted);
-  margin-bottom: clamp(20px, 3vw, 32px);
+  margin: 22px 0 16px;
+  color: #8b756f !important;
+  font-size: .86rem !important;
+  letter-spacing: .02em;
+}
+
+body.ssense-privacy-page .privacy-hero__card h2 {
+  margin: 0 0 12px;
+  color: #2d2424;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(1.55rem, 2.5vw, 2.05rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+body.ssense-privacy-page .privacy-hero__card p:last-child {
+  margin-bottom: 0;
+  color: #6f5d58 !important;
+  line-height: 1.7;
+}
+
+body.ssense-privacy-page .privacy-content {
+  padding: clamp(34px, 5vw, 70px) 0 clamp(48px, 6vw, 86px);
+}
+
+body.ssense-privacy-page .privacy-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 78px);
+  align-items: start;
+}
+
+body.ssense-privacy-page .privacy-toc {
+  position: sticky;
+  top: 118px;
+  padding: 22px;
+  border: 1px solid rgba(175, 136, 85, .18);
+  border-radius: 26px;
+  background: rgba(255, 253, 251, .78);
+  box-shadow: 0 18px 50px rgba(84, 45, 45, .08);
+  backdrop-filter: blur(12px);
+}
+
+body.ssense-privacy-page .privacy-toc p {
+  margin-bottom: 14px;
+  color: #a34d6a !important;
+  font-size: .72rem !important;
+  font-weight: 700;
+  letter-spacing: .2em;
+  line-height: 1.3 !important;
+  text-transform: uppercase;
+}
+
+body.ssense-privacy-page .privacy-toc nav {
+  display: grid;
+  gap: 3px;
+}
+
+body.ssense-privacy-page .privacy-toc a {
+  display: block;
+  padding: 9px 10px;
+  border-radius: 14px;
+  color: #6f5d58 !important;
+  font-size: .92rem;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: background-color .35s ease, color .35s ease, transform .35s ease;
+}
+
+body.ssense-privacy-page .privacy-toc a:hover,
+body.ssense-privacy-page .privacy-toc a:focus-visible {
+  background: #f7e5e1;
+  color: #2d2424 !important;
+  transform: translateX(3px);
+}
+
+body.ssense-privacy-page .privacy-policy {
+  display: grid;
+  gap: clamp(18px, 2.4vw, 28px);
+}
+
+body.ssense-privacy-page .privacy-section {
+  scroll-margin-top: 120px;
+  padding: clamp(24px, 3.5vw, 42px);
+  border: 1px solid rgba(175, 136, 85, .16);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, .72);
+  box-shadow: 0 18px 56px rgba(84, 45, 45, .07);
+}
+
+body.ssense-privacy-page .privacy-section__head {
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+body.ssense-privacy-page .privacy-section__number {
+  color: rgba(163, 77, 106, .52);
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  line-height: 1;
+}
+
+body.ssense-privacy-page .privacy-section h2 {
+  margin: 0;
+  color: #2d2424 !important;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: 1.12;
+}
+
+body.ssense-privacy-page .privacy-section h3 {
+  margin: 0 0 8px;
+  color: #2d2424 !important;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+body.ssense-privacy-page .privacy-section p,
+body.ssense-privacy-page .privacy-section li,
+body.ssense-privacy-page .privacy-section dd {
+  color: #6f5d58 !important;
+  font-size: clamp(.94rem, 1.05vw, 1rem);
+  line-height: 1.76;
+}
+
+body.ssense-privacy-page .privacy-section p {
+  margin-bottom: 14px;
+}
+
+body.ssense-privacy-page .privacy-section p:last-child,
+body.ssense-privacy-page .privacy-section ul:last-child,
+body.ssense-privacy-page .privacy-section dl:last-child {
+  margin-bottom: 0;
+}
+
+body.ssense-privacy-page .privacy-section strong,
+body.ssense-privacy-page .privacy-section dt {
+  color: #2d2424 !important;
+  font-weight: 650;
+}
+
+body.ssense-privacy-page .privacy-section a,
+body.ssense-privacy-page .privacy-contact-cta a:not(.btn) {
+  color: #8e3f5a !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(142, 63, 90, .28);
+  text-underline-offset: 4px;
+  transition: color .3s ease, text-decoration-color .3s ease;
+}
+
+body.ssense-privacy-page .privacy-section a:hover,
+body.ssense-privacy-page .privacy-section a:focus-visible {
+  color: #2d2424 !important;
+  text-decoration-color: currentColor;
+}
+
+body.ssense-privacy-page .privacy-definition-list {
+  display: grid;
+  grid-template-columns: minmax(130px, .34fr) minmax(0, 1fr);
+  gap: 10px 20px;
+  margin: 0;
+}
+
+body.ssense-privacy-page .privacy-definition-list dt,
+body.ssense-privacy-page .privacy-definition-list dd {
+  padding-top: 12px;
+  border-top: 1px solid rgba(175, 136, 85, .16);
+}
+
+body.ssense-privacy-page .privacy-check-list,
+body.ssense-privacy-page .privacy-contact-list {
+  display: grid;
+  gap: 10px;
+  padding-left: 0;
+  margin: 0 0 16px;
+  list-style: none;
+}
+
+body.ssense-privacy-page .privacy-check-list li {
+  position: relative;
+  padding-left: 28px;
+}
+
+body.ssense-privacy-page .privacy-check-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .68em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b25996;
+  box-shadow: 0 0 0 5px rgba(178, 89, 150, .1);
+}
+
+body.ssense-privacy-page .privacy-mini-grid,
+body.ssense-privacy-page .privacy-provider-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+body.ssense-privacy-page .privacy-mini-grid > div,
+body.ssense-privacy-page .privacy-provider-list > div {
+  padding: 18px;
+  border: 1px solid rgba(175, 136, 85, .15);
+  border-radius: 22px;
+  background: #fffaf7;
+}
+
+body.ssense-privacy-page .privacy-contact-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+body.ssense-privacy-page .privacy-contact-list span {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 50%;
+  background: #f7e5e1;
+  color: #a34d6a;
+}
+
+body.ssense-privacy-page .privacy-contact-cta {
+  padding: clamp(4px, 2vw, 24px) 0 clamp(40px, 6vw, 76px);
+}
+
+body.ssense-privacy-page .privacy-contact-cta__inner {
+  overflow: hidden;
+  position: relative;
+  padding: clamp(34px, 5vw, 62px);
+  border-radius: 38px 38px 10px 38px;
+  background:
+    radial-gradient(circle at 88% 24%, rgba(255,255,255,.55), transparent 28%),
+    linear-gradient(135deg, #f7e5e1, #fbf5ef 54%, #fffdfb);
+  box-shadow: 0 24px 70px rgba(84, 45, 45, .1);
+}
+
+body.ssense-privacy-page .privacy-contact-cta__inner::after {
+  content: '';
+  position: absolute;
+  right: -42px;
+  bottom: -92px;
+  width: 240px;
+  height: 240px;
+  border: 1px solid rgba(163, 77, 106, .18);
+  border-radius: 50%;
+}
+
+body.ssense-privacy-page .privacy-contact-cta__inner > * {
+  position: relative;
+  z-index: 1;
+}
+
+body.ssense-privacy-page .privacy-contact-cta h2 {
+  max-width: 740px;
+  margin: 0 0 14px;
+  color: #2d2424;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(2rem, 4.6vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: .98;
+}
+
+body.ssense-privacy-page .privacy-contact-cta p:not(.privacy-kicker) {
+  max-width: 650px;
+  color: #6f5d58 !important;
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.72;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body.ssense-privacy-page .privacy-hero__copy,
+  body.ssense-privacy-page .privacy-hero__card,
+  body.ssense-privacy-page .privacy-section,
+  body.ssense-privacy-page .privacy-contact-cta__inner {
+    animation: ssensePrivacyRise .55s ease-out both;
+  }
+
+  body.ssense-privacy-page .privacy-hero__card { animation-delay: .08s; }
+  body.ssense-privacy-page .privacy-section:nth-child(2n) { animation-delay: .05s; }
+}
+
+@keyframes ssensePrivacyRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ==========================================================================
@@ -17689,6 +18230,499 @@ a, p, h1, h2, h3, h4, h5, h6, li, dt, dd, span { overflow-wrap: anywhere; }
 .ssense-footer-architecture-links { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 18px; margin:32px auto 10px; padding:18px 0; border-top:1px solid rgba(178,89,150,.12); border-bottom:1px solid rgba(178,89,150,.12); }
 .ssense-footer-architecture-links a { color:inherit; font-size:.92rem; }
 .ssense-footer-architecture-links a:hover { color:var(--color-primary); }
+
+/* Careers landing page: reference-aligned editorial recruitment layout. */
+.ssense-careers-page {
+  --careers-ink: #241718;
+  --careers-muted: #735f5b;
+  --careers-burgundy: #8f2748;
+  --careers-blush: #fff4ef;
+  --careers-cream: #fffaf6;
+  --careers-line: rgba(143, 39, 72, .16);
+}
+
+.ssense-careers-hero,
+.ssense-careers-strip,
+.ssense-careers-intro,
+.ssense-careers-process,
+.ssense-careers-openings,
+.ssense-careers-benefits,
+.ssense-careers-location,
+.ssense-careers-final { background: var(--careers-cream); }
+
+.ssense-careers-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(112px, 12vw, 154px) 0 clamp(34px, 5vw, 62px);
+  background:
+    radial-gradient(circle at 5% 18%, rgba(143, 39, 72, .09), transparent 28%),
+    linear-gradient(115deg, #fffaf6 0%, #fff7f2 54%, #ead2c8 100%);
+}
+
+.ssense-careers-hero::after {
+  content: '';
+  position: absolute;
+  inset: auto -120px -180px auto;
+  width: clamp(280px, 34vw, 520px);
+  height: clamp(280px, 34vw, 520px);
+  border: 1px solid rgba(143, 39, 72, .14);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ssense-careers-hero .container,
+.ssense-careers-strip .container,
+.ssense-careers-intro .container,
+.ssense-careers-process .container,
+.ssense-careers-openings .container,
+.ssense-careers-benefits .container,
+.ssense-careers-location .container,
+.ssense-careers-final .container { max-width: 1260px; }
+
+.ssense-careers-hero__grid,
+.ssense-careers-intro__grid,
+.ssense-careers-benefits__grid,
+.ssense-careers-location__panel {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(360px, 1fr);
+  gap: clamp(34px, 6vw, 86px);
+  align-items: center;
+}
+
+.ssense-careers-hero__copy,
+.ssense-careers-hero__media,
+.ssense-careers-final__panel > * { position: relative; z-index: 1; }
+
+.ssense-careers-page .ssense-eyebrow {
+  margin-bottom: 18px;
+  color: var(--careers-burgundy) !important;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.ssense-careers-hero h1,
+.ssense-careers-intro h2,
+.ssense-careers-process h2,
+.ssense-careers-openings h2,
+.ssense-careers-benefits h2,
+.ssense-careers-location h2,
+.ssense-careers-final h2 {
+  color: var(--careers-ink);
+  font-family: var(--font-heading), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -.06em;
+  line-height: .96;
+}
+
+.ssense-careers-hero h1 {
+  max-width: 710px;
+  margin-bottom: 24px;
+  font-size: clamp(3.5rem, 7.4vw, 7.1rem);
+}
+
+.ssense-careers-hero h1 span {
+  color: var(--careers-burgundy);
+  font-family: 'Alex Brush', cursive;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.ssense-careers-hero p,
+.ssense-careers-intro__copy p,
+.ssense-careers-process .ssense-section-heading > p,
+.ssense-careers-role-list p,
+.ssense-careers-benefit-list p,
+.ssense-careers-location p,
+.ssense-careers-final p {
+  color: var(--careers-muted) !important;
+  line-height: 1.72;
+}
+
+.ssense-careers-hero__copy > p:not(.ssense-eyebrow) {
+  max-width: 570px;
+  font-size: clamp(1rem, 1.35vw, 1.16rem);
+}
+
+.ssense-careers-page .ssense-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.ssense-careers-page .ssense-actions .btn {
+  min-height: 50px;
+  border-radius: 999px;
+  padding: 14px 24px;
+}
+
+.ssense-careers-hero__media { position: relative; min-height: clamp(430px, 46vw, 650px); }
+
+.ssense-careers-hero__media figure,
+.ssense-careers-intro__media figure {
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 30px 80px rgba(67, 32, 34, .16);
+}
+
+.ssense-careers-hero__media img,
+.ssense-careers-intro__media img { width: 100%; height: 100%; object-fit: cover; }
+
+.ssense-careers-hero__image-main {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  border: 10px solid rgba(255,255,255,.84);
+  border-radius: 170px 170px 18px 18px;
+}
+
+.ssense-careers-badge {
+  position: absolute;
+  left: -34px;
+  bottom: 34px;
+  display: grid;
+  place-items: center;
+  width: clamp(104px, 10vw, 138px);
+  height: clamp(104px, 10vw, 138px);
+  border-radius: 50%;
+  background: var(--careers-burgundy);
+  color: #fff;
+  box-shadow: 0 22px 45px rgba(143, 39, 72, .28);
+}
+
+.ssense-careers-badge span {
+  max-width: 76px;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.ssense-careers-strip { padding: 18px 0 clamp(56px, 7vw, 88px); }
+
+.ssense-careers-strip__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.ssense-careers-strip__grid > div {
+  min-height: 92px;
+  padding: 18px 16px;
+  border: 1px solid var(--careers-line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .74);
+  box-shadow: 0 16px 38px rgba(67, 32, 34, .06);
+}
+
+.ssense-careers-strip__grid span,
+.ssense-careers-role-list span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--careers-burgundy);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.ssense-careers-strip__grid strong {
+  display: block;
+  color: var(--careers-ink);
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: 1.06rem;
+  line-height: 1.15;
+}
+
+.ssense-careers-intro,
+.ssense-careers-process,
+.ssense-careers-openings,
+.ssense-careers-benefits,
+.ssense-careers-location,
+.ssense-careers-final { padding: clamp(64px, 8vw, 106px) 0; }
+
+.ssense-careers-intro__grid { align-items: center; }
+
+.ssense-careers-intro h2,
+.ssense-careers-process h2,
+.ssense-careers-openings h2,
+.ssense-careers-benefits h2,
+.ssense-careers-location h2,
+.ssense-careers-final h2 { font-size: clamp(2.35rem, 4.9vw, 4.85rem); }
+
+.ssense-careers-intro__copy .ssense-check-list { margin-top: 26px; }
+
+.ssense-careers-intro__media { position: relative; }
+
+.ssense-careers-intro__media figure {
+  aspect-ratio: 4 / 5;
+  border-radius: 42px 42px 12px 42px;
+}
+
+.ssense-careers-side-card {
+  position: absolute;
+  right: -18px;
+  bottom: 28px;
+  max-width: 285px;
+  padding: 22px;
+  border: 1px solid var(--careers-line);
+  border-radius: 24px;
+  background: rgba(255, 250, 246, .92);
+  box-shadow: 0 22px 52px rgba(67, 32, 34, .12);
+  backdrop-filter: blur(10px);
+}
+
+.ssense-careers-side-card strong { display: block; margin-bottom: 12px; color: var(--careers-ink); font-family: var(--font-heading), Georgia, serif; font-size: 1.45rem; }
+.ssense-careers-side-card ul { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; color: var(--careers-muted); font-size: .94rem; line-height: 1.45; }
+.ssense-careers-side-card li::before { content: ''; display: inline-block; width: 6px; height: 6px; margin: 0 8px 2px 0; border-radius: 50%; background: var(--careers-burgundy); }
+
+.ssense-careers-process,
+.ssense-careers-benefits { background: #f5e4dc; }
+
+.ssense-careers-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: clamp(30px, 4vw, 52px);
+}
+
+.ssense-careers-steps article,
+.ssense-careers-role-list article,
+.ssense-careers-benefit-list article {
+  border: 1px solid var(--careers-line);
+  background: rgba(255, 255, 255, .78);
+  box-shadow: 0 18px 46px rgba(67, 32, 34, .07);
+}
+
+.ssense-careers-steps article { border-radius: 28px; padding: clamp(22px, 2.6vw, 32px); }
+.ssense-careers-steps span { color: rgba(143, 39, 72, .52); font-family: var(--font-heading), Georgia, serif; font-size: clamp(2.15rem, 3.6vw, 3.4rem); line-height: 1; }
+.ssense-careers-steps h3,
+.ssense-careers-role-list h3,
+.ssense-careers-benefit-list h3 { margin: 18px 0 10px; color: var(--careers-ink); font-family: var(--font-heading), Georgia, serif; font-size: clamp(1.35rem, 2vw, 1.8rem); letter-spacing: -.035em; }
+
+.ssense-careers-openings .ssense-section-heading { max-width: 720px; margin-bottom: clamp(28px, 4vw, 46px); }
+
+.ssense-careers-role-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ssense-careers-role-list article {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 28px;
+  padding: clamp(22px, 2.8vw, 32px);
+}
+
+.ssense-careers-role-list h3,
+.ssense-careers-role-list p { margin-top: 0; }
+.ssense-careers-role-list p { flex: 1; }
+
+.ssense-role-apply {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: var(--careers-burgundy);
+  font-weight: 800;
+}
+.ssense-role-apply::after { content: '\2192'; transition: transform .3s ease; }
+.ssense-role-apply:hover::after,
+.ssense-role-apply:focus::after { transform: translateX(4px); }
+
+.ssense-careers-benefits__grid { grid-template-columns: minmax(280px, .55fr) minmax(0, 1fr); align-items: start; }
+.ssense-careers-benefits__script { margin-top: 20px !important; color: var(--careers-burgundy) !important; font-family: 'Alex Brush', cursive; font-size: clamp(2.25rem, 4vw, 4rem); line-height: 1; }
+
+.ssense-careers-benefit-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.ssense-careers-benefit-list article { border-radius: 26px; padding: 24px; }
+.ssense-careers-benefit-list article > span { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #fff4ef; color: var(--careers-burgundy); font-size: 1.2rem; }
+.ssense-careers-benefit-list h3 { margin-top: 16px; }
+
+.ssense-careers-location__panel,
+.ssense-careers-final__panel {
+  border: 1px solid var(--careers-line);
+  box-shadow: 0 24px 70px rgba(67, 32, 34, .1);
+}
+
+.ssense-careers-location__panel {
+  padding: clamp(28px, 5vw, 58px);
+  border-radius: 38px 38px 12px 38px;
+  background: linear-gradient(135deg, #fff, #fff7f2 58%, #f1d9cf);
+}
+
+.ssense-careers-location__links { display: grid; gap: 12px; }
+.ssense-careers-location__links a { display: flex; justify-content: space-between; align-items: center; min-height: 56px; padding: 14px 18px; border: 1px solid var(--careers-line); border-radius: 999px; background: rgba(255,255,255,.76); color: var(--careers-ink); font-weight: 800; }
+.ssense-careers-location__links a::after { content: '\2192'; color: var(--careers-burgundy); }
+
+.ssense-careers-final__panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(38px, 7vw, 82px);
+  border-radius: 44px 44px 12px 44px;
+  background: var(--careers-burgundy);
+  text-align: center;
+}
+.ssense-careers-final__panel::before { content: ''; position: absolute; inset: 18px; border: 1px solid rgba(255,255,255,.28); border-radius: 32px 32px 8px 32px; pointer-events: none; }
+.ssense-careers-final h2,
+.ssense-careers-final .ssense-eyebrow,
+.ssense-careers-final p { color: #fff !important; }
+.ssense-careers-final__panel > p:not(.ssense-eyebrow) { color: #fff !important; }
+.ssense-careers-final p { max-width: 690px; margin-right: auto; margin-left: auto; opacity: .86; }
+.ssense-careers-final .ssense-actions { justify-content: center; }
+.ssense-careers-final .btn--tra-black { border-color: rgba(255,255,255,.54); color: #fff; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .ssense-careers-hero__copy,
+  .ssense-careers-hero__image-main,
+  .ssense-careers-badge,
+  .ssense-careers-strip__grid > div,
+  .ssense-careers-steps article,
+  .ssense-careers-role-list article,
+  .ssense-careers-benefit-list article,
+  .ssense-careers-final__panel { animation: ssenseCareersRise .55s ease-out both; }
+  .ssense-careers-hero__image-main { animation-delay: .06s; }
+  .ssense-careers-badge { animation-delay: .14s; }
+  .ssense-careers-strip__grid > div:nth-child(2), .ssense-careers-steps article:nth-child(2), .ssense-careers-role-list article:nth-child(2) { animation-delay: .06s; }
+  .ssense-careers-strip__grid > div:nth-child(3), .ssense-careers-steps article:nth-child(3), .ssense-careers-role-list article:nth-child(3) { animation-delay: .12s; }
+  .ssense-careers-strip__grid > div:nth-child(4), .ssense-careers-steps article:nth-child(4), .ssense-careers-role-list article:nth-child(4) { animation-delay: .18s; }
+}
+
+@keyframes ssenseCareersRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 1199.98px) {
+  .ssense-careers-strip__grid,
+  .ssense-careers-role-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ssense-careers-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 991.98px) {
+  .ssense-careers-hero__grid,
+  .ssense-careers-intro__grid,
+  .ssense-careers-benefits__grid,
+  .ssense-careers-location__panel { grid-template-columns: 1fr; }
+  .ssense-careers-hero__media { min-height: 540px; }
+  .ssense-careers-side-card { right: 18px; }
+}
+
+@media (max-width: 575.98px) {
+  .ssense-careers-hero { padding-top: 96px; }
+  .ssense-careers-hero h1 { font-size: clamp(3rem, 15vw, 4.2rem); }
+  .ssense-careers-page .ssense-actions { display: grid; grid-template-columns: 1fr; width: 100%; }
+  .ssense-careers-page .ssense-actions .btn { width: 100%; justify-content: center; text-align: center; }
+  .ssense-careers-hero__media { min-height: 410px; }
+  .ssense-careers-hero__image-main { border-width: 6px; border-radius: 92px 92px 14px 14px; }
+  .ssense-careers-badge { left: 14px; bottom: 18px; width: 94px; height: 94px; }
+  .ssense-careers-badge span { max-width: 62px; font-size: .62rem; }
+  .ssense-careers-strip__grid,
+  .ssense-careers-steps,
+  .ssense-careers-role-list,
+  .ssense-careers-benefit-list { grid-template-columns: 1fr; }
+  .ssense-careers-side-card { position: relative; right: auto; bottom: auto; max-width: none; margin: -26px 16px 0; }
+  .ssense-careers-location__links a { border-radius: 18px; }
+}
+
+/* Careers page compact height pass: preserve look, reduce vertical space. */
+.ssense-careers-hero { padding: clamp(92px, 9vw, 124px) 0 clamp(18px, 3vw, 34px); }
+.ssense-careers-hero__grid,
+.ssense-careers-intro__grid,
+.ssense-careers-benefits__grid,
+.ssense-careers-location__panel { gap: clamp(24px, 4vw, 56px); }
+.ssense-careers-page .ssense-eyebrow { margin-bottom: 12px; }
+.ssense-careers-hero h1 { margin-bottom: 14px; font-size: clamp(3.05rem, 6.2vw, 5.85rem); }
+.ssense-careers-hero__copy > p:not(.ssense-eyebrow) { font-size: clamp(.94rem, 1.05vw, 1.04rem); line-height: 1.5; }
+.ssense-careers-page .ssense-actions { margin-top: 20px; }
+.ssense-careers-page .ssense-actions .btn { min-height: 44px; padding: 11px 22px; }
+.ssense-careers-hero__media { min-height: clamp(340px, 35vw, 500px); }
+.ssense-careers-hero__image-main {
+  height: clamp(340px, 35vw, 500px);
+  min-height: 0;
+  background: transparent;
+}
+.ssense-careers-hero__image-main img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.ssense-careers-badge { width: clamp(88px, 8vw, 116px); height: clamp(88px, 8vw, 116px); bottom: 24px; }
+.ssense-careers-badge span { font-size: .62rem; }
+.ssense-careers-strip { padding: 12px 0 clamp(36px, 4.5vw, 58px); }
+.ssense-careers-strip__grid > div { min-height: 72px; padding: 13px 14px; }
+.ssense-careers-strip__grid span,
+.ssense-careers-role-list span { margin-bottom: 6px; }
+.ssense-careers-strip__grid strong { font-size: .98rem; line-height: 1.12; }
+.ssense-careers-intro,
+.ssense-careers-process,
+.ssense-careers-openings,
+.ssense-careers-benefits,
+.ssense-careers-location,
+.ssense-careers-final { padding: clamp(42px, 5vw, 68px) 0; }
+.ssense-careers-intro h2,
+.ssense-careers-process h2,
+.ssense-careers-openings h2,
+.ssense-careers-benefits h2,
+.ssense-careers-location h2,
+.ssense-careers-final h2 { font-size: clamp(2.05rem, 4vw, 3.85rem); }
+.ssense-careers-hero p,
+.ssense-careers-intro__copy p,
+.ssense-careers-process .ssense-section-heading > p,
+.ssense-careers-role-list p,
+.ssense-careers-benefit-list p,
+.ssense-careers-location p,
+.ssense-careers-final p { line-height: 1.5; }
+.ssense-careers-intro__copy .ssense-check-list { margin-top: 18px; }
+.ssense-careers-intro__media figure { aspect-ratio: 16 / 15; }
+.ssense-careers-side-card { bottom: 18px; padding: 18px; }
+.ssense-careers-side-card strong { margin-bottom: 8px; font-size: 1.28rem; }
+.ssense-careers-side-card ul { gap: 6px; font-size: .88rem; line-height: 1.32; }
+.ssense-careers-steps { gap: 12px; margin-top: clamp(20px, 3vw, 34px); }
+.ssense-careers-steps article { padding: clamp(16px, 2vw, 24px); }
+.ssense-careers-steps span { font-size: clamp(1.75rem, 2.8vw, 2.65rem); }
+.ssense-careers-steps h3,
+.ssense-careers-role-list h3,
+.ssense-careers-benefit-list h3 { margin: 12px 0 7px; font-size: clamp(1.18rem, 1.65vw, 1.55rem); }
+.ssense-careers-openings .ssense-section-heading { margin-bottom: clamp(20px, 3vw, 32px); }
+.ssense-careers-role-list,
+.ssense-careers-benefit-list { gap: 12px; }
+.ssense-careers-role-list article { padding: clamp(17px, 2.1vw, 24px); border-radius: 22px; }
+.ssense-role-apply { margin-top: 12px; }
+.ssense-careers-benefits__script { margin-top: 12px !important; font-size: clamp(1.95rem, 3.2vw, 3.35rem); }
+.ssense-careers-benefit-list article { padding: 18px; border-radius: 22px; }
+.ssense-careers-benefit-list article > span { width: 38px; height: 38px; }
+.ssense-careers-benefit-list h3 { margin-top: 12px; }
+.ssense-careers-location__panel { padding: clamp(22px, 3.8vw, 42px); }
+.ssense-careers-location__links { gap: 9px; }
+.ssense-careers-location__links a { min-height: 48px; padding: 11px 16px; }
+.ssense-careers-final__panel { padding: clamp(28px, 5vw, 56px); }
+.ssense-careers-final__panel::before { inset: 12px; }
+
+@media (max-width: 991.98px) {
+  .ssense-careers-hero__media { min-height: 430px; }
+  .ssense-careers-hero__image-main { height: 430px; }
+}
+
+@media (max-width: 575.98px) {
+  .ssense-careers-hero { padding-top: 82px; }
+  .ssense-careers-hero h1 { font-size: clamp(2.65rem, 13vw, 3.65rem); }
+  .ssense-careers-hero__media { min-height: 330px; }
+  .ssense-careers-intro,
+  .ssense-careers-process,
+  .ssense-careers-openings,
+  .ssense-careers-benefits,
+  .ssense-careers-location,
+  .ssense-careers-final { padding: 34px 0; }
+  .ssense-careers-hero__image-main { height: 330px; }
+}
 
 /* Homepage header: transparent over the hero, solid after scroll. */
 body.ssense-transparent-header .tra-menu .wsmainfull:not(.scroll) {

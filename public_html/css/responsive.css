@@ -6113,6 +6113,69 @@ body:not(.theme--dark) #hero-1 .caption p,
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  body.ssense-privacy-page .privacy-hero {
+    padding-top: 112px;
+  }
+
+  body.ssense-privacy-page .privacy-hero__actions .btn,
+  body.ssense-privacy-page .privacy-contact-cta__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  body.ssense-privacy-page .privacy-section,
+  body.ssense-privacy-page .privacy-contact-cta__inner {
+    border-radius: 24px;
+  }
+
+  body.ssense-privacy-page .privacy-section__head {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  body.ssense-privacy-page .privacy-section__icon {
+    grid-row: 1;
+  }
+
+  body.ssense-privacy-page .privacy-section h2 {
+    grid-column: 1 / -1;
+  }
+
+  body.ssense-privacy-page .privacy-definition-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  body.ssense-privacy-page .privacy-definition-list dd {
+    padding-top: 4px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.ssense-privacy-page .privacy-hero__grid,
+  body.ssense-privacy-page .privacy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  body.ssense-privacy-page .privacy-toc {
+    position: static;
+  }
+
+  body.ssense-privacy-page .privacy-toc nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.ssense-privacy-page .privacy-mini-grid,
+  body.ssense-privacy-page .privacy-provider-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.ssense-privacy-page .privacy-toc nav {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ==========================================================================

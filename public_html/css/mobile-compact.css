@@ -197,6 +197,11 @@
   html body .ssense-services-related-showcase .ssense-related-card::after,
   html body .ssense-hair-related-showcase .ssense-related-card::after,
   html body .ssense-about-menu-card::after { display: none !important; }
+  html body .ssense-hair-related-showcase .ssense-related-card { padding: 24px !important; gap: 22px !important; border-radius: 22px !important; }
+  html body .ssense-hair-related-showcase .ssense-related-card > img,
+  html body .ssense-hair-related-showcase .ssense-related-icon,
+  html body .ssense-hair-related-showcase .ssense-related-card > small,
+  html body .ssense-hair-related-showcase .ssense-related-card > b { display: none !important; }
   html body .ssense-about-menu-card__meta { display: flex !important; justify-content: space-between; }
   html body .ssense-about-menu-card__icon { width: 24px !important; height: 24px !important; font-size: 14px !important; }
   html body .ssense-about-menu-card__link { display: flex !important; flex-wrap: wrap; margin-top: auto !important; min-height: 44px; }
@@ -580,6 +585,7 @@
   html body .ssense-general-footer__bottom .container { gap: 8px !important; padding-block: 0 !important; }
   html body .ssense-general-footer__bottom p { margin: 0 !important; font-size: .75rem !important; }
   html body .ssense-general-footer__bottom a { display: inline-flex; align-items: center; min-height: 44px; }
+  html body .ssense-general-footer__bottom nav a[href$="sitemap.xml"] { display: none !important; }
   html body .ssense-compact-panel { scroll-margin-top: 84px; }
   html body .ssense-compact-toggle:active { opacity: .75; }
   html body .ssense-compact-row > [hidden] { display: none !important; }
