@@ -13,72 +13,74 @@ $(document).ready(function() {
         var staff = $(".staff");
         var date = $(".date");
         var flag = false;
+        var requiredFields = [firstname, lastname, email, phone, service, staff, date];
         if (firstname.val() == "") {
-            firstname.closest(".form-control").addClass("error");
+            firstname.addClass("error");
             firstname.focus();
             flag = false;
             return false;
         } else {
-            firstname.closest(".form-control").removeClass("error").addClass("success");
+            firstname.removeClass("error").addClass("success");
         } if (lastname.val() == "") {
-            lastname.closest(".form-control").addClass("error");
+            lastname.addClass("error");
             lastname.focus();
             flag = false;
             return false;
         } else {
-            lastname.closest(".form-control").removeClass("error").addClass("success");
+            lastname.removeClass("error").addClass("success");
         } if (email.val() == "") {
-            email.closest(".form-control").addClass("error");
+            email.addClass("error");
             email.focus();
             flag = false;
             return false;
         } else {
-            email.closest(".form-control").removeClass("error").addClass("success");
+            email.removeClass("error").addClass("success");
         } if (phone.val() == "") {
-            phone.closest(".form-control").addClass("error");
+            phone.addClass("error");
             phone.focus();
             flag = false;
             return false;
         } else {
-            phone.closest(".form-control").removeClass("error").addClass("success");
-        } if (service.val() == "") {
-            service.closest(".form-control").addClass("error");
+            phone.removeClass("error").addClass("success");
+        } if (!service.val()) {
+            service.addClass("error");
             service.focus();
             flag = false;
             return false;
         } else {
-            service.closest(".form-control").removeClass("error").addClass("success");
-        } if (staff.val() == "") {
-            staff.closest(".form-control").addClass("error");
+            service.removeClass("error").addClass("success");
+        } if (!staff.val()) {
+            staff.addClass("error");
             staff.focus();
             flag = false;
             return false;
         } else {
-            staff.closest(".form-control").removeClass("error").addClass("success");
+            staff.removeClass("error").addClass("success");
         } if (date.val() == "") {
-            date.closest(".form-control").addClass("error");
+            date.addClass("error");
             date.focus();
             flag = false;
             return false;
         } else {
-            date.closest(".form-control").removeClass("error").addClass("success");
+            date.removeClass("error").addClass("success");
             flag = true;
         }
-        var dataString = "firstname=" + firstname.val() + "&lastname=" + lastname.val() + "&email=" + email.val() + "&phone=" + phone.val() + "&service=" + service.val() + "&staff=" + staff.val() + "&date=" + date.val();
-        $(".loading").fadeIn("slow").html("Loading...");
-        $.ajax({
-            type: "POST",
-            data: dataString,
-            url: "php/bookingForm.php",
-            cache: false,
-            success: function (d) {
-                $(".form-control").removeClass("success");
-                    if(d == 'success') // Message Sent? Show the 'Thank You' message and hide the form
-                        $('.loading').fadeIn('slow').html('<font color="#48af4b">Mail sent Successfully.</font>').delay(3000).fadeOut('slow');
-                         else
-                        $('.loading').fadeIn('slow').html('<font color="#ff5607">Mail not sent.</font>').delay(3000).fadeOut('slow');
-                                }
-        });
+        if (flag) {
+            var message = encodeURIComponent(
+                "Hi S.Sense, I would like to book an appointment.\n\n" +
+                "Name: " + firstname.val() + " " + lastname.val() + "\n" +
+                "Email: " + email.val() + "\n" +
+                "Phone: " + phone.val() + "\n" +
+                "Service: " + service.val() + "\n" +
+                "Preferred Staff: " + staff.val() + "\n" +
+                "Preferred Date/Time: " + date.val() + "\n\n" +
+                "Please confirm availability."
+            );
+            var whatsappUrl = "https://wa.me/918054777888?text=" + message;
+            $(".loading").fadeIn("slow").html('<font color="#48af4b">Opening WhatsApp to confirm your request...</font>').delay(3000).fadeOut('slow');
+            requiredFields.forEach(function(field) { field.removeClass("success"); });
+            window.open(whatsappUrl, "_blank");
+        }
         return false;
     });
     $("#reset").on('click', function() {
@@ -113,6 +115,4 @@ $(document).ready(function() {
     });
 
 })
-
-
 
