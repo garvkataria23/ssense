@@ -19363,6 +19363,225 @@ body.ssense-home-refined #blog-1 .item-overlay {
   transition: opacity .4s ease;
 }
 
+/* Homepage usability audit fixes: consolidate scale, spacing, affordance and CTAs. */
+body.ssense-home-refined {
+  --ssense-fs-xs: .75rem;
+  --ssense-fs-sm: .875rem;
+  --ssense-fs-md: 1rem;
+  --ssense-fs-lg: 1.125rem;
+  --ssense-fs-xl: clamp(1.25rem, 1.7vw, 1.5rem);
+  --ssense-radius-sm: 8px;
+  --ssense-radius-md: 14px;
+  --ssense-radius-lg: 22px;
+  --ssense-radius-pill: 999px;
+  --ssense-copy: #39312d;
+  --ssense-copy-muted: #6d625d;
+  --ssense-copy-soft: #8f817a;
+  --ssense-surface-soft: #fbf7f3;
+  --ssense-surface-warm: #f3e9e2;
+  color: var(--ssense-copy);
+}
+
+body.ssense-home-refined p,
+body.ssense-home-refined li,
+body.ssense-home-refined .price-txt p,
+body.ssense-home-refined .sbox-txt p {
+  color: var(--ssense-copy-muted);
+  font-size: var(--ssense-fs-md);
+}
+
+body.ssense-home-refined h3,
+body.ssense-home-refined .h5-lg {
+  font-size: var(--ssense-fs-xl);
+}
+
+body.ssense-home-refined .btn,
+body.ssense-home-refined a.btn,
+body.ssense-home-refined button.btn,
+body.ssense-home-refined .ssense-home-service-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: var(--ssense-radius-pill) !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+body.ssense-home-refined .btn--black,
+body.ssense-home-refined .hover--black:hover {
+  background: var(--ssense-home-ink) !important;
+  border-color: var(--ssense-home-ink) !important;
+  color: #fff !important;
+}
+
+body.ssense-home-refined .btn--tra-black,
+body.ssense-home-refined .hover--tra-black:hover {
+  background: transparent !important;
+  border-color: rgba(33, 27, 24, .72) !important;
+  color: var(--ssense-home-ink) !important;
+}
+
+body.ssense-home-refined .ssense-hero-assist {
+  color: rgba(255, 255, 255, .82) !important;
+  font-size: var(--ssense-fs-sm) !important;
+  letter-spacing: .01em !important;
+  text-transform: none !important;
+}
+
+body.ssense-home-refined .ssense-luxury-feature {
+  column-gap: 12px;
+}
+
+body.ssense-home-refined .ssense-luxury-feature h3,
+body.ssense-home-refined .ssense-luxury-badge span,
+body.ssense-home-refined .ssense-home-secret-rail span,
+body.ssense-home-refined .ssense-home-peace-points span,
+body.ssense-home-refined .ssense-best-features b {
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+body.ssense-home-refined .ssense-home-secret-side,
+body.ssense-home-refined .ssense-home-peace-side {
+  color: var(--ssense-copy-soft);
+  font-size: 13px !important;
+  line-height: 1.45;
+  letter-spacing: .03em;
+  text-transform: none !important;
+}
+
+body.ssense-home-refined .ssense-menu-section .pricing-1-item {
+  padding: 14px 0 !important;
+  border-bottom: 1px solid rgba(33, 27, 24, .12);
+}
+
+body.ssense-home-refined .ssense-menu-section .pricing-list .pricing-1-item:last-child {
+  border-bottom: 0;
+}
+
+body.ssense-home-refined #gallery-4 .gallery-4-wrapper > .row {
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 20px;
+}
+
+body.ssense-home-refined #gallery-4 .gallery-4-wrapper .col-lg-3,
+body.ssense-home-refined #gallery-4 .gallery-4-wrapper .col-lg-2 {
+  display: grid;
+  gap: 20px;
+}
+
+body.ssense-home-refined #gallery-4 .gallery-image {
+  margin-bottom: 0 !important;
+  overflow: hidden;
+  border-radius: var(--ssense-radius-lg);
+}
+
+body.ssense-home-refined .ssense-general-footer__newsletter .newsletter-form .input-group {
+  align-items: stretch;
+}
+
+body.ssense-home-refined .ssense-general-footer__newsletter .newsletter-form .form-control,
+body.ssense-home-refined .ssense-general-footer__newsletter .newsletter-form .btn {
+  height: 42px !important;
+  min-height: 42px !important;
+}
+
+body.ssense-home-refined .ssense-general-footer__newsletter .newsletter-form .btn {
+  width: 42px;
+  min-width: 42px;
+  padding: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.ssense-home-refined #why-ssense .accordion-thumb {
+  cursor: pointer;
+  padding: 16px 48px 16px 18px;
+  border: 1px solid rgba(33, 27, 24, .14) !important;
+  border-radius: var(--ssense-radius-md);
+  background: var(--ssense-surface-soft);
+  transition: background-color .25s ease, border-color .25s ease, transform .25s ease;
+}
+
+body.ssense-home-refined #why-ssense .accordion-thumb:hover,
+body.ssense-home-refined #why-ssense .accordion-thumb:focus-visible {
+  background: var(--ssense-surface-warm);
+  border-color: rgba(139, 94, 75, .34) !important;
+}
+
+body.ssense-home-refined #why-ssense .accordion-thumb:focus-visible {
+  outline: 3px solid rgba(139, 94, 75, .28);
+  outline-offset: 3px;
+}
+
+body.ssense-home-refined #why-ssense .accordion-thumb[aria-expanded="true"] {
+  background: #efe3da;
+  border-color: rgba(139, 94, 75, .42) !important;
+}
+
+body.ssense-home-refined .ssense-home-service-link {
+  min-height: 42px;
+  padding: .68rem 1.05rem;
+  border: 1px solid rgba(33, 27, 24, .18);
+  background: #fff;
+  color: var(--ssense-home-ink) !important;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(33, 27, 24, .06);
+}
+
+body.ssense-home-refined .ssense-home-service-link:hover,
+body.ssense-home-refined .ssense-home-service-link:focus-visible {
+  border-color: rgba(33, 27, 24, .34);
+  box-shadow: 0 12px 24px rgba(33, 27, 24, .1);
+}
+
+body.ssense-home-refined .ssense-home-service-link:focus-visible {
+  outline: 3px solid rgba(139, 94, 75, .28);
+  outline-offset: 3px;
+}
+
+body.ssense-home-refined .ssense-home-service-link span {
+  transition: transform .2s ease;
+}
+
+body.ssense-home-refined .ssense-home-service-link:hover span {
+  transform: translateX(3px);
+}
+
+body.ssense-home-refined .ssense-floating-cta {
+  right: max(18px, env(safe-area-inset-right)) !important;
+  bottom: max(22px, env(safe-area-inset-bottom)) !important;
+  gap: 0 !important;
+}
+
+body.ssense-home-refined .ssense-floating-cta a:not(.ssense-floating-cta__whatsapp) {
+  display: none !important;
+}
+
+body.ssense-home-refined .ssense-floating-cta__whatsapp {
+  width: 54px !important;
+  height: 54px !important;
+  min-width: 54px !important;
+  min-height: 54px !important;
+  box-shadow: 0 14px 34px rgba(18, 140, 126, .24) !important;
+}
+
+@media (max-width: 767.98px) {
+  body.ssense-home-refined #gallery-4 .gallery-4-wrapper > .row {
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 16px;
+  }
+
+  body.ssense-home-refined #gallery-4 .gallery-4-wrapper .col-lg-3,
+  body.ssense-home-refined #gallery-4 .gallery-4-wrapper .col-lg-2 {
+    gap: 16px;
+  }
+}
+
 body.ssense-home-refined #blog-1 .ssense-blog-card:hover .item-overlay {
   opacity: 1;
 }
@@ -27113,4 +27332,227 @@ body .banner-2-txt h2 span {
 body .banner-2-txt h3 {
   color: #fff4f7 !important;
   text-shadow: 0 3px 18px rgba(0, 0, 0, .42);
+}
+
+
+/* Shared services-page related showcase, aligned with services.html. */
+body.ssense-ia-page .ssense-services-related-showcase {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: clamp(80px, 8.5vw, 132px) 0 clamp(70px, 7vw, 110px);
+  background:
+    radial-gradient(620px 420px at 76% 16%, rgba(198, 117, 124, 0.13), transparent 72%),
+    radial-gradient(540px 360px at 38% 78%, rgba(222, 190, 178, 0.18), transparent 70%),
+    linear-gradient(135deg, #fffdfb 0%, #fbf5f1 54%, #f3e9e8 100%) !important;
+}
+body.ssense-ia-page .ssense-services-related-showcase .container { max-width: 1740px; }
+body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(520px, 0.48fr) minmax(620px, 0.52fr);
+  min-height: clamp(360px, 28vw, 490px);
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+  margin: 0 0 clamp(34px, 4.6vw, 64px);
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split::before {
+  content: 'Look\A Good\A Feel\A Good';
+  position: absolute;
+  left: 54%;
+  top: 0;
+  z-index: 3;
+  display: grid;
+  width: clamp(138px, 10vw, 176px);
+  height: clamp(138px, 10vw, 176px);
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(247, 231, 228, 0.82);
+  color: #4f5963;
+  white-space: pre;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  line-height: 1.55;
+  text-align: center;
+  text-transform: uppercase;
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -54px;
+  z-index: 2;
+  width: min(680px, 42vw);
+  height: clamp(310px, 27vw, 460px);
+  border: 8px solid rgba(255, 255, 255, 0.72);
+  border-radius: 240px 48px 48px 240px;
+  background: url(../images/salon_hero_background.webp) center/cover no-repeat;
+  box-shadow: 0 28px 74px rgba(95, 41, 55, 0.16);
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split > div:first-child { position: relative; z-index: 4; }
+body.ssense-ia-page .ssense-services-related-showcase .ssense-eyebrow {
+  gap: 18px;
+  margin-bottom: clamp(20px, 2.4vw, 34px);
+  color: #bd777c;
+  font-size: clamp(0.74rem, 0.92vw, 0.88rem);
+  letter-spacing: 0.32em;
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-eyebrow::before,
+body.ssense-ia-page .ssense-services-related-showcase .ssense-eyebrow::after { width: 54px; background: rgba(182, 106, 112, 0.5); }
+body.ssense-ia-page .ssense-services-related-showcase h2 {
+  max-width: 720px;
+  margin: 0;
+  color: #171414;
+  font-family: var(--font-heading), serif;
+  font-size: clamp(4rem, 6.4vw, 7.4rem);
+  font-weight: 600;
+  letter-spacing: -0.058em;
+  line-height: 0.88;
+}
+body.ssense-ia-page .ssense-services-related-showcase h2 span { display: block; color: #b66a70; }
+body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split > p {
+  position: relative;
+  z-index: 4;
+  align-self: end;
+  max-width: 610px;
+  margin: 0 0 32px;
+  color: #607080;
+  font-size: clamp(1rem, 1.2vw, 1.22rem);
+  line-height: 1.6;
+}
+body.ssense-ia-page .ssense-related-script {
+  position: absolute;
+  left: calc(100% + 90px);
+  bottom: 12px;
+  z-index: 4;
+  margin: 0;
+  color: rgba(182, 106, 112, 0.78) !important;
+  font-family: var(--font-handwriting), cursive;
+  font-size: clamp(1.8rem, 2.5vw, 3.2rem) !important;
+  line-height: 0.95 !important;
+  text-align: center;
+  transform: rotate(-5deg);
+}
+body.ssense-ia-page .ssense-related-script span { font-size: 1rem; }
+body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split > p::after {
+  content: 'Book Ahead\A\A Premium Services\A\A Expert Care';
+  position: absolute;
+  right: -410px;
+  top: -92px;
+  z-index: 5;
+  min-width: 180px;
+  padding: 30px 28px;
+  border: 1px solid rgba(166, 83, 98, 0.18);
+  border-radius: 28px;
+  background: rgba(246, 226, 224, 0.9);
+  box-shadow: 0 20px 44px rgba(95, 41, 55, 0.14);
+  color: #4f5963;
+  white-space: pre;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(18px, 2vw, 28px);
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr) 58px;
+  grid-template-areas: 'image label arrow' 'image title arrow' 'image desc arrow';
+  gap: 0 22px;
+  align-items: center;
+  min-height: 164px;
+  padding: 18px 22px 18px 18px;
+  border: 0 !important;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.78) !important;
+  color: #171414;
+  box-shadow: 0 18px 48px rgba(95, 41, 55, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card img {
+  grid-area: image;
+  width: 132px;
+  height: 132px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 12px 26px rgba(95, 41, 55, 0.12);
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card span {
+  grid-area: label;
+  margin: 0 0 8px;
+  color: #bd777c;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card strong {
+  grid-area: title;
+  margin-top: 0;
+  color: #171414;
+  font-family: var(--font-heading), serif;
+  font-size: clamp(1.5rem, 1.9vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card em {
+  grid-area: desc;
+  margin-top: 10px;
+  color: #607080;
+  font-style: normal;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card::after {
+  grid-area: arrow;
+  position: static;
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 50%;
+  background: #f5dfdd;
+  color: #a65362;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: transform 0.35s var(--ssense-ease), background-color 0.35s ease, color 0.35s ease;
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card:hover,
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 64px rgba(95, 41, 55, 0.16);
+}
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card:hover::after,
+body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card:focus-visible::after {
+  transform: translateX(4px);
+  background: #a65362;
+  color: #fff;
+}
+@media (max-width: 1399.98px) {
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card { grid-template-columns: 112px minmax(0, 1fr) 48px; gap: 0 16px; }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card img { width: 112px; height: 112px; }
+}
+@media (max-width: 1199.98px) {
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split { grid-template-columns: 1fr; min-height: 0; }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split::before,
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split::after,
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split > p::after,
+  body.ssense-ia-page .ssense-related-script { display: none; }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split > p { align-self: auto; margin: 0; }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767.98px) {
+  body.ssense-ia-page .ssense-services-related-showcase { padding: 58px 0 70px; }
+  body.ssense-ia-page .ssense-services-related-showcase h2 { font-size: clamp(3rem, 14vw, 4.5rem); }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-related-grid { grid-template-columns: 1fr; }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card { grid-template-columns: 94px minmax(0, 1fr) 44px; min-height: 132px; padding: 14px; }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card img { width: 94px; height: 94px; }
+  body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card::after { width: 42px; height: 42px; }
 }
