@@ -729,6 +729,9 @@
   html body .ssense-general-footer__links > a { min-height: 32px !important; align-items: center !important; font-size: .9rem !important; line-height: 1.15 !important; }
   html body .ssense-general-footer__hours .ssense-general-footer__booking { display: inline-flex !important; }
   html body .ssense-general-footer__hours .ssense-general-footer__badges { display: grid !important; }
+  html body .ssense-general-footer__newsletter .input-group { max-width: 320px !important; height: 46px !important; padding: 4px !important; }
+  html body .ssense-general-footer__newsletter .form-control { padding: 0 12px !important; font-size: .82rem !important; }
+  html body .ssense-general-footer__newsletter .btn { width: 38px !important; height: 38px !important; min-height: 38px !important; padding: 0 !important; font-size: .95rem !important; }
   html body .ssense-general-footer__bottom::before,
   html body .ssense-general-footer__bottom::after { display: none !important; }
 
