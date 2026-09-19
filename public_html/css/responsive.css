@@ -207,8 +207,8 @@
     visibility: visible!important;
     opacity: 1!important;
     position: fixed!important;
-    left: min(calc(100vw - 62px), 330px)!important;
-    right: auto!important;
+    left: auto!important;
+    right: 14px!important;
     top: 10px!important;
     width: 44px!important;
     height: 44px!important;

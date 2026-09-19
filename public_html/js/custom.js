@@ -304,9 +304,95 @@
 		/*	Single Image Lightbox
 		/*----------------------------------------------------*/
 				
+		function ssenseBindLightboxSwipe() {
+			var startX = 0;
+			var startY = 0;
+			var threshold = 48;
+
+			$('.mfp-container')
+				.off('touchstart.ssenseLightbox touchend.ssenseLightbox')
+				.on('touchstart.ssenseLightbox', function(e) {
+					var touch = e.originalEvent.touches && e.originalEvent.touches[0];
+					if (!touch) return;
+					startX = touch.clientX;
+					startY = touch.clientY;
+				})
+				.on('touchend.ssenseLightbox', function(e) {
+					var touch = e.originalEvent.changedTouches && e.originalEvent.changedTouches[0];
+					if (!touch || !$.magnificPopup.instance || !$.magnificPopup.instance.isOpen) return;
+					var diffX = touch.clientX - startX;
+					var diffY = touch.clientY - startY;
+					if (Math.abs(diffX) < threshold || Math.abs(diffX) < Math.abs(diffY)) return;
+					if (diffX < 0) $.magnificPopup.instance.next();
+					else $.magnificPopup.instance.prev();
+				});
+		}
+
 		$('.image-link').magnificPopup({
-		  type: 'image'
-		});	
+			type: 'image',
+			image: {
+				titleSrc: function() { return ''; }
+			},
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+				tPrev: 'Previous image',
+				tNext: 'Next image'
+			},
+			callbacks: {
+				open: ssenseBindLightboxSwipe,
+				change: ssenseBindLightboxSwipe
+			}
+		});
+
+		function ssenseImageIsLightboxable(img) {
+			var $img = $(img);
+			var src = $img.attr('src') || '';
+			if (!src || !/\.(webp|jpe?g|png|gif)(\?.*)?$/i.test(src)) return false;
+			if ($img.closest('a, button, header, footer, .desktoplogo, .smllogo, .ssense-floating-cta, #loading').length) return false;
+			if ($img.closest('.mfp-content, .owl-stage-outer').length) return false;
+			if (/logo|favicon|apple-touch-icon|back-to-top|brand-|google|yelp|crowd/i.test(src)) return false;
+			return true;
+		}
+
+		function ssensePageLightboxItems() {
+			return $('#page img').filter(function() {
+				return ssenseImageIsLightboxable(this) && $(this).is(':visible');
+			}).map(function() {
+				return {
+					src: $(this).attr('src'),
+					title: ''
+				};
+			}).get();
+		}
+
+		$('#page').on('click', 'img', function(e) {
+			if (!ssenseImageIsLightboxable(this)) return;
+			e.preventDefault();
+			var src = $(this).attr('src');
+			var items = ssensePageLightboxItems();
+			var index = Math.max(0, items.findIndex(function(item) { return item.src === src; }));
+
+			$.magnificPopup.open({
+				items: items.length ? items : [{ src: src, title: '' }],
+				type: 'image',
+				image: {
+					titleSrc: function() { return ''; }
+				},
+				gallery: {
+					enabled: true,
+					navigateByImgClick: true,
+					arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+					tPrev: 'Previous image',
+					tNext: 'Next image'
+				},
+				callbacks: {
+					open: ssenseBindLightboxSwipe,
+					change: ssenseBindLightboxSwipe
+				}
+			}, index);
+		});
 
 
 		/*----------------------------------------------------*/

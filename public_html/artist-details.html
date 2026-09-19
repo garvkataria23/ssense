@@ -212,9 +212,9 @@
 		<section id="artist-page" class="inner-page-hero">
 			<div class="container">	
 				<div class="page-hero-txt">
-					<p class="ssense-eyebrow">Our Stylists</p>
-					<h1>Meet Your Artist</h1>
-					<p>Passionate professionals dedicated to bringing out your natural beauty</p>
+					<p class="ssense-eyebrow">Our Team</p>
+					<h1 id="artist-page-title">Meet Your Artist</h1>
+					<p id="artist-hero-sub">Passionate professionals dedicated to bringing out your natural beauty</p>
 				</div>
 			</div>
 		</section>	<!-- END INNER PAGE HERO -->
@@ -222,13 +222,13 @@
 
 		<!-- ARTIST DETAILS
 		============================================= -->
-		<section class="ssense-artist-section">
+		<section id="artist-profile" class="ssense-artist-section">
 			<div class="container">	
 				<div class="ssense-artist-grid">
 
 					<!-- Team Member Photo -->
 					<div class="ssense-artist-photo">
-						<img class="img-fluid" src="images/team-6.webp" width="700" height="900" alt="Aftab Ahamad - Senior Stylist" loading="lazy" />
+						<img id="artist-photo" class="img-fluid" src="" width="700" height="900" alt="" loading="lazy"/>
 					</div>	
 
 
@@ -236,45 +236,63 @@
 					<div class="ssense-artist-bio">
 
 						<!-- Artist Name & Role -->
-						<h2 class="h2-title">Aftab Ahamad</h2>
-						<p class="ssense-artist-role">Senior Stylist &bull; Hairdressing since 2006</p>
+						<h2 id="artist-name" class="h2-title">Meet Your Artist</h2>
+						<p id="artist-role" class="ssense-artist-role"></p>
+
+						<!-- Category & Experience Chips -->
+						<div id="artist-meta" class="ssense-artist-meta" aria-label="Artist category and experience"></div>
 
 						<!-- Social Icons -->
 						<div class="ssense-artist-social">
-							<a href="#" aria-label="Facebook"><span class="flaticon-facebook"></span></a>
-							<a href="#" aria-label="Instagram"><span class="flaticon-instagram"></span></a>
+							<a href="https://www.facebook.com/share/17BiWq4miC/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="flaticon-facebook"></span></a>
+							<a href="https://www.instagram.com/s.sensesalonandspa" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="flaticon-instagram"></span></a>
 						</div>
 
 						<!-- About -->
 						<div class="ssense-artist-about">
 							<h4>About</h4>
-							<p>Passionate about creating hairstyles that enhance natural beauty, Aftab has been a trusted stylist since 2006. With years of salon experience, she specializes in precision cuts, smooth blowouts, and personalized color techniques. Known for her friendly approach and attention to detail, Marcy ensures that every client leaves the chair feeling confident and refreshed.</p>
-							<p>With over a decade of experience, Marcy specializes in modern cuts, color, and styling that highlight every client's natural beauty.</p>
+							<div id="artist-about"></div>
+						</div>
+
+						<!-- Services -->
+						<div id="artist-services-wrap" class="ssense-artist-services">
+							<h4>Services</h4>
+							<ul id="artist-services" class="ssense-artist-services-list"></ul>
 						</div>
 
 						<!-- Price List -->
-						<div class="ssense-artist-prices">
+						<div id="artist-prices-wrap" class="ssense-artist-prices">
 							<h4>Service Prices</h4>
-							<ul>
-								<li><span>Shampoo Cut Blowdry</span><span>Rs.1,000</span></li>
-								<li><span>Long Hair / Extra Time</span><span>+Rs.1,500</span></li>
-								<li><span>Dry Haircut</span><span>Rs.720</span></li>
-								<li><span>Child's Haircut</span><span>Rs.550</span></li>
-								<li><span>Root Touch Up</span><span>Rs.2,000</span></li>
-								<li><span>Highlights</span><span>Rs.7,000</span></li>
-							</ul>
+							<ul id="artist-prices"></ul>
 						</div>
 
 						<!-- Booking Link -->
 						<div class="ssense-artist-cta">
 							<a href="booking.html" class="btn btn--black">Book Appointment</a>
 						</div>
+
+						<!-- Back to Team -->
+						<p class="ssense-artist-back"><a href="team.html">&larr; Back to Our Team</a></p>
 						
 					</div>
 
 				</div>    <!-- End artist grid --> 	
 			</div>	   <!-- End container --> 
 		</section>	<!-- END ARTIST DETAILS -->
+
+
+		<!-- ARTIST NOT FOUND (JS fallback)
+		============================================= -->
+		<div id="artist-empty" class="ssense-artist-empty">
+			<div class="container">
+				<p class="ssense-eyebrow">Our Team</p>
+				<h2 class="h2-md">Profile Not Found</h2>
+				<p>We couldn't find that team member's profile. Head back to the team page to meet everyone.</p>
+				<div class="ssense-artist-empty-cta">
+					<a href="team.html" class="btn btn--black">Back to Our Team</a>
+				</div>
+			</div>
+		</div>	<!-- END ARTIST NOT FOUND -->
 
 
 
@@ -289,7 +307,7 @@
 				<div class="row justify-content-center">	
 					<div class="col-lg-10 col-xl-8">
 						<div class="section-title text-center ssense-artist-gallery-title">
-							<h2>View Aftab's Work</h2>	
+							<h2 id="artist-gallery-title">View Our Work</h2>
 						</div>	
 					</div>
 				</div>
@@ -611,6 +629,10 @@
 				
 		<!-- Custom Script -->		
 		<script src="js/custom.js?v=floating-cta-2026"></script>
+
+		<!-- Artist Profiles -->
+		<script src="js/artists-data.js"></script>
+		<script src="js/artist-details.js"></script>
 
 			
 

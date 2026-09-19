@@ -263,11 +263,12 @@
   html body #why-ssense .row { display: flex !important; flex-direction: column !important; }
   html body #why-ssense .row > .ssense-why-img,
   html body #why-ssense .row > .ssense-why-txt { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; }
-  html body #why-ssense .ct-06-img { width: 100% !important; height: 150px !important; min-height: 0 !important; overflow: hidden !important; }
+  html body #why-ssense .row > .ssense-why-img { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+  html body #why-ssense .ct-06-img { width: 100% !important; height: clamp(240px, 68vw, 300px) !important; min-height: 0 !important; overflow: hidden !important; }
   html body #why-ssense .ct-06-img img { width: 100% !important; height: 100% !important; min-height: 0 !important; object-fit: cover !important; border-radius: 20px 20px 0 0 !important; }
   html body #why-ssense .ct-06-img::before { left: 18px !important; top: 26px !important; font-size: 1.35rem !important; }
   html body #why-ssense .ct-06-img::after { left: 16px !important; bottom: 16px !important; width: 128px !important; height: 76px !important; border-radius: 20px !important; font-size: .58rem !important; }
-  html body #why-ssense .ssense-why-col.ssense-why-txt .txt-block { padding: 20px 16px !important; }
+  html body #why-ssense .ssense-why-col.ssense-why-txt .txt-block { padding: 8px 16px 20px !important; }
   html body #why-ssense .ssense-why-txt h2 { font-size: clamp(1.8rem, 8vw, 2.35rem) !important; line-height: 1.05 !important; }
   html body #why-ssense .accordion { margin-top: 16px !important; }
   html body #why-ssense .accordion .accordion-thumb { min-height: 54px !important; padding: 10px 42px 10px 50px !important; }
@@ -363,6 +364,7 @@
   html body .ssense-testimonial-card { padding: 18px !important; min-height: 0 !important; }
   html body .ssense-testimonial-card p { min-height: 0 !important; }
   html body .ssense-testimonial-stats { grid-template-columns: 1fr 1fr !important; gap: 14px !important; margin-top: 20px !important; }
+  html body .ssense-testimonial-stats > span:nth-child(3) b { flex: 0 0 auto !important; white-space: nowrap !important; overflow-wrap: normal !important; word-break: normal !important; }
   html body .ssense-swipe-hint { margin: 0 0 10px; color: var(--compact-ink); font-size: .8rem; }
 
   /* Supporting photography has a shorter crop; information stays in flow. */
@@ -495,7 +497,12 @@
   html body .ssense-general-footer__socials { margin-top: 10px !important; }
   html body .ssense-general-footer__brand > a > img { width: 156px !important; height: auto !important; }
   html body .ssense-general-footer__hours ul { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
-  html body .ssense-general-footer__hours li { display: flex !important; justify-content: space-between !important; flex-wrap: wrap; gap: 2px 6px !important; padding: 0 !important; font-size: .875rem !important; }
+  html body .ssense-general-footer__hours li { display: none !important; justify-content: space-between !important; flex-wrap: wrap; gap: 2px 6px !important; padding: 0 !important; font-size: .875rem !important; }
+  html body .ssense-general-footer__hours li:first-child { display: flex !important; }
+  html body .ssense-general-footer__hours li:first-child span,
+  html body .ssense-general-footer__hours li:first-child time { font-size: 0 !important; }
+  html body .ssense-general-footer__hours li:first-child span::before { content: 'Mon-Sun'; font-size: .875rem !important; }
+  html body .ssense-general-footer__hours li:first-child time::before { content: '11:00 AM - 9:00 PM'; font-size: .875rem !important; }
   html body .ssense-general-footer__badges { margin-top: 14px !important; }
   html body .ssense-general-footer__bottom { margin-top: 0 !important; padding-top: 12px !important; padding-bottom: 86px !important; }
   html body .ssense-contact-connect__assurance { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
@@ -532,10 +539,13 @@
   html body .ssense-services-design-showcase .ssense-process-card { padding: 18px !important; }
   html body .ssense-process-card ol { margin-block: 12px !important; }
   html body .ssense-process-card li { padding-block: 8px !important; margin-bottom: 8px !important; }
-  html body .ssense-about-proof-strip { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-  html body .ssense-about-proof-item { display: flex !important; flex-direction: column !important; align-items: flex-start !important; gap: 6px !important; }
-  html body .ssense-about-proof-item strong { font-size: .9rem !important; }
-  html body .ssense-about-proof-item span { font-size: .8rem !important; }
+  html body .ssense-about-proof-strip { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 1px !important; border-radius: 16px !important; }
+  html body .ssense-about-proof-item { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; gap: 3px !important; padding: 10px 6px !important; min-height: 0 !important; }
+  html body .ssense-about-proof-item__top { gap: 4px !important; justify-content: center !important; }
+  html body .ssense-about-proof-item__icon { width: 16px !important; height: 16px !important; font-size: .55rem !important; }
+  html body .ssense-about-proof-item strong { font-size: .8rem !important; line-height: 1.15 !important; }
+  html body .ssense-about-proof-item span { font-size: .7rem !important; line-height: 1.3 !important; }
+  html body .ssense-about-proof-section { padding: 14px 0 !important; }
   html body .ssense-about-approach-step-list { gap: 0 !important; }
   html body .ssense-about-approach-step__body p { margin-bottom: 0 !important; font-size: .9375rem !important; line-height: 1.45 !important; }
   html body .ssense-about-menu-head,
@@ -678,7 +688,6 @@
   html body .ssense-offers-gift__copy { padding: 18px !important; }
   html body .ssense-offers-gift__script { margin: 12px 0 0 !important; }
   html body .ssense-offers-hero__featured { min-height: 0 !important; }
-  html body .ssense-offers-ribbon__inner p { color: #fff !important; }
   html body .ssense-service-design-media::before,
   html body .ssense-service-design-media::after { display: none !important; }
   html body .ssense-booking-panel { background: #f7eeeb !important; border-radius: 16px !important; }
@@ -709,15 +718,15 @@
   html body .ssense-general-footer__tagline { font-size: .7rem !important; letter-spacing: .14em !important; margin-block: 10px !important; }
   html body .ssense-general-footer__contact-list li { font-size: .875rem !important; }
   html body .ssense-general-footer__direction { margin-top: 12px !important; min-height: 44px !important; }
-  html body .ssense-general-footer__grid { grid-template-columns: 1fr !important; gap: 18px !important; }
+  html body .ssense-general-footer__grid { grid-template-columns: 1fr !important; gap: 10px !important; }
   html body .ssense-general-footer__grid h3::before { display: none !important; }
   html body .ssense-general-footer__grid h3::after { display: block !important; width: 34px !important; bottom: -7px !important; }
   html body .ssense-general-footer__hours,
   html body .ssense-general-footer__newsletter,
-  html body .ssense-general-footer__links { border-top: 1px solid #eadbe1 !important; padding-block: 16px 2px !important; }
-  html body .ssense-general-footer__links { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 0 16px !important; }
+  html body .ssense-general-footer__links { border-top: 1px solid #eadbe1 !important; padding-block: 12px 0 !important; }
+  html body .ssense-general-footer__links { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 0 14px !important; }
   html body .ssense-general-footer__links > h3 { grid-column: 1 / -1 !important; }
-  html body .ssense-general-footer__links > a { min-height: 38px !important; }
+  html body .ssense-general-footer__links > a { min-height: 32px !important; align-items: center !important; font-size: .9rem !important; line-height: 1.15 !important; }
   html body .ssense-general-footer__hours .ssense-general-footer__booking { display: inline-flex !important; }
   html body .ssense-general-footer__hours .ssense-general-footer__badges { display: grid !important; }
   html body .ssense-general-footer__bottom::before,
@@ -736,10 +745,10 @@
   html body .ssense-general-footer__contact-list a { min-height: 36px !important; }
   html body .ssense-general-footer__direction { margin-top: 6px !important; min-height: 40px !important; }
   html body .ssense-general-footer__grid { padding-bottom: 8px !important; }
-  html body .ssense-general-footer__grid h3 { margin-bottom: 14px !important; font-size: 1.05rem !important; }
+  html body .ssense-general-footer__grid h3 { margin-bottom: 10px !important; font-size: 1rem !important; }
   html body .ssense-general-footer__hours,
   html body .ssense-general-footer__newsletter,
-  html body .ssense-general-footer__links { padding-block: 14px 2px !important; }
+  html body .ssense-general-footer__links { padding-block: 10px 0 !important; }
   html body .ssense-general-footer__bottom { padding-bottom: 40px !important; }
   html body .ssense-general-footer__hours li { min-height: 26px !important; }
 
@@ -804,11 +813,17 @@
   html body .ssense-booking-panel { padding: 16px 16px !important; }
   html body .ssense-local-panel { padding: 16px !important; }
 
-  /* Home: shorter supporting photos, tighter accordion rails. */
-  html body .ssense-luxury-photo { height: 180px !important; }
-  html body #why-ssense .ct-06-img,
+  /* Home: keep the salon photo prominent while the info chips stay compact. */
+  html body .ssense-luxury-visual { min-height: 292px !important; height: 292px !important; }
+  html body .ssense-luxury-photo { height: 270px !important; }
+  html body .ssense-luxury-badge { width: 72px !important; height: 72px !important; right: 6px !important; top: 8px !important; }
+  html body .ssense-luxury-badge span:last-child { font-size: .58rem !important; line-height: 1.2 !important; }
+  html body .ssense-luxury-location { bottom: 8px !important; right: 8px !important; width: min(74%, 230px) !important; min-width: 0 !important; padding: 6px 8px !important; grid-template-columns: 30px 1fr !important; gap: 8px !important; border-radius: 999px !important; }
+  html body .ssense-luxury-location b { display: none !important; }
+  html body .ssense-luxury-pin { width: 30px !important; height: 30px !important; }
   html body .ssense-home-peace-panel .img-block,
   html body .ssense-best-section .ct-05-img { height: 140px !important; }
+  html body #why-ssense .ct-06-img { height: clamp(240px, 68vw, 300px) !important; }
   html body #why-ssense .accordion .accordion-thumb { min-height: 46px !important; padding-block: 6px !important; }
   html body #why-ssense .ct-06-img::after { height: 64px !important; }
   html body .ssense-home-secret-services .ssense-home-service-photo,
@@ -902,6 +917,21 @@
   html body .newsletter-form .btn,
   html body .request-form .btn,
   html body .ssense-contact-connect__form .submit { min-height: 36px !important; padding-block: 8px !important; }
+
+  /* ---- Artist profile page (team View Profile) ---- */
+  html body .ssense-artist-section { padding: 28px 0 8px !important; }
+  html body .ssense-artist-photo img { aspect-ratio: 4 / 4.4 !important; box-shadow: 0 14px 34px rgba(95, 41, 55, .14) !important; }
+  html body .ssense-artist-bio h2 { font-size: clamp(1.7rem, 8vw, 2.2rem) !important; }
+  html body .ssense-artist-meta { gap: 6px !important; margin-bottom: 16px !important; }
+  html body .ssense-artist-chip { padding: 6px 12px !important; font-size: .72rem !important; }
+  html body .ssense-artist-social { margin-bottom: 20px !important; }
+  html body .ssense-artist-social a { width: 38px !important; height: 38px !important; }
+  html body .ssense-artist-about,
+  html body .ssense-artist-services,
+  html body .ssense-artist-prices { padding-top: 18px !important; }
+  html body .ssense-artist-services-list li { padding: 7px 13px !important; font-size: .8rem !important; }
+  html body .ssense-artist-gallery { padding: 20px 0 44px !important; }
+  html body .ssense-artist-empty { padding: 40px 0 64px !important; }
 
   @media (prefers-reduced-motion: reduce) {
     html body .ssense-compact-row { scroll-behavior: auto !important; }
