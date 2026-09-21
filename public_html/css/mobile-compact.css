@@ -267,7 +267,7 @@
   html body #why-ssense .ct-06-img { width: 100% !important; height: clamp(240px, 68vw, 300px) !important; min-height: 0 !important; overflow: hidden !important; }
   html body #why-ssense .ct-06-img img { width: 100% !important; height: 100% !important; min-height: 0 !important; object-fit: cover !important; border-radius: 20px 20px 0 0 !important; }
   html body #why-ssense .ct-06-img::before { left: 18px !important; top: 26px !important; font-size: 1.35rem !important; }
-  html body #why-ssense .ct-06-img::after { left: 16px !important; bottom: 16px !important; width: 128px !important; height: 76px !important; border-radius: 20px !important; font-size: .58rem !important; }
+  html body #why-ssense .ct-06-img::after { left: 16px !important; bottom: 16px !important; width: 158px !important; height: 96px !important; padding: 0 12px !important; border-radius: 22px !important; font-size: .52rem !important; letter-spacing: .16em !important; line-height: 1.75 !important; white-space: pre !important; overflow: hidden !important; }
   html body #why-ssense .ssense-why-col.ssense-why-txt .txt-block { padding: 8px 16px 20px !important; }
   html body #why-ssense .ssense-why-txt h2 { font-size: clamp(1.8rem, 8vw, 2.35rem) !important; line-height: 1.05 !important; }
   html body #why-ssense .accordion { margin-top: 16px !important; }
@@ -831,7 +831,7 @@
   html body .ssense-best-section .ct-05-img { height: 140px !important; }
   html body #why-ssense .ct-06-img { height: clamp(240px, 68vw, 300px) !important; }
   html body #why-ssense .accordion .accordion-thumb { min-height: 46px !important; padding-block: 6px !important; }
-  html body #why-ssense .ct-06-img::after { height: 64px !important; }
+  html body #why-ssense .ct-06-img::after { height: 96px !important; }
   html body .ssense-home-secret-services .ssense-home-service-photo,
   html body .ssense-home-secret-services .ssense-home-service-photo img { height: 105px !important; }
   html body .ssense-related-card img { height: 105px !important; }
