@@ -28,6 +28,32 @@
 }
 
 @media (max-width: 767.98px) {
+  html body.ssense-batch1-contact .ssense-contact-premium__image {
+    height: clamp(150px, 42vw, 185px)!important;
+    min-height: clamp(150px, 42vw, 185px)!important;
+  }
+
+  html body.ssense-batch1-contact .ssense-contact-premium__image img {
+    height: 100%!important;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  html body.ssense-batch1-contact .ssense-contact-premium__image figcaption {
+    right: 14px!important;
+    bottom: 14px!important;
+    max-width: 180px!important;
+    padding: 12px 14px!important;
+    border-radius: 14px!important;
+    font-size: .78rem!important;
+    line-height: 1.22!important;
+  }
+
+  html body.ssense-batch1-contact .ssense-contact-premium__image figcaption:after {
+    width: 24px!important;
+    margin-top: 8px!important;
+  }
+
   .footer {
     padding-bottom: calc(110px + env(safe-area-inset-bottom))!important;
   }
@@ -6331,6 +6357,20 @@ body:not(.theme--dark) #hero-1 .caption p,
 /* Gallery page final mobile override: keep gallery.html as a wrapped editorial
    grid, not the global horizontal card scroller. Must stay after mobile guards. */
 @media (max-width: 767.98px) {
+  body.ssense-gallery-page .inner-page-title {
+    margin-top: 0!important;
+    padding-top: clamp(18px, 5vw, 28px)!important;
+    padding-bottom: 18px!important;
+  }
+
+  body.ssense-gallery-page .ssense-gallery-hero-brand {
+    margin-bottom: 8px!important;
+  }
+
+  body.ssense-gallery-page #gallery-1.ssense-editorial-gallery {
+    padding-top: 6px!important;
+  }
+
   body.ssense-gallery-page #gallery-1 .ssense-gallery-row {
     display: grid!important;
     grid-template-columns: repeat(2, minmax(0, 1fr))!important;

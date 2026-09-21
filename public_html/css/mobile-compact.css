@@ -393,8 +393,6 @@
   }
   html body .ssense-booking-cta .ssense-booking-panel::before { min-height: 0 !important; height: 100px !important; }
   html body .ssense-local-panel::before { min-height: 0 !important; height: 110px !important; }
-  html body .ssense-contact-premium__image { height: 130px !important; min-height: 0 !important; }
-  html body .ssense-contact-premium__image img { height: 100% !important; object-fit: cover; }
   html body .ssense-contact-connect__map,
   html body .ssense-contact-connect__map iframe { height: 220px !important; min-height: 0 !important; }
   html body .about-8-img,
@@ -801,7 +799,15 @@
 
   /* Contact: leaner cards, panels and shorter form fields. */
   html body .ssense-contact-premium__card { padding: 14px !important; gap: 6px !important; }
-  html body .ssense-contact-premium__image { height: 110px !important; }
+  html body.ssense-batch1-contact .ssense-contact-premium__image {
+    height: clamp(150px, 42vw, 185px) !important;
+    min-height: clamp(150px, 42vw, 185px) !important;
+  }
+  html body.ssense-batch1-contact .ssense-contact-premium__image img {
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
   html body .ssense-contact-premium__script { margin-block: 8px !important; }
   html body .ssense-contact-connect__panel { padding: 16px !important; row-gap: 10px !important; }
   html body .ssense-contact-connect__map,
