@@ -22103,9 +22103,45 @@ body.ssense-services-index .ssense-services-hero-visual figure {
 }
 
 body.ssense-services-index .ssense-services-hero-visual figure img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  max-height: none;
   object-fit: cover;
+  will-change: opacity, transform;
+}
+
+body.ssense-services-index .ssense-services-hero-visual figure {
+  overflow: hidden;
+}
+
+body.ssense-services-index .ssense-services-hero-visual figure img.ssense-hero-front {
+  z-index: 2;
+  animation: ssenseHeroSlideFront 8s cubic-bezier(.62, .05, .32, 1) infinite;
+}
+
+body.ssense-services-index .ssense-services-hero-visual figure img.ssense-hero-alt {
+  z-index: 1;
+  animation: ssenseHeroSlideAlt 8s cubic-bezier(.62, .05, .32, 1) infinite;
+}
+
+@keyframes ssenseHeroSlideFront {
+  0%, 42% { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+  58%, 100% { opacity: 0; transform: translate3d(0, 0, -120px) scale(.78); }
+}
+
+@keyframes ssenseHeroSlideAlt {
+  0%, 42% { opacity: 0; transform: translate3d(0, 0, -120px) scale(.78); }
+  58%, 100% { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.ssense-services-index .ssense-services-hero-visual figure img { animation: none !important; transform: none !important; }
+  body.ssense-services-index .ssense-services-hero-visual figure img.ssense-hero-alt { display: none !important; }
+  body.ssense-services-index .ssense-services-hero-shape::before,
+  body.ssense-services-index .ssense-services-hero-shape::after { animation: none !important; transform: none !important; }
+  body.ssense-services-index .ssense-services-hero-shape::after { display: none !important; }
 }
 
 body.ssense-services-index .ssense-services-hero-badge {
@@ -27393,16 +27429,49 @@ body.ssense-home-refined #blog-1.ssense-blog-replacement {
   background: linear-gradient(135deg, #fff6f7 0%, #fcebed 52%, #fff4f5 100%) !important;
 }
 
-/* Services hero: use the supplied salon photo on the offset background card. */
+/* Services hero: the offset background card crossfades between two salon photos. */
 body.ssense-services-index .ssense-services-hero-shape {
-  background-image: url("../images/salon_hero_background.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: none;
+  isolation: isolate;
   z-index: 1;
   cursor: pointer;
   transition: transform .45s ease, box-shadow .45s ease, filter .45s ease;
   will-change: transform;
+}
+
+body.ssense-services-index .ssense-services-hero-shape::before,
+body.ssense-services-index .ssense-services-hero-shape::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  will-change: opacity, transform;
+}
+
+body.ssense-services-index .ssense-services-hero-shape::before {
+  background-image: url("../images/salon_hero_background.webp");
+  z-index: 1;
+  animation: ssenseHeroBgFront 8s cubic-bezier(.62, .05, .32, 1) infinite;
+}
+
+body.ssense-services-index .ssense-services-hero-shape::after {
+  background-image: url("../images/salon_02.webp");
+  z-index: 2;
+  opacity: 0;
+  animation: ssenseHeroBgAlt 8s cubic-bezier(.62, .05, .32, 1) infinite;
+}
+
+@keyframes ssenseHeroBgFront {
+  0%, 42% { opacity: 1; transform: scale(1); }
+  58%, 100% { opacity: 0; transform: scale(.82); }
+}
+
+@keyframes ssenseHeroBgAlt {
+  0%, 42% { opacity: 0; transform: scale(.82); }
+  58%, 100% { opacity: 1; transform: scale(1); }
 }
 
 @media (hover: hover) {

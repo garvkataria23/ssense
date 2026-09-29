@@ -8,7 +8,17 @@ url("../images/fonts/flaticon.svg?b8e939e97cbbeabd5290d803a3b7e130#flaticon_beau
 }
 
 span[class^="flaticon-"]:before, 
-span[class*=" flaticon-"]:before {
+span[class*=" flaticon-"]:before,
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before,
+em[class^="flaticon-"]:before,
+em[class*=" flaticon-"]:before,
+b[class^="flaticon-"]:before,
+b[class*=" flaticon-"]:before,
+small[class^="flaticon-"]:before,
+small[class*=" flaticon-"]:before,
+strong[class^="flaticon-"]:before,
+strong[class*=" flaticon-"]:before {
   font-family: flaticon !important;
   font-style: normal;
   font-weight: normal !important;
@@ -715,4 +725,42 @@ span[class*=" flaticon-"]:before {
 }
 .flaticon-pipette:before {
     content: "\f1e8";
+}
+
+/* Semantic aliases mapped to existing glyphs in this font. */
+.flaticon-clock:before {
+    content: "\f19c";
+}
+.flaticon-leaf:before {
+    content: "\f103";
+}
+.flaticon-user:before {
+    content: "\f160";
+}
+.flaticon-analytics:before {
+    content: "\f17e";
+}
+.flaticon-book:before {
+    content: "\f18a";
+}
+.flaticon-network:before {
+    content: "\f159";
+}
+.flaticon-padlock:before {
+    content: "\f126";
+}
+.flaticon-settings:before {
+    content: "\f19a";
+}
+.flaticon-shield:before {
+    content: "\f126";
+}
+.flaticon-back:before {
+    content: "\f1a7";
+}
+.flaticon-next:before {
+    content: "\f1a6";
+}
+.flaticon-diamond:before {
+    content: "\f18c";
 }

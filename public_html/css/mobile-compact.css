@@ -64,7 +64,31 @@
   }
   html body section h2,
   html body .pricing-section h2,
-  html body section .h2-title { font-size: clamp(1.75rem, 7.6vw, 2.1rem) !important; line-height: 1.12 !important; }
+  html body section .h2-title { font-size: clamp(1.6rem, 6.9vw, 1.92rem) !important; line-height: 1.1 !important; }
+  /* Forced <br> in headings is a desktop line-break device. On phones it just
+     stacks three short lines, so the break collapses to a single space.
+     `display: none` alone would weld the two words together, hence the
+     inline + ::after-space pattern rather than hiding the element. */
+  html body section h1 br,
+  html body section h2 br,
+  html body section h3 br,
+  html body section .h2-md br,
+  html body section .h2-title br,
+  html body #hero-1 .caption h1 br {
+    display: inline !important;
+    content: '' !important;
+  }
+  html body section h1 br::after,
+  html body section h2 br::after,
+  html body section h3 br::after,
+  html body section .h2-md br::after,
+  html body section .h2-title br::after,
+  html body #hero-1 .caption h1 br::after { content: ' ' !important; }
+  html body section h1,
+  html body section h2,
+  html body section h3,
+  html body .h2-md,
+  html body .h2-title { text-wrap: balance !important; overflow-wrap: break-word !important; }
   html body section .mb-5,
   html body section .mb-6 { margin-bottom: 22px !important; }
   html body section .mt-5,
@@ -94,7 +118,8 @@
   html body #hero-1 .slide-content { padding: 20px 0 !important; align-items: center !important; }
   html body #hero-1 .caption { margin-top: 0 !important; }
   html body #hero-1 .caption h1,
-  html body #hero-1 .caption h2 { font-size: clamp(1.9rem, 8.3vw, 2.25rem) !important; line-height: 1.06 !important; letter-spacing: -.035em !important; }
+  html body #hero-1 .caption h2 { font-size: clamp(1.65rem, 7.2vw, 1.95rem) !important; line-height: 1.08 !important; letter-spacing: -.03em !important; }
+  html body #hero-1 .caption .ssense-hero-title-line { white-space: normal !important; }
   html body #hero-1 .caption p { font-size: 1rem !important; line-height: 1.45 !important; margin-block: 14px !important; }
   html body #hero-1 .caption .btn { min-height: 44px !important; padding: 12px 8px !important; margin: 0 !important; font-size: .8rem !important; overflow-wrap: normal !important; }
   html body #hero-1 .slide-content .container { width: 100% !important; max-width: 100% !important; padding-inline: 18px !important; }
@@ -119,7 +144,8 @@
   html body .ssense-about-image-main picture,
   html body .ssense-about-image-main img { width: 100% !important; height: auto !important; max-width: 100% !important; max-height: none !important; min-height: 0 !important; aspect-ratio: auto !important; object-fit: cover !important; object-position: center !important; }
   html body .ssense-about-image-secondary { height: 130px !important; }
-  html body .ssense-reviews-hero__image img { height: 220px !important; object-fit: cover; }
+  html body .ssense-reviews-hero__image { width: 100% !important; aspect-ratio: auto !important; height: auto !important; min-height: 0 !important; }
+  html body .ssense-reviews-hero__image img { position: static !important; display: block !important; width: 100% !important; height: auto !important; max-height: none !important; aspect-ratio: auto !important; object-fit: cover !important; }
   html body .ssense-article-hero { height: auto !important; min-height: 0 !important; }
   html body .ssense-article-hero__content { padding-top: 24px !important; padding-bottom: 24px !important; }
 
@@ -198,6 +224,61 @@
   html body .ssense-services-related-showcase .ssense-related-card::after,
   html body .ssense-hair-related-showcase .ssense-related-card::after,
   html body .ssense-about-menu-card::after { display: none !important; }
+
+  /* Related-service cards: identical image box, label, title and copy baselines
+     so every card in a two-up row lines up regardless of copy length. */
+  html body .ssense-services-related-showcase .ssense-related-grid,
+  html body .ssense-hair-related-showcase .ssense-related-grid {
+    grid-auto-rows: 1fr !important;
+    align-items: stretch !important;
+  }
+  html body .ssense-services-related-showcase .ssense-related-grid > *,
+  html body .ssense-hair-related-showcase .ssense-related-grid > * { height: 100% !important; }
+  html body .ssense-services-related-showcase .ssense-related-card,
+  html body .ssense-hair-related-showcase .ssense-related-card {
+    height: 100% !important;
+    justify-content: flex-start !important;
+    padding: 12px !important;
+    gap: 6px !important;
+  }
+  html body .ssense-services-related-showcase .ssense-related-card > img,
+  html body .ssense-hair-related-showcase .ssense-related-card > img {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    height: 104px !important;
+    min-height: 104px !important;
+    max-height: 104px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+  }
+  html body .ssense-services-related-showcase .ssense-related-card > span {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    font-size: .68rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: .16em !important;
+  }
+  html body .ssense-services-related-showcase .ssense-related-card strong {
+    flex: 0 0 auto !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    min-height: 2.88rem !important;
+    font-size: 1.05rem !important;
+    line-height: 1.2 !important;
+  }
+  html body .ssense-services-related-showcase .ssense-related-card em {
+    flex: 1 1 auto !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    font-size: .8rem !important;
+    line-height: 1.35 !important;
+    color: inherit !important;
+    opacity: .78 !important;
+  }
   html body .ssense-hair-related-showcase .ssense-related-card { padding: 24px !important; gap: 22px !important; border-radius: 22px !important; }
   html body .ssense-hair-related-showcase .ssense-related-card > img,
   html body .ssense-hair-related-showcase .ssense-related-icon,
@@ -270,7 +351,7 @@
   html body #why-ssense .ct-06-img::before { left: 18px !important; top: 26px !important; font-size: 1.35rem !important; }
   html body #why-ssense .ct-06-img::after { left: 16px !important; bottom: 16px !important; width: 158px !important; height: 96px !important; padding: 0 12px !important; border-radius: 22px !important; font-size: .52rem !important; letter-spacing: .16em !important; line-height: 1.75 !important; white-space: pre !important; overflow: hidden !important; }
   html body #why-ssense .ssense-why-col.ssense-why-txt .txt-block { padding: 8px 16px 20px !important; }
-  html body #why-ssense .ssense-why-txt h2 { font-size: clamp(1.8rem, 8vw, 2.35rem) !important; line-height: 1.05 !important; }
+  html body #why-ssense .ssense-why-txt h2 { font-size: clamp(1.55rem, 6.8vw, 1.9rem) !important; line-height: 1.06 !important; }
   html body #why-ssense .accordion { margin-top: 16px !important; }
   html body #why-ssense .accordion .accordion-thumb { min-height: 54px !important; padding: 10px 42px 10px 50px !important; }
   html body #why-ssense .accordion .accordion-thumb p { font-size: .98rem !important; line-height: 1.2 !important; }
@@ -376,8 +457,9 @@
   html body .about-8-img img,
   html body .ct-06-img img,
   html body .ssense-home-peace-panel .img-block img,
-  html body .ssense-about-experience-media img,
-  html body .ssense-offers-gift__media img { width: 100% !important; height: 230px !important; object-fit: cover; }
+  html body .ssense-about-experience-media img { width: 100% !important; height: 230px !important; object-fit: cover; }
+  html body .ssense-offers-gift__media { width: 100% !important; min-height: 0 !important; height: auto !important; aspect-ratio: 3 / 2 !important; }
+  html body .ssense-offers-gift__media img { width: 100% !important; height: 100% !important; max-height: none !important; object-fit: cover !important; }
   html body .ct-12 { height: 180px !important; min-height: 0 !important; }
   html body .ssense-home-peace-panel,
   html body .ssense-about-approach-card,
@@ -521,22 +603,72 @@
   html body .ssense-ia-hero h1,
   html body .ssense-about-hero h1,
   html body .ssense-offers-hero h1,
-  html body .ssense-contact-premium h1 { font-size: clamp(1.9rem, 8.2vw, 2.25rem) !important; line-height: 1.08 !important; margin-bottom: 16px !important; }
+  html body .ssense-contact-premium h1 { font-size: clamp(1.62rem, 7vw, 1.95rem) !important; line-height: 1.08 !important; margin-bottom: 10px !important; }
+  html body .ssense-ia-hero h1 br,
+  html body .ssense-about-hero h1 br,
+  html body .ssense-offers-hero h1 br,
+  html body .ssense-contact-premium h1 br { display: inline !important; content: '' !important; }
+  html body .ssense-ia-hero h1 br::after,
+  html body .ssense-about-hero h1 br::after,
+  html body .ssense-offers-hero h1 br::after,
+  html body .ssense-contact-premium h1 br::after { content: ' ' !important; }
+  /* This title carries four forced breaks; it needs the smallest step of all. */
+  html body .ssense-services-hero-copy h1,
+  html body .ssense-services-index .ssense-services-hero-copy h1 {
+    font-size: clamp(1.32rem, 5.7vw, 1.58rem) !important;
+    line-height: 1.12 !important;
+    text-wrap: initial !important;
+  }
   html body .ssense-quick-info { margin-top: 0 !important; }
-  html body .ssense-services-hero-strip { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-  html body .ssense-services-hero-strip > span { grid-template-columns: 28px minmax(0, 1fr) !important; gap: 8px !important; min-width: 0 !important; padding: 4px 0 !important; font-size: .85rem !important; }
-  html body .ssense-services-hero-strip i { margin-bottom: 4px !important; }
+  html body .ssense-services-hero-strip {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-rows: 1fr !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    margin-top: 12px !important;
+    padding: 0 !important;
+  }
+  html body .ssense-services-hero-strip > span {
+    display: grid !important;
+    grid-template-columns: 26px minmax(0, 1fr) !important;
+    grid-template-rows: auto !important;
+    align-items: center !important;
+    align-content: center !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    padding: 10px 8px !important;
+    font-size: .8rem !important;
+    line-height: 1.25 !important;
+    text-align: left !important;
+  }
+  html body .ssense-services-hero-strip > span + span::before { display: none !important; }
+  html body .ssense-services-hero-strip i,
+  html body .ssense-services-hero-strip > span > i[class^="flaticon-"],
+  html body .ssense-services-hero-strip > span > i[class*=" flaticon-"] {
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+    margin: 0 !important;
+    font-size: .82rem !important;
+    line-height: 1 !important;
+  }
   html body .ssense-services-hero-visual { display: block !important; width: 100% !important; max-width: 100% !important; }
-  html body .ssense-services-hero-visual figure { width: 100% !important; height: auto !important; min-height: 0 !important; margin: 0 !important; aspect-ratio: 4 / 3 !important; }
-  html body .ssense-services-hero-visual figure img { width: 100% !important; height: 100% !important; max-height: none !important; object-fit: cover !important; object-position: center !important; }
-  html body .ssense-services-hero-shape { display: none !important; }
+  html body .ssense-services-hero-visual figure { position: relative !important; inset: auto !important; z-index: 2 !important; width: 100% !important; height: auto !important; min-height: 0 !important; margin: 0 !important; aspect-ratio: 4 / 3 !important; }
+  html body .ssense-services-hero-visual figure img { position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; max-height: none !important; object-fit: cover !important; object-position: center !important; }
+  html body .ssense-services-hero-shape { display: block !important; position: absolute !important; inset: 16px 10px auto 10px !important; z-index: 1 !important; height: 0 !important; min-height: 0 !important; padding-bottom: 70% !important; transform: rotate(5deg) !important; background: none !important; }
+  html body .ssense-services-hero-shape::before,
+  html body .ssense-services-hero-shape::after { animation-duration: 8s !important; }
   html body .ssense-services-hero-badge { position: static !important; width: 100% !important; height: auto !important; min-height: 0 !important; margin: 12px 0 0 !important; border-radius: 22px !important; padding: 14px 10px !important; font-size: .72rem !important; letter-spacing: .18em !important; }
   html body .ssense-services-hero-badge::after { display: none !important; }
   html body .ssense-services-hero-script { position: static !important; width: 100% !important; margin: 10px 0 0 !important; font-size: clamp(1.3rem, 6vw, 1.8rem) !important; line-height: 1.35 !important; text-align: center !important; }
-  html body .ssense-services-hero-stat { display: block !important; position: static !important; width: 100% !important; min-height: 0 !important; margin: 10px 0 0 !important; text-align: center !important; }
+  html body .ssense-services-hero-stat { display: block !important; position: relative !important; z-index: 3 !important; inset: auto !important; width: 100% !important; min-height: 0 !important; margin: 22px auto 0 !important; padding: 12px 14px !important; text-align: center !important; }
+  html body .ssense-services-hero-stat span { font-size: .72rem !important; letter-spacing: .12em !important; }
+  html body .ssense-services-hero-stat strong { font-size: 1.5rem !important; line-height: 1.15 !important; }
+  html body .ssense-services-hero-stat em { font-size: .62rem !important; letter-spacing: .14em !important; }
   html body .ssense-services-hero-stat::before { display: none !important; }
   html body .ssense-services-hero-stat > * { margin: 0 !important; }
-  html body .ssense-services-hero-stat strong { font-size: 2rem !important; line-height: 1.1 !important; }
   html body .ssense-services-hero-stat em { font-size: .8rem !important; }
   html body .ssense-service-design-copy,
   html body .ssense-services-design-showcase .ssense-process-card { padding: 18px !important; }
@@ -686,8 +818,8 @@
   html body .ssense-offers-card > p,
   html body .ssense-offers-card > a { grid-column: 2 !important; margin: 0 !important; }
   html body .ssense-offers-card > a { min-height: 44px !important; font-size: .875rem !important; display: flex !important; align-items: center; }
-  html body .ssense-offers-gift__media,
-  html body .ssense-offers-gift__media img { height: 140px !important; min-height: 0 !important; }
+  html body .ssense-offers-gift__media { aspect-ratio: 4 / 3 !important; height: auto !important; min-height: 0 !important; }
+  html body .ssense-offers-gift__media img { height: 100% !important; min-height: 0 !important; }
   html body .ssense-offers-gift__copy { padding: 18px !important; }
   html body .ssense-offers-gift__script { margin: 12px 0 0 !important; }
   html body .ssense-offers-hero__featured { min-height: 0 !important; }
@@ -699,6 +831,8 @@
   html body .ssense-booking-panel h2 { font-size: 1.5rem !important; }
   html body .ssense-booking-panel p { margin-bottom: 8px !important; }
   html body .ssense-local-panel { border-radius: 16px !important; }
+  /* The "Visit S.Sense..." line repeats on 20+ pages; keep it to two lines. */
+  html body .ssense-local-panel h2 { font-size: clamp(1.2rem, 5.2vw, 1.45rem) !important; line-height: 1.15 !important; margin-bottom: 6px !important; }
   html body .ssense-local-copy ul { gap: 0 !important; }
   html body .ssense-local-copy li a { min-height: 44px !important; padding-block: 10px !important; }
   html body .ssense-contact-premium__script { margin-block: 12px !important; }
@@ -774,6 +908,10 @@
   /* Services hero: shorter crop, tighter strip. */
   html body .ssense-services-hero-visual figure { aspect-ratio: 3 / 2 !important; }
   html body .ssense-services-hero-visual figure img { height: 100% !important; max-height: none !important; }
+  html body .ssense-services-hero-visual figure img.ssense-hero-front,
+  html body .ssense-services-hero-visual figure img.ssense-hero-alt { animation-duration: 8s !important; }
+  html body .ssense-services-hero-shape::before,
+  html body .ssense-services-hero-shape::after { animation-duration: 8s !important; }
   html body .ssense-services-hero-strip { margin-top: 12px !important; padding: 10px !important; gap: 8px !important; }
   html body .ssense-services-hero-copy > p { margin-block: 6px !important; }
 
@@ -790,9 +928,13 @@
 
   /* About: leaner menu cards and proof strip. */
   html body .ssense-about-menu-card { padding: 12px !important; gap: 6px !important; }
-  html body .ssense-about-menu-card img,
+  html body .ssense-about-menu-card img { height: 90px !important; }
   html body .ssense-services-related-showcase .ssense-related-card > img,
-  html body .ssense-hair-related-showcase .ssense-related-card > img { height: 90px !important; }
+  html body .ssense-hair-related-showcase .ssense-related-card > img {
+    height: 92px !important;
+    min-height: 92px !important;
+    max-height: 92px !important;
+  }
   html body .ssense-about-menu-grid,
   html body .ssense-related-grid { gap: 10px !important; }
   html body .ssense-about-menu-head,
@@ -842,6 +984,12 @@
   html body .ssense-home-secret-services .ssense-home-service-photo,
   html body .ssense-home-secret-services .ssense-home-service-photo img { height: 105px !important; }
   html body .ssense-related-card img { height: 105px !important; }
+  html body .ssense-services-related-showcase .ssense-related-card > img,
+  html body .ssense-hair-related-showcase .ssense-related-card > img {
+    height: 92px !important;
+    min-height: 92px !important;
+    max-height: 92px !important;
+  }
   html body .ssense-testimonial-card { padding: 14px !important; }
   html body .ssense-testimonial-grid.ssense-review-marquee { scroll-snap-type: none !important; scrollbar-width: none !important; }
   html body .ssense-testimonial-grid.ssense-review-marquee::-webkit-scrollbar { display: none !important; }
@@ -884,6 +1032,43 @@
   html body .ssense-menu-eyebrow,
   html body .ssense-about-hero-chip,
   html body .ssense-section-label { font-size: .72rem !important; letter-spacing: .14em !important; }
+
+  /* Breadcrumbs duplicate the mobile menu; the hero eyebrow carries the context. */
+  html body .ssense-breadcrumb,
+  html body .inner-page-title .ssense-breadcrumb,
+  html body .ssense-ia-hero .ssense-breadcrumb,
+  html body .ssense-services-hero-showcase .ssense-breadcrumb,
+  html body .ssense-offers-hero .ssense-breadcrumb,
+  html body .ssense-reviews-hero .ssense-breadcrumb,
+  html body .ssense-about-hero .ssense-breadcrumb,
+  html body .ssense-contact-premium .ssense-breadcrumb,
+  html body .ssense-article-hero .ssense-breadcrumb,
+  html body .ssense-ia-hero .ssense-breadcrumb a,
+  html body .ssense-breadcrumb > * { display: none !important; }
+  html body .ssense-breadcrumb { margin: 0 !important; padding: 0 !important; min-height: 0 !important; }
+
+  /* Hero eyebrow takes the top slot, centred above the headline. */
+  html body .ssense-ia-hero .ssense-eyebrow,
+  html body .ssense-services-hero-copy .ssense-eyebrow,
+  html body .ssense-offers-hero .ssense-eyebrow,
+  html body .ssense-reviews-hero .ssense-eyebrow,
+  html body .ssense-about-hero .ssense-eyebrow,
+  html body .ssense-contact-premium .ssense-eyebrow,
+  html body .ssense-article-hero .ssense-eyebrow,
+  html body .inner-page-title .ssense-eyebrow {
+    display: block !important;
+    order: -1 !important;
+    text-align: center !important;
+    margin: 0 0 10px !important;
+    padding: 0 !important;
+    justify-self: center !important;
+  }
+  html body .ssense-ia-hero-grid,
+  html body .ssense-about-hero-grid,
+  html body .ssense-services-hero-grid,
+  html body .ssense-offers-hero__grid,
+  html body .ssense-reviews-hero__inner,
+  html body .ssense-contact-premium__grid { row-gap: 0 !important; }
 
   /* Mobile button scale: compact enough for phones without changing desktop. */
   html body .btn,
@@ -954,6 +1139,279 @@
   html body .ssense-artist-services-list li { padding: 7px 13px !important; font-size: .8rem !important; }
   html body .ssense-artist-gallery { padding: 20px 0 44px !important; }
   html body .ssense-artist-empty { padding: 40px 0 64px !important; }
+
+  /* ======================================================================
+     Density pass: every page starts flush at the top and every vertical
+     gap collapses. Nothing is resized - only spacing and alignment.
+     ====================================================================== */
+  html body { --compact-gap: 8px; --compact-space: 14px; }
+  html body section[class*="hero"]:not(#hero-1):not(.ssense-luxury-hero),
+  html body .ssense-contact-premium,
+  html body .inner-page-title {
+    min-height: 0 !important;
+    padding-top: 84px !important;
+    padding-bottom: 14px !important;
+  }
+  html body #hero-1 { min-height: 0 !important; padding-bottom: 12px !important; }
+
+  /* Sections sit closer together and carry no leftover bottom air. */
+  html body section.division,
+  html body main > section,
+  html body #page > section,
+  html body .ssense-about-section,
+  html body .ssense-ia-section,
+  html body .ssense-services-design-showcase,
+  html body .pricing-section,
+  html body .blog-section,
+  html body .services-section,
+  html body .ssense-blog-section,
+  html body #gallery-1,
+  html body #gallery-3 {
+    padding-top: var(--compact-space) !important;
+    padding-bottom: var(--compact-space) !important;
+    margin-top: 0 !important;
+  }
+  html body section[class*="hero"]:not(#hero-1),
+  html body .ssense-contact-premium,
+  html body .inner-page-title,
+  html body .ssense-ia-hero,
+  html body .ssense-offers-hero,
+  html body .ssense-reviews-hero {
+    padding-top: 84px !important;
+    padding-bottom: 14px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    min-height: 0 !important;
+  }
+
+  /* Headings and their wrappers stop reserving empty blocks. */
+  html body .section-title,
+  html body .ssense-section-heading,
+  html body .category-title,
+  html body .ssense-testimonials-heading,
+  html body .ssense-about-menu-head,
+  html body .ssense-about-approach-intro,
+  html body .ssense-section-title,
+  html body .ssense-heading-split { margin-top: 0 !important; margin-bottom: 12px !important; }
+  html body h1, html body h2, html body h3, html body h4,
+  html body .h2-md, html body .h2-title, html body .h5-md { margin-top: 0 !important; }
+  html body section p { margin-top: 0 !important; }
+
+  /* Grids and flex stacks: tighter gaps, nothing vertically centred. */
+  html body .row,
+  html body .ssense-ia-content,
+  html body .ssense-ia-hero-grid,
+  html body .ssense-about-hero-grid,
+  html body .ssense-about-approach,
+  html body .ssense-services-hero-grid,
+  html body .ssense-services-hero-copy,
+  html body .ssense-contact-premium__grid,
+  html body .ssense-contact-connect__grid,
+  html body .ssense-offers-hero__grid,
+  html body .ssense-offers-ribbon__inner,
+  html body .ssense-offers-visit__panel,
+  html body .ssense-local-panel,
+  html body .ssense-booking-panel,
+  html body .ssense-reviews-hero__inner,
+  html body .ssense-reviews-hero__copy,
+  html body .ssense-testimonial-grid,
+  html body .ssense-quick-grid,
+  html body .ssense-about-proof-strip,
+  html body .ssense-related-grid,
+  html body .ssense-about-menu-grid,
+  html body .ssense-gallery-grid,
+  html body .ssense-menu-section .container {
+    row-gap: var(--compact-gap) !important;
+    column-gap: 10px !important;
+    align-items: flex-start !important;
+    margin-top: 0 !important;
+  }
+
+  /* Cards: no forced equal height, no leftover internal air. */
+  html body .ssense-related-card,
+  html body .ssense-about-menu-card,
+  html body .ssense-offers-card,
+  html body .ssense-quick-grid > *,
+  html body .ssense-about-proof-item,
+  html body .ssense-about-approach-step,
+  html body .ssense-luxury-feature,
+  html body .ssense-home-peace-points > *,
+  html body .ssense-offers-visit__card {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    align-self: start !important;
+    height: auto !important;
+  }
+
+  /* Utility margins collapse; Bootstrap spacing is the usual culprit. */
+  html body .mb-0 { margin-bottom: 0 !important; }
+  html body .mb-1, html body .mb-2 { margin-bottom: 6px !important; }
+  html body .mb-3, html body .mb-4, html body .mb-5, html body .mb-6 { margin-bottom: 10px !important; }
+  html body .mt-1, html body .mt-2 { margin-top: 6px !important; }
+  html body .mt-3, html body .mt-4, html body .mt-5, html body .mt-6 { margin-top: 10px !important; }
+  html body .my-4, html body .my-5 { margin-top: 10px !important; margin-bottom: 10px !important; }
+  html body .py-4, html body .py-5 { padding-top: 10px !important; padding-bottom: 10px !important; }
+
+  /* Page-level footer breathing room. */
+  html body footer,
+  html body .ssense-menu-footer,
+  html body .footer-bottom { padding-top: 10px !important; padding-bottom: 10px !important; }
+  html body main { padding-bottom: 0 !important; }
+
+  /* ---- Pass 2: template blocks the first pass could not reach ---- */
+
+  /* Template spacing utility classes (pt-8 / py-6 / pb-7 / mt-5 ...). */
+  html body [class*="pt-0"] { padding-top: 0 !important; }
+  html body [class*="pt-1"], html body [class*="pt-2"] { padding-top: 4px !important; }
+  html body [class*="pt-3"], html body [class*="pt-4"],
+  html body [class*="pt-5"], html body [class*="pt-6"],
+  html body [class*="pt-7"], html body [class*="pt-8"],
+  html body [class*="pt-9"], html body [class*="pt-10"] { padding-top: var(--compact-space) !important; }
+  html body [class*="pb-1"], html body [class*="pb-2"] { padding-bottom: 4px !important; }
+  html body [class*="pb-3"], html body [class*="pb-4"],
+  html body [class*="pb-5"], html body [class*="pb-6"],
+  html body [class*="pb-7"], html body [class*="pb-8"],
+  html body [class*="pb-9"], html body [class*="pb-10"] { padding-bottom: var(--compact-space) !important; }
+  html body [class*="py-7"], html body [class*="py-8"],
+  html body [class*="py-9"], html body [class*="py-10"] {
+    padding-top: var(--compact-space) !important;
+    padding-bottom: var(--compact-space) !important;
+  }
+  html body [class*="mt-7"], html body [class*="mt-8"],
+  html body [class*="mt-9"], html body [class*="mt-10"] { margin-top: 10px !important; }
+  html body [class*="mb-7"], html body [class*="mb-8"],
+  html body [class*="mb-9"], html body [class*="mb-10"] { margin-bottom: 10px !important; }
+
+  /* Banners and full-bleed promos: less dead air above and below the copy. */
+  html body .banner-2,
+  html body .banner-3,
+  html body .banner-4,
+  html body .ct-02,
+  html body .ct-03,
+  html body .ct-05,
+  html body .ct-06,
+  html body .ct-07,
+  html body .ct-08,
+  html body .ct-12 { padding-top: 18px !important; padding-bottom: 18px !important; }
+  html body .banner-2-txt h2 { font-size: clamp(2rem, 11vw, 2.9rem) !important; margin-bottom: 6px !important; }
+  html body .banner-2-txt h3 { margin-bottom: 12px !important; }
+
+  /* Accordions: thumbs sit closer, panels have no extra inset. */
+  html body .accordion-item,
+  html body .accordion-wrapper .accordion { margin-bottom: 0 !important; }
+  html body .accordion-thumb,
+  html body .accordion .accordion-thumb {
+    min-height: 0 !important;
+    padding: 11px 38px 11px 44px !important;
+    margin: 0 !important;
+  }
+  html body .accordion-panel { padding: 0 10px 10px 44px !important; margin: 0 !important; }
+  html body .accordion-panel p:last-child { margin-bottom: 0 !important; }
+  html body .accordion + .accordion { margin-top: 4px !important; }
+  html body .accordion-wrapper.mt-5,
+  html body .accordion-wrapper.mt-4,
+  html body .accordion-wrapper.mt-3 { margin-top: 12px !important; }
+
+  /* Homepage editorial blocks observed in the scroll capture. */
+  html body .ssense-home-secret-head .txt-block { padding: 0 !important; }
+  html body .ssense-home-secret-head .section-id { margin-bottom: 8px !important; }
+  html body .ssense-home-secret-rail { margin-top: 10px !important; gap: 6px !important; }
+  html body .ssense-home-secret-rail > span { padding: 8px 9px !important; }
+  html body .ssense-home-secret-services .sbox-2 { margin-bottom: 0 !important; }
+  html body .ssense-home-secret-services .sbox-txt { padding: 8px 0 0 !important; }
+  html body .ssense-home-secret-services .sbox-txt h5 { margin-bottom: 6px !important; }
+  html body .ssense-home-secret-services .sbox-txt p { margin-bottom: 8px !important; }
+  html body .ssense-home-secret-script { margin: 10px 0 0 !important; }
+  html body .ssense-luxury-features { margin-top: 12px !important; gap: 6px !important; }
+  html body .ssense-luxury-cta { margin-top: 10px !important; }
+  html body .ssense-why-cta { margin-top: 12px !important; }
+  html body .ssense-hours-features { margin-top: 12px !important; gap: 8px !important; }
+  html body .ssense-hours-section .left-column,
+  html body .ssense-hours-section .right-column { padding: 0 !important; }
+
+  /* Testimonials, blog and gallery blocks. */
+  html body .ssense-testimonials-heading { margin-bottom: 10px !important; }
+  html body .ssense-testimonials-heading p { margin-bottom: 0 !important; }
+  html body .ssense-testimonial-card { padding: 12px !important; }
+  html body .ssense-testimonial-card p { margin: 6px 0 !important; }
+  html body .ssense-home-testimonials { padding-top: var(--compact-space) !important; padding-bottom: var(--compact-space) !important; }
+  html body .ssense-testimonial-deco { display: none !important; }
+  html body .blog-post { margin-bottom: 10px !important; }
+  html body .blog-post-txt { padding: 10px 12px !important; }
+  html body .blog-post-txt h3,
+  html body .blog-post-txt h5 { margin-bottom: 6px !important; }
+  html body .blog-post-txt p:last-child { margin-bottom: 0 !important; }
+  html body .social-share,
+  html body .ssense-blog-tags,
+  html body .post-tags { margin-top: 8px !important; }
+  html body #blog-1 .section-title { margin-bottom: 12px !important; }
+  html body .ssense-blog-replacement { padding-top: var(--compact-space) !important; padding-bottom: var(--compact-space) !important; }
+
+  /* Gallery masonry cells and lightbox triggers keep zero dead margin. */
+  html body .grid-item,
+  html body .gallery-image,
+  html body .ssense-gallery-row > * { margin-bottom: 0 !important; }
+  html body .ssense-gallery-row { gap: 6px !important; }
+
+  /* About page specifics seen in the capture. */
+  html body .ssense-about-approach-intro { margin-bottom: 10px !important; }
+  html body .ssense-about-approach-step + .ssense-about-approach-step { margin-top: 6px !important; }
+  html body .ssense-about-menu-banner { margin-top: 10px !important; padding: 10px !important; }
+  html body .ssense-about-proof-section { padding: 10px 0 !important; }
+  html body .ssense-about-hero-lede { margin-bottom: 10px !important; }
+  html body .ssense-hero-actions { gap: 8px !important; margin-top: 10px !important; }
+  html body .ssense-about-menu-banner__script,
+  html body .ssense-about-approach-step__num { margin-bottom: 4px !important; }
+
+  /* Headings that the capture showed spilling onto a 3rd line. */
+  html body .ssense-general-footer h2,
+  html body .ssense-general-footer h3 { text-wrap: balance !important; }
+  html body .ssense-booking-panel h2 { font-size: clamp(1.2rem, 5.4vw, 1.5rem) !important; line-height: 1.14 !important; }
+  html body .ssense-process-card h2,
+  html body .ssense-service-design-copy h2 { font-size: clamp(1.25rem, 5.6vw, 1.55rem) !important; line-height: 1.14 !important; }
+  html body .ssense-testimonials-heading h2 { font-size: clamp(1.55rem, 6.8vw, 1.9rem) !important; line-height: 1.08 !important; }
+  html body .ssense-article-hero h1 { font-size: clamp(1.55rem, 6.8vw, 1.9rem) !important; line-height: 1.08 !important; }
+  html body .ssense-offers-feature__name { font-size: .95rem !important; line-height: 1.25 !important; }
+  html body .ssense-offers-visit__panel h2,
+  html body .ssense-offers-gift__copy h2 { font-size: clamp(1.3rem, 5.8vw, 1.6rem) !important; line-height: 1.12 !important; }
+  html body .ssense-reviews-hero h1 { font-size: clamp(1.55rem, 6.8vw, 1.9rem) !important; line-height: 1.08 !important; }
+  html body .ssense-reviews-hero__visual { gap: 8px !important; }
+  html body h1, html body h2, html body h3 { hyphens: none !important; }
+
+  /* Footer brand block centres on phones: logo, tagline and blurb. */
+  html body .ssense-general-footer__grid { grid-template-columns: 1fr !important; }
+  html body .ssense-general-footer__brand {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  html body .ssense-general-footer__brand > a { margin-inline: auto !important; }
+  html body .ssense-general-footer__brand img { margin: 0 auto !important; }
+  html body .ssense-general-footer__tagline { margin-top: 8px !important; }
+  html body .ssense-general-footer__contact-list { text-align: left !important; }
+  html body .ssense-general-footer__contact-list,
+  html body .ssense-general-footer__links { margin-inline: auto !important; max-width: 320px !important; }
+  html body .ssense-general-footer h3 { text-align: center !important; }
+  html body .ssense-general-footer h3:after { left: 50% !important; transform: translateX(-50%) !important; }
+  html body .ssense-general-footer__links,
+  html body .ssense-general-footer__socials,
+  html body .ssense-general-footer__socials ul { text-align: center !important; }
+
+  /* Footer columns: no stacked air between link lists. */
+  html body .footer-widget,
+  html body .ssense-footer-col { margin-bottom: 12px !important; }
+  html body .footer-links li,
+  html body .ssense-footer-links li { padding: 2px 0 !important; }
+  html body .ssense-footer-bottom,
+  html body .footer-bottom p { margin-top: 6px !important; margin-bottom: 0 !important; }
+  html body .ssense-floating-cta { gap: 6px !important; }
+
+  /* Utility: anything still inheriting a large bottom margin steps down. */
+  html body main p { margin-bottom: 10px !important; }
+  html body main ul,
+  html body main ol { margin-bottom: 10px !important; }
+  html body main li { margin-bottom: 4px !important; }
 
   @media (prefers-reduced-motion: reduce) {
     html body .ssense-compact-row { scroll-behavior: auto !important; }
