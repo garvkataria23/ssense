@@ -116,8 +116,8 @@
   html body .ssense-luxury-photo { height: 210px !important; min-height: 0 !important; }
   html body .ssense-luxury-photo img { height: 100% !important; object-fit: cover; }
   html body .ssense-about-hero-visual { min-height: 0 !important; height: auto !important; }
-  html body .ssense-about-image-main { width: 100% !important; margin-inline: auto !important; height: clamp(180px, 78vw, 420px) !important; min-height: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; background: var(--ssense-poudre, #f3ece6) !important; }
-  html body .ssense-about-image-main img { width: 100% !important; height: 100% !important; min-height: 0 !important; max-height: none !important; aspect-ratio: auto !important; object-fit: contain !important; }
+  html body .ssense-about-image-main { width: 100% !important; margin-inline: auto !important; height: clamp(190px, 82vw, 440px) !important; min-height: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 10px !important; background: var(--ssense-poudre, #f3ece6) !important; }
+  html body .ssense-about-image-main img { width: auto !important; height: auto !important; max-width: 100% !important; max-height: 100% !important; min-height: 0 !important; aspect-ratio: auto !important; object-fit: contain !important; }
   html body .ssense-about-image-secondary { height: 130px !important; }
   html body .ssense-reviews-hero__image img { height: 220px !important; object-fit: cover; }
   html body .ssense-article-hero { height: auto !important; min-height: 0 !important; }
@@ -794,8 +794,8 @@
   html body .ssense-about-menu-head,
   html body .ssense-about-menu-banner { margin-block: 12px !important; padding-block: 12px !important; }
   html body .ssense-about-hero-visual { min-height: 0 !important; height: auto !important; }
-  html body .ssense-about-image-main { width: 100% !important; margin-inline: auto !important; height: clamp(165px, 82vw, 320px) !important; min-height: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; background: var(--ssense-poudre, #f3ece6) !important; }
-  html body .ssense-about-image-main img { width: 100% !important; height: 100% !important; min-height: 0 !important; max-height: none !important; aspect-ratio: auto !important; object-fit: contain !important; }
+  html body .ssense-about-image-main { width: 100% !important; margin-inline: auto !important; height: clamp(175px, 86vw, 340px) !important; min-height: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 9px !important; background: var(--ssense-poudre, #f3ece6) !important; }
+  html body .ssense-about-image-main img { width: auto !important; height: auto !important; max-width: 100% !important; max-height: 100% !important; min-height: 0 !important; aspect-ratio: auto !important; object-fit: contain !important; }
   html body .ssense-about-image-secondary { height: 110px !important; }
   html body .ssense-about-approach-step { padding-block: 0 !important; margin-block: 8px !important; }
 
