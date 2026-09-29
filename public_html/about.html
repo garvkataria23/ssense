@@ -237,7 +237,7 @@
 		<link href="css/style.css?v=global-live-20260921" rel="stylesheet">
 		
 		<!-- RESPONSIVE CSS -->
-		<link href="css/responsive.css?v=global-live-20260929d" rel="stylesheet">
+		<link href="css/responsive.css?v=global-live-20260929e" rel="stylesheet">
 		<style>
 			.ssense-about-redesign .container { width: min(100%, calc(100vw - 36px))!important; max-width: min(1140px, calc(100vw - 36px))!important; padding-right: 0!important; padding-left: 0!important; }
 			@media (max-width: 767.98px) {
@@ -251,8 +251,9 @@
 				.ssense-about-hero-chip { display: none !important; }
 				/* Full-width card on mobile */
 				.ssense-about-hero-visual { position: relative !important; min-height: 0 !important; height: auto !important; width: calc(100vw - 36px) !important; max-width: calc(100vw - 36px) !important; margin: 22px 0 0 !important; }
-				.ssense-about-image-main { position: relative !important; inset: auto !important; display: flex !important; align-items: center !important; justify-content: center !important; width: 100% !important; height: clamp(200px, 84vw, 440px) !important; padding: 12px !important; border-radius: 24px !important; overflow: hidden !important; background: #f1e9e2 !important; box-shadow: 0 16px 40px rgba(95, 41, 55, 0.12) !important; }
-				.ssense-about-image-main img { position: static !important; display: block !important; width: auto !important; height: auto !important; max-width: 100% !important; max-height: 100% !important; min-height: 0 !important; aspect-ratio: auto !important; object-fit: contain !important; border-radius: 14px !important; transform: none !important; }
+				.ssense-about-image-main { position: relative !important; inset: auto !important; display: block !important; width: 100% !important; height: clamp(155px, 44vw, 235px) !important; padding: 0 !important; border-radius: 22px !important; overflow: hidden !important; background: #f1e9e2 !important; box-shadow: 0 16px 40px rgba(95, 41, 55, 0.12) !important; }
+				.ssense-about-image-main picture,
+				.ssense-about-image-main img { position: static !important; display: block !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; min-height: 0 !important; aspect-ratio: auto !important; object-fit: cover !important; object-position: center 32% !important; border-radius: 0 !important; transform: none !important; }
 				.ssense-about-image-secondary { display: none !important; }
 			}
 		</style>
@@ -384,7 +385,7 @@
 								</div>
 							</div>
 							<div class="ssense-about-hero-visual" aria-label="S.Sense Salon experience highlights">
-								<figure class="ssense-about-image ssense-about-image-main"><img src="images/about-hero-wide.webp" width="967" height="1300" alt="S.Sense Salon nail consultation and beauty experience" loading="eager"></figure>
+								<figure class="ssense-about-image ssense-about-image-main"><picture><source media="(max-width: 767.98px)" srcset="images/saloncrop.webp"><img src="images/about-hero-wide.webp" width="967" height="1300" alt="S.Sense Salon nail consultation and beauty experience" loading="eager"></picture></figure>
 								<figure class="ssense-about-image ssense-about-image-secondary"><img src="images/salon10.webp" width="600" height="400" alt="S.Sense Salon consultation experience" loading="lazy"></figure>
 								<div class="ssense-about-hero-note"><i class="flaticon-basic-clock"></i><span>Open daily</span><strong>11 AM &ndash; 9 PM</strong></div>
 								<div class="ssense-about-hero-chip"><i class="flaticon-thumbs-up"></i><span>Walk-ins welcome</span></div>
