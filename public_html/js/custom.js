@@ -173,6 +173,335 @@
 
 
 		/*----------------------------------------------------*/
+		/*	Mobile Instagram Gallery Marquee
+		/*----------------------------------------------------*/
+
+		(function() {
+			var $galleryRow = $('body.ssense-home-refined #gallery-3 .row.row-cols-1');
+			if (!$galleryRow.length) return;
+
+			var media = window.matchMedia('(max-width: 767.98px)');
+			var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+			var frame = null;
+			var lastTime = 0;
+			var offset = 0;
+			var paused = false;
+			var built = false;
+
+			function stop() {
+				if (frame) window.cancelAnimationFrame(frame);
+				frame = null;
+				lastTime = 0;
+				offset = $galleryRow[0] ? $galleryRow[0].scrollLeft : offset;
+			}
+
+			function teardown() {
+				stop();
+				$galleryRow.find('.ssense-gallery-marquee-clone').remove();
+				$galleryRow.removeClass('ssense-gallery-marquee');
+				built = false;
+				if ($galleryRow[0]) $galleryRow[0].scrollLeft = 0;
+				offset = 0;
+			}
+
+			function tick(time) {
+				var row = $galleryRow[0];
+				if (!row) return;
+				if (!lastTime) lastTime = time;
+				if (!paused && !reducedMotion.matches) {
+					var loopWidth = row.scrollWidth / 2;
+					offset += (time - lastTime) * 0.04;
+					if (loopWidth > 0 && offset >= loopWidth) offset -= loopWidth;
+					row.scrollLeft = offset;
+				}
+				lastTime = time;
+				frame = window.requestAnimationFrame(tick);
+			}
+
+			function setup() {
+				if (!media.matches || reducedMotion.matches) {
+					teardown();
+					return;
+				}
+				if (!built) {
+					$galleryRow.children().not('.ssense-gallery-marquee-clone').each(function() {
+						var $clone = $(this).clone(true, true).addClass('ssense-gallery-marquee-clone').attr('aria-hidden', 'true');
+						$clone.find('[id]').removeAttr('id');
+						$galleryRow.append($clone);
+					});
+					$galleryRow.addClass('ssense-gallery-marquee').attr('aria-label', 'Salon gallery auto scrolling list');
+					built = true;
+					offset = $galleryRow[0].scrollLeft;
+				}
+				if (!frame) frame = window.requestAnimationFrame(tick);
+			}
+
+			$galleryRow.on('mouseenter focusin touchstart pointerdown', function() { paused = true; });
+			$galleryRow.on('mouseleave focusout touchend touchcancel pointerup pointercancel', function() { paused = false; });
+			media.addEventListener('change', setup);
+			reducedMotion.addEventListener('change', setup);
+			setup();
+		})();
+
+
+		/*----------------------------------------------------*/
+		/*	Compact Mobile Service Cards
+		/*----------------------------------------------------*/
+
+		(function() {
+			var media = window.matchMedia('(max-width: 767.98px)');
+			var section = document.querySelector('body.ssense-home-refined #services-2.ssense-home-secret-services');
+			if (!section) return;
+
+			var container = section.querySelector('.container');
+			var row = section.querySelector('.sbox-2-wrapper > .row');
+			var columns = Array.prototype.slice.call(row.children);
+			var cards = columns.map(function(column) { return column.querySelector('.sbox-2'); });
+			var entranceObserver = null;
+
+			function setImportant(element, property, value) {
+				if (element) element.style.setProperty(property, value, 'important');
+			}
+
+			function clear(element, properties) {
+				if (!element) return;
+				properties.forEach(function(property) { element.style.removeProperty(property); });
+			}
+
+			function update() {
+				if (!media.matches) {
+					row.classList.remove('ssense-service-cards-enter', 'is-in-view');
+					clear(container, ['padding-left', 'padding-right']);
+					clear(row, ['display', 'grid-template-columns', 'gap', 'width', 'padding-left', 'padding-right', 'margin-left', 'margin-right']);
+					columns.forEach(function(column) { clear(column, ['width', 'max-width', 'flex', 'padding', 'margin']); });
+					cards.forEach(function(card) {
+						clear(card, ['display', 'grid-template-columns', 'align-items', 'height', 'min-height', 'padding', 'border-radius']);
+						clear(card.querySelector('.ssense-home-service-photo'), ['width', 'height']);
+						clear(card.querySelector('.ssense-home-service-photo img'), ['width', 'height']);
+						clear(card.querySelector('.sbox-ico'), ['display']);
+						clear(card.querySelector('.sbox-txt'), ['align-items', 'justify-content', 'padding', 'text-align']);
+						clear(card.querySelector('.sbox-txt h5'), ['margin', 'font-size', 'line-height']);
+						clear(card.querySelector('.sbox-txt p'), ['display']);
+						clear(card.querySelector('.ssense-home-service-link'), ['width', 'min-height', 'margin-top', 'padding', 'font-size', 'letter-spacing']);
+					});
+					return;
+				}
+
+				setImportant(container, 'padding-left', '0');
+				setImportant(container, 'padding-right', '0');
+				row.classList.add('ssense-service-cards-enter');
+				setImportant(row, 'display', 'grid');
+				setImportant(row, 'grid-template-columns', '1fr');
+				setImportant(row, 'gap', '10px');
+				setImportant(row, 'width', '100%');
+				setImportant(row, 'padding-left', '0');
+				setImportant(row, 'padding-right', '0');
+				setImportant(row, 'margin-left', '0');
+				setImportant(row, 'margin-right', '0');
+				columns.forEach(function(column) {
+					setImportant(column, 'width', '100%');
+					setImportant(column, 'max-width', 'none');
+					setImportant(column, 'flex', 'none');
+					setImportant(column, 'padding', '0');
+					setImportant(column, 'margin', '0');
+				});
+				cards.forEach(function(card) {
+					setImportant(card, 'display', 'grid');
+					setImportant(card, 'grid-template-columns', '112px minmax(0, 1fr)');
+					setImportant(card, 'align-items', 'stretch');
+					setImportant(card, 'height', '116px');
+					setImportant(card, 'min-height', '0');
+					setImportant(card, 'padding', '7px');
+					setImportant(card, 'border-radius', '16px');
+					var photo = card.querySelector('.ssense-home-service-photo');
+					var image = card.querySelector('.ssense-home-service-photo img');
+					var text = card.querySelector('.sbox-txt');
+					var title = card.querySelector('.sbox-txt h5');
+					var copy = card.querySelector('.sbox-txt p');
+					var link = card.querySelector('.ssense-home-service-link');
+					setImportant(photo, 'width', '112px');
+					setImportant(photo, 'height', '102px');
+					setImportant(image, 'width', '112px');
+					setImportant(image, 'height', '102px');
+					setImportant(card.querySelector('.sbox-ico'), 'display', 'none');
+					setImportant(text, 'align-items', 'flex-start');
+					setImportant(text, 'justify-content', 'center');
+					setImportant(text, 'padding', '4px 6px 2px 12px');
+					setImportant(text, 'text-align', 'left');
+					setImportant(title, 'margin', '0 0 6px');
+					setImportant(title, 'font-size', '1.12rem');
+					setImportant(title, 'line-height', '1');
+					setImportant(copy, 'display', 'none');
+					setImportant(link, 'width', '100%');
+					setImportant(link, 'min-height', '32px');
+					setImportant(link, 'margin-top', '0');
+					setImportant(link, 'padding', '4px 6px');
+					setImportant(link, 'font-size', '.62rem');
+					setImportant(link, 'letter-spacing', '.08em');
+				});
+			}
+
+			media.addEventListener('change', update);
+			update();
+
+			if ('IntersectionObserver' in window) {
+				entranceObserver = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (!entry.isIntersecting || !media.matches) return;
+						row.classList.add('is-in-view');
+						entranceObserver.unobserve(section);
+					});
+				}, { threshold: 0.18 });
+				entranceObserver.observe(section);
+			} else {
+				row.classList.add('is-in-view');
+			}
+		})();
+
+
+		/*----------------------------------------------------*/
+		/*	Single-line Mobile Accordion Labels
+		/*----------------------------------------------------*/
+
+		(function() {
+			var media = window.matchMedia('(max-width: 767.98px)');
+			var section = document.querySelector('body.ssense-home-refined #why-ssense');
+			if (!section) return;
+			var thumbs = Array.prototype.slice.call(section.querySelectorAll('.accordion-thumb'));
+			var cta = section.querySelector('.ssense-why-cta');
+			var imageWrap = section.querySelector('.ct-06-img');
+			var image = imageWrap && imageWrap.querySelector('img');
+
+			function update() {
+				thumbs.forEach(function(thumb) {
+					var label = thumb.querySelector('p');
+					if (media.matches) {
+						thumb.style.setProperty('padding-left', '52px', 'important');
+						thumb.style.setProperty('padding-right', '48px', 'important');
+						label.style.setProperty('width', '100%', 'important');
+						label.style.setProperty('font-size', '11px', 'important');
+						label.style.setProperty('line-height', '1.15', 'important');
+						label.style.setProperty('letter-spacing', '-.01em', 'important');
+						label.style.setProperty('white-space', 'nowrap', 'important');
+					} else {
+						thumb.style.removeProperty('padding-left');
+						thumb.style.removeProperty('padding-right');
+						label.style.removeProperty('width');
+						label.style.removeProperty('font-size');
+						label.style.removeProperty('line-height');
+						label.style.removeProperty('letter-spacing');
+						label.style.removeProperty('white-space');
+					}
+				});
+
+				if (imageWrap && image) {
+					if (media.matches) {
+						imageWrap.style.setProperty('height', 'auto', 'important');
+						imageWrap.style.setProperty('min-height', '0', 'important');
+						imageWrap.style.setProperty('aspect-ratio', '1118 / 1407', 'important');
+						image.style.setProperty('height', 'auto', 'important');
+						image.style.setProperty('min-height', '0', 'important');
+						image.style.setProperty('object-fit', 'contain', 'important');
+					} else {
+						imageWrap.style.removeProperty('height');
+						imageWrap.style.removeProperty('min-height');
+						imageWrap.style.removeProperty('aspect-ratio');
+						image.style.removeProperty('height');
+						image.style.removeProperty('min-height');
+						image.style.removeProperty('object-fit');
+					}
+				}
+
+				if (!cta) return;
+				if (media.matches) {
+					cta.style.setProperty('white-space', 'nowrap', 'important');
+					cta.style.setProperty('font-size', '.68rem', 'important');
+					cta.style.setProperty('letter-spacing', '.12em', 'important');
+				} else {
+					cta.style.removeProperty('white-space');
+					cta.style.removeProperty('font-size');
+					cta.style.removeProperty('letter-spacing');
+				}
+			}
+
+			media.addEventListener('change', update);
+			update();
+		})();
+
+
+		/*----------------------------------------------------*/
+		/*	Mobile Blog Cards Marquee
+		/*----------------------------------------------------*/
+
+		(function() {
+			var $blogRow = $('body.ssense-home-refined #blog-1 .ssense-blog-row');
+			if (!$blogRow.length) return;
+
+			var media = window.matchMedia('(max-width: 767.98px)');
+			var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+			var frame = null;
+			var lastTime = 0;
+			var offset = 0;
+			var paused = false;
+			var built = false;
+
+			function stop() {
+				if (frame) window.cancelAnimationFrame(frame);
+				frame = null;
+				lastTime = 0;
+				offset = $blogRow[0] ? $blogRow[0].scrollLeft : offset;
+			}
+
+			function teardown() {
+				stop();
+				$blogRow.find('.ssense-blog-marquee-clone').remove();
+				$blogRow.removeClass('ssense-blog-marquee');
+				built = false;
+				if ($blogRow[0]) $blogRow[0].scrollLeft = 0;
+				offset = 0;
+			}
+
+			function tick(time) {
+				var row = $blogRow[0];
+				if (!row) return;
+				if (!lastTime) lastTime = time;
+				if (!paused && !reducedMotion.matches) {
+					var loopWidth = row.scrollWidth / 2;
+					offset += (time - lastTime) * 0.04;
+					if (loopWidth > 0 && offset >= loopWidth) offset -= loopWidth;
+					row.scrollLeft = offset;
+				}
+				lastTime = time;
+				frame = window.requestAnimationFrame(tick);
+			}
+
+			function setup() {
+				if (!media.matches || reducedMotion.matches) {
+					teardown();
+					return;
+				}
+				if (!built) {
+					$blogRow.children().not('.ssense-blog-marquee-clone').each(function() {
+						var $clone = $(this).clone(true, true).addClass('ssense-blog-marquee-clone').attr('aria-hidden', 'true');
+						$clone.find('[id]').removeAttr('id');
+						$blogRow.append($clone);
+					});
+					$blogRow.addClass('ssense-blog-marquee').attr('aria-label', 'Beauty and hair journal auto scrolling list');
+					built = true;
+					offset = $blogRow[0].scrollLeft;
+				}
+				if (!frame) frame = window.requestAnimationFrame(tick);
+			}
+
+			$blogRow.on('mouseenter focusin touchstart pointerdown', function() { paused = true; });
+			$blogRow.on('mouseleave focusout touchend touchcancel pointerup pointercancel', function() { paused = false; });
+			media.addEventListener('change', setup);
+			reducedMotion.addEventListener('change', setup);
+			setup();
+		})();
+
+
+		/*----------------------------------------------------*/
 		/*	Accordion
 		/*----------------------------------------------------*/
 
