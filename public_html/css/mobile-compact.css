@@ -103,8 +103,7 @@
   html body #hero-1 .caption { padding: 0 !important; }
   html body #hero-1 .caption .text { margin: 0 !important; padding: 0 !important; }
   html body #hero-1 .caption .ssense-hero-assist { font-size: .8rem !important; font-weight: 500 !important; line-height: 1.4 !important; text-transform: none !important; letter-spacing: .02em !important; margin-bottom: 0 !important; }
-  html body .ssense-ia-hero figure img,
-  html body .ssense-services-hero-visual img {
+  html body .ssense-ia-hero figure img {
     height: 160px !important;
     max-height: 160px !important;
     width: 100% !important;
@@ -527,10 +526,14 @@
   html body .ssense-services-hero-strip { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   html body .ssense-services-hero-strip > span { grid-template-columns: 28px minmax(0, 1fr) !important; gap: 8px !important; min-width: 0 !important; padding: 4px 0 !important; font-size: .85rem !important; }
   html body .ssense-services-hero-strip i { margin-bottom: 4px !important; }
-  html body .ssense-services-hero-visual figure { height: 160px !important; min-height: 0 !important; }
-  html body .ssense-services-hero-visual { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; align-items: center !important; }
-  html body .ssense-services-hero-visual figure { width: 100% !important; margin: 0 !important; }
-  html body .ssense-services-hero-stat { display: block !important; position: static !important; width: auto !important; min-height: 0 !important; margin: 0 !important; }
+  html body .ssense-services-hero-visual { display: block !important; width: 100% !important; max-width: 100% !important; }
+  html body .ssense-services-hero-visual figure { width: 100% !important; height: auto !important; min-height: 0 !important; margin: 0 !important; aspect-ratio: 4 / 3 !important; }
+  html body .ssense-services-hero-visual figure img { width: 100% !important; height: 100% !important; max-height: none !important; object-fit: cover !important; object-position: center !important; }
+  html body .ssense-services-hero-shape { display: none !important; }
+  html body .ssense-services-hero-badge { position: static !important; width: 100% !important; height: auto !important; min-height: 0 !important; margin: 12px 0 0 !important; border-radius: 22px !important; padding: 14px 10px !important; font-size: .72rem !important; letter-spacing: .18em !important; }
+  html body .ssense-services-hero-badge::after { display: none !important; }
+  html body .ssense-services-hero-script { position: static !important; width: 100% !important; margin: 10px 0 0 !important; font-size: clamp(1.3rem, 6vw, 1.8rem) !important; line-height: 1.35 !important; text-align: center !important; }
+  html body .ssense-services-hero-stat { display: block !important; position: static !important; width: 100% !important; min-height: 0 !important; margin: 10px 0 0 !important; text-align: center !important; }
   html body .ssense-services-hero-stat::before { display: none !important; }
   html body .ssense-services-hero-stat > * { margin: 0 !important; }
   html body .ssense-services-hero-stat strong { font-size: 2rem !important; line-height: 1.1 !important; }
@@ -769,8 +772,8 @@
   html body .ssense-contact-premium__lede { margin-block: 6px !important; }
 
   /* Services hero: shorter crop, tighter strip. */
-  html body .ssense-services-hero-visual figure,
-  html body .ssense-services-hero-visual figure img { height: 120px !important; max-height: 120px !important; }
+  html body .ssense-services-hero-visual figure { aspect-ratio: 3 / 2 !important; }
+  html body .ssense-services-hero-visual figure img { height: 100% !important; max-height: none !important; }
   html body .ssense-services-hero-strip { margin-top: 12px !important; padding: 10px !important; gap: 8px !important; }
   html body .ssense-services-hero-copy > p { margin-block: 6px !important; }
 
