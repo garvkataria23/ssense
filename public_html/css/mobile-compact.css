@@ -1643,6 +1643,57 @@
     overflow: visible !important;
   }
 
+  /* Journal listing: keep the photo flush with its frame and show complete copy. */
+  html body.ssense-blog-page .ssense-blog-listing-grid .blog-post-img {
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+    aspect-ratio: auto !important;
+    margin-bottom: 14px !important;
+    overflow: hidden !important;
+  }
+
+  html body.ssense-blog-page .ssense-blog-listing-grid .blog-post-img .hover-overlay,
+  html body.ssense-blog-page .ssense-blog-listing-grid .blog-post-img img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+  }
+
+  html body.ssense-blog-page .ssense-blog-listing-grid .post-link,
+  html body.ssense-blog-page .ssense-blog-listing-grid .blog-post-txt > p.mb-0 {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    text-overflow: clip !important;
+    -webkit-line-clamp: unset !important;
+    -webkit-box-orient: initial !important;
+  }
+
+  html body.ssense-blog-page .ssense-blog-listing-grid .ssense-blog-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: 100% !important;
+    align-self: stretch !important;
+  }
+
+  html body.ssense-blog-page .ssense-blog-listing-grid {
+    align-items: stretch !important;
+  }
+
+  html body.ssense-blog-page .ssense-blog-listing-grid .blog-post-txt {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+  }
+
   /* Utility: anything still inheriting a large bottom margin steps down. */
   html body main p { margin-bottom: 10px !important; }
   html body main ul,
