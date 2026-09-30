@@ -1611,6 +1611,38 @@
     z-index: 3 !important;
   }
 
+  /* Homepage journal cards: image fills its frame and copy is never clipped. */
+  html body.ssense-home-refined #blog-1 .blog-post-img {
+    height: 180px !important;
+    min-height: 180px !important;
+    aspect-ratio: auto !important;
+    margin-bottom: 14px !important;
+  }
+
+  html body.ssense-home-refined #blog-1 .blog-post-img .hover-overlay,
+  html body.ssense-home-refined #blog-1 .blog-post-img img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+  }
+
+  html body.ssense-home-refined #blog-1 .post-link,
+  html body.ssense-home-refined #blog-1 .blog-post-txt > p.mb-0 {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    -webkit-line-clamp: unset !important;
+  }
+
+  html body.ssense-home-refined #blog-1 .ssense-blog-card {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
   /* Utility: anything still inheriting a large bottom margin steps down. */
   html body main p { margin-bottom: 10px !important; }
   html body main ul,
