@@ -13685,7 +13685,9 @@ body.ssense-offers-page .ssense-offers-ribbon__inner p span {
   .ssense-about-redesign .container,
   .ssense-about-hero-grid,
   .ssense-about-hero-copy { min-width: 0; max-width: 100%; }
-  .ssense-about-redesign .container { width: calc(100vw - 36px); max-width: calc(100vw - 36px); padding-right: 0; padding-left: 0; }
+  /* Match the 10px mobile gutter used in responsive.css so copy gets the full
+     width. Needs !important to beat the global .container mobile rule. */
+  .ssense-about-redesign .container { width: 100% !important; max-width: 100% !important; padding-right: 10px !important; padding-left: 10px !important; }
   .ssense-about-hero-copy h1 { width: calc(100vw - 36px)!important; max-width: min(100%, 560px)!important; font-size: clamp(2rem, 8.7vw, 2.85rem); line-height: 1.07; letter-spacing: -.045em; overflow-wrap: break-word; }
   .ssense-about-visit-board h2 { max-width: 560px; font-size: clamp(1.72rem, 7vw, 2.15rem); line-height: 1.12; letter-spacing: -.035em; }
   .ssense-about-visit-board { grid-template-columns: 1fr; gap: 26px; }
@@ -27859,5 +27861,28 @@ body.ssense-reviews-page .ssense-return-section .ssense-review-head h2#return-ti
   }
   body.ssense-reviews-page .ssense-return-section .ssense-review-head h2#return-title br {
     display: none !important;
+  }
+}
+
+/* ==========================================================================
+   Reviews "return" cards - tighter on mobile.
+   Row 1 was 62px because the 50px icon carried a 12px top margin, so the
+   short title sat in a tall row and left ~36px of dead space above the body
+   copy. Shrink the icon, drop its offset, and tighten padding/gap/min-height.
+   Desktop is untouched.
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div {
+    min-height: 0 !important;
+    padding: 11px 12px !important;
+    row-gap: 8px !important;
+    gap: 8px 12px !important;
+  }
+  body.ssense-reviews-page .ssense-return-section .ssense-return-grid > div::before {
+    width: 38px !important;
+    height: 38px !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    font-size: 1rem !important;
   }
 }

@@ -6554,7 +6554,9 @@ body:not(.theme--dark) #hero-1 .caption p,
    ===================================================================== */
 @media (max-width: 767.98px) {
   html, body { max-width: 100%; overflow-x: hidden; }
-  .container { width: 100%; max-width: 100%; padding-right: 18px !important; padding-left: 18px !important; }
+  /* Reclaim side padding so copy uses the full mobile width and wraps in as
+     few lines as possible. Was 18px each side (36px lost per line of text). */
+  .container { width: 100%; max-width: 100%; padding-right: 10px !important; padding-left: 10px !important; }
   img, video, iframe { max-width: 100%; }
 
   body h1 { font-size: clamp(2.1rem, 10vw, 3.15rem); line-height: 1.02; }
