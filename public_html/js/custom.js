@@ -1655,3 +1655,75 @@
     media.addEventListener('change', refresh);
     window.addEventListener('hashchange', revealFragment);
 })();
+
+/* Mobile card collections: gentle, staggered reveal as each card enters the
+   viewport. Kept separate from WOW because mobile pages use their own scroll
+   layout and intentionally disable the legacy WOW reveal classes. */
+(function ssenseMobileCardReveal() {
+    'use strict';
+
+    var mobile = window.matchMedia('(max-width: 767.98px)');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var observer = null;
+    var selector = [
+        '.ssense-about-approach-step',
+        '.ssense-about-menu-card',
+        '.ssense-related-card',
+        '.ssense-offers-card',
+        '.ssense-offers-visit__card',
+        '.ssense-testimonial-card',
+        '.ssense-quick-grid > *',
+        '.ssense-process-card',
+        '.ssense-careers-steps > article',
+        '.ssense-careers-role-list > article',
+        '.ssense-careers-benefit-list > article',
+        '.ssense-luxury-feature',
+        '.ssense-home-peace-points > *'
+    ].join(',');
+
+    function revealAll() {
+        document.documentElement.classList.remove('ssense-card-motion');
+        document.querySelectorAll('.ssense-card-reveal').forEach(function(card) {
+            card.classList.add('ssense-card-visible');
+            card.style.removeProperty('--ssense-card-delay');
+        });
+        if (observer) observer.disconnect();
+        observer = null;
+    }
+
+    function setup() {
+        if (!mobile.matches || reducedMotion.matches || !('IntersectionObserver' in window)) {
+            revealAll();
+            return;
+        }
+
+        if (observer) observer.disconnect();
+        document.documentElement.classList.add('ssense-card-motion');
+        observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('ssense-card-visible');
+                observer.unobserve(entry.target);
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+
+        document.querySelectorAll(selector).forEach(function(card) {
+            if (card.hidden || card.classList.contains('ssense-card-visible')) return;
+            var siblings = Array.prototype.filter.call(card.parentElement.children, function(item) {
+                return item.matches && item.matches(selector);
+            });
+            var index = Math.max(0, siblings.indexOf(card));
+            card.classList.add('ssense-card-reveal');
+            card.style.setProperty('--ssense-card-delay', Math.min(index % 4, 3) * 110 + 'ms');
+            observer.observe(card);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setup, { once: true });
+    } else {
+        setup();
+    }
+    mobile.addEventListener('change', setup);
+    reducedMotion.addEventListener('change', setup);
+})();

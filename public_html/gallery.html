@@ -80,10 +80,85 @@
 	<link href="css/animate.css" rel="stylesheet" media="print" onload="this.media='all'">
 
 	<!-- TEMPLATE CSS -->
-	<link href="css/style.css?v=global-live-20260930c" rel="stylesheet">
+	<link href="css/style.css?v=gallery-lookbook-20260930d" rel="stylesheet">
 
 	<!-- RESPONSIVE CSS -->
-	<link href="css/responsive.css?v=global-live-20260930c" rel="stylesheet">
+	<link href="css/responsive.css?v=gallery-lookbook-20260930d" rel="stylesheet">
+	<style>
+		/* Mobile gallery hero.
+		   responsive.css:5 @imports mobile-compact.css, which pins
+		   "html body section.division { padding: var(--compact-space) !important }"
+		   and collapses the hero to 14px. Padding on the section and on
+		   .page-title-txt is not overridable here at any specificity, so the
+		   room is added as margin on .page-title-txt instead.
+		   Target: content starts just under the 60px fixed .wsmobileheader
+		   plus a light gap -> 14px section padding + 58px margin = 72px.
+		   Desktop spacing is owned by css/style.css. */
+		@media (max-width: 767.98px) {
+			html body.ssense-gallery-page .inner-page-title .page-title-txt {
+				margin-top: 58px !important;
+			}
+			html body.ssense-gallery-page .inner-page-title .ssense-gallery-hero-brand {
+				margin-top: 0 !important;
+			}
+			html body.ssense-gallery-page .inner-page-title .page-title-txt h1 {
+				margin-top: 16px !important;
+			}
+		}
+		/* Full uncropped gallery images.
+		   style.css forces equal-height tiles via grid-auto-rows and uses
+		   object-fit:cover, which crops every photo. Here we drop the fixed row
+		   height, let each tile size to its own image's aspect ratio, and switch
+		   to object-fit:contain so nothing is cut off. The nth-child span rules
+		   in style.css are neutralised because they assume a fixed row unit. */
+		html body.ssense-gallery-page #gallery-1 .ssense-gallery-row {
+			grid-auto-rows: auto !important;
+			grid-auto-flow: row !important;
+			align-items: start !important;
+		}
+		html body.ssense-gallery-page #gallery-1 .ssense-gallery-row > .col {
+			grid-row: auto !important;
+			grid-column: auto !important;
+			height: auto !important;
+		}
+		html body.ssense-gallery-page #gallery-1 .ssense-gallery-row > .col:nth-child(n) {
+			grid-row: auto !important;
+			grid-column: auto !important;
+		}
+		/* mobile-compact.css:1004-1005 pins #gallery-1 tiles to 140px with an
+		   id-only selector, which outranks a class-scoped rule. Repeat the id
+		   here so the auto-height version wins on specificity. */
+		html body.ssense-gallery-page #gallery-1 .gallery-image,
+		html body.ssense-gallery-page #gallery-1 .hover-overlay,
+		html body.ssense-gallery-page #gallery-1 .gallery-image img,
+		html body #gallery-1 .gallery-image,
+		html body #gallery-1 .hover-overlay,
+		html body #gallery-1 .gallery-image img {
+			height: auto !important;
+			min-height: 0 !important;
+		}
+		html body.ssense-gallery-page #gallery-1 .gallery-image img {
+			height: auto !important;
+			width: 100% !important;
+			object-fit: contain !important;
+			object-position: center !important;
+		}
+		/* Keep the hover zoom from cropping once the tile is auto-height. */
+		html body.ssense-gallery-page #gallery-1 .gallery-image {
+			overflow: hidden;
+		}
+		@media (max-width: 767.98px) {
+			html body.ssense-gallery-page #gallery-1 .ssense-gallery-row {
+				grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+				grid-auto-rows: auto !important;
+			}
+		}
+		@media (max-width: 420px) {
+			html body.ssense-gallery-page #gallery-1 .ssense-gallery-row {
+				grid-template-columns: 1fr !important;
+			}
+		}
+	</style>
 	
 	<!-- ADDED: Image Gallery Schema -->
 	<script type="application/ld+json">
@@ -203,10 +278,9 @@
 							<div class="ssense-gallery-hero-brand">
 								<img src="images/logo-black.webp" width="1000" height="300" alt="S.Sense Salon and Spa">
 							</div>
-							<span class="ssense-eyebrow">S.Sense Portfolio</span>
 							<h1>The Beauty Lookbook</h1>
 							<div class="ssense-gallery-hero-meta">
-								<span>Hair Colour</span>
+								<span>Hair</span>
 								<span>Makeup</span>
 								<span>Nails</span>
 								<span>Skin & Spa</span>
@@ -1270,6 +1344,34 @@
 
 	<!-- Custom Script -->
 	<script src="js/custom.js?v=global-live-20260930c"></script>
+
+	<!-- Gallery: show every photo uncropped.
+	     mobile-compact.css pins #gallery-1 tiles to a fixed 140px height with
+	     !important, and style.css used equal-height rows + object-fit:cover, so
+	     photos were being cropped. Author rules cannot outrank those here, so
+	     the locked heights are cleared on the elements directly. -->
+	<script>
+	(function () {
+		function uncrop() {
+			var tiles = document.querySelectorAll(
+				'#gallery-1 .ssense-gallery-row .gallery-image, ' +
+				'#gallery-1 .ssense-gallery-row .hover-overlay, ' +
+				'#gallery-1 .ssense-gallery-row .gallery-image img'
+			);
+			for (var i = 0; i < tiles.length; i++) {
+				tiles[i].style.setProperty('height', 'auto', 'important');
+				tiles[i].style.setProperty('min-height', '0', 'important');
+			}
+			var imgs = document.querySelectorAll('#gallery-1 .ssense-gallery-row .gallery-image img');
+			for (var j = 0; j < imgs.length; j++) {
+				imgs[j].style.setProperty('object-fit', 'contain', 'important');
+			}
+		}
+		uncrop();
+		window.addEventListener('load', uncrop);
+		window.addEventListener('resize', uncrop);
+	})();
+	</script>
 
 </body>
 

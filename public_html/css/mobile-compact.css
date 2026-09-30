@@ -1407,6 +1407,154 @@
   html body .footer-bottom p { margin-top: 6px !important; margin-bottom: 0 !important; }
   html body .ssense-floating-cta { gap: 6px !important; }
 
+  /* Equal-size card contract: repeated cards stay visually consistent even
+     when a title or description wraps onto an extra line. */
+  html body .ssense-about-menu-grid,
+  html body .ssense-related-grid:not(#related-posts .ssense-related-grid),
+  html body .ssense-testimonial-grid,
+  html body .ssense-quick-grid,
+  html body .ssense-about-proof-strip {
+    grid-auto-rows: 1fr !important;
+    align-items: stretch !important;
+  }
+
+  html body .ssense-about-menu-grid > *,
+  html body .ssense-related-grid:not(#related-posts .ssense-related-grid) > *,
+  html body .ssense-testimonial-grid > *,
+  html body .ssense-quick-grid > *,
+  html body .ssense-about-proof-strip > * {
+    height: 100% !important;
+    align-self: stretch !important;
+  }
+
+  html body .ssense-about-menu-card > strong {
+    display: -webkit-box !important;
+    min-height: 2.4em !important;
+    overflow: hidden !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  html body .ssense-about-menu-card > p {
+    display: -webkit-box !important;
+    min-height: 4.05em !important;
+    overflow: hidden !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important;
+  }
+
+  html body .ssense-about-menu-card__link {
+    margin-top: auto !important;
+  }
+
+  /* About category pills fill the complete content width as two equal boxes. */
+  html body .ssense-about-approach-chips {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  html body .ssense-about-approach-chips > li {
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    padding-inline: 8px !important;
+    white-space: nowrap !important;
+  }
+
+  /* About hero: keep the phone layout concise and remove the heavy CTA glow. */
+  html body .ssense-about-hero-copy__script,
+  html body .ssense-about-hero-copy > .ssense-about-lede {
+    display: none !important;
+  }
+
+  html body .ssense-about-redesign .ssense-hero-actions__primary,
+  html body .ssense-about-redesign .ssense-hero-actions__primary:hover,
+  html body .ssense-about-redesign .ssense-hero-actions__primary:focus,
+  html body .ssense-about-redesign .ssense-hero-actions__primary:active {
+    box-shadow: none !important;
+  }
+
+  html body .ssense-about-redesign .ssense-hero-actions > .ssense-text-link {
+    display: none !important;
+  }
+
+  html body .ssense-about-redesign .ssense-hero-actions {
+    margin-bottom: 0 !important;
+  }
+
+  html body .ssense-about-redesign .ssense-about-hero-visual {
+    margin: 8px 0 0 !important;
+  }
+
+  /* Gallery hero clears the fixed mobile header; logo/title must not clip. */
+  html body.ssense-gallery-page .inner-page-title {
+    padding-top: 92px !important;
+  }
+
+  html body.ssense-gallery-page .ssense-gallery-hero-meta {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 5px !important;
+  }
+
+  html body.ssense-gallery-page .ssense-gallery-hero-meta > span {
+    justify-content: center !important;
+    min-width: 0 !important;
+    padding: 5px 3px !important;
+    font-size: 0.56rem !important;
+    letter-spacing: 0.06em !important;
+    white-space: nowrap !important;
+  }
+
+  /* Individual service-page heroes use one consistent full-width portrait
+     frame on phones, cropping any blank/black side padding in source files. */
+  html body.ssense-ia-page:not(.ssense-services-index) .ssense-ia-hero figure {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: 3 / 4 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  html body.ssense-ia-page:not(.ssense-services-index) .ssense-ia-hero figure > img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  /* Slow, staggered entrance for repeated card collections on phones. The
+     html guard keeps every card visible when JavaScript is unavailable. */
+  html.ssense-card-motion body .ssense-card-reveal {
+    opacity: 0 !important;
+    transform: translateY(24px) scale(0.985) !important;
+    transition:
+      opacity 0.72s ease var(--ssense-card-delay, 0ms),
+      transform 0.78s cubic-bezier(0.22, 1, 0.36, 1) var(--ssense-card-delay, 0ms) !important;
+    will-change: opacity, transform;
+  }
+
+  html.ssense-card-motion body .ssense-card-reveal.ssense-card-visible {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html.ssense-card-motion body .ssense-card-reveal {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+  }
+
   /* Utility: anything still inheriting a large bottom margin steps down. */
   html body main p { margin-bottom: 10px !important; }
   html body main ul,

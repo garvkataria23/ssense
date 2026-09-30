@@ -532,10 +532,62 @@
 		<!-- Google Analytics 4 - Replace G-XXXXXXXXXX with your actual GA4 ID -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', 'G-XXXXXXXXXX');
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-XXXXXXXXXX');
+		</script>
+
+		<!-- Reviews: run the "return" headline on ONE line on mobile.
+		     Several stylesheet rules target this h2 with !important, and an
+		     inline style only beats those when it is itself !important - so the
+		     size is measured and applied with setProperty(..., 'important').
+		     Desktop keeps the two-line break from the <br> in the markup. -->
+		<script>
+		(function () {
+			var h2 = document.getElementById('return-title');
+			if (!h2) return;
+			var br = null;
+
+			function measure(text, fontCss) {
+				var s = document.createElement('span');
+				s.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;left:-9999px;top:0';
+				if (fontCss) s.style.font = fontCss;
+				s.textContent = text;
+				document.body.appendChild(s);
+				var w = s.getBoundingClientRect().width;
+				s.remove();
+				return w;
+			}
+
+			function fit() {
+				if (!window.matchMedia('(max-width: 767.98px)').matches) {
+					h2.style.removeProperty('font-size');
+					return;
+				}
+
+				var text = h2.textContent.replace(/\s+/g, ' ').trim();
+				var avail = h2.clientWidth;
+				if (!avail) return;
+
+				// Reset first so we measure from the stylesheet size, not a previous fit.
+				h2.style.removeProperty('font-size');
+				var baseFont = getComputedStyle(h2).font;
+				var natural = measure(text, baseFont);
+				if (!natural) return;
+
+				var size = parseFloat(getComputedStyle(h2).fontSize) * (avail / natural);
+				// Walk down until the measured width really fits the column.
+				for (var i = 0; i < 60 && size > 11; i++) {
+					h2.style.setProperty('font-size', size.toFixed(2) + 'px', 'important');
+					if (measure(text, getComputedStyle(h2).font) <= avail + 0.5) break;
+					size -= 0.5;
+				}
+			}
+			fit();
+			window.addEventListener('load', fit);
+			window.addEventListener('resize', fit);
+		})();
 		</script>
 
 	</body>

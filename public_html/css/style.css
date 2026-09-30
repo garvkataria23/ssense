@@ -20914,7 +20914,6 @@ body.ssense-gallery-page {
 }
 
 body.ssense-gallery-page .inner-page-title {
-  padding-top: clamp(118px, 10vw, 168px) !important;
   padding-bottom: clamp(42px, 6vw, 82px) !important;
   background:
     linear-gradient(135deg, rgba(248, 247, 244, .98), rgba(255, 255, 255, .9)) !important;
@@ -21165,9 +21164,14 @@ body.ssense-gallery-page #gallery-1 .more-btn .btn {
   }
 }
 
-/* Gallery compact hero: keep portfolio visible above the fold. */
+/* Gallery compact hero: single authoritative source for section padding.
+   The site header is position:fixed and ~67px tall on desktop, so the hero
+   must clear it or the <h1> renders underneath the nav. calc() adds the
+   breathing room on top of the header height rather than a magic number.
+   Mobile is left to the inline block in gallery.html, which loads after this
+   file and wins the cascade at that breakpoint. */
 body.ssense-gallery-page .inner-page-title {
-  padding-top: clamp(28px, 3vw, 42px) !important;
+  padding-top: calc(67px + clamp(28px, 3vw, 42px)) !important;
   padding-bottom: clamp(12px, 1.8vw, 20px) !important;
 }
 
@@ -22017,13 +22021,16 @@ body.ssense-services-index .ssense-services-hero-copy .ssense-eyebrow {
 
 body.ssense-services-index .ssense-services-hero-copy h1 {
   margin: 0;
-  max-width: 10.8ch;
+  /* Two balanced lines: "Hair, beauty, nails and spa" / "services in Thakur Village."
+     The old 10.8ch cap forced four lines. Note this page sets html{font-size:18.4px},
+     so ch/rem are inflated ~15% - cap against the column width instead. */
+  max-width: 100%;
   color: #171414;
   font-family: var(--font-heading), serif;
-  font-size: clamp(4.1rem, 6.8vw, 7.4rem);
+  font-size: clamp(2.05rem, 2.32vw, 2.5rem);
   font-weight: 600;
   letter-spacing: -0.055em;
-  line-height: 0.86;
+  line-height: 0.98;
 }
 
 body.ssense-services-index .ssense-services-hero-copy h1 span {
@@ -22313,7 +22320,7 @@ body.ssense-services-index .ssense-quick-info {
   }
 
   body.ssense-services-index .ssense-services-hero-copy h1 {
-    max-width: 12ch;
+    max-width: 22ch;
   }
 
   body.ssense-services-index .ssense-services-hero-visual {
@@ -24063,8 +24070,8 @@ body.ssense-services-index .ssense-service-design-copy .ssense-eyebrow {
 }
 
 body.ssense-services-index .ssense-services-hero-copy h1 {
-  font-size: clamp(3.45rem, 5.7vw, 6.4rem);
-  line-height: 0.88;
+  font-size: clamp(2.35rem, 2.62vw, 2.95rem);
+  line-height: 0.98;
 }
 
 body.ssense-services-index .ssense-services-hero-copy p:not(.ssense-eyebrow) {
@@ -24321,8 +24328,8 @@ body.ssense-services-index .ssense-services-hero-copy .ssense-eyebrow {
 }
 
 body.ssense-services-index .ssense-services-hero-copy h1 {
-  font-size: clamp(3rem, 5vw, 5.55rem);
-  line-height: 0.9;
+  font-size: clamp(2.35rem, 3.4vw, 3.4rem);
+  line-height: 0.98;
 }
 
 body.ssense-services-index .ssense-services-hero-copy p:not(.ssense-eyebrow) {
@@ -27811,4 +27818,46 @@ body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card:focus
   body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card { grid-template-columns: 94px minmax(0, 1fr) 44px; min-height: 132px; padding: 14px; }
   body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card img { width: 94px; height: 94px; }
   body.ssense-ia-page .ssense-services-related-showcase .ssense-related-card::after { width: 42px; height: 42px; }
+}
+
+/* ==========================================================================
+   Services hero headline - final authority.
+   The hero h1 was targeted by six separate font-size rules at different
+   breakpoints, so the computed size depended on source order and the page's
+   inflated html{font-size:18.4px} root. These two lines are the only place
+   that sets it: the headline breaks exactly once, after "spa".
+   max-width:100% stops ch-based caps from exceeding the 0.82fr copy column.
+   ========================================================================== */
+body.ssense-services-index .ssense-services-hero-copy h1#page-title {
+  max-width: 100% !important;
+  font-size: clamp(2.05rem, 2.32vw, 2.5rem) !important;
+  line-height: 0.98 !important;
+}
+
+/* ==========================================================================
+   Reviews "return" headline - final authority.
+   max-width:12ch (style.css:8420) capped this h2 far below the width of
+   "What Makes a Visit", forcing three lines at every breakpoint. The head
+   column is a fixed ~415px, so the size is capped in px (this page switches
+   html{font-size} from 16px to 18.4px at 1200px, which makes rem/ch drift).
+   Break is set by the <br> in the markup; the clamp only guarantees the long
+   line fits the column so nothing re-wraps.
+   ========================================================================== */
+body.ssense-reviews-page .ssense-return-section .ssense-review-head h2#return-title {
+  max-width: 100% !important;
+  font-size: clamp(21px, 3.3vw, 47px) !important;
+  line-height: 1.02 !important;
+}
+
+/* Mobile: run the whole headline on ONE line. The <br> is suppressed so the
+   text can reflow as a single row, and the size drops to whatever actually
+   fits the column (~19px at 320 up to ~34px at 768). Desktop keeps two lines. */
+@media (max-width: 767.98px) {
+  body.ssense-reviews-page .ssense-return-section .ssense-review-head h2#return-title {
+    font-size: clamp(19px, 5.9vw, 34px) !important;
+    white-space: nowrap !important;
+  }
+  body.ssense-reviews-page .ssense-return-section .ssense-review-head h2#return-title br {
+    display: none !important;
+  }
 }
