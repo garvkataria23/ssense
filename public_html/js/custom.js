@@ -1486,38 +1486,10 @@
     }
 
     function disclosure(heading, panel, copy) {
-        if (!panel.id) attribute(panel, 'id', 'ssense-compact-panel-' + (++nextId));
-        var button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'ssense-compact-toggle';
-        button.setAttribute('aria-controls', panel.id);
-        button.setAttribute('aria-expanded', 'false');
-        if (copy) {
-            button.textContent = 'Read More';
-            panel.insertAdjacentElement('afterend', button);
-            mark(panel, 'ssense-compact-copy');
-        } else {
-            // Move the original heading nodes, keeping semantic heading levels.
-            var label = document.createElement('span');
-            while (heading.firstChild) label.appendChild(heading.firstChild);
-            button.appendChild(label);
-            heading.appendChild(button);
-            mark(panel, 'ssense-compact-panel');
-            attribute(panel, 'hidden', '');
-        }
-        button.addEventListener('click', function() {
-            var open = button.getAttribute('aria-expanded') !== 'true';
-            button.setAttribute('aria-expanded', String(open));
-            if (copy) {
-                panel.classList.toggle('ssense-compact-open', open);
-                button.textContent = open ? 'Show Less' : 'Read More';
-            } else panel.hidden = !open;
-        });
-        undo.push(function() {
-            panel.classList.remove('ssense-compact-open');
-            if (!copy) while (label.firstChild) heading.insertBefore(label.firstChild, button);
-            button.remove();
-        });
+        // Mobile content now stays fully visible; no Read More disclosure is
+        // installed. Keep this no-op so the existing layout routing remains
+        // centralized without hiding or moving any source content.
+        return;
     }
 
     // Move, never clone, existing content. Restore its exact position on resize.
