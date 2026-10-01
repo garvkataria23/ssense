@@ -5712,11 +5712,12 @@ body:not(.theme--dark) #hero-1 .caption p,
     flex-direction: column!important;
   }
   body.ssense-team-page .team-member-photo {
-    aspect-ratio: auto!important;
-    height: 148px!important;
+    aspect-ratio: 7 / 9!important;
+    height: auto!important;
   }
   body.ssense-team-page .team-member-photo img {
-    object-fit: cover!important;
+    object-fit: contain!important;
+    object-position: center!important;
   }
   body.ssense-team-page .category-title {
     margin-bottom: 14px!important;
