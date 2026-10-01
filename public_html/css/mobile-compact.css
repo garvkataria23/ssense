@@ -988,6 +988,14 @@
     width: auto !important;
     min-width: 24px !important;
   }
+
+  /* Team hero: keep mobile focused on the heading and staff listing. */
+  html body.ssense-team-page .ssense-team-hero-copy > p,
+  html body.ssense-team-page .ssense-team-hero-features,
+  html body.ssense-team-page .ssense-team-hero-cta {
+    display: none !important;
+  }
+
   html body.ssense-home-refined .ssense-luxury-photo {
     position: relative !important;
     inset: auto !important;
@@ -1817,6 +1825,14 @@
   html body .ssense-mobile-read-more,
   html body.ssense-reviews-page .ssense-read-more {
     display: none !important;
+  }
+
+  /* Homepage luxury intro: keep the short editorial heading centred on phones. */
+  html body.ssense-home-refined .ssense-luxury-copy h2,
+  html body.ssense-home-refined .ssense-luxury-hero .ssense-compact-summary h2 {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    text-align: center !important;
   }
 
   @media (prefers-reduced-motion: reduce) {
