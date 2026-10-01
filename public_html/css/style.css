@@ -27934,3 +27934,72 @@ body.ssense-reviews-page .ssense-return-section .ssense-review-head h2#return-ti
     font-size: 1rem !important;
   }
 }
+/* --------------------------------------------------------------------------
+   S.Sense interaction polish: quiet, consistent motion across card surfaces.
+   Classes are assigned by custom.js so legacy layout selectors remain intact.
+---------------------------------------------------------------------------- */
+html.ssense-card-motion body .ssense-card-reveal {
+  opacity: 1;
+  transform: none;
+}
+
+html.ssense-card-motion body .ssense-card-reveal.ssense-card-visible {
+  opacity: 1;
+  animation: ssense-card-arrive .68s cubic-bezier(.22, 1, .36, 1) var(--ssense-card-delay, 0ms) both;
+}
+
+@keyframes ssense-card-arrive {
+  from {
+    opacity: .72;
+    transform: translate3d(var(--ssense-card-x, 0), var(--ssense-card-y, 18px), 0) scale(.992);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+body .ssense-motion-card {
+  transition:
+    transform .42s cubic-bezier(.22, 1, .36, 1),
+    box-shadow .42s ease,
+    border-color .32s ease !important;
+}
+
+body .ssense-motion-card img {
+  transition: transform .7s cubic-bezier(.22, 1, .36, 1), filter .45s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html.ssense-card-motion body .ssense-card-reveal.ssense-card-visible:hover,
+  html.ssense-card-motion body .ssense-card-reveal.ssense-card-visible:focus-within,
+  body .ssense-motion-card:hover,
+  body .ssense-motion-card:focus-within {
+    transform: translate3d(0, -5px, 0) scale(1.002);
+    box-shadow: 0 18px 42px rgba(63, 45, 60, .12);
+  }
+
+  body .ssense-motion-card:hover img,
+  body .ssense-motion-card:focus-within img {
+    transform: scale(1.025);
+    filter: saturate(1.025);
+  }
+}
+
+@media (max-width: 767.98px) {
+  html.ssense-card-motion body .ssense-card-reveal.ssense-card-visible {
+    animation-duration: .6s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.ssense-card-motion body .ssense-card-reveal,
+  html.ssense-card-motion body .ssense-card-reveal.ssense-card-visible,
+  body .ssense-motion-card,
+  body .ssense-motion-card img {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}

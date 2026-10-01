@@ -1733,22 +1733,32 @@
     reducedMotion.addEventListener('change', setup);
 })();
 
-/* Mobile card collections: gentle, staggered reveal as each card enters the
-   viewport. Kept separate from WOW because mobile pages use their own scroll
-   layout and intentionally disable the legacy WOW reveal classes. */
-(function ssenseMobileCardReveal() {
+/* Site-wide card motion: a restrained, one-time entrance for card collections.
+   Hover/focus polish stays in CSS so motion remains responsive and lightweight. */
+(function ssenseCardMotion() {
     'use strict';
 
-    var mobile = window.matchMedia('(max-width: 767.98px)');
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     var observer = null;
     var selector = [
+        '.sbox-2',
+        '.sbox-3',
+        '.blog-post',
+        '.ssense-blog-card',
+        '.ssense-review-card',
         '.ssense-about-approach-step',
+        '.ssense-about-approach-card',
         '.ssense-about-menu-card',
         '.ssense-related-card',
         '.ssense-offers-card',
         '.ssense-offers-visit__card',
         '.ssense-testimonial-card',
+        '.ssense-contact-premium__card',
+        '.ssense-service-card',
+        '.ssense-team-card',
+        '.team-member',
+        '.pricing-1-table',
+        '.pricing-5-table',
         '.ssense-quick-grid > *',
         '.ssense-process-card',
         '.ssense-careers-steps > article',
@@ -1769,7 +1779,7 @@
     }
 
     function setup() {
-        if (!mobile.matches || reducedMotion.matches || !('IntersectionObserver' in window)) {
+        if (reducedMotion.matches || !('IntersectionObserver' in window)) {
             revealAll();
             return;
         }
@@ -1785,13 +1795,25 @@
         }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
 
         document.querySelectorAll(selector).forEach(function(card) {
-            if (card.hidden || card.classList.contains('ssense-card-visible')) return;
+            if (card.hidden || card.classList.contains('ssense-card-visible') ||
+                card.classList.contains('ssense-auto-card-clone') ||
+                card.classList.contains('ssense-review-card--marquee-clone') ||
+                window.getComputedStyle(card).display === 'none') return;
+
+            // Several templates place a named card inside another named card.
+            // Animate only the outer surface to avoid compounded transforms.
+            var parentCard = card.parentElement && card.parentElement.closest(selector);
+            if (parentCard) return;
+
             var siblings = Array.prototype.filter.call(card.parentElement.children, function(item) {
                 return item.matches && item.matches(selector);
             });
             var index = Math.max(0, siblings.indexOf(card));
             card.classList.add('ssense-card-reveal');
-            card.style.setProperty('--ssense-card-delay', Math.min(index % 4, 3) * 110 + 'ms');
+            card.classList.add('ssense-motion-card');
+            card.style.setProperty('--ssense-card-delay', Math.min(index % 4, 3) * 85 + 'ms');
+            card.style.setProperty('--ssense-card-x', index % 3 === 0 ? '-8px' : (index % 3 === 2 ? '8px' : '0px'));
+            card.style.setProperty('--ssense-card-y', index % 2 === 0 ? '18px' : '14px');
             observer.observe(card);
         });
     }
@@ -1801,6 +1823,5 @@
     } else {
         setup();
     }
-    mobile.addEventListener('change', setup);
     reducedMotion.addEventListener('change', setup);
 })();
