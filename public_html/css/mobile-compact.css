@@ -1946,5 +1946,51 @@
   html body #page > section#hero-1 .slides {
     height: 336px !important;
   }
+
+  /* Home visit highlights: all three tiles share one fixed visual frame even
+     when the final label wraps to an extra line. */
+  html body.ssense-home-refined .ssense-home-peace-points {
+    align-items: stretch !important;
+  }
+  html body.ssense-home-refined .ssense-home-peace-points > span {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    align-self: stretch !important;
+    box-sizing: border-box !important;
+    height: 106px !important;
+    min-height: 106px !important;
+  }
+  html body.ssense-home-refined .ssense-home-peace-panel .img-block {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    overflow: hidden !important;
+  }
+  html body.ssense-home-refined .ssense-home-peace-panel .img-block::before {
+    display: none !important;
+    content: none !important;
+  }
+  html body.ssense-home-refined .ssense-home-peace-panel .img-block > img {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+  html body.ssense-home-refined .ssense-home-peace-panel .section-id {
+    display: block !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    white-space: nowrap !important;
+  }
 }
 }
