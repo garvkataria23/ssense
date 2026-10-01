@@ -30,6 +30,27 @@
     box-shadow: none !important;
   }
 
+  /* Compact mobile header: remove the unused lower band while keeping the
+     logo and 44px menu control comfortably centred. */
+  html body .wsmobileheader { height: 64px !important; }
+  html body .wsmobileheader .smllogo {
+    margin-top: 13px !important;
+    padding-left: 18px !important;
+  }
+  html body .wsmobileheader .smllogo img {
+    width: auto !important;
+    max-height: 38px !important;
+  }
+  html body .hero-section,
+  html body #hero-1 .slideshow,
+  html body .inner-page-hero,
+  html body .inner-page-title {
+    margin-top: 64px !important;
+  }
+  html body #hero-1 {
+    padding-top: 0 !important;
+  }
+
   /* Content must not rely on WOW's window scroll listener: this theme also
      uses a body scroll container on mobile. */
   html body .wow,
@@ -446,8 +467,6 @@
   html body .ssense-testimonial-card p { min-height: 0 !important; }
   html body .ssense-testimonial-stats { grid-template-columns: 1fr 1fr !important; gap: 14px !important; margin-top: 20px !important; }
   html body .ssense-testimonial-stats > span:nth-child(3) b { flex: 0 0 auto !important; white-space: nowrap !important; overflow-wrap: normal !important; word-break: normal !important; }
-  html body .ssense-swipe-hint { margin: 0 0 10px; color: var(--compact-ink); font-size: .8rem; }
-
   /* Supporting photography has a shorter crop; information stays in flow. */
   html body .ct-05-img img,
   html body .content-section .img-block > img,
@@ -733,6 +752,51 @@
   html body .ssense-compact-panel { scroll-margin-top: 84px; }
   html body .ssense-compact-toggle:active { opacity: .75; }
   html body .ssense-compact-row > [hidden] { display: none !important; }
+  html body .ssense-compact-row.ssense-auto-card-marquee {
+    scroll-snap-type: none !important;
+    scrollbar-width: none !important;
+  }
+  html body .ssense-compact-row.ssense-auto-card-marquee::-webkit-scrollbar { display: none !important; }
+  html body .ssense-compact-row.ssense-auto-card-marquee > * { scroll-snap-align: none !important; }
+
+  /* Reviews has later page-specific grid rules in responsive.css. Keep both
+     review collections as true one-row rails so cloned cards cannot form a
+     second grid column or be clipped at inconsistent widths. */
+  html body.ssense-reviews-page #page .ssense-featured-grid,
+  html body.ssense-reviews-page #page .ssense-reviews-grid {
+    display: flex !important;
+    grid-template-columns: none !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+  }
+  html body.ssense-reviews-page #page .ssense-featured-grid > .ssense-review-card,
+  html body.ssense-reviews-page #page .ssense-reviews-grid > .ssense-review-card {
+    display: flex !important;
+    flex: 0 0 86% !important;
+    flex-direction: column !important;
+    align-self: stretch !important;
+    width: 86% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  html body.ssense-reviews-page #page .ssense-review-card > footer {
+    margin-top: auto !important;
+  }
+  html body.ssense-reviews-page #page .ssense-featured-grid > .ssense-review-card--feature:first-child {
+    display: none !important;
+  }
+  html body.ssense-reviews-page #page .ssense-reviews-hero__copy {
+    text-align: center !important;
+  }
+  html body.ssense-reviews-page #page .ssense-reviews-hero__copy > p:not(.ssense-eyebrow) {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
 
   /* Keep the three peace highlights on one compact row even below 576px. */
   html body .ssense-home-peace-points { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 7px !important; }
@@ -1866,6 +1930,21 @@
 
   @media (prefers-reduced-motion: reduce) {
     html body .ssense-compact-row { scroll-behavior: auto !important; }
+  }
+
+  /* Final hero authority: the generic compact section rule adds 14px to every
+     #page section later in this file. The homepage slider must meet the fixed
+     header directly, without inheriting that section gutter. */
+  html body #page > section#hero-1 {
+    padding-top: 64px !important;
+    margin-top: 0 !important;
+  }
+  html body #page > section#hero-1 .slideshow {
+    margin-top: 0 !important;
+  }
+  html body #page > section#hero-1 .slideshow,
+  html body #page > section#hero-1 .slides {
+    height: 336px !important;
   }
 }
 }

@@ -1603,11 +1603,7 @@
             var section = row.closest('section, .gallery-section');
             var heading = section && section.querySelector('h2, h3');
             attribute(row, 'aria-label', (heading ? heading.textContent.trim() : 'Browse more') + ' — scroll horizontally');
-            var hint = document.createElement('p');
-            hint.className = 'ssense-swipe-hint';
-            hint.textContent = 'Swipe to explore →';
-            row.before(hint);
-            undo.push(function() { hint.remove(); row.scrollLeft = 0; });
+            undo.push(function() { row.scrollLeft = 0; });
         });
         var gallery = document.querySelector('#gallery-1 .ssense-gallery-row');
         if (gallery && gallery.children.length > 6) {
@@ -1651,6 +1647,90 @@
     else window.addEventListener('load', function() { setTimeout(refresh, 0); }, {once: true});
     media.addEventListener('change', refresh);
     window.addEventListener('hashchange', revealFragment);
+})();
+
+/* Generic mobile card marquee ---------------------------------------------
+   Extends the same quiet, continuous motion used by homepage journals and
+   reviews to every other horizontal card rail created by the compact layout. */
+(function ssenseMobileCardMarquees() {
+    'use strict';
+
+    var mobile = window.matchMedia('(max-width: 767.98px)');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var instances = [];
+
+    function destroy() {
+        instances.forEach(function(instance) {
+            if (instance.frame) window.cancelAnimationFrame(instance.frame);
+            instance.row.querySelectorAll('.ssense-auto-card-clone').forEach(function(clone) { clone.remove(); });
+            instance.row.classList.remove('ssense-auto-card-marquee');
+            instance.row.removeAttribute('data-ssense-auto-cards');
+            instance.row.scrollLeft = 0;
+        });
+        instances = [];
+    }
+
+    function setup() {
+        destroy();
+        if (!mobile.matches || reducedMotion.matches) return;
+
+        document.querySelectorAll('.ssense-compact-row').forEach(function(row) {
+            if (row.matches('.ssense-blog-row, .ssense-gallery-marquee, .ssense-blog-marquee, .ssense-review-marquee') ||
+                row.closest('#gallery-3') || row.hasAttribute('data-review-grid') || row.children.length < 2) return;
+
+            var originals = Array.prototype.slice.call(row.children).filter(function(child) {
+                return !child.classList.contains('ssense-auto-card-clone') &&
+                    !child.hidden && window.getComputedStyle(child).display !== 'none';
+            });
+            if (originals.length < 2 || row.scrollWidth <= row.clientWidth + 4) return;
+
+            originals.forEach(function(child) {
+                var clone = child.cloneNode(true);
+                clone.classList.add('ssense-auto-card-clone');
+                clone.setAttribute('aria-hidden', 'true');
+                clone.querySelectorAll('[id]').forEach(function(node) { node.removeAttribute('id'); });
+                clone.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach(function(node) {
+                    node.setAttribute('tabindex', '-1');
+                });
+                row.appendChild(clone);
+            });
+
+            row.classList.add('ssense-auto-card-marquee');
+            row.setAttribute('data-ssense-auto-cards', 'true');
+            var instance = { row: row, frame: null, last: 0, offset: row.scrollLeft, paused: false };
+
+            function tick(time) {
+                if (!instance.last) instance.last = time;
+                if (!instance.paused && !reducedMotion.matches) {
+                    var loopWidth = row.scrollWidth / 2;
+                    instance.offset += (time - instance.last) * 0.035;
+                    if (loopWidth > 0 && instance.offset >= loopWidth) instance.offset -= loopWidth;
+                    row.scrollLeft = instance.offset;
+                }
+                instance.last = time;
+                instance.frame = window.requestAnimationFrame(tick);
+            }
+
+            ['mouseenter', 'focusin', 'touchstart', 'pointerdown'].forEach(function(eventName) {
+                row.addEventListener(eventName, function() { instance.paused = true; });
+            });
+            ['mouseleave', 'focusout', 'touchend', 'touchcancel', 'pointerup', 'pointercancel'].forEach(function(eventName) {
+                row.addEventListener(eventName, function() {
+                    instance.offset = row.scrollLeft;
+                    instance.paused = false;
+                });
+            });
+
+            instances.push(instance);
+            instance.frame = window.requestAnimationFrame(tick);
+        });
+    }
+
+    // Compact rows are assigned by the preceding mobile-layout pass in a
+    // zero-delay load callback, so start just after that routing completes.
+    window.addEventListener('load', function() { window.setTimeout(setup, 60); }, { once: true });
+    mobile.addEventListener('change', setup);
+    reducedMotion.addEventListener('change', setup);
 })();
 
 /* Mobile card collections: gentle, staggered reveal as each card enters the
