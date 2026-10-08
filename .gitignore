@@ -13,3 +13,7 @@ Thumbs.db
 *.log
 .vercel
 .env*
+
+# Python bytecode from seo.py
+__pycache__/
+*.pyc

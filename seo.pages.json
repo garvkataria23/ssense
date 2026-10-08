@@ -1,0 +1,4300 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "path": "about.html",
+      "title": "About S.Sense Salon & Spa | Unisex Salon Kandivali",
+      "description": "Learn about S.Sense Salon & Spa â€” Mumbai's award-winning unisex salon in Kandivali East Thakur Village. Expert hair, beauty & nail care.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/about.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon & Spa | Best Beauty Salon in Kandivali Mumbai",
+        "description": "Transform your look at S.Sense Salon & Spa. Expert hair, beauty & spa services in Kandivali East. Book your appointment today!",
+        "url": "https://ssensesalon.com/about.html",
+        "image": "https://ssensesalon.com/images/about-page.jpg",
+        "image_width": "1920",
+        "image_height": "900",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon & Spa | Best Beauty Salon in Kandivali Mumbai",
+        "description": "Transform your look at S.Sense Salon & Spa. Expert hair, beauty & spa services in Kandivali East.",
+        "image": "https://ssensesalon.com/images/about-page.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "About S.Sense Salon & Spa",
+          "item": "https://ssensesalon.com/about.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "artist-details.html",
+      "title": "S.Sense Salon & Spa | Luxury Beauty, Hair & Makeup Services",
+      "description": "Experience premium beauty, hair, and spa services at S.Sense Salon & Spa. Expert stylists, luxury treatments, and a relaxing atmosphere designed just for you.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/artist-details.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon & Spa | Luxury Beauty, Hair & Makeup Services",
+        "description": "Expert stylists, luxury treatments, and a relaxing atmosphere at S.Sense Salon & Spa Kandivali East.",
+        "url": "https://ssensesalon.com/artist-details.html",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_width": "1626",
+        "image_height": "967",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon & Spa | Luxury Beauty, Hair & Makeup Services",
+        "description": "Expert stylists, luxury treatments at S.Sense Salon & Spa Kandivali East.",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "S.Sense Salon & Spa",
+          "item": "https://ssensesalon.com/artist-details.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "barber-shop-1.html",
+      "title": "Barber Shop Kandivali East | S.Sense Salon",
+      "description": "Professional barber shop in Kandivali East Mumbai. Expert men's haircuts, grooming & beard styling at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/barber-shop-1.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon & Spa Men's Grooming | Best Men's Grooming in Kandivali Mumbai",
+        "description": "Get the perfect haircut & beard trim at S.Sense Salon & Spa Men's Grooming. Professional barbers, modern styles, classic cuts. Book your grooming appointment today!",
+        "url": "https://ssensesalon.com/barber-shop-1.html",
+        "image": "https://ssensesalon.com/images/barber_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon & Spa Men's Grooming | Men's Haircut & Grooming Kandivali",
+        "description": "Expert barbers offering premium haircuts, beard styling & grooming services in Kandivali East Mumbai",
+        "image": "https://ssensesalon.com/images/barber_01.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Barber Shop Kandivali East",
+          "item": "https://ssensesalon.com/barber-shop-1.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "barber-shop-2.html",
+      "title": "Men's Grooming Salon Kandivali | S.Sense Salon",
+      "description": "Premium men's grooming salon in Kandivali East Mumbai. Haircuts, beard trim, hair colour & spa treatments at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/barber-shop-2.html",
+      "og": {
+        "type": "website",
+        "title": "Men's Grooming Services | S.Sense Salon & Spa Men's Grooming Thakur Village",
+        "description": "Traditional & modern barber services in Mumbai. Expert haircuts, luxury shaves, beard grooming. Book your appointment today!",
+        "url": "https://ssensesalon.com/barber-shop-2.html",
+        "image": "https://ssensesalon.com/images/barber_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Men's Grooming & Barber Services | S.Sense Thakur Village",
+        "description": "Traditional barber services with modern techniques. Expert stylists for men's haircuts & grooming in Mumbai",
+        "image": "https://ssensesalon.com/images/barber_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Men's Grooming Salon Kandivali",
+          "item": "https://ssensesalon.com/barber-shop-2.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "beauty-salon.html",
+      "title": "Beauty Salon Near Me |  Hair, Facial, Makeup | Kandivali East Mumbai",
+      "description": "Premium beauty salon in Kandivali East Mumbai. Facials, waxing, threading, cleanup & beauty treatments at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/beauty-salon.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Beauty Salon & Spa | Luxury Beauty Services Kandivali Mumbai",
+        "description": "Transform your beauty at S.Sense - Expert facials, makeup, skincare, nail art & spa services in Kandivali East",
+        "url": "https://ssensesalon.com/beauty-salon.html",
+        "image": "https://ssensesalon.com/images/beauty_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Beauty Salon | Best Beauty Parlour Kandivali",
+        "description": "Luxury beauty treatments, bridal makeup & spa services in Thakur Village Mumbai",
+        "image": "https://ssensesalon.com/images/beauty_01.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Beauty Salon Near Me",
+          "item": "https://ssensesalon.com/beauty-salon.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog-listing.html",
+      "title": "Beauty Blog | S.Sense Salon & Spa Kandivali",
+      "description": "Read beauty tips, hair care guides, skincare routines & salon updates from S.Sense Salon & Spa Kandivali East Mumbai. Stay inspired.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "noindex, follow",
+      "canonical": "https://ssensesalon.com/blog-listing.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon & Spa Blog | Beauty Tips, Hair Care & Makeup Ideas",
+        "description": "Read the latest beauty tips, hair care guides, and salon updates from S.Sense Salon & Spa Kandivali East.",
+        "url": "https://ssensesalon.com/blog-listing.html",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_width": "1626",
+        "image_height": "967",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon & Spa Blog | Beauty Tips, Hair Care & Makeup Ideas",
+        "description": "Read the latest beauty tips, hair care guides, and salon updates from S.Sense Salon & Spa.",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Beauty Blog",
+          "item": "https://ssensesalon.com/blog-listing.html"
+        }
+      ],
+      "noindex": true,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog.html",
+      "title": "Beauty Blog | S.Sense Salon & Spa",
+      "description": "Read the latest beauty tips, hair care advice, skincare routines & salon news from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog.html",
+      "og": {
+        "type": "website",
+        "title": "Beauty Blog | S.Sense Salon & Spa",
+        "description": "Read hair, beauty, skin and nail care notes from S.Sense Salon & Spa in Kandivali East, Mumbai.",
+        "url": "https://ssensesalon.com/blog.html",
+        "image": "https://ssensesalon.com/images/salon11.png",
+        "image_width": "1087",
+        "image_height": "1447",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Beauty Blog | S.Sense Salon & Spa",
+        "description": "Read hair, beauty, skin and nail care notes from S.Sense Salon & Spa in Kandivali East, Mumbai.",
+        "image": "https://ssensesalon.com/images/salon11.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/beauty-habits-that-transform-your-daily-routine.html",
+      "title": "5 Beauty Habits for Daily Routine | S.Sense Salon",
+      "description": "Transform your daily routine with 5 beauty habits from S.Sense Salon & Spa Kandivali East Mumbai. Simple tips for glowing skin & hair.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/beauty-habits-that-transform-your-daily-routine.html",
+      "og": {
+        "type": "article",
+        "title": "5 Beauty Habits That Transform Your Daily Routine | S.Sense Salon & Spa",
+        "description": "Transform your daily routine with these 5 beauty habits from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/beauty-habits-that-transform-your-daily-routine.html",
+        "image": "https://ssensesalon.com/images/beauty_08.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "5 Beauty Habits That Transform Your Daily Routine | S.Sense Salon & Spa",
+        "description": "Transform your daily routine with these 5 beauty habits from S.Sense Salon.",
+        "image": "https://ssensesalon.com/images/beauty_08.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "5 Beauty Habits for Daily Routine",
+          "item": "https://ssensesalon.com/blog/beauty-habits-that-transform-your-daily-routine.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2024-12-15",
+        "modified": "2024-12-15"
+      },
+      "blog": {
+        "title": "5 Beauty Habits That Transform Your Daily Routine",
+        "image": "https://ssensesalon.com/images/beauty_08.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/benefits-of-regular-manicures.html",
+      "title": "The Benefits of Regular Manicures | S.Sense Salon & Spa",
+      "description": "Discover the benefits of regular manicures for healthy nails. Expert nail care tips from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/benefits-of-regular-manicures.html",
+      "og": {
+        "type": "article",
+        "title": "The Benefits of Regular Manicures | S.Sense Salon & Spa",
+        "description": "Discover the benefits of regular manicures for healthy, beautiful nails. Expert nail care advice from S.Sense Salon Kandivali East.",
+        "url": "https://ssensesalon.com/blog/benefits-of-regular-manicures.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_06.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "The Benefits of Regular Manicures | S.Sense Salon & Spa",
+        "description": "Discover the benefits of regular manicures for healthy, beautiful nails.",
+        "image": "https://ssensesalon.com/images/gallery/nail_06.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "The Benefits of Regular Manicures",
+          "item": "https://ssensesalon.com/blog/benefits-of-regular-manicures.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2023-08-03",
+        "modified": "2023-08-03"
+      },
+      "blog": {
+        "title": "The Benefits of Regular Manicures",
+        "image": "https://ssensesalon.com/images/gallery/nail_06.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/best-haircuts-for-your-face-shape.html",
+      "title": "Best Haircuts for Your Face Shape | S.Sense Salon",
+      "description": "Find the best haircut for your face shape - oval, round, square or heart. Expert styling advice from S.Sense Salon Kandivali East & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/best-haircuts-for-your-face-shape.html",
+      "og": {
+        "type": "article",
+        "title": "Best Haircuts for Your Face Shape | S.Sense Salon & Spa",
+        "description": "Discover the best haircuts for your face shape with expert advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/best-haircuts-for-your-face-shape.html",
+        "image": "https://ssensesalon.com/images/blog/img-34.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Best Haircuts for Your Face Shape | S.Sense Salon & Spa",
+        "description": "Discover the best haircuts for your face shape.",
+        "image": "https://ssensesalon.com/images/blog/img-34.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Best Haircuts for Your Face Shape",
+          "item": "https://ssensesalon.com/blog/best-haircuts-for-your-face-shape.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-12",
+        "modified": "2026-09-12"
+      },
+      "blog": {
+        "title": "Best Haircuts for Your Face Shape",
+        "image": "https://ssensesalon.com/images/blog/img-34.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/best-party-makeup-looks.html",
+      "title": "Best Party Makeup Looks for Every Occasion | S.Sense Salon",
+      "description": "Discover the best party makeup looks for every occasion with expert tips from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/best-party-makeup-looks.html",
+      "og": {
+        "type": "article",
+        "title": "Best Party Makeup Looks for Every Occasion | S.Sense Salon & Spa",
+        "description": "Discover the best party makeup looks for every occasion with expert advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/best-party-makeup-looks.html",
+        "image": "https://ssensesalon.com/images/blog/img-31.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Best Party Makeup Looks for Every Occasion | S.Sense Salon & Spa",
+        "description": "Discover the best party makeup looks for every occasion with expert tips.",
+        "image": "https://ssensesalon.com/images/blog/img-31.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Best Party Makeup Looks for Every Occasion",
+          "item": "https://ssensesalon.com/blog/best-party-makeup-looks.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-11",
+        "modified": "2026-09-11"
+      },
+      "blog": {
+        "title": "Best Party Makeup Looks for Every Occasion",
+        "image": "https://ssensesalon.com/images/blog/img-31.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/complete-guide-to-chemical-peels.html",
+      "title": "Complete Guide to Chemical Peels | S.Sense Salon",
+      "description": "What is a chemical peel and is it right for your skin? Brightening, pigmentation and aftercare explained by S.Sense Salon experts & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/complete-guide-to-chemical-peels.html",
+      "og": {
+        "type": "article",
+        "title": "Complete Guide to Chemical Peels | S.Sense Salon & Spa",
+        "description": "Discover everything about chemical peels with expert advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/complete-guide-to-chemical-peels.html",
+        "image": "https://ssensesalon.com/images/blog/img-36.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Complete Guide to Chemical Peels | S.Sense Salon & Spa",
+        "description": "Discover chemical peels explained from consultation to aftercare.",
+        "image": "https://ssensesalon.com/images/blog/img-36.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Complete Guide to Chemical Peels",
+          "item": "https://ssensesalon.com/blog/complete-guide-to-chemical-peels.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-12",
+        "modified": "2026-09-12"
+      },
+      "blog": {
+        "title": "Complete Guide to Chemical Peels",
+        "image": "https://ssensesalon.com/images/blog/img-36.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/eyebrow-threading-vs-waxing.html",
+      "title": "Eyebrow Threading vs Waxing: Which Is Better? | S.Sense Salon",
+      "description": "Threading or waxing for eyebrows? Compare precision, skin sensitivity and lasting results, with advice from S.Sense Salon & Spa Kandivali East, Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/eyebrow-threading-vs-waxing.html",
+      "og": {
+        "type": "article",
+        "title": "Eyebrow Threading vs Waxing: Which Is Better? | S.Sense Salon & Spa",
+        "description": "Discover the differences between eyebrow threading and waxing with expert advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/eyebrow-threading-vs-waxing.html",
+        "image": "https://ssensesalon.com/images/blog/img-33.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Eyebrow Threading vs Waxing: Which Is Better? | S.Sense Salon & Spa",
+        "description": "Discover eyebrow threading vs waxing, brows shaped perfectly.",
+        "image": "https://ssensesalon.com/images/blog/img-33.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Eyebrow Threading vs Waxing: Which Is Better?",
+          "item": "https://ssensesalon.com/blog/eyebrow-threading-vs-waxing.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-12",
+        "modified": "2026-09-12"
+      },
+      "blog": {
+        "title": "Eyebrow Threading vs Waxing: Which Is Better?",
+        "image": "https://ssensesalon.com/images/blog/img-33.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/hair-spa-benefits-and-how-often.html",
+      "title": "Hair Spa Benefits & How Often You Should Get One | S.Sense Salon",
+      "description": "Discover the amazing benefits of hair spa treatments and how often you should get one. Expert hair care advice from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/hair-spa-benefits-and-how-often.html",
+      "og": {
+        "type": "article",
+        "title": "Hair Spa Benefits & How Often You Should Get One | S.Sense Salon & Spa",
+        "description": "Everything you need to know about hair spa treatments. Expert advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/hair-spa-benefits-and-how-often.html",
+        "image": "https://ssensesalon.com/images/blog/img-30.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Hair Spa Benefits & How Often You Should Get One | S.Sense Salon & Spa",
+        "description": "Everything you need to know about hair spa treatments.",
+        "image": "https://ssensesalon.com/images/blog/img-30.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Hair Spa Benefits & How Often You Should Get One",
+          "item": "https://ssensesalon.com/blog/hair-spa-benefits-and-how-often.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-11",
+        "modified": "2026-09-11"
+      },
+      "blog": {
+        "title": "Hair Spa Benefits & How Often You Should Get One",
+        "image": "https://ssensesalon.com/images/blog/img-30.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/home-remedies-for-frizzy-hair.html",
+      "title": "Home Remedies for Frizzy Hair | S.Sense Salon",
+      "description": "Simple home remedies to tame frizzy hair naturally - coconut oil, aloe vera and more. Expert hair care tips from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/home-remedies-for-frizzy-hair.html",
+      "og": {
+        "type": "article",
+        "title": "Home Remedies for Frizzy Hair | S.Sense Salon & Spa",
+        "description": "Discover simple home remedies for frizzy hair with expert tips from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/home-remedies-for-frizzy-hair.html",
+        "image": "https://ssensesalon.com/images/blog/img-35.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Home Remedies for Frizzy Hair | S.Sense Salon & Spa",
+        "description": "Discover home remedies for frizzy and dry hair.",
+        "image": "https://ssensesalon.com/images/blog/img-35.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Home Remedies for Frizzy Hair",
+          "item": "https://ssensesalon.com/blog/home-remedies-for-frizzy-hair.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-12",
+        "modified": "2026-09-12"
+      },
+      "blog": {
+        "title": "Home Remedies for Frizzy Hair",
+        "image": "https://ssensesalon.com/images/blog/img-35.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/how-to-choose-right-hair-colour.html",
+      "title": "How to Choose the Right Hair Colour for Your Skin Tone | S.Sense Salon",
+      "description": "Not sure which hair colour suits your skin tone? Learn how to pick the perfect shade from expert hair colourists at S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/how-to-choose-right-hair-colour.html",
+      "og": {
+        "type": "article",
+        "title": "How to Choose the Right Hair Colour for Your Skin Tone | S.Sense Salon & Spa",
+        "description": "Expert guide to picking the perfect hair colour for your skin tone. Professional advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/how-to-choose-right-hair-colour.html",
+        "image": "https://ssensesalon.com/images/blog/img-22.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "How to Choose the Right Hair Colour for Your Skin Tone | S.Sense Salon & Spa",
+        "description": "Expert guide to picking the perfect hair colour for your skin tone.",
+        "image": "https://ssensesalon.com/images/blog/img-22.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "How to Choose the Right Hair Colour for Your Skin Tone",
+          "item": "https://ssensesalon.com/blog/how-to-choose-right-hair-colour.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-10",
+        "modified": "2026-09-10"
+      },
+      "blog": {
+        "title": "How to Choose the Right Hair Colour for Your Skin Tone",
+        "image": "https://ssensesalon.com/images/blog/img-22.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/how-to-get-rid-of-dark-circles.html",
+      "title": "How to Get Rid of Dark Circles Permanently | S.Sense Salon",
+      "description": "Struggling with dark circles? Learn treatments and home remedies that work, with practical skincare advice from S.Sense Salon & Spa Kandivali East, Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/how-to-get-rid-of-dark-circles.html",
+      "og": {
+        "type": "article",
+        "title": "How to Get Rid of Dark Circles Permanently | S.Sense Salon & Spa",
+        "description": "Effective treatments and remedies to get rid of dark circles. Expert skincare advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/how-to-get-rid-of-dark-circles.html",
+        "image": "https://ssensesalon.com/images/blog/img-28.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "How to Get Rid of Dark Circles Permanently | S.Sense Salon & Spa",
+        "description": "Effective treatments and remedies to get rid of dark circles.",
+        "image": "https://ssensesalon.com/images/blog/img-28.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "How to Get Rid of Dark Circles Permanently",
+          "item": "https://ssensesalon.com/blog/how-to-get-rid-of-dark-circles.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-11",
+        "modified": "2026-09-11"
+      },
+      "blog": {
+        "title": "How to Get Rid of Dark Circles Naturally",
+        "image": "https://ssensesalon.com/images/blog/img-28.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/indian-head-massage-benefits.html",
+      "title": "Indian Head Massage: Benefits for Hair and Mind | S.Sense Salon",
+      "description": "Discover the benefits of Indian head massage - better hair growth, stress relief and great sleep. Try it at S.Sense Salon Mumbai & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/indian-head-massage-benefits.html",
+      "og": {
+        "type": "article",
+        "title": "Indian Head Massage: Benefits for Hair and Mind | S.Sense Salon & Spa",
+        "description": "Discover the benefits of Indian head massage for hair and mind with expert advice Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/indian-head-massage-benefits.html",
+        "image": "https://ssensesalon.com/images/blog/img-37.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Indian Head Massage: Benefits for Hair and Mind | S.Sense Salon & Spa",
+        "description": "Discover Indian head massage benefits for hair and mind.",
+        "image": "https://ssensesalon.com/images/blog/img-37.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Indian Head Massage: Benefits for Hair and Mind",
+          "item": "https://ssensesalon.com/blog/indian-head-massage-benefits.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-12",
+        "modified": "2026-09-12"
+      },
+      "blog": {
+        "title": "Indian Head Massage: Benefits for Hair and Mind",
+        "image": "https://ssensesalon.com/images/blog/img-37.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/monsoon-hair-care-tips.html",
+      "title": "Monsoon Hair Care: Tips to Prevent Hair Fall | S.Sense Salon",
+      "description": "Mumbai monsoons causing hair fall? Expert tips to prevent it and keep hair healthy through the rainy season, from S.Sense Salon & Spa Kandivali East, Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/monsoon-hair-care-tips.html",
+      "og": {
+        "type": "article",
+        "title": "Monsoon Hair Care: Tips to Prevent Hair Fall | S.Sense Salon & Spa",
+        "description": "Expert monsoon hair care tips to prevent hair fall. Professional hair care advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/monsoon-hair-care-tips.html",
+        "image": "https://ssensesalon.com/images/blog/img-29.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Monsoon Hair Care: Tips to Prevent Hair Fall | S.Sense Salon & Spa",
+        "description": "Expert monsoon hair care tips to prevent hair fall.",
+        "image": "https://ssensesalon.com/images/blog/img-29.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Monsoon Hair Care: Tips to Prevent Hair Fall",
+          "item": "https://ssensesalon.com/blog/monsoon-hair-care-tips.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-11",
+        "modified": "2026-09-11"
+      },
+      "blog": {
+        "title": "Monsoon Hair Care Tips to Prevent Hair Fall",
+        "image": "https://ssensesalon.com/images/blog/img-29.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/monthly-facials-for-glowing-skin.html",
+      "title": "Monthly Facials for Glowing Skin | S.Sense Salon",
+      "description": "Why monthly facials are essential for glowing skin. Expert skincare advice from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/monthly-facials-for-glowing-skin.html",
+      "og": {
+        "type": "article",
+        "title": "Why Monthly Facials Are Essential for Glowing Skin | S.Sense Salon & Spa",
+        "description": "Learn why monthly facials are essential for glowing skin. Skincare advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/monthly-facials-for-glowing-skin.html",
+        "image": "https://ssensesalon.com/images/beauty_02.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Why Monthly Facials Are Essential for Glowing Skin | S.Sense Salon & Spa",
+        "description": "Learn why monthly facials are essential for glowing skin.",
+        "image": "https://ssensesalon.com/images/beauty_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Monthly Facials for Glowing Skin",
+          "item": "https://ssensesalon.com/blog/monthly-facials-for-glowing-skin.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2023-08-03",
+        "modified": "2023-08-03"
+      },
+      "blog": {
+        "title": "Why Monthly Facials Are Essential for Glowing Skin",
+        "image": "https://ssensesalon.com/images/beauty_02.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/skincare-tips-for-mumbai-humid-weather.html",
+      "title": "Skincare Tips for Mumbai's Humid Weather | S.Sense Salon",
+      "description": "Struggling with skincare in Mumbai's humid weather? Expert tips to keep your skin fresh, hydrated and glowing from S.Sense Salon & Spa Kandivali East.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/skincare-tips-for-mumbai-humid-weather.html",
+      "og": {
+        "type": "article",
+        "title": "Skincare Tips for Mumbai's Humid Weather | S.Sense Salon & Spa",
+        "description": "Expert skincare advice for Mumbai's tropical climate. Keep your skin fresh and glowing with tips from S.Sense Salon Kandivali East.",
+        "url": "https://ssensesalon.com/blog/skincare-tips-for-mumbai-humid-weather.html",
+        "image": "https://ssensesalon.com/images/blog/img-26.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Skincare Tips for Mumbai's Humid Weather | S.Sense Salon & Spa",
+        "description": "Expert skincare advice for Mumbai's tropical climate.",
+        "image": "https://ssensesalon.com/images/blog/img-26.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Skincare Tips for Mumbai's Humid Weather",
+          "item": "https://ssensesalon.com/blog/skincare-tips-for-mumbai-humid-weather.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-10",
+        "modified": "2026-09-10"
+      },
+      "blog": {
+        "title": "Skincare Tips for Mumbai's Humid Weather",
+        "image": "https://ssensesalon.com/images/blog/img-26.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/top-nail-art-trends.html",
+      "title": "Top Nail Art Trends You Need to Try This Season | S.Sense Salon",
+      "description": "Discover the top nail art trends you need to try this season. Expert nail designs and manicure tips from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/top-nail-art-trends.html",
+      "og": {
+        "type": "article",
+        "title": "Top Nail Art Trends You Need to Try This Season | S.Sense Salon & Spa",
+        "description": "Explore the latest nail art trends and designs. Professional nail services at S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/top-nail-art-trends.html",
+        "image": "https://ssensesalon.com/images/blog/img-23.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Top Nail Art Trends You Need to Try This Season | S.Sense Salon & Spa",
+        "description": "Explore the latest nail art trends and designs.",
+        "image": "https://ssensesalon.com/images/blog/img-23.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Top Nail Art Trends You Need to Try This Season",
+          "item": "https://ssensesalon.com/blog/top-nail-art-trends.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-10",
+        "modified": "2026-09-10"
+      },
+      "blog": {
+        "title": "Top Nail Art Trends You Need to Try This Season",
+        "image": "https://ssensesalon.com/images/blog/img-23.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/ultimate-bridal-makeup-guide-mumbai.html",
+      "title": "The Ultimate Bridal Makeup Guide for Mumbai Brides | S.Sense Salon",
+      "description": "Planning your bridal look? The ultimate guide to bridal makeup for Mumbai brides, with tips from expert artists at S.Sense Salon & Spa Kandivali East, Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/ultimate-bridal-makeup-guide-mumbai.html",
+      "og": {
+        "type": "article",
+        "title": "The Ultimate Bridal Makeup Guide for Mumbai Brides | S.Sense Salon & Spa",
+        "description": "Everything Mumbai brides need to know about bridal makeup. Expert tips from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/ultimate-bridal-makeup-guide-mumbai.html",
+        "image": "https://ssensesalon.com/images/blog/img-24.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "The Ultimate Bridal Makeup Guide for Mumbai Brides | S.Sense Salon & Spa",
+        "description": "Everything Mumbai brides need to know about bridal makeup.",
+        "image": "https://ssensesalon.com/images/blog/img-24.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "The Ultimate Bridal Makeup Guide for Mumbai Brides",
+          "item": "https://ssensesalon.com/blog/ultimate-bridal-makeup-guide-mumbai.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-10",
+        "modified": "2026-09-10"
+      },
+      "blog": {
+        "title": "The Ultimate Bridal Makeup Guide for Mumbai Brides",
+        "image": "https://ssensesalon.com/images/blog/img-24.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/ultimate-guide-to-pedicure.html",
+      "title": "The Complete Guide to Pedicure | S.Sense Salon",
+      "description": "Learn everything about pedicure treatments and foot care with expert advice from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/ultimate-guide-to-pedicure.html",
+      "og": {
+        "type": "article",
+        "title": "The Complete Guide to Pedicure | S.Sense Salon & Spa",
+        "description": "Everything you need to know about pedicure treatments and foot care from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/ultimate-guide-to-pedicure.html",
+        "image": "https://ssensesalon.com/images/blog/img-32.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "The Complete Guide to Pedicure | S.Sense Salon & Spa",
+        "description": "Everything you need to know about pedicure treatments and foot care.",
+        "image": "https://ssensesalon.com/images/blog/img-32.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "The Complete Guide to Pedicure",
+          "item": "https://ssensesalon.com/blog/ultimate-guide-to-pedicure.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-11",
+        "modified": "2026-09-11"
+      },
+      "blog": {
+        "title": "The Complete Guide to Pedicure",
+        "image": "https://ssensesalon.com/images/blog/img-32.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "blog/why-keratin-treatments-are-worth-it.html",
+      "title": "Why Keratin Treatments Are Worth the Investment | S.Sense Salon",
+      "description": "Is keratin treatment worth it? Learn the benefits, real results and aftercare of keratin hair smoothing at S.Sense Salon & Spa Kandivali East, Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/blog/why-keratin-treatments-are-worth-it.html",
+      "og": {
+        "type": "article",
+        "title": "Why Keratin Treatments Are Worth the Investment | S.Sense Salon & Spa",
+        "description": "Everything you need to know about keratin hair treatments. Expert advice from S.Sense Salon Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/blog/why-keratin-treatments-are-worth-it.html",
+        "image": "https://ssensesalon.com/images/blog/img-25.jpg",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Why Keratin Treatments Are Worth the Investment | S.Sense Salon & Spa",
+        "description": "Everything you need to know about keratin hair treatments.",
+        "image": "https://ssensesalon.com/images/blog/img-25.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Blog",
+          "item": "https://ssensesalon.com/blog.html"
+        },
+        {
+          "name": "Why Keratin Treatments Are Worth the Investment",
+          "item": "https://ssensesalon.com/blog/why-keratin-treatments-are-worth-it.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "dates": {
+        "published": "2026-09-10",
+        "modified": "2026-09-10"
+      },
+      "blog": {
+        "title": "Why Keratin Treatments Are Worth the Investment",
+        "image": "https://ssensesalon.com/images/blog/img-25.jpg"
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "booking.html",
+      "title": "Book Salon Appointment Online | S.Sense Beauty Salon Kandivali Mumbai",
+      "description": "Book your appointment at S.Sense Salon & Spa Kandivali East Mumbai. Easy online booking for hair, beauty, nail & spa services.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/booking.html",
+      "og": {
+        "type": "website",
+        "title": "Book Online - S.Sense Salon & Spa Kandivali",
+        "description": "Book your beauty appointment online at S.Sense Salon. Quick & easy booking for all services.",
+        "url": "https://ssensesalon.com/booking.html",
+        "image": "https://ssensesalon.com/images/booking-page.jpg",
+        "image_width": "1920",
+        "image_height": "900",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Book Appointment | S.Sense Salon & Spa Kandivali",
+        "description": "Online booking for beauty services at S.Sense Salon Mumbai",
+        "image": "https://ssensesalon.com/images/booking-page.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Book Salon Appointment Online",
+          "item": "https://ssensesalon.com/booking.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "careers.html",
+      "title": "Salon Careers in Kandivali East | S.Sense Salon & Spa",
+      "description": "Interested in salon careers in Kandivali East? Contact S.Sense Salon & Spa about stylist, beauty, nail and guest-care opportunities.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/careers.html",
+      "og": {
+        "type": "website",
+        "title": "Salon Careers in Kandivali East | S.Sense Salon & Spa",
+        "description": "Interested in salon careers in Kandivali East? Contact S.Sense Salon & Spa about stylist, beauty, nail and guest-care opportunities.",
+        "url": "https://ssensesalon.com/careers.html",
+        "image": "https://ssensesalon.com/images/beauty_03.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Salon Careers in Kandivali East | S.Sense Salon & Spa",
+        "description": "Interested in salon careers in Kandivali East? Contact S.Sense Salon & Spa about stylist, beauty, nail and guest-care opportunities.",
+        "image": "https://ssensesalon.com/images/beauty_03.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Salon Careers in Kandivali East",
+          "item": "https://ssensesalon.com/careers.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "chemical-peels.html",
+      "title": "Chemical Peel Treatment Mumbai | S.Sense Salon",
+      "description": "Professional chemical peel treatment in Kandivali East Mumbai. Deep exfoliation & skin renewal at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/chemical-peels.html",
+      "og": {
+        "type": "website",
+        "title": "Chemical Peels Consultation in Kandivali East | S.Sense Salon & Spa",
+        "description": "Chemical peel consultation information at S.Sense Salon & Spa Kandivali East. Educational tone; suitability and aftercare must be discussed.",
+        "url": "https://ssensesalon.com/chemical-peels.html",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Chemical Peels Consultation in Kandivali East | S.Sense Salon & Spa",
+        "description": "Chemical peel consultation information at S.Sense Salon & Spa Kandivali East. Educational tone; suitability and aftercare must be discussed.",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Chemical Peel Treatment Mumbai",
+          "item": "https://ssensesalon.com/chemical-peels.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "cleanup.html",
+      "title": "Cleanup in Kandivali East | S.Sense Salon & Spa",
+      "description": "Cleanup services at S.Sense Salon & Spa Kandivali East for practical skincare maintenance before everyday plans and occasions.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/cleanup.html",
+      "og": {
+        "type": "website",
+        "title": "Cleanup in Kandivali East | S.Sense Salon & Spa",
+        "description": "Cleanup services at S.Sense Salon & Spa Kandivali East for practical skincare maintenance before everyday plans and occasions.",
+        "url": "https://ssensesalon.com/cleanup.html",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Cleanup in Kandivali East | S.Sense Salon & Spa",
+        "description": "Cleanup services at S.Sense Salon & Spa Kandivali East for practical skincare maintenance before everyday plans and occasions.",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Cleanup in Kandivali East",
+          "item": "https://ssensesalon.com/cleanup.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "contact.html",
+      "title": "Contact S.Sense Salon & Spa | Beauty & Hair Kandivali Mumbai",
+      "description": "Contact S.Sense Salon & Spa in Kandivali East Mumbai. Book appointments, ask questions or visit us at Thakur Village. Call +91-8054777888.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/contact.html",
+      "og": {
+        "type": "website",
+        "title": "Contact S.Sense Salon & Spa - Best Beauty & Hair Salon in Kandivali East, Mumbai",
+        "description": "Book your appointment at S.Sense Salon & Spa for premium hair, makeup, skincare and nail services in Thakur Village, Kandivali East. Call +91 8054 777 888",
+        "url": "https://ssensesalon.com/contact.html",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Contact S.Sense Salon & Spa - Premium Beauty Services Kandivali",
+        "description": "Book appointments for hair, makeup, skincare & nail services at S.Sense Salon & Spa, Thakur Village, Kandivali East, Mumbai",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Contact S.Sense Salon & Spa",
+          "item": "https://ssensesalon.com/contact.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "facials.html",
+      "title": "Facials in Kandivali East | S.Sense Salon & Spa",
+      "description": "Facial services at S.Sense Salon & Spa in Thakur Village, Kandivali East. Consultation-led skincare and beauty maintenance appointments.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/facials.html",
+      "og": {
+        "type": "website",
+        "title": "Facials in Kandivali East | S.Sense Salon & Spa",
+        "description": "Facial services at S.Sense Salon & Spa in Thakur Village, Kandivali East. Consultation-led skincare and beauty maintenance appointments.",
+        "url": "https://ssensesalon.com/facials.html",
+        "image": "https://ssensesalon.com/images/beauty_03.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Facials in Kandivali East | S.Sense Salon & Spa",
+        "description": "Facial services at S.Sense Salon & Spa in Thakur Village, Kandivali East. Consultation-led skincare and beauty maintenance appointments.",
+        "image": "https://ssensesalon.com/images/beauty_03.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Facials in Kandivali East",
+          "item": "https://ssensesalon.com/facials.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "faqs.html",
+      "title": "FAQs | S.Sense Salon & Spa Kandivali East Mumbai",
+      "description": "Frequently asked questions about S.Sense Salon & Spa Kandivali East Mumbai. Appointments, pricing, services & salon policies answered.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/faqs.html",
+      "og": {
+        "type": "website",
+        "title": "FAQs - S.Sense Salon & Spa Kandivali | Beauty & Hair Service Questions",
+        "description": "Get answers to your questions about appointments, services, pricing, and products at S.Sense Salon & Spa, Thakur Village, Mumbai",
+        "url": "https://ssensesalon.com/faqs.html",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Salon FAQs - S.Sense Salon & Spa Kandivali East Mumbai",
+        "description": "Common questions about beauty services, appointments, and products at S.Sense Salon & Spa",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "FAQs",
+          "item": "https://ssensesalon.com/faqs.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "gallery.html",
+      "title": "Salon Gallery | S.Sense Salon & Spa Kandivali",
+      "description": "Browse photos of S.Sense Salon & Spa in Kandivali East Mumbai. See our salon interior, hair styles, beauty treatments & nail art work.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/gallery.html",
+      "og": {
+        "type": "website",
+        "title": "Gallery - S.Sense Salon & Spa Gallery | Beauty Work Kandivali Mumbai",
+        "description": "Explore our portfolio of professional hair, makeup, nail art and spa services at S.Sense Salon & Spa, Thakur Village, Mumbai",
+        "url": "https://ssensesalon.com/gallery.html",
+        "image": "https://ssensesalon.com/images/gallery/hair_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Beauty Gallery - S.Sense Salon & Spa Kandivali East",
+        "description": "Professional hair styling, makeup artistry, and beauty services showcase",
+        "image": "https://ssensesalon.com/images/gallery/hair_01.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Salon Gallery",
+          "item": "https://ssensesalon.com/gallery.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "gel-polish.html",
+      "title": "Gel Polish in Kandivali East | S.Sense Salon & Spa",
+      "description": "Long-lasting gel polish nails in Kandivali East Mumbai. Chip-free gel manicure & pedicure at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/gel-polish.html",
+      "og": {
+        "type": "website",
+        "title": "Gel Polish in Kandivali East | S.Sense Salon & Spa",
+        "description": "Gel polish services at S.Sense Salon & Spa Kandivali East for manicures, pedicures and polished everyday nails.",
+        "url": "https://ssensesalon.com/gel-polish.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_11.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Gel Polish in Kandivali East | S.Sense Salon & Spa",
+        "description": "Gel polish services at S.Sense Salon & Spa Kandivali East for manicures, pedicures and polished everyday nails.",
+        "image": "https://ssensesalon.com/images/gallery/nail_11.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Gel Polish in Kandivali East",
+          "item": "https://ssensesalon.com/gel-polish.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "gfc-treatment.html",
+      "title": "GFC Hair Treatment Mumbai | S.Sense Salon & Spa",
+      "description": "GFC hair treatment in Kandivali East Mumbai. Advanced hair growth therapy at S.Sense Salon & Spa Thakur Village. Book your session today.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/gfc-treatment.html",
+      "og": {
+        "type": "website",
+        "title": "GFC Treatment Consultation in Kandivali East | S.Sense Salon & Spa",
+        "description": "GFC treatment consultation information at S.Sense Salon & Spa Kandivali East. Consultation required; no guaranteed outcomes.",
+        "url": "https://ssensesalon.com/gfc-treatment.html",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "GFC Treatment Consultation in Kandivali East | S.Sense Salon & Spa",
+        "description": "GFC treatment consultation information at S.Sense Salon & Spa Kandivali East. Consultation required; no guaranteed outcomes.",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "GFC Hair Treatment Mumbai",
+          "item": "https://ssensesalon.com/gfc-treatment.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "gift-cards.html",
+      "title": "Gift Cards | S.Sense Salon & Spa Kandivali East",
+      "description": "Buy beauty gift cards from S.Sense Salon & Spa Kandivali East Mumbai. Perfect gift for hair, beauty & spa treatments. Buy online now.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/gift-cards.html",
+      "og": {
+        "type": "product",
+        "title": "Gift Cards - S.Sense Salon & Spa Kandivali | Beauty & Spa Vouchers",
+        "description": "Perfect gift for loved ones - S.Sense Salon & Spa gift cards for hair, makeup, spa & beauty services in Mumbai. Available from Rs.500 to Rs.3000",
+        "url": "https://ssensesalon.com/gift-cards.html",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Salon Gift Cards - S.Sense Salon & Spa Spa Kandivali Mumbai",
+        "description": "Buy beauty & spa gift vouchers Rs.500-Rs.3000. Perfect presents for any occasion",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Gift Cards",
+          "item": "https://ssensesalon.com/gift-cards.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hair-art-studio.html",
+      "title": "Hair Art Studio Kandivali | S.Sense Salon & Spa",
+      "description": "Creative hair art studio in Kandivali East Mumbai. Hair colour, highlights, balayage & creative styling at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hair-art-studio.html",
+      "og": {
+        "type": "website",
+        "title": "Hair Studio - S.Sense Salon & Spa Kandivali | Expert Hair Services",
+        "description": "Professional haircuts, coloring, treatments & styling at S.Sense Salon & Spa Hair Studio, Thakur Village, Mumbai",
+        "url": "https://ssensesalon.com/hair-art-studio.html",
+        "image": "https://ssensesalon.com/images/logo-black-hair.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Hair Studio Services - S.Sense Salon & Spa Kandivali",
+        "description": "Expert haircuts, coloring & treatments by professional stylists",
+        "image": "https://ssensesalon.com/images/logo-black-hair.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Art Studio Kandivali",
+          "item": "https://ssensesalon.com/hair-art-studio.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hair-colour.html",
+      "title": "Hair Colour in Kandivali East | S.Sense Salon & Spa",
+      "description": "Hair colour services at S.Sense Salon & Spa Kandivali East: global colour, highlights, touch-ups and consultation-led colour changes.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hair-colour.html",
+      "og": {
+        "type": "website",
+        "title": "Hair Colour in Kandivali East | S.Sense Salon & Spa",
+        "description": "Hair colour services at S.Sense Salon & Spa Kandivali East: global colour, highlights, touch-ups and consultation-led colour changes.",
+        "url": "https://ssensesalon.com/hair-colour.html",
+        "image": "https://ssensesalon.com/images/gallery/hair_29.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Hair Colour in Kandivali East | S.Sense Salon & Spa",
+        "description": "Hair colour services at S.Sense Salon & Spa Kandivali East: global colour, highlights, touch-ups and consultation-led colour changes.",
+        "image": "https://ssensesalon.com/images/gallery/hair_29.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Colour in Kandivali East",
+          "item": "https://ssensesalon.com/hair-colour.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hair-lounge.html",
+      "title": "Hair Lounge Kandivali East | S.Sense Salon & Spa",
+      "description": "Luxury hair lounge in Kandivali East Mumbai. Premium haircuts, styling, treatments & hair spa at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hair-lounge.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon & Spa Kandivali | Hair Styling & Premium Hair Care",
+        "description": "Professional hair salon in Thakur Village offering precision cuts, expert colour, keratin & smoothing treatments and relaxing hair spa",
+        "url": "https://ssensesalon.com/hair-lounge.html",
+        "image": "https://ssensesalon.com/images/logo-black-hair.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon & Spa - Hair Styling Kandivali",
+        "description": "Expert hair styling, colour, keratin & hair spa treatments in Mumbai",
+        "image": "https://ssensesalon.com/images/logo-black-hair.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Lounge Kandivali East",
+          "item": "https://ssensesalon.com/hair-lounge.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hair-salon.html",
+      "title": "Hair Salon Kandivali East Mumbai | S.Sense Salon",
+      "description": "Best hair salon in Kandivali East Mumbai. Haircuts, styling, colour, smoothening & treatments at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hair-salon.html",
+      "og": {
+        "type": "website",
+        "title": "Professional Hair Salon in Mumbai | Haircuts, Coloring & Styling - S.Sense Salon",
+        "description": "Transform your hair at S.Sense - Mumbai's premier hair salon. Expert cuts, vibrant coloring, professional treatments. Certified stylists, organic products, luxury experience.",
+        "url": "https://ssensesalon.com/hair-salon.html",
+        "image": "https://ssensesalon.com/images/hair_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": "S.Sense Salon & Spa Hair Salon - Professional haircut and styling services in Mumbai"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Professional Hair Salon in Mumbai | S.Sense Salon",
+        "description": "Transform your hair at Mumbai's premier salon. Expert cuts, coloring & treatments by certified stylists using organic products.",
+        "image": "https://ssensesalon.com/images/hair_01.jpg",
+        "image_alt": "S.Sense Salon & Spa Hair Salon Mumbai - Professional hair services"
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Salon Kandivali East Mumbai",
+          "item": "https://ssensesalon.com/hair-salon.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hair-spa.html",
+      "title": "Hair Spa in Kandivali East | S.Sense Salon & Spa",
+      "description": "Relaxing hair spa treatment in Kandivali East Mumbai. Deep conditioning, scalp therapy & hair repair at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hair-spa.html",
+      "og": {
+        "type": "website",
+        "title": "Hair Spa in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book hair spa at S.Sense Salon & Spa Kandivali East for scalp comfort, conditioning and a relaxed salon reset.",
+        "url": "https://ssensesalon.com/hair-spa.html",
+        "image": "https://ssensesalon.com/images/hair_01.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Hair Spa in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book hair spa at S.Sense Salon & Spa Kandivali East for scalp comfort, conditioning and a relaxed salon reset.",
+        "image": "https://ssensesalon.com/images/hair_01.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Spa in Kandivali East",
+          "item": "https://ssensesalon.com/hair-spa.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hair-studio.html",
+      "title": "Hair Studio Kandivali East | S.Sense Salon & Spa",
+      "description": "Expert hair studio in Kandivali East Mumbai. Professional haircuts, blow dry, keratin & hair spa at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hair-studio.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Hair Studio & Salon - Best Hair Salon in Kandivali East, Mumbai",
+        "description": "Precision haircuts, expert hair colour, keratin & smoothing treatments, hair spa and professional styling. Visit S.Sense Hair Studio & Salon in Thakur Village, Kandivali East for premium hair care.",
+        "url": "https://ssensesalon.com/hair-studio.html",
+        "image": "https://ssensesalon.com/images/logo-black-hair.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Hair Studio & Salon - Best Hair Salon in Kandivali East",
+        "description": "Professional haircuts, styling, beard grooming & spa treatments in Mumbai",
+        "image": "https://ssensesalon.com/images/logo-black-hair.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Studio Kandivali East",
+          "item": "https://ssensesalon.com/hair-studio.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hair-treatments.html",
+      "title": "Hair Treatments in Kandivali East | S.Sense Salon & Spa",
+      "description": "Explore hair treatments at S.Sense Salon & Spa in Thakur Village for frizz care, repair support and smoother manageability. Consultation advised.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hair-treatments.html",
+      "og": {
+        "type": "website",
+        "title": "Hair Treatments in Kandivali East | S.Sense Salon & Spa",
+        "description": "Explore hair treatments at S.Sense Salon & Spa in Thakur Village for frizz care, repair support and smoother manageability. Consultation advised.",
+        "url": "https://ssensesalon.com/hair-treatments.html",
+        "image": "https://ssensesalon.com/images/woman_08.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Hair Treatments in Kandivali East | S.Sense Salon & Spa",
+        "description": "Explore hair treatments at S.Sense Salon & Spa in Thakur Village for frizz care, repair support and smoother manageability. Consultation advised.",
+        "image": "https://ssensesalon.com/images/woman_08.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Treatments in Kandivali East",
+          "item": "https://ssensesalon.com/hair-treatments.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "haircuts.html",
+      "title": "Haircuts in Kandivali East | S.Sense Salon & Spa",
+      "description": "Book women’s and men’s haircuts at S.Sense Salon & Spa, Thakur Village, Kandivali East. Consultation-led cutting, styling and finishing.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/haircuts.html",
+      "og": {
+        "type": "website",
+        "title": "Haircuts in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book women’s and men’s haircuts at S.Sense Salon & Spa, Thakur Village, Kandivali East. Consultation-led cutting, styling and finishing.",
+        "url": "https://ssensesalon.com/haircuts.html",
+        "image": "https://ssensesalon.com/images/gallery/hair_12.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Haircuts in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book women’s and men’s haircuts at S.Sense Salon & Spa, Thakur Village, Kandivali East. Consultation-led cutting, styling and finishing.",
+        "image": "https://ssensesalon.com/images/gallery/hair_12.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Haircuts in Kandivali East",
+          "item": "https://ssensesalon.com/haircuts.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "hydra-facial.html",
+      "title": "Hydra Facial in Kandivali East | S.Sense Salon & Spa",
+      "description": "Hydra facial information and booking at S.Sense Salon & Spa Kandivali East. Consultation advised; no medical promises.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/hydra-facial.html",
+      "og": {
+        "type": "website",
+        "title": "Hydra Facial in Kandivali East | S.Sense Salon & Spa",
+        "description": "Hydra facial information and booking at S.Sense Salon & Spa Kandivali East. Consultation advised; no medical promises.",
+        "url": "https://ssensesalon.com/hydra-facial.html",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Hydra Facial in Kandivali East | S.Sense Salon & Spa",
+        "description": "Hydra facial information and booking at S.Sense Salon & Spa Kandivali East. Consultation advised; no medical promises.",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hydra Facial in Kandivali East",
+          "item": "https://ssensesalon.com/hydra-facial.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "index.html",
+      "title": "S.Sense Salon & Spa | Best Salon in Kandivali East",
+      "description": "Best salon in Kandivali East Mumbai. Premium hair, beauty, nail & spa services at S.Sense Salon & Spa, Thakur Village. Book now.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/",
+      "og": {
+        "type": "website",
+        "title": "Best Salon in Kandivali Thakur Village Mumbai | S.Sense Salon & Spa",
+        "description": "Premium beauty salon offering haircuts, facials, nail care, spa services & more. Expert stylists, organic products, hygienic environment in Mumbai.",
+        "url": "https://ssensesalon.com/",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": "S.Sense Salon & Spa interior - luxury beauty salon in Mumbai"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Best Salon in Kandivali Thakur Village Mumbai | S.Sense Salon & Spa",
+        "description": "Premium beauty salon offering haircuts, facials, nail care, spa services & more. Expert stylists, organic products, hygienic environment in Mumbai.",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_alt": "S.Sense Salon & Spa - luxury beauty salon in Mumbai"
+      },
+      "breadcrumb": [],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "location.html",
+      "title": "Salon Location Kandivali East | S.Sense Salon & Spa",
+      "description": "Find S.Sense Salon & Spa in Thakur Village, Kandivali East Mumbai. Easy directions, parking info & Google Maps link. Visit us today.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/location.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon & Spa - Best Hair & Beauty Salon in Kandivali East Mumbai",
+        "description": "Premium hair salon at Thakur Village offering expert cuts, color, styling, spa & beauty services. Book your appointment today! Call 8054777888",
+        "url": "https://ssensesalon.com/location.html",
+        "image": "https://ssensesalon.com/images/about-page.jpg",
+        "image_width": "1920",
+        "image_height": "900",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon & Spa - Premier Hair Salon Kandivali East",
+        "description": "Expert hair services, makeup, facials & spa at Thakur Village Mumbai. Book now!",
+        "image": "https://ssensesalon.com/images/about-page.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Salon Location Kandivali East",
+          "item": "https://ssensesalon.com/location.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "manicure-pedicure.html",
+      "title": "Manicure Pedicure Kandivali | S.Sense Salon & Spa",
+      "description": "Professional manicure & pedicure in Kandivali East Mumbai. Nail care, paraffin treatment & spa pedicure at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/manicure-pedicure.html",
+      "og": {
+        "type": "website",
+        "title": "Manicure & Pedicure in Kandivali East | S.Sense Salon & Spa",
+        "description": "Manicure and pedicure services at S.Sense Salon & Spa Thakur Village, Kandivali East. Explore classic, spa and polish options.",
+        "url": "https://ssensesalon.com/manicure-pedicure.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_02.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Manicure & Pedicure in Kandivali East | S.Sense Salon & Spa",
+        "description": "Manicure and pedicure services at S.Sense Salon & Spa Thakur Village, Kandivali East. Explore classic, spa and polish options.",
+        "image": "https://ssensesalon.com/images/gallery/nail_02.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Manicure Pedicure Kandivali",
+          "item": "https://ssensesalon.com/manicure-pedicure.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "manicure.html",
+      "title": "Manicure in Kandivali East | S.Sense Salon & Spa",
+      "description": "Professional manicure services in Kandivali East Mumbai. Classic, gel, acrylic & nail art at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/manicure.html",
+      "og": {
+        "type": "website",
+        "title": "Manicure in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book manicures at S.Sense Salon & Spa Kandivali East: classic, spa and polish-focused options.",
+        "url": "https://ssensesalon.com/manicure.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_03.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Manicure in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book manicures at S.Sense Salon & Spa Kandivali East: classic, spa and polish-focused options.",
+        "image": "https://ssensesalon.com/images/gallery/nail_03.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Manicure in Kandivali East",
+          "item": "https://ssensesalon.com/manicure.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "medi-treatments.html",
+      "title": "Medi Treatments Mumbai | S.Sense Salon & Spa",
+      "description": "Advanced medi treatments in Kandivali East Mumbai. Chemical peels, microneedling, GFC & skin care at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/medi-treatments.html",
+      "og": {
+        "type": "website",
+        "title": "Medi Aesthetic Consultations in Kandivali East | S.Sense Salon & Spa",
+        "description": "Explore medi/aesthetic consultation pages at S.Sense Salon & Spa Kandivali East including hydra facial, microneedling, GFC and chemical peels. Consultation required.",
+        "url": "https://ssensesalon.com/medi-treatments.html",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Medi Aesthetic Consultations in Kandivali East | S.Sense Salon & Spa",
+        "description": "Explore medi/aesthetic consultation pages at S.Sense Salon & Spa Kandivali East including hydra facial, microneedling, GFC and chemical peels. Consultation required.",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Medi Treatments Mumbai",
+          "item": "https://ssensesalon.com/medi-treatments.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "microneedling.html",
+      "title": "Microneedling Treatment Mumbai | S.Sense Salon",
+      "description": "Advanced microneedling treatment in Kandivali East Mumbai. Collagen induction therapy for flawless skin at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/microneedling.html",
+      "og": {
+        "type": "website",
+        "title": "Microneedling Consultation in Kandivali East | S.Sense Salon & Spa",
+        "description": "Microneedling consultation page for S.Sense Salon & Spa Kandivali East. Educational information only; suitability must be assessed.",
+        "url": "https://ssensesalon.com/microneedling.html",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Microneedling Consultation in Kandivali East | S.Sense Salon & Spa",
+        "description": "Microneedling consultation page for S.Sense Salon & Spa Kandivali East. Educational information only; suitability must be assessed.",
+        "image": "https://ssensesalon.com/images/woman_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Microneedling Treatment Mumbai",
+          "item": "https://ssensesalon.com/microneedling.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "nail-art.html",
+      "title": "Nail Art in Kandivali East | S.Sense Salon & Spa",
+      "description": "Nail art services at S.Sense Salon & Spa Thakur Village, Kandivali East. Book ahead for detailed designs and occasion nails.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/nail-art.html",
+      "og": {
+        "type": "website",
+        "title": "Nail Art in Kandivali East | S.Sense Salon & Spa",
+        "description": "Nail art services at S.Sense Salon & Spa Thakur Village, Kandivali East. Book ahead for detailed designs and occasion nails.",
+        "url": "https://ssensesalon.com/nail-art.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_08.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Nail Art in Kandivali East | S.Sense Salon & Spa",
+        "description": "Nail art services at S.Sense Salon & Spa Thakur Village, Kandivali East. Book ahead for detailed designs and occasion nails.",
+        "image": "https://ssensesalon.com/images/gallery/nail_08.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Nail Art in Kandivali East",
+          "item": "https://ssensesalon.com/nail-art.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "nail-care-center.html",
+      "title": "Nail Care Center Kandivali | S.Sense Salon & Spa",
+      "description": "Premium nail care center in Kandivali East Mumbai. Manicures, pedicures, nail art & extensions at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/nail-care-center.html",
+      "og": {
+        "type": "website",
+        "title": "Best Nail Salon Mumbai | S.Sense Salon & Spa Kandivali",
+        "description": "Professional nail services: manicures, pedicures, nail art & extensions in Mumbai. Book your appointment today!",
+        "url": "https://ssensesalon.com/nail-care-center.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Best Nail Salon Mumbai | S.Sense Salon & Spa Kandivali",
+        "description": "Professional nail services including manicures, pedicures, nail art & extensions in Mumbai.",
+        "image": "https://ssensesalon.com/images/gallery/nail_01.jpg",
+        "image_alt": "Professional nail salon services in Mumbai"
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Nail Care Center Kandivali",
+          "item": "https://ssensesalon.com/nail-care-center.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "nail-extensions.html",
+      "title": "Nail Extensions in Kandivali East | S.Sense Salon & Spa",
+      "description": "Book nail extensions at S.Sense Salon & Spa Kandivali East. Consultation-led length, shape and finish recommendations.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/nail-extensions.html",
+      "og": {
+        "type": "website",
+        "title": "Nail Extensions in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book nail extensions at S.Sense Salon & Spa Kandivali East. Consultation-led length, shape and finish recommendations.",
+        "url": "https://ssensesalon.com/nail-extensions.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_05.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Nail Extensions in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book nail extensions at S.Sense Salon & Spa Kandivali East. Consultation-led length, shape and finish recommendations.",
+        "image": "https://ssensesalon.com/images/gallery/nail_05.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Nail Extensions in Kandivali East",
+          "item": "https://ssensesalon.com/nail-extensions.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "nail-salon.html",
+      "title": "Nail Salon Kandivali East | S.Sense Salon & Spa",
+      "description": "Premium nail salon in Kandivali East Mumbai. Manicures, pedicures, nail art & extensions at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/nail-salon.html",
+      "og": {
+        "type": "website",
+        "title": "Premium Luxury Nail Salon Near Me Mumbai | S.Sense Kandivali",
+        "description": "Transform your nails at Mumbai's premium luxury nail salon. Professional gel polish, extensions, nail art & manicure services near you. Expert technicians, quality products.",
+        "url": "https://ssensesalon.com/nail-salon.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": "S.Sense Premium Luxury Nail Salon - Professional nail services in Mumbai"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Premium Luxury Nail Salon Near Me | S.Sense Mumbai",
+        "description": "Premium nail salon offering luxury gel polish, extensions, nail art & manicure. Expert technicians near you in Mumbai.",
+        "image": "https://ssensesalon.com/images/gallery/nail_01.jpg",
+        "image_alt": "S.Sense Luxury Nail Salon Mumbai"
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Nail Salon Kandivali East",
+          "item": "https://ssensesalon.com/nail-salon.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "nail-services.html",
+      "title": "Nail Services in Kandivali East | S.Sense Salon & Spa",
+      "description": "Nail services at S.Sense Salon & Spa in Thakur Village: nail extensions, nail art, gel polish, manicure and pedicure.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/nail-services.html",
+      "og": {
+        "type": "website",
+        "title": "Nail Services in Kandivali East | S.Sense Salon & Spa",
+        "description": "Nail services at S.Sense Salon & Spa in Thakur Village: nail extensions, nail art, gel polish, manicure and pedicure.",
+        "url": "https://ssensesalon.com/nail-services.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_14.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Nail Services in Kandivali East | S.Sense Salon & Spa",
+        "description": "Nail services at S.Sense Salon & Spa in Thakur Village: nail extensions, nail art, gel polish, manicure and pedicure.",
+        "image": "https://ssensesalon.com/images/gallery/nail_14.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Nail Services in Kandivali East",
+          "item": "https://ssensesalon.com/nail-services.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "nail-studio.html",
+      "title": "S.Sense Salon - Manicure Pedicure Nail Art Kandivali Mumbai",
+      "description": "Premium nail studio in Kandivali East Mumbai. Manicures, pedicures, nail art & extensions at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/nail-studio.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon & Spa | Best Nail Salon in Kandivali East Mumbai",
+        "description": "Professional nail care, manicure, pedicure & nail art services in Mumbai. Visit our luxury salon today!",
+        "url": "https://ssensesalon.com/nail-studio.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon & Spa - Best Nail Salon in Mumbai",
+        "description": "Professional nail care services in Kandivali East. Book your appointment today!",
+        "image": "https://ssensesalon.com/images/gallery/nail_01.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "S.Sense Salon",
+          "item": "https://ssensesalon.com/nail-studio.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "offers.html",
+      "title": "Salon Offers in Kandivali East | S.Sense Salon & Spa",
+      "description": "View salon offers at S.Sense Salon & Spa Kandivali East. Contact the salon for current availability and appointment recommendations.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/offers.html",
+      "og": {
+        "type": "website",
+        "title": "Salon Offers in Kandivali East | S.Sense Salon & Spa",
+        "description": "View salon offers at S.Sense Salon & Spa Kandivali East. Contact the salon for current availability and appointment recommendations.",
+        "url": "https://ssensesalon.com/offers.html",
+        "image": "https://ssensesalon.com/images/gift-card.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Salon Offers in Kandivali East | S.Sense Salon & Spa",
+        "description": "View salon offers at S.Sense Salon & Spa Kandivali East. Contact the salon for current availability and appointment recommendations.",
+        "image": "https://ssensesalon.com/images/gift-card.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Salon Offers in Kandivali East",
+          "item": "https://ssensesalon.com/offers.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "pedicure.html",
+      "title": "Pedicure in Kandivali East | S.Sense Salon & Spa",
+      "description": "Luxury pedicure services in Kandivali East Mumbai. Spa pedicure, paraffin treatment & nail care at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/pedicure.html",
+      "og": {
+        "type": "website",
+        "title": "Pedicure in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book pedicure appointments at S.Sense Salon & Spa Thakur Village, Kandivali East for classic and spa foot care.",
+        "url": "https://ssensesalon.com/pedicure.html",
+        "image": "https://ssensesalon.com/images/gallery/nail_04.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Pedicure in Kandivali East | S.Sense Salon & Spa",
+        "description": "Book pedicure appointments at S.Sense Salon & Spa Thakur Village, Kandivali East for classic and spa foot care.",
+        "image": "https://ssensesalon.com/images/gallery/nail_04.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Pedicure in Kandivali East",
+          "item": "https://ssensesalon.com/pedicure.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "pricing-1.html",
+      "title": "Hair Pricing | S.Sense Salon & Spa Kandivali East",
+      "description": "View hair service pricing at S.Sense Salon & Spa Kandivali East Mumbai. Affordable rates for haircuts, colour, smoothening & treatments.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/pricing-1.html",
+      "og": {
+        "type": "website",
+        "title": "Best Hair Salon Prices Near Me Mumbai | Premium Hair Services - S.Sense",
+        "description": "Affordable luxury hair salon services in Mumbai. Professional hair coloring, treatments, styling & spa. Best prices at Kandivali East.",
+        "url": "https://ssensesalon.com/pricing-1.html",
+        "image": "https://ssensesalon.com/images/hair_01.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Best Hair Salon Prices Mumbai | S.Sense",
+        "description": "Premium hair services at affordable prices in Mumbai",
+        "image": "https://ssensesalon.com/images/hair_01.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Pricing",
+          "item": "https://ssensesalon.com/pricing-1.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "pricing-2.html",
+      "title": "Beauty Pricing | S.Sense Salon & Spa Kandivali",
+      "description": "View beauty service pricing at S.Sense Salon & Spa Kandivali East Mumbai. Affordable rates for facials, cleanup, waxing & threading.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/pricing-2.html",
+      "og": {
+        "type": "website",
+        "title": "Beauty Services & Pricing - S.Sense Salon & Spa Kandivali East Mumbai",
+        "description": "Premium beauty services including skincare facials, body waxing, medi-treatments at S.Sense Salon & Spa. Professional treatments with expert beauticians in Kandivali East Mumbai.",
+        "url": "https://ssensesalon.com/pricing-2.html",
+        "image": "https://ssensesalon.com/images/beauty_02.jpg",
+        "image_width": "800",
+        "image_height": "800",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Beauty Services & Pricing - S.Sense Salon & Spa",
+        "description": "Premium beauty services including skincare facials, body waxing, medi-treatments at S.Sense Salon & Spa Kandivali East Mumbai.",
+        "image": "https://ssensesalon.com/images/beauty_02.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Beauty Pricing",
+          "item": "https://ssensesalon.com/pricing-2.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "pricing-3.html",
+      "title": "Medi & Nail Pricing | S.Sense Salon Kandivali",
+      "description": "View medi treatment & nail service pricing at S.Sense Salon & Spa Kandivali East Mumbai. Affordable rates for facials, nails & skin care.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/pricing-3.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon Pricing - Affordable Manicure, Pedicure & Nail Services in Kandivali Mumbai",
+        "description": "Transparent pricing for premium beauty services. Classic manicure Rs.850, Spa pedicure Rs.1300, Gel polish Rs.1000. Located in Thakur Village, Kandivali East. Book online now!",
+        "url": "https://ssensesalon.com/pricing-3.html",
+        "image": "https://ssensesalon.com/images/logo-black-nails.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon Pricing - Manicure, Pedicure & Nail Services Kandivali",
+        "description": "Affordable luxury beauty services. Manicure from Rs.850, Pedicure from Rs.950. Professional nail care in Thakur Village Mumbai.",
+        "image": "https://ssensesalon.com/images/logo-black-nails.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Medi & Nail Pricing",
+          "item": "https://ssensesalon.com/pricing-3.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "pricing.html",
+      "title": "Service Pricing | S.Sense Salon & Spa Kandivali",
+      "description": "View all service pricing at S.Sense Salon & Spa Kandivali East Mumbai. Transparent rates for hair, beauty, nails & spa treatments.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/pricing.html",
+      "og": {
+        "type": "website",
+        "title": "Salon Pricing Overview in Kandivali East | S.Sense Salon & Spa",
+        "description": "S.Sense Salon & Spa pricing overview. View hair pricing, beauty pricing, nail and salon package menus for Kandivali East appointments.",
+        "url": "https://ssensesalon.com/pricing.html",
+        "image": "https://ssensesalon.com/images/pricing-1-page.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Salon Pricing Overview in Kandivali East | S.Sense Salon & Spa",
+        "description": "S.Sense Salon & Spa pricing overview. View hair pricing, beauty pricing, nail and salon package menus for Kandivali East appointments.",
+        "image": "https://ssensesalon.com/images/pricing-1-page.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Service Pricing",
+          "item": "https://ssensesalon.com/pricing.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "privacy-policy.html",
+      "title": "Privacy Policy | S.Sense Salon & Spa Kandivali East Mumbai",
+      "description": "Read the S.Sense Salon & Spa privacy policy for Kandivali East, Mumbai. How we collect, use, protect and manage personal data for enquiries and bookings.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/privacy-policy.html",
+      "og": {
+        "type": "website",
+        "title": "Privacy Policy | S.Sense Salon & Spa Kandivali East Mumbai",
+        "description": "Understand how S.Sense Salon & Spa collects, uses, protects, and manages personal information for website enquiries, bookings, and salon services.",
+        "url": "https://ssensesalon.com/privacy-policy.html",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Privacy Policy | S.Sense Salon & Spa Kandivali East Mumbai",
+        "description": "How S.Sense Salon & Spa protects personal information for website enquiries, bookings, and salon services.",
+        "image": "https://ssensesalon.com/images/logo-black.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Privacy Policy",
+          "item": "https://ssensesalon.com/privacy-policy.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "reviews.html",
+      "title": "S.Sense Salon Reviews | Customer Stories | Kandivali Mumbai",
+      "description": "Read client reviews of S.Sense Salon & Spa Kandivali East Mumbai. See what our customers say about our hair, beauty & nail services.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/reviews.html",
+      "og": {
+        "type": "website",
+        "title": "S.Sense Salon Reviews | Kandivali Mumbai",
+        "description": "Read genuine guest reviews and customer stories for S.Sense Salon & Spa in Thakur Village, Kandivali East.",
+        "url": "https://ssensesalon.com/reviews.html",
+        "image": "https://ssensesalon.com/images/logo-black-nails.png",
+        "image_width": "1000",
+        "image_height": "300",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "S.Sense Salon Customer Reviews Mumbai",
+        "description": "Read genuine guest experiences from S.Sense Salon & Spa in Kandivali East, Mumbai.",
+        "image": "https://ssensesalon.com/images/logo-black-nails.png",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "S.Sense Salon Reviews",
+          "item": "https://ssensesalon.com/reviews.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "services-hair.html",
+      "title": "Hair Services in Kandivali East | S.Sense Salon & Spa",
+      "description": "Hair services at S.Sense Salon & Spa in Thakur Village, Kandivali East. Explore haircuts, colour, treatments and hair spa appointments.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/services-hair.html",
+      "og": {
+        "type": "website",
+        "title": "Hair Services in Kandivali East | S.Sense Salon & Spa",
+        "description": "Hair services at S.Sense Salon & Spa in Thakur Village, Kandivali East. Explore haircuts, colour, treatments and hair spa appointments.",
+        "url": "https://ssensesalon.com/services-hair.html",
+        "image": "https://ssensesalon.com/images/gallery/hair_18.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Hair Services in Kandivali East | S.Sense Salon & Spa",
+        "description": "Hair services at S.Sense Salon & Spa in Thakur Village, Kandivali East. Explore haircuts, colour, treatments and hair spa appointments.",
+        "image": "https://ssensesalon.com/images/gallery/hair_18.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Services in Kandivali East",
+          "item": "https://ssensesalon.com/services-hair.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "services.html",
+      "title": "Salon Services in Kandivali East | S.Sense Salon & Spa",
+      "description": "Explore all services at S.Sense Salon & Spa Kandivali East Mumbai. Hair, beauty, nail, medi treatments & spa services. Book online today.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/services.html",
+      "og": {
+        "type": "website",
+        "title": "Salon Services in Kandivali East | S.Sense Salon & Spa",
+        "description": "Explore S.Sense Salon & Spa services in Kandivali East: haircuts, colour, facials, cleanups, waxing, threading, nails, manicure, pedicure and aesthetics consultations.",
+        "url": "https://ssensesalon.com/services.html",
+        "image": "https://ssensesalon.com/images/salon_01.jpg",
+        "image_width": "1536",
+        "image_height": "1024",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Salon Services in Kandivali East | S.Sense Salon & Spa",
+        "description": "Explore S.Sense Salon & Spa services in Kandivali East: haircuts, colour, facials, cleanups, waxing, threading, nails, manicure, pedicure and aesthetics consultations.",
+        "image": "https://ssensesalon.com/images/salon_01.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Salon Services in Kandivali East",
+          "item": "https://ssensesalon.com/services.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "single-post.html",
+      "title": "Beauty & Hair Care Tips | S.Sense Salon & Spa Blog",
+      "description": "Expert beauty and hair care tips from S.Sense Salon & Spa in Kandivali East, Mumbai. Stay updated with the latest salon trends and advice.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "noindex, follow",
+      "canonical": "https://ssensesalon.com/single-post.html",
+      "og": {
+        "type": "website",
+        "title": "Beauty & Hair Care Tips | S.Sense Salon & Spa Blog",
+        "description": "Expert beauty and hair care tips from S.Sense Salon & Spa in Kandivali East, Mumbai.",
+        "url": "https://ssensesalon.com/single-post.html",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_width": "1626",
+        "image_height": "967",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Beauty & Hair Care Tips | S.Sense Salon & Spa Blog",
+        "description": "Expert beauty and hair care tips from S.Sense Salon & Spa in Kandivali East, Mumbai.",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Beauty & Hair Care Tips",
+          "item": "https://ssensesalon.com/single-post.html"
+        }
+      ],
+      "noindex": true,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "single-post1.html",
+      "title": "Hair Care Mistakes to Avoid | S.Sense Salon Blog",
+      "description": "5 common hair care mistakes you might be making. Expert tips to fix damaged hair from S.Sense Salon & Spa Kandivali East Mumbai.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "noindex, follow",
+      "canonical": "https://ssensesalon.com/single-post1.html",
+      "og": {
+        "type": "article",
+        "title": "5 Hair Care Mistakes You Might Be Making | S.Sense Salon Blog",
+        "description": "Discover 5 common hair care mistakes and learn how to fix them for healthier hair. Expert tips from S.Sense Salon Mumbai.",
+        "url": "https://ssensesalon.com/single-post1.html",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_width": "1626",
+        "image_height": "967",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "5 Hair Care Mistakes You Might Be Making | S.Sense Salon Blog",
+        "description": "Discover 5 common hair care mistakes and learn how to fix them for healthier hair.",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Hair Care Mistakes to Avoid",
+          "item": "https://ssensesalon.com/single-post1.html"
+        }
+      ],
+      "noindex": true,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "skincare-center.html",
+      "title": "Best Cosmetologist Kandivali East | S.Sense Salon Mumbai",
+      "description": "Advanced skincare center in Kandivali East Mumbai. Facials, chemical peels, microneedling & skin treatments at S.Sense Salon & Spa.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/skincare-center.html",
+      "og": {
+        "type": "website",
+        "title": "Best Cosmetologist in Kandivali East | S.Sense Salon & Spa Mumbai",
+        "description": "Expert Skin, Hair & Beauty Treatments | Hydrafacial Rs.3500 | Certified Cosmetologists | Book Now: +91 8054777888",
+        "url": "https://ssensesalon.com/skincare-center.html",
+        "image": "https://ssensesalon.com/images/hero-7-1.jpg",
+        "image_width": "800",
+        "image_height": "700",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Best Cosmetologist Kandivali East | S.Sense Salon Mumbai",
+        "description": "Expert Skin Treatments | Hydrafacial Rs.3500 | Book: 8054777888",
+        "image": "https://ssensesalon.com/images/hero-7-1.jpg",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Best Cosmetologist Kandivali East",
+          "item": "https://ssensesalon.com/skincare-center.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "team.html",
+      "title": "Our Team - Professional Barbers & Stylists | S.Sense Salon",
+      "description": "Meet our professional team of barbers and stylists dedicated to providing expert haircuts, grooming, and salon services.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/team.html",
+      "og": {
+        "type": "website",
+        "title": "Our Team - Professional Barbers & Stylists | S.Sense Salon",
+        "description": "Meet the expert barbers and stylists at S.Sense Salon & Spa Kandivali East.",
+        "url": "https://ssensesalon.com/team.html",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_width": "1626",
+        "image_height": "967",
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Our Team - Professional Barbers & Stylists | S.Sense Salon",
+        "description": "Meet the expert barbers and stylists at S.Sense Salon & Spa Kandivali East.",
+        "image": "https://ssensesalon.com/images/salon9.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Our Team - Professional Barbers & Stylists",
+          "item": "https://ssensesalon.com/team.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "threading.html",
+      "title": "Threading in Kandivali East | S.Sense Salon & Spa",
+      "description": "Expert eyebrow threading & face threading in Kandivali East Mumbai. Precise shaping at S.Sense Salon & Spa Thakur Village.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/threading.html",
+      "og": {
+        "type": "website",
+        "title": "Threading in Kandivali East | S.Sense Salon & Spa",
+        "description": "Threading services at S.Sense Salon & Spa Kandivali East for brows, upper lip and regular facial grooming.",
+        "url": "https://ssensesalon.com/threading.html",
+        "image": "https://ssensesalon.com/images/woman_04.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Threading in Kandivali East | S.Sense Salon & Spa",
+        "description": "Threading services at S.Sense Salon & Spa Kandivali East for brows, upper lip and regular facial grooming.",
+        "image": "https://ssensesalon.com/images/woman_04.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Threading in Kandivali East",
+          "item": "https://ssensesalon.com/threading.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    },
+    {
+      "path": "waxing.html",
+      "title": "Waxing in Kandivali East | S.Sense Salon & Spa",
+      "description": "Waxing services at S.Sense Salon & Spa Thakur Village, Kandivali East. Book regular beauty maintenance with clean salon practices.",
+      "author": "S.Sense Salon & Spa",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "canonical": "https://ssensesalon.com/waxing.html",
+      "og": {
+        "type": "website",
+        "title": "Waxing in Kandivali East | S.Sense Salon & Spa",
+        "description": "Waxing services at S.Sense Salon & Spa Thakur Village, Kandivali East. Book regular beauty maintenance with clean salon practices.",
+        "url": "https://ssensesalon.com/waxing.html",
+        "image": "https://ssensesalon.com/images/beauty_02.webp",
+        "image_width": null,
+        "image_height": null,
+        "image_alt": null
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Waxing in Kandivali East | S.Sense Salon & Spa",
+        "description": "Waxing services at S.Sense Salon & Spa Thakur Village, Kandivali East. Book regular beauty maintenance with clean salon practices.",
+        "image": "https://ssensesalon.com/images/beauty_02.webp",
+        "image_alt": null
+      },
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "item": "https://ssensesalon.com/"
+        },
+        {
+          "name": "Waxing in Kandivali East",
+          "item": "https://ssensesalon.com/waxing.html"
+        }
+      ],
+      "noindex": false,
+      "business": {
+        "name": "S.Sense Salon & Spa",
+        "telephone": "+91-8054777888",
+        "email": "info@ssensesalon.com",
+        "priceRange": "₹₹",
+        "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+        "addressLocality": "Kandivali East",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400101",
+        "addressCountry": "IN",
+        "latitude": 19.2139797,
+        "longitude": 72.8719803,
+        "openingHours": "Mo-Su 11:00-21:00",
+        "logo": "https://ssensesalon.com/images/logo-black.png",
+        "sameAs": [
+          "https://www.facebook.com/share/17BiWq4miC/",
+          "https://www.instagram.com/s.sensesalonandspa"
+        ]
+      },
+      "repair_price_range": false
+    }
+  ]
+}

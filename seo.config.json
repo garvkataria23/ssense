@@ -1,0 +1,90 @@
+{
+  "_comment": "Site-wide SEO constants for seo.py. Edit here, never inside generated <head> blocks.",
+
+  "origin": "https://ssensesalon.com",
+  "site_name": "S.Sense Salon & Spa",
+  "locale": "en_IN",
+  "lang": "en-IN",
+  "twitter_card": "summary_large_image",
+
+  "robots": {
+    "index": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "noindex": "noindex, follow"
+  },
+
+  "exclude_from_managed_block": [
+    "403.html",
+    "404.html",
+    "500.html"
+  ],
+
+  "noindex": {
+    "_comment": "Orphan/demo template pages. Kept on disk and linked from nav, but removed from search results and the sitemap so they stop competing with the real content.",
+    "blog-listing.html": "Duplicate blog listing; links to zero real posts, contains filler articles.",
+    "single-post.html": "Template demo post. Nine category pages link their 'Our Latest News' blocks to it, so it must stay reachable, but it is not a real article.",
+    "single-post1.html": "Template demo post. Linked only from blog-listing.html."
+  },
+
+  "default_og": {
+    "_comment": "Used only when a page has no og:image of its own. salon9.webp is a real in-salon photo, 1626x967.",
+    "image": "https://ssensesalon.com/images/salon9.webp",
+    "width": "1626",
+    "height": "967",
+    "alt": "S.Sense Salon & Spa nail bar in Kandivali East, Mumbai"
+  },
+
+  "business": {
+    "name": "S.Sense Salon & Spa",
+    "telephone": "+91-8054777888",
+    "email": "info@ssensesalon.com",
+    "priceRange": "₹₹",
+    "streetAddress": "CHS Ltd, Evershine Sun, Shop No 17/18, EMP 62, Thakur Village",
+    "addressLocality": "Kandivali East",
+    "addressRegion": "Maharashtra",
+    "postalCode": "400101",
+    "addressCountry": "IN",
+    "latitude": 19.2139797,
+    "longitude": 72.8719803,
+    "openingHours": "Mo-Su 11:00-21:00",
+    "logo": "https://ssensesalon.com/images/logo-black.png",
+    "sameAs": [
+      "https://www.facebook.com/share/17BiWq4miC/",
+      "https://www.instagram.com/s.sensesalonandspa"
+    ]
+  },
+
+  "sitemap": {
+    "path": "sitemap.xml",
+    "default_changefreq": "monthly",
+    "default_priority": "0.6"
+  },
+
+  "image_replacements": {
+    "_comment": "Assets referenced by og:image / twitter:image that do not exist on disk. Mapped to a verified local file.",
+    "https://ssensesalon.com/images/salon-main-image.jpg": "https://ssensesalon.com/images/salon9.webp"
+  },
+
+  "schema_identity": {
+    "_comment": "Top-level entity @id/url values that pointed at URLs which do not exist, so they contradicted the page canonical. Each entry lists only the top-level page-describing node; nested nodes are left alone.",
+    "barber-shop-1.html": {
+      "@type": "BarberShop",
+      "from": "https://ssensesalon.com/barber-shop",
+      "to": "https://ssensesalon.com/barber-shop-1.html"
+    },
+    "barber-shop-2.html": {
+      "@type": "HairSalon",
+      "from": "https://ssensesalon.com/mens-grooming-services",
+      "to": "https://ssensesalon.com/barber-shop-2.html"
+    },
+    "beauty-salon.html": {
+      "@type": "BeautySalon",
+      "from": "https://ssensesalon.com/beauty-salon",
+      "to": "https://ssensesalon.com/beauty-salon.html"
+    },
+    "booking.html": {
+      "@type": "BookingPage",
+      "from": "https://ssensesalon.com/booking",
+      "to": "https://ssensesalon.com/booking.html"
+    }
+  }
+}
