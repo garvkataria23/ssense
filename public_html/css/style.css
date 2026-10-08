@@ -24482,9 +24482,45 @@ body.ssense-services-index .ssense-services-hero-strip span + span::before {
   }
 }
 
+/* Services hero: contain the absolutely positioned figure.
+   The figure is position:absolute with an aspect-ratio, so it does not
+   contribute to .ssense-services-hero-visual's height. Earlier passes set
+   min-height in a clamp() that fell below top(18px) + figure height, letting
+   the image spill past the container and collide with the strip below it.
+   Reserve height explicitly instead. */
+body.ssense-services-index .ssense-services-hero-visual {
+  min-height: clamp(360px, 31vw, 500px);
+}
+
+body.ssense-services-index .ssense-services-hero-visual figure {
+  top: 18px;
+  width: min(520px, 66%);
+  aspect-ratio: 520 / 460;
+}
+
+@media (min-width: 768px) {
+  body.ssense-services-index .ssense-services-hero-visual {
+    /* 18px figure offset + 460px figure height + breathing room for the
+       absolutely positioned badge/script/stat overlays. */
+    min-height: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.ssense-services-index .ssense-services-hero-visual {
+    min-height: 540px;
+  }
+}
+
 @media (max-width: 767.98px) {
   body.ssense-services-index .ssense-services-hero-showcase {
     padding-top: 82px;
+  }
+
+  /* Below 768px the figure returns to normal flow, so no reserved height is
+     needed and the overlays reposition themselves. */
+  body.ssense-services-index .ssense-services-hero-visual {
+    min-height: 0;
   }
 
   body.ssense-services-index .ssense-services-hero-copy h1 {
@@ -28002,4 +28038,39 @@ body .ssense-motion-card img {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* Related-services handwriting flourish.
+   It was absolutely positioned at left: calc(100% + 90px), which lands 90px
+   past the copy column and inside the second grid column. With no room left
+   to its right the box collapsed to minimum width, so the script wrapped one
+   word per line and collided with the paragraph and image beside it.
+   Anchor it to the right edge of its own column instead. */
+body.ssense-ia-page .ssense-related-script {
+  left: auto;
+  right: 12px;
+  max-width: min(240px, 42%);
+}
+
+/* With the intro paragraph gone the split is a single column, so `right: 12px`
+   lands the script on top of the ::after photo. Park it to the left of the
+   photo instead, in the empty gutter beside the heading. */
+@media (min-width: 1200px) {
+  body.ssense-ia-page .ssense-related-script {
+    right: calc(min(680px, 42vw) + 40px);
+  }
+}
+
+/* The "Book Ahead" badge and the intro paragraph were both ::after / child of
+   .ssense-heading-split > p. That paragraph has been removed from every
+   service page, so both rules below are dead and were dropped. Any further
+   styling for this section must target .ssense-heading-split directly. */
+
+/* With that paragraph gone the split has a single grid child, so the second
+   column would sit empty and the heading would be squeezed into the first.
+   Collapse to one column; ::after (salon photo) and ::before (the circular
+   "Look Good Feel Good" badge) are absolutely positioned against .ssense-heading-split
+   itself, so they still paint on the right. */
+body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split {
+  grid-template-columns: 1fr;
 }
