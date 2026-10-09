@@ -23,6 +23,15 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # ==========================================
+# 2b. BLOG LISTING (blog/ directory exists, so /blog would 403)
+#     blog.html lives at the site root and uses root-relative asset paths
+#     (css/..., images/...), so it must be served at root depth (/blog),
+#     never at /blog/ where the browser would resolve those to /blog/css/...
+# ==========================================
+RewriteRule ^blog/$ /blog [R=301,L]
+RewriteRule ^blog$ /blog.html [L]
+
+# ==========================================
 # 3. REMOVE .HTML EXTENSION FROM URLs
 # ==========================================
 RewriteCond %{REQUEST_FILENAME} !-d
