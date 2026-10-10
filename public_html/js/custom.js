@@ -38,16 +38,6 @@
 			
 		"use strict";
 
-		// Graceful no-ops when optional plugins are not loaded on this page, so
-		// the rest of this ready() handler always runs. Utility pages (403,
-		// 404, 500, privacy) link custom.js without the lightbox/carousel
-		// plugins and previously crashed here, killing every init below.
-		if ( !$.fn.owlCarousel ) { $.fn.owlCarousel = function () { return this; }; }
-		if ( !$.fn.magnificPopup ) {
-			$.fn.magnificPopup = function () { return this; };
-			$.magnificPopup = { instance: null, open: function () {} };
-		}
-
 		$('#loading').hide();
 
 
@@ -61,8 +51,8 @@
 		if ( $(window).outerWidth() < 992 ) {
 			$('.wsmenu-list li.nl-simple, .wsmegamenu li, .sub-menu li').on('click', function() {				
 				 $('body').removeClass("wsactive");	
-				 $('.sub-menu').slideUp(250);
-     			 $('.wsmegamenu').slideUp(250);	
+				 $('.sub-menu').slideUp('slow');
+     			 $('.wsmegamenu').slideUp('slow');	
      			 $('.wsmenu-click').removeClass("ws-activearrow");
         		 $('.wsmenu-click02 > i').removeClass("wsmenu-rotate");
 			});
@@ -70,8 +60,8 @@
 
 		if ( $(window).outerWidth() < 992 ) {
 			$('.wsanimated-arrow').on('click', function() {				
-				 $('.sub-menu').slideUp(250);
-     			 $('.wsmegamenu').slideUp(250);	
+				 $('.sub-menu').slideUp('slow');
+     			 $('.wsmegamenu').slideUp('slow');	
      			 $('.wsmenu-click').removeClass("ws-activearrow");
         		 $('.wsmenu-click02 > i').removeClass("wsmenu-rotate");
 			});
@@ -92,7 +82,7 @@
 		        },
 		        animation: {
 		            easing: 'easeInSine',
-		            duration: 250,
+		            duration: 'slow',
 		            complete: $.noop,
 		            step: $.noop
 		        }

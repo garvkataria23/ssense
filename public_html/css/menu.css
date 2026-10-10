@@ -750,16 +750,16 @@
 
 /* ================== Mobile Base CSS ================== */
 
-/* Let the document scroll normally on phones/tablets so window scroll
-   listeners (sticky header, WOW reveals) keep working. Scroll is locked only
-   while the drawer is open (body.wsactive). overflow-x must be `clip`, not
-   `hidden`: hidden would make body the scroll container and break window
-   scroll events. */
-html,
+html {
+  overflow: hidden;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
-  height: auto;
-  overflow-x: clip;
-  overflow-y: visible;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body.wsactive {
@@ -1272,17 +1272,30 @@ body.wsactive {
 .wsactive .wsmenu .overlapblackbg {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.25s ease-out;
-  -moz-transition: opacity 0.25s ease-out;
-  -ms-transition: opacity 0.25s ease-out;
-  -o-transition: opacity 0.25s ease-out;
-  transition: opacity 0.25s ease-out;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -ms-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
   z-index: 8888!important;
 }
 
-/* The drawer overlays the page; no longer push .wsmenucontainer sideways.
-   The old margin-right transition animated the entire page on every open and
-   close, which caused visible layout jank on phones. */
+.wsmenucontainer {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.wsactive .wsmenucontainer {
+  margin-right: 300px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
 .wsactive .wsmenu {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;

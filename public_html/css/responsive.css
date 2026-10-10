@@ -2,11 +2,7 @@
 
 
 
-/* Mobile compact styles now load from a direct media-scoped <link> in every
-   page head (css/mobile-compact.css) instead of this @import. The @import
-   forced a serial download chain (responsive.css first, then mobile-compact)
-   on every mobile page load; the direct link downloads them in parallel at
-   the same cascade position this import occupied. */
+@import url("mobile-compact.css?v=global-live-20261001a") screen and (max-width: 767.98px);
 
 /*
   Template Name: Reine - Beauty Salon HTML5 Template

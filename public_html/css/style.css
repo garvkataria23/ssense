@@ -28074,34 +28074,3 @@ body.ssense-ia-page .ssense-related-script {
 body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split {
   grid-template-columns: 1fr;
 }
-
-/* Cross-document view transitions: same-origin page navigations get a soft
-   250ms root cross-fade instead of a hard cut, which smooths the perceived
-   jump when the menu closes and the next page swaps in. Progressive
-   enhancement: unsupported browsers simply keep the hard cut. */
-@view-transition {
-  navigation: auto;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
-    animation: none;
-  }
-}
-
-/* Preloader safety net: the overlay is position:fixed at z-index 999999 and is
-   normally removed by custom.js, which sits behind every theme script in the
-   page. On a slow connection those scripts can take seconds, leaving a blank
-   screen painted on top of perfectly ready content. Hide the overlay on its
-   own after a short beat so slow script loading can never hold back paint.
-   On a fast connection custom.js still removes it first, as before. */
-#loading {
-  animation: ss-hide-preloader 0s linear 1.2s forwards;
-}
-
-@keyframes ss-hide-preloader {
-  to {
-    visibility: hidden;
-  }
-}
