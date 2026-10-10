@@ -1,10 +1,13 @@
 @font-face {
     font-family: "flaticon";
-    src: url("../images/fonts/flaticon.ttf?b8e939e97cbbeabd5290d803a3b7e130") format("truetype"),
+    /* woff2 first: browsers take the first format they support, so the list
+       used to hand every visitor the 110 KB truetype file. The eot and svg
+       entries only ever served IE8, and the svg fallback is ~1 MB. */
+    src: url("../images/fonts/flaticon.woff2?b8e939e97cbbeabd5290d803a3b7e130") format("woff2"),
 url("../images/fonts/flaticon.woff?b8e939e97cbbeabd5290d803a3b7e130") format("woff"),
-url("../images/fonts/flaticon.woff2?b8e939e97cbbeabd5290d803a3b7e130") format("woff2"),
-url("../images/fonts/flaticon.eot?b8e939e97cbbeabd5290d803a3b7e130#iefix") format("embedded-opentype"),
-url("../images/fonts/flaticon.svg?b8e939e97cbbeabd5290d803a3b7e130#flaticon_beauty_salon") format("svg");
+url("../images/fonts/flaticon.ttf?b8e939e97cbbeabd5290d803a3b7e130") format("truetype");
+    /* Icons must never hold back first paint; draw them in when they arrive. */
+    font-display: swap;
 }
 
 span[class^="flaticon-"]:before, 
