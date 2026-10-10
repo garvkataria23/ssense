@@ -6,8 +6,10 @@
     src: url("../images/fonts/flaticon.woff2?b8e939e97cbbeabd5290d803a3b7e130") format("woff2"),
 url("../images/fonts/flaticon.woff?b8e939e97cbbeabd5290d803a3b7e130") format("woff"),
 url("../images/fonts/flaticon.ttf?b8e939e97cbbeabd5290d803a3b7e130") format("truetype");
-    /* Icons must never hold back first paint; draw them in when they arrive. */
-    font-display: swap;
+    /* No font-display:swap here on purpose. Icons are drawn by :before / :after
+       pseudo-elements, so swapping the font in after first paint re-flows the
+       rows that contain them and showed up as real cumulative layout shift.
+       Blocking on this small cached file keeps icon geometry stable. */
 }
 
 span[class^="flaticon-"]:before, 
