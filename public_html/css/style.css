@@ -28074,3 +28074,18 @@ body.ssense-ia-page .ssense-related-script {
 body.ssense-ia-page .ssense-services-related-showcase .ssense-heading-split {
   grid-template-columns: 1fr;
 }
+
+/* Cross-document view transitions: same-origin page navigations get a soft
+   250ms root cross-fade instead of a hard cut, which smooths the perceived
+   jump when the menu closes and the next page swaps in. Progressive
+   enhancement: unsupported browsers simply keep the hard cut. */
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
