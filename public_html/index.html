@@ -112,8 +112,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Jost:wght@300;400;500;600;700&family=Vollkorn:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Prioritize the first visible hero image for mobile LCP without changing visuals. -->
-    <link rel="preload" as="image" href="images/slider/Untitled%20design%20(43).webp?v=20261001a" fetchpriority="high" media="(max-width: 767.98px)">
+    <!-- Prioritize the first visible hero image for mobile LCP without changing visuals.
+         imagesrcset mirrors the <img> below so the preload picks the same small
+         candidate the phone actually needs, instead of forcing the 402 KB master. -->
+    <link rel="preload" as="image" imagesrcset="images/slider/Untitled%20design%20(43)-480w.webp 480w, images/slider/Untitled%20design%20(43)-768w.webp 768w, images/slider/Untitled%20design%20(43)-1200w.webp 1200w, images/slider/Untitled%20design%20(43)-1600w.webp 1600w, images/slider/Untitled%20design%20(43).webp?v=20261001a 1672w" imagesizes="100vw" fetchpriority="high" media="(max-width: 767.98px)">
 		<!-- BOOTSTRAP CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- FONT ICONS -->
@@ -810,7 +812,10 @@
 
 
 							<!-- SLIDE #1 -->
-							<div class="slide is-active">
+							<!-- is-loaded is set in the markup so the hero is painted from CSS alone.
+							     slideshow.js adds it to every slide on DOMContentLoaded, which made the
+							     largest contentful paint wait for jQuery and 15 other scripts to load. -->
+							<div class="slide is-active is-loaded">
 
 								<!-- Slide Content -->
 						<div class="slide-content">
@@ -845,7 +850,7 @@
 
 								<!-- Slide Background Image -->
 						        <div class="image-container">
-							<img class="image" src="images/slider/Untitled%20design%20(43).webp?v=20261001a" alt="slide-background" fetchpriority="high" decoding="async" width="1672" height="941">
+							<img class="image" src="images/slider/Untitled%20design%20(43).webp?v=20261001a" srcset="images/slider/Untitled%20design%20(43)-480w.webp 480w, images/slider/Untitled%20design%20(43)-768w.webp 768w, images/slider/Untitled%20design%20(43)-1200w.webp 1200w, images/slider/Untitled%20design%20(43)-1600w.webp 1600w, images/slider/Untitled%20design%20(43).webp?v=20261001a 1672w" sizes="100vw" alt="slide-background" fetchpriority="high" decoding="async" width="1672" height="941">
 						        </div>
 
 						</div>	<!-- END SLIDE #1 -->
